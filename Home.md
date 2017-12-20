@@ -1,5 +1,5 @@
 # TRON Introduction
-![](images/1.png)
+![](https://github.com/tron-network/wiki/blob/master/images/1.png)
 
 ## 一 Introduction
 TRON contains consensus engine, ABCI, UTXO, smart contracts and other modules. Consensus engine is the core, application connects with consensus engine by ABCI to form a Byzantine fault-tolerant state machine, which can be implemented in any programming language.
@@ -18,12 +18,12 @@ and the entire system is open and transparent, the nodes can not deceive each ot
  of UTXO's easy-to-parallel computing model. To make data easy to manage and easy to program, TRON introduces the world state-lightweight state tree concept, each of which maintains a global world state, the global state has the features of quickly find, can not be changed, easy to provide proof.
 
 ## 二 Software hierarchy
-![](images/2_en.png)
+![](https://github.com/tron-network/wiki/blob/master/images/2_en.png)
 
 Software level is divided into two parts. The first part includes APIs, SDKs and CLI, which are mainly used for calling an external provider for convenient development. The second part includes Wallet Module, Blockchain Module and Smart Contract Module, provides a storage interface, making the data of each module persistent.
 
 ## 三 UTXO
-![](images/3_en.png)
+![](https://github.com/tron-network/wiki/blob/master/images/3_en.png)
 
 In the UTXO model, it is possible to transparently trace back the history of each transaction through the public ledger. The UTXO model has parallel processing capability to initialize transactions among multiple addresses indicating the extensibility.
 
@@ -34,7 +34,7 @@ Compared with the UTXO model, Ethereum is an account based system. In Ethereum, 
 Based on the discussion above, we consider the Ethereum account model to be a scalability bottleneck. By contrast. The UTXO model of bitcoin has enhanced network efficiency with obvious advantages. Therefore, we build the block-chain based on the UTXO model and abstract the concept of the account, making it more intuitive understanding of the real world, which is the original intention of TRON.
 
 ## 四 Smart contract
-![](images/4_en.png)
+![](https://github.com/tron-network/wiki/blob/master/images/4_en.png)
 
 Certainty and Termination are two properties of a smart contract. When designing a smart contract system, non-deterministic factors need to be excluded.
 
@@ -58,7 +58,7 @@ TRON is currently open source code to achieve a consensus algorithm for the firs
 
 ## 六 Protocol Buffer based object coding and serialization
 
-![](images/5_en.png)
+![](https://github.com/tron-network/wiki/blob/master/images/5_en.png)
 
 ### Example
 **Proto code**
