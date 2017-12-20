@@ -1,54 +1,67 @@
-# TRON 简介
+# TRON Introduction
 ![](images/1.png)
 
-## 一 简介
-TRON包含共识引擎、ABCI、UTXO、智能合约等模块。共识引擎是其核心，应用通过ABCI与之对接，实现为拜占庭容错的状态机，可以由任意一种编程语言实现。
-TRON区块链平台具有以下特点：
+## 一 Introduction
+TRON contains consensus engine, ABCI, UTXO, smart contracts and other modules. Consensus engine is the core, application connects with consensus engine by ABCI to form a Byzantine fault-tolerant state machine, which can be implemented in any programming language.
 
-- 可扩展性：TRON区块链可通过侧链扩容，意味着不仅货币交易，具有法律约束能力的合同及证书、音频视频文件都可储存在区块链的数据库上；
-- 去中心化：没有中介机构，所有节点的权利和义务都相等，任一节点停止工作都不会影响系统整体的运作；
-- 非可信环境：系统中所有节点之间无需信任也可以进行交易因为数据库和整个系统的运作是公开透明的，节点之间无法欺骗彼此；
-- 一致性：节点之间的数据信息是一致的；
-- 容错型：系统能包容1/3节点的拜占庭故障；
-- 扩展性账户模型：UTXO模型 + Account抽象。TRON在采用了UTXO易于并行运算的模型前提下，还做了针对性的改进；为了数据易于管理，易于编程，TRON引入世界状态—轻量级状态树的概念，每一种资产都维持一个全局世界状态，该全局状态具有快速可查找，不可更改，简单易提供证明的特性。
+TRON blockchain platform has the following characteristics:
 
-## 二 软件层次图
-![](images/2.png)
+- Scalability: TRON blockchain can be extended through the side chain, which means that not only currency 
+transactions, legally binding contracts and certificates, audio and video files can be stored in the blockchain database;
+- Decentralization: Without an agency, all nodes have the same rights and obligations, any node stopping working will 
+not affect the overall operation of the system.
+- Trustless environment: All nodes in the system can be traded without trust. Because the operation of the database 
+and the entire system is open and transparent, the nodes can not deceive each other;
+- Consistency: The data information between nodes is consistent;
+- Fault-tolerant: The system can accommodate 1/3 node Byzantine failure;
+- Scalability Account Model: UTXO Model + Account Abstraction. TRON has also made targeted improvements on the premise
+ of UTXO's easy-to-parallel computing model. To make data easy to manage and easy to program, TRON introduces the world state-lightweight state tree concept, each of which maintains a global world state, the global state has the features of quickly find, can not be changed, easy to provide proof.
 
-软件层次分为两大部分。第一部分为应用程序接口，软件开发包和命令行，主要为外部提供程序调用接口，方便开发；第二部分为模块，包括钱包模块，区块链模块和智能合约模块，同时提供了存储接口，方便各个模块的数据持久化。
+## 二 Software hierarchy
+![](images/2_en.png)
+
+Software level is divided into two parts. The first part includes APIs, SDKs and CLI, which are mainly used for calling an external provider for convenient development. The second part includes Wallet Module, Blockchain Module and Smart Contract Module, provides a storage interface, making the data of each module persistent.
 
 ## 三 UTXO
-![](images/3.png)
+![](images/3_en.png)
 
-UTXO模型可以通过公共账簿透明地追踪每个交易的历史记录。UTXO有天生的并发处理能力，对于在多个地址之间交易具有很好的扩展性。UTXO支持通过Change Address的输出来保护用户的隐私，TRON的目标是基于智能合约。
+In the UTXO model, it is possible to transparently trace back the history of each transaction through the public ledger. The UTXO model has parallel processing capability to initialize transactions among multiple addresses indicating the extensibility.
 
-相对于UTXO，以太坊基于账户系统，以太坊的余额管理类似于现实世界的银行管理，每个新产生的块都会潜在地影响全局。每个账户都有自己的余额和存储空间，用户通过远程调用来执行P2P交易，尽管可以通过智能合约给每个账户发送消息，但是这些内部交易仅对于每个账户的余额可见，在公共账簿追踪它们是个巨大的挑战。
+Additionally, the UTXO model supports privacy protection in that users can use Change Address as the output of a UTXO. The target of TRON is based on smart contracts.
 
-基于以上的讨论，以太坊账户模型存在可伸缩性瓶颈，相较而言，比特币的UTXO模型增强了网络 效能，具有明显的优势。因此我们基于UTXO模型构建区块链，并抽象出账户的概念，使之更符合真实世界的直观认识，这是TRON设计的初衷。
+Compared with the UTXO model, Ethereum is an account based system. In Ethereum, balance management resembles a bank account in the real world. Every newly generated block potentially influences the global status of other accounts. Every account has its own balance, storage and code-space base. users perform P2P transactions via client remote procedure calls. Although sending messages to each account via smart contracts is possible, these internal transactions are only visible in the balance of each account and tracking them on the public ledger of Ethereum is a challenge.
+ 
+Based on the discussion above, we consider the Ethereum account model to be a scalability bottleneck. By contrast. The UTXO model of bitcoin has enhanced network efficiency with obvious advantages. Therefore, we build the block-chain based on the UTXO model and abstract the concept of the account, making it more intuitive understanding of the real world, which is the original intention of TRON.
 
-## 四 智能合约
-![](images/4.png)
+## 四 Smart contract
+![](images/4_en.png)
 
-确定性和可终止性是智能合约的两种性质，在设计智能合约系统的时候，需要想办法把非确定性因素排除在外。
+Certainty and Termination are two properties of a smart contract. When designing a smart contract system, non-deterministic factors need to be excluded.
 
-比特币内置了一套脚本引擎，其指令集非常简单且非图灵完备，具有可终止性，因此比特币的智能合约是确定性的。以太坊虚拟机（EVM）是以太坊中智能合约的运行环境，以太坊智能合约的系统函数不是非确定性的，但是合约的调用路径会是非确定性的，会导致一个可扩展性上的重要性能损失，它采用计价器实现可终止性。Hyperledger Fabric智能合约采用了Docker作为执行环境。Docker是轻量级的虚拟化技术，在区块链下Docker是一个比较“重”的执行环境，这也是Fabric的性能瓶颈所在，目前只能达到每秒几百TPS，它采用计时器实现可终止性。
+Bitcoin has a set of scripting engines, the instruction set is very simple and non-Turing complete, with termination, so bitcoin smart contracts are certain. The Ethereum Virtual Machine (EVM) is a runtime environment for Ethereum smart contracts. The system functions for Ethereum smart contracts are not nondeterministic, but the contract's call path can be nondeterministic and result in a scalable performance Losses, it uses meter to achieve the termination. The Hyperledger Fabric smart contract uses Docker as the execution environment. Docker is a lightweight virtualization technology, under the blockchain Docker is a “heavier” execution environment, which is where the performance bottlenecks of Fabric, currently only up to hundreds of TPS per second, which uses a timer to achieve Termination.
 
-为了兼顾确定性，可终止性以及虚拟机的轻量级和容器方案的编写语言灵活性这些优点，TRON准备在未来开发轻量级的 TVM（Tron Virtual Machine）作为其智能合约的执行环境，它的启动速度非常快，占用资源也很小。TRON虚拟机的数据操作指令直接对数组及复杂数据结构提供支持。这些都会提升 TRON智能合约的运行性能。TRON网络计划对代币转账和智能合约的运行和存储进行收费，从而实现对记账人的经济激励和防止资源滥用。
+In order to keep with the advantages of certainty, termination, and lightweight of virtual machines and the language flexibility of container programming, TRON is poised to develop the TRON Virtual Machine as an execution environment for its smart contracts in the future. The TVM boots very fast, occupies less resources. TRON virtual machine data manipulation instructions are directly to the array and complex data structures to provide support. These will enhance the operational performance of TRON smart contracts. The TRON Network plans to charge for the operation and storage of tokens and smart contracts to achieve economic incentives to book-keeping persons and to prevent the abuse of resources.
 
-未来TRON智能合约开发者可以直接使用几乎任何他们擅长的高级语言来进行 TRON智能合约的开发工作。首批计划支持的语言是 java ，Go等。TRON计划提供这些语言的编译器和插件，用于将高级语言编译成 TRON虚拟机所支持的指令集。
+In the future TRON smart contract developers can use almost any high-level language they are good at for TRON smart contract development. The first language support are java, Go etc. Tron plans to provide compilers and plug-ins for these languages to compile high-level languages into the instruction sets supported by TRON virtual machines.
 
-如上图所示是TRON的智能合约模型：一段代码（智能合约），运行在智能合约虚拟机上，被部署在分享的、复制的账本（区块链）上，TRON对智能合约进行了生命周期的管理, 分别是：建立，部署，制定，回滚，终止。它可以维持自己的状态，控制自己的资产值和接收到外界信息、交易或者对外界信息、交易进行回应。
+The TRON smart contract model shown above is a piece of code (a smart contract) that runs on a smart contract virtual machine and is deployed on a shared, replicated ledger (blockchain). TRON has a life cycle for smart contracts management, respectively are: the establishment, deployment, development, rollback, termination. It can maintain its own status, control its own asset value and receive external information, transactions or external information and transactions to respond.
 
-## 五 共识
+## 五 Consensus
 
-TRON的共识采取分三步走的策略，第一步采用基于Kafka的技术体制，实现中心化共识算法，目的在于实现系统的联调联试，功能集成；第二步采用基于Raft的分布式共识机制，实现了从中心化到分布式的跨越，这一步逐渐完善网络、分发等功能，为最终实现无逻辑中心的广域全分布打下基础；第三步实现PoS的共识机制，实现基于 “保证金机制 + epoch确认”的拜占庭容错共识，同时兼容PoS和PoW的集成共识。目前TRON的开源代码实现了第一阶段的中心共识算法。第二阶段的分布式共识算法正在开发测试中。
+The consensus of TRON adopts a three-step strategy. The first step is to adopt a Kafka-based technology system to implement a centralized consensus algorithm. The purpose of TRON is to achieve system joint debugging and functional integration.
 
-## 六 基于Protocol Buffer的对象编码和序列化
+The second step is to use Raft-based distributed consensus mechanism to realize the centralized and distributed leapfrogging. This step gradually improves the functions of network and distribution and lays the foundation for the eventual realization of a wide distribution with no logical center.
 
-![](images/5.png)
+The third step is to realize the Consensus mechanism of PoS and realize the Byzantine Fault Tolerant Consensus based on the "Margin Mechanism + Epoch Confirmation" and the compatibility consensus between PoS and PoW.
 
-### 实例
-**Proto代码**
+TRON is currently open source code to achieve a consensus algorithm for the first phase of the center. The second phase of the distributed consensus algorithm is under development and testing.
+
+## 六 Protocol Buffer based object coding and serialization
+
+![](images/5_en.png)
+
+### Example
+**Proto code**
 
 ```
 message Block {
@@ -57,7 +70,7 @@ message Block {
 }
 ```
 
-**序列化**
+**Serialization**
 
 ```
 Block.Builder block = Block.newBuilder()
@@ -70,7 +83,7 @@ byte[] keyData = block.getHash();
 DB.saveBlock(keyData, blockData);
 ```
 
-**反序列化**
+**Deserialize**
 
 ```
 byte[] keyData = block.getHash();
