@@ -75,7 +75,7 @@ message Block {
 ```
 Block.Builder block = Block.newBuilder()
     .setTransactions(transactions)
-    .setBlockHeader(blochHeader)
+    .setBlockHeader(blockHeader)
     .build();
     
 byte[] blockData = block.toByteArray();
