@@ -64,7 +64,8 @@ TRON is currently open source code to achieve a consensus algorithm for the firs
 Protocol Buffer based object coding and serialization
 -----------------------------------------------------
 
-*Proto Code*
+** Proto Code **
+
 .. code-block:: json
 
     message Block {
@@ -72,7 +73,8 @@ Protocol Buffer based object coding and serialization
         BlockHeader blockHeader = 2;
     }
 
-*Serialization*
+** Serialization **
+
 .. code-block:: json
 
     Block.Builder block = Block.newBuilder()
@@ -84,7 +86,8 @@ Protocol Buffer based object coding and serialization
     byte[] keyData = block.getHash();
     DB.saveBlock(keyData, blockData);
 
-*Deserialize*
+** Deserialize **
+
 .. code-block:: json
 
     byte[] keyData = block.getHash();
