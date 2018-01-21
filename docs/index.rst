@@ -9,11 +9,13 @@ Tron Protocol
     installation
 
 
-.. image:: /img/500-tron.jpg
-    :align: center
+
 
 Wavefield TRON
 --------------
+
+.. figure:: /img/500-tron.jpg
+    :align: right
 
 *Wavefield TRON is a blockchain-based open source decentralized content entertainment protocol.*
 
