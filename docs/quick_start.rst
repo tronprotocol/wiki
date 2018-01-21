@@ -42,6 +42,7 @@ Software Hierarchy
 * Run
 
 .. image:: /img/commands/default-set.gif
+    :width: 100%
 
 or simply from terminal:
 
