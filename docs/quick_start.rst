@@ -41,5 +41,21 @@ Software Hierarchy
 * [Edit Configurations...] -> [Program arguments]: --type server
 * Run
 
-.. image:: /img/commands/default-set.git
+.. image:: /img/commands/default-set.gif
+
+or simply from terminal:
+
+.. code-block:: json
+
+    > ./gradlew run -Pserver=true
+
+**Complete process**
+
+.. image:: /img/commands/process.gif
+
+Other nodes to join need to modify the connection ip.
+
+Commands
+--------
+
 
