@@ -6,18 +6,16 @@ Quick Start
     :depth: 1
     :local:
 
-Software Hierarchy
+Download and build
 ------------------
-
-.. note::  This repository is a IDEA project which you can simply download and import.
-
-**Download and build**
 
 .. code-block:: json
 
     > git clone https://github.com/tronprotocol/java-tron.git
     > cd java-tron
     > gradle build
+
+.. note::  This repository is a IDEA project which you can simply download and import.
 
 **Import project to IDEA**
 
@@ -81,11 +79,41 @@ account
     :width: 100%
 
 getbalance
-^^^^^^^
+^^^^^^^^^^
 **Get Balance**
 
 .. code-block:: json
     > getbalance
 
 .. image:: /img/commands/getbalance.gif
+    :width: 100%
+
+send
+^^^^
+**send [to] [balance]**
+
+.. code-block:: json
+    > send 2cddf5707aefefb199cb16430fb0f6220d460dfe 2
+
+.. image:: /img/commands/send1.gif
+    :width: 100%
+
+printblockchain
+^^^^^^^^^^^^^^^
+**Print blockchain**
+
+.. code-block:: json
+    > printblockchain
+
+.. image:: /img/commands/printblockchain.gif
+    :width: 100%
+
+exit
+^^^^
+**Exit**
+
+.. code-block:: json
+    > exit
+
+.. image:: /img/commands/exit.gif
     :width: 100%
