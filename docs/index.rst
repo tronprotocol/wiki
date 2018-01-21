@@ -7,7 +7,8 @@ Tron Protocol
 
     introduction
     quick_start
-
+    contributions
+    contact
 
 Wavefield TRON
 --------------
