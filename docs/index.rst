@@ -9,6 +9,9 @@ Tron Protocol
     installation
 
 
+.. image:: /img/500-tron.jpg
+    :align: center
+
 Wavefield TRON
 --------------
 
