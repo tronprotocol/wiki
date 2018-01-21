@@ -53,10 +53,39 @@ or simply from terminal:
 **Complete process**
 
 .. image:: /img/commands/process.gif
+    :width: 100%
 
 Other nodes to join need to modify the connection ip.
 
 Commands
 --------
 
+help
+^^^^
+**Help Tips**
 
+.. code-block:: json
+    > help
+
+.. image:: /img/commands/help.gif
+    :width: 100%
+
+account
+^^^^^^^
+**Get Address**
+
+.. code-block:: json
+    > account
+
+.. image:: /img/commands/account.gif
+    :width: 100%
+
+getbalance
+^^^^^^^
+**Get Balance**
+
+.. code-block:: json
+    > getbalance
+
+.. image:: /img/commands/getbalance.gif
+    :width: 100%
