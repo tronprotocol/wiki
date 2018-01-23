@@ -8,6 +8,9 @@ Introduction
 
 TRON contains consensus engine, ABCI, UTXO, smart contracts and other modules. Consensus engine is the core, application connects with consensus engine by ABCI to form a Byzantine fault-tolerant state machine, which can be implemented in any programming language.
 
+.. image:: /img/intro/1_en_intro.png
+    :width: 100%
+
 TRON blockchain platform has the following characteristics:
 
 * Scalability: TRON blockchain can be extended through the side chain, which means that not only currency transactions, legally binding contracts and certificates, audio and video files can be stored in the blockchain database;
@@ -21,12 +24,19 @@ TRON blockchain platform has the following characteristics:
 Software Hierarchy
 ------------------
 
+.. image:: /img/intro/2_en_hierarchy.png
+    :width: 100%
+
 Software level is divided into two parts. The first part includes APIs, SDKs and CLI, which are mainly used for calling an external provider for convenient development. The second part includes Wallet Module, Blockchain Module and Smart Contract Module, provides a storage interface, making the data of each module persistent.
+
 
 UTXO
 ----
 
 In the UTXO model, it is possible to transparently trace back the history of each transaction through the public ledger. The UTXO model has parallel processing capability to initialize transactions among multiple addresses indicating the extensibility.
+
+.. image:: /img/intro/3_en_utxo.png
+    :width: 100%
 
 Additionally, the UTXO model supports privacy protection in that users can use Change Address as the output of a UTXO. The target of TRON is based on smart contracts.
 
@@ -39,6 +49,9 @@ Smart contract
 --------------
 
 Certainty and Termination are two properties of a smart contract. When designing a smart contract system, non-deterministic factors need to be excluded.
+
+.. image:: /img/intro/4_en_smartcontract.png
+    :width: 100%
 
 Bitcoin has a set of scripting engines, the instruction set is very simple and non-Turing complete, with termination, so bitcoin smart contracts are certain. The Ethereum Virtual Machine (EVM) is a runtime environment for Ethereum smart contracts. The system functions for Ethereum smart contracts are not nondeterministic, but the contract's call path can be nondeterministic and result in a scalable performance Losses, it uses meter to achieve the termination. The Hyperledger Fabric smart contract uses Docker as the execution environment. Docker is a lightweight virtualization technology, under the blockchain Docker is a “heavier” execution environment, which is where the performance bottlenecks of Fabric, currently only up to hundreds of TPS per second, which uses a timer to achieve Termination.
 
@@ -63,6 +76,12 @@ TRON is currently open source code to achieve a consensus algorithm for the firs
 
 Protocol Buffer based object coding and serialization
 -----------------------------------------------------
+
+.. image:: /img/intro/5_en.png
+    :width: 100%
+
+Example
+^^^^^^^
 
 **Proto Code**
 
