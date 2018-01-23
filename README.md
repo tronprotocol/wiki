@@ -4,7 +4,3 @@
 
 ## Getting Started
 The documentation is currently hosted on http://wiki.tron.network
-
-## Contributing
-
-## License
