@@ -25,8 +25,6 @@ Download and build
 
 **Testing**
 
-**Install Kafka and create two topics (block and transaction)**
-
 **Update the configuration**
 
 **Starting program**
