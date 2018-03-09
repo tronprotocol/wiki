@@ -15,6 +15,30 @@ Download and build
     > cd java-tron
     > gradle build
 
+**Building an executable JAE**
+
+.. code-block: json
+
+    > git clone https://github.com/tronprotocol/java-tron.git
+    > cd java-tron
+    > ./gradlew clean shadowJar
+    > java -jar java-tron/build/libs/java-tron.jar
+
+**Optional samples**
+
+.. code-block: shell
+
+    > # Witness node will generate blocks
+    > java -jar java-tron.jar --witness true/false
+    > # Private key
+    > java -jar java-tron.jar --private-key YourPrivateKey
+    > # Store data directory
+    > java -jar java-tron.jar --output-directory OutputDirectory
+    # Addresses of seed nodes
+    > java -jar java-tron.jar --seed-nodes 127.0.0.1:7080,127.0.0.1:7081
+    # Port of node
+    > java -jar java-tron.jar --overlay-port 7080
+
 .. note::  This repository is a IDEA project which you can simply download and import.
 
 **Import project to IDEA**
@@ -24,8 +48,6 @@ Download and build
 * Dialog [Import Project from Gradle], confirm [Use auto-import] and [Use gradle wrapper task configuration] have been selected，then select Gradle JVM（JDK 1.8）and click [OK]
 
 **Testing**
-
-**Install Kafka and create two topics (block and transaction)**
 
 **Update the configuration**
 
