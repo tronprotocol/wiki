@@ -17,7 +17,7 @@ Download and build
 
 **Building an executable JAE**
 
-.. code-block: json
+.. code-block:: json
 
     > git clone https://github.com/tronprotocol/java-tron.git
     > cd java-tron
@@ -26,7 +26,7 @@ Download and build
 
 **Optional samples**
 
-.. code-block: shell
+.. code-block:: shell
 
     > # Witness node will generate blocks
     > java -jar java-tron.jar --witness true/false
