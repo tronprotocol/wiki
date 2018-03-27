@@ -74,11 +74,11 @@ TRON Brief Introduction
 Community
 ---------
 
-* .. _Reddit link: https://www.reddit.com/r/Tronix/
+* `Reddit <https://www.reddit.com/r/Tronix/>`_
 * Stack exchange
-* .. _Slack Workspace link: https://tronfoundation.slack.com/ （Invitation needed）
-* .. _Gitter Rooms link: https://gitter.im/tronprotocol/java-tron/
-* .. _Telegram link: https://t.me/tronnetworkCN/
+* `Slack Workspace <https://tronfoundation.slack.com/>`_（Invitation needed）
+* `Gitter Rooms <https://gitter.im/tronprotocol/java-tron/>`_
+* `Telegram <https://t.me/tronnetworkCN/>`_
 * Meetup
 * Skype
 * Forum
