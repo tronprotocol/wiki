@@ -48,7 +48,6 @@ Download and build
     > java -jar java-tron.jar --witness
     > # Private key
     > java -jar java-exit
-                     ^^^^
 
 **Exit**
 
