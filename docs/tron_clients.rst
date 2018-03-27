@@ -65,8 +65,9 @@ How to Build
     cd java-tron
     ./gradlew build
 
+----------------------------------------------------------
 The building will normally finish in less than one minute.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------------
 
 * Build an executable JAE
 
@@ -74,9 +75,9 @@ The building will normally finish in less than one minute.
 
     ./gradlew clean shadowJar
 
-
+-----------------------------------------------------
 Build in IntelliJ IDEA (community version is enough):
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------------------
 
 Start IntelliJ Idea. Select File -> Open, then locate to the java-tron folder which you have git cloned to your local drive. Then click Open button on the right bottom.
 Check on Use auto-import on the Import Project from Gradle dialog. Select JDK 1.8 in the Gradle JVM option. Then click OK.
