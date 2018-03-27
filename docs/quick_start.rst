@@ -38,22 +38,23 @@ How to Build
 * JDK 1.8 (do not use JDK 1.9 please)
 
 **Building source code**
+
 * Build in the Terminal
 
 .. code-block:: shell
-cd java-tron
-./gradlew build
-The building will normally finish in less than one minute.
+    >cd java-tron
+    >./gradlew build
+    >The building will normally finish in less than one minute.
 
-Build an executable JAE
+    >Build an executable JAE
 
-./gradlew clean shadowJar
-Build in IntelliJ IDEA (community version is enough):
+    >./gradlew clean shadowJar
+    >Build in IntelliJ IDEA (community version is enough):
 
-Start IntelliJ Idea. Select File -> Open, then locate to the java-tron folder which you have git cloned to your local drive. Then click Open button on the right bottom.
-Check on Use auto-import on the Import Project from Gradle dialog. Select JDK 1.8 in the Gradle JVM option. Then click OK.
-IntelliJ will open the project and start gradle syncing, which will take several minutes, depending on your network connection and your IntelliJ configuration.
-After the syncing finished, select Gradle -> Tasks -> build, and then double click build option. The project will start building, which will normally take less than one minute to finish.
+    >Start IntelliJ Idea. Select File -> Open, then locate to the java-tron folder which you have git cloned to your local drive. Then click Open button on the right bottom.
+    >Check on Use auto-import on the Import Project from Gradle dialog. Select JDK 1.8 in the Gradle JVM option. Then click OK.
+    >IntelliJ will open the project and start gradle syncing, which will take several minutes, depending on your network connection and your IntelliJ configuration.
+    >After the syncing finished, select Gradle -> Tasks -> build, and then double click build option. The project will start building, which will normally take less than one minute to finish.
 Download and build
 ------------------
 
