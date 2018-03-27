@@ -48,7 +48,7 @@ How to Build
 
 * The building will normally finish in less than one minute.
 
-*Build an executable JAE
+* Build an executable JAE
 
 .. code-block:: shell
 
