@@ -3,8 +3,21 @@ Quick Start
 ===========
 
 .. contents:: Table of contents
-    :depth: 1
+:depth: 1
     :local:
+
+Set up the environment
+------------------
+
+**Supported Operating System**
+Tron currently supports the following operating systems:
+
+*Centos 7.*
+*Fedora 25 and higher (Fedora 27 recommended).*
+*Mint 18.*
+*Ubuntu 16.04 (Ubuntu 16.10 recommended).*
+*MacOS Darwin 10.12 and higher (MacOS 10.13.x recommended).*
+
 
 Download and build
 ------------------
@@ -28,10 +41,21 @@ Download and build
 
 .. code-block:: shell
 
+    > # Normal node
+    > java -jar java-tron.jar
     > # Witness node will generate blocks
-    > java -jar java-tron.jar --witness true/false
+    > java -jar java-tron.jar --witness
     > # Private key
-    > java -jar java-tron.jar --private-key YourPrivateKey
+    > java -jar java-exit
+                     ^^^^
+                     **Exit**
+
+                     .. code-block:: json
+                         > exit
+
+                     .. image:: /img/commands/exit.gif
+:width: 100%
+tron.jar --private-key YourPrivateKey
     > # Store data directory
     > java -jar java-tron.jar --output-directory OutputDirectory
     # Addresses of seed nodes
@@ -62,7 +86,7 @@ Download and build
 * Run
 
 .. image:: /img/commands/default-set.gif
-    :width: 100%
+:width: 100%
 
 or simply from terminal:
 
@@ -73,69 +97,6 @@ or simply from terminal:
 **Complete process**
 
 .. image:: /img/commands/process.gif
-    :width: 100%
+:width: 100%
 
 Other nodes to join need to modify the connection ip.
-
-Commands
---------
-
-help
-^^^^
-**Help Tips**
-
-.. code-block:: json
-    > help
-
-.. image:: /img/commands/help.gif
-    :width: 100%
-
-account
-^^^^^^^
-**Get Address**
-
-.. code-block:: json
-    > account
-
-.. image:: /img/commands/account.gif
-    :width: 100%
-
-getbalance
-^^^^^^^^^^
-**Get Balance**
-
-.. code-block:: json
-    > getbalance
-
-.. image:: /img/commands/getbalance.gif
-    :width: 100%
-
-send
-^^^^
-**send [to] [balance]**
-
-.. code-block:: json
-    > send 2cddf5707aefefb199cb16430fb0f6220d460dfe 2
-
-.. image:: /img/commands/send1.gif
-    :width: 100%
-
-printblockchain
-^^^^^^^^^^^^^^^
-**Print blockchain**
-
-.. code-block:: json
-    > printblockchain
-
-.. image:: /img/commands/printblockchain.gif
-    :width: 100%
-
-exit
-^^^^
-**Exit**
-
-.. code-block:: json
-    > exit
-
-.. image:: /img/commands/exit.gif
-    :width: 100%
