@@ -76,7 +76,7 @@ Community
 
 * `Reddit <https://www.reddit.com/r/Tronix/>`_
 * Stack exchange
-* `Slack Workspace <https://tronfoundation.slack.com/>`_（Invitation needed）
+* `Slack Workspace <https://tronfoundation.slack.com/>`_ （Invitation needed）
 * `Gitter Rooms <https://gitter.im/tronprotocol/java-tron/>`_
 * `Telegram <https://t.me/tronnetworkCN/>`_
 * Meetup
