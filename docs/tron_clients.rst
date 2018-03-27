@@ -88,18 +88,19 @@ Running
 
 **Running a private testnet**
 
-Running a full node
-In the Terminal
+* Running a full node
+    In the Terminal
 
-./gradlew run
-Use the executable JAE
+    ./gradlew run
+    Use the executable JAE
 
-cd build/libs
-java -jar java-tron.jar
-In IntelliJ IDEA
-1). After the building finishes, locate FullNode in the project structure view panel, which is on the path java-tron/src/main/java/org.tron/program/FullNode.
+    cd build/libs
+    java -jar java-tron.jar
+    In IntelliJ IDEA
 
-2). Select FullNode, right click on it, and select Run 'FullNode.main()', then FullNode starts running.
+1.After the building finishes, locate FullNode in the project structure view panel, which is on the path java-tron/src/main/java/org.tron/program/FullNode.
+
+2.Select FullNode, right click on it, and select Run 'FullNode.main()', then FullNode starts running.
 
 
 Wallet-CLI
