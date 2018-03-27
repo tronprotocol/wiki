@@ -19,7 +19,6 @@ Tron currently supports the following operating systems:
 * Ubuntu 16.04 (Ubuntu 16.10 recommended).
 * MacOS Darwin 10.12 and higher (MacOS 10.13.x recommended).
 
-
 Download and build
 ------------------
 
@@ -42,20 +41,17 @@ Download and build
 
 .. code-block:: shell
 
-    > # Normal node
-    > java -jar java-tron.jar
     > # Witness node will generate blocks
-    > java -jar java-tron.jar --witness
+    > java -jar java-tron.jar --witness true/false
     > # Private key
     > java -jar java-exit
+                     ^^^^
+                     **Exit**
 
-**Exit**
+                     .. code-block:: json
+                         > exit
 
-.. code-block:: json
-
-    > exit
-
-.. image:: /img/commands/exit.gif
+                     .. image:: /img/commands/exit.gif
 :width: 100%
 tron.jar --private-key YourPrivateKey
     > # Store data directory
