@@ -6,5 +6,11 @@ The TRON Network
     :depth: 1
     :local:
 
-Content
--------
+Connecting to the Network
+-------------------------
+
+Test Network
+------------
+
+Setting up a local private testnet
+----------------------------------
