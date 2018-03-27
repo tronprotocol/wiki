@@ -3,8 +3,9 @@ Quick Start
 ===========
 
 .. contents:: Table of contents
+
 :depth: 1
-    :local:
+:local:
 
 Set up the environment
 ----------------------
@@ -44,21 +45,12 @@ Download and build
     > # Witness node will generate blocks
     > java -jar java-tron.jar --witness true/false
     > # Private key
-    > java -jar java-exit
-                     ^^^^
-                     **Exit**
-
-                     .. code-block:: json
-                         > exit
-
-                     .. image:: /img/commands/exit.gif
-:width: 100%
-tron.jar --private-key YourPrivateKey
+    > tron.jar --private-key YourPrivateKey
     > # Store data directory
     > java -jar java-tron.jar --output-directory OutputDirectory
-    # Addresses of seed nodes
+      # Addresses of seed nodes
     > java -jar java-tron.jar --seed-nodes 127.0.0.1:7080,127.0.0.1:7081
-    # Port of node
+      # Port of node
     > java -jar java-tron.jar --overlay-port 7080
 
 .. note::  This repository is a IDEA project which you can simply download and import.
@@ -90,7 +82,7 @@ or simply from terminal:
 
 .. code-block:: json
 
-    > ./gradlew run -Pserver=true
+    > ./gradlew run -Pwitness
 
 **Complete process**
 
@@ -98,3 +90,5 @@ or simply from terminal:
 :width: 100%
 
 Other nodes to join need to modify the connection ip.
+
+**DOCKER:**
