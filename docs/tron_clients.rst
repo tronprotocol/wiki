@@ -89,14 +89,21 @@ Running
 **Running a private testnet**
 
 * Running a full node
-    In the Terminal
+
+In the Terminal
+
+.. code-block:: shell
 
     ./gradlew run
-    Use the executable JAE
+
+Use the executable JAE
+
+.. code-block:: shell
 
     cd build/libs
     java -jar java-tron.jar
-    In IntelliJ IDEA
+
+In IntelliJ IDEA
 
 1.After the building finishes, locate FullNode in the project structure view panel, which is on the path java-tron/src/main/java/org.tron/program/FullNode.
 
