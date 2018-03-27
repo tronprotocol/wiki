@@ -19,6 +19,22 @@ Tron currently supports the following operating systems:
 * Ubuntu 16.04 (Ubuntu 16.10 recommended).
 * MacOS Darwin 10.12 and higher (MacOS 10.13.x recommended).
 
+How to Build
+------------
+
+**Getting the code**
+
+* Use Git from the Terminal, see the Setting up Git and Fork a Repo articles. In the shell command, type:
+
+.. code-block:: json
+
+    >git clone https://github.com/tronprotocol/java-tron.git
+
+* For Mac, you can also install GitHub for Mac then fork and clone our repository.
+* If you'd rather not use Git, use the Download ZIP button on the right to get the source directly.
+
+
+
 Download and build
 ------------------
 
