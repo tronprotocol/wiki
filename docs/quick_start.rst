@@ -49,12 +49,14 @@ Download and build
     > # Private key
     > java -jar java-exit
                      ^^^^
-                     **Exit**
 
-                     .. code-block:: json
-                         > exit
+**Exit**
 
-                     .. image:: /img/commands/exit.gif
+.. code-block:: json
+
+    > exit
+
+.. image:: /img/commands/exit.gif
 :width: 100%
 tron.jar --private-key YourPrivateKey
     > # Store data directory
