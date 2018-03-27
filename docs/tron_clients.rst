@@ -47,7 +47,7 @@ How to Build
 
 .. code-block:: shell
 
-git clone https://github.com/tronprotocol/java-tron.git
+    git clone https://github.com/tronprotocol/java-tron.git
 
 * For Mac, you can also install GitHub for Mac then fork and clone our repository.
 * If you'd rather not use Git, use the Download ZIP button on the right to get the source directly.
@@ -62,8 +62,8 @@ git clone https://github.com/tronprotocol/java-tron.git
 
 .. code-block:: shell
 
-cd java-tron
-./gradlew build
+    cd java-tron
+    ./gradlew build
 
 ----------------------------------------------------------
 The building will normally finish in less than one minute.
@@ -73,7 +73,7 @@ The building will normally finish in less than one minute.
 
 .. code-block:: shell
 
-./gradlew clean shadowJar
+    ./gradlew clean shadowJar
 
 -----------------------------------------------------
 Build in IntelliJ IDEA (community version is enough):
