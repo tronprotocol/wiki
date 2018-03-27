@@ -3,9 +3,8 @@ Quick Start
 ===========
 
 .. contents:: Table of contents
-
-:depth: 1
-:local:
+  :depth: 1
+  :local:
 
 Set up the environment
 ----------------------
