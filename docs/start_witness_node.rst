@@ -10,7 +10,7 @@ Witness node, join the testnet. Get block information from the testnet and execu
 
 **Steps**
 
-1. create an account using wallet-api, and apply to become a witness;
+1. Create an account using wallet-api, and apply to become a witness;
 
   1. Create an account using wallet-api;
   2. Transfer at least 100 assets from the existing account to the new account.(Account applying for a witness requires at least 100 assets);
