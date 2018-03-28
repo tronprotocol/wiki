@@ -55,28 +55,17 @@ The building will normally finish in less than one minute.
     ./gradlew clean shadowJar
 
 Build in IntelliJ IDEA (community version is enough):
-Start IntelliJ Idea. Select File -> Open, then locate to the java-tron folder which you have git cloned to your local drive. Then click Open button on the right bottom.
-Check on Use auto-import on the Import Project from Gradle dialog. Select JDK 1.8 in the Gradle JVM option. Then click OK.
-IntelliJ will open the project and start gradle syncing, which will take several minutes, depending on your network connection and your IntelliJ configuration.
-After the syncing finished, select Gradle -> Tasks -> build, and then double click build option. The project will start building, which will normally take less than one minute to finish.
 
-Download and build
-------------------
+1.Start IntelliJ Idea. Select File -> Open, then locate to the java-tron folder which you have git cloned to your local drive. Then click Open button on the right bottom.
 
-.. code-block:: json
+2.Check on Use auto-import on the Import Project from Gradle dialog. Select JDK 1.8 in the Gradle JVM option. Then click OK.
 
-    > git clone https://github.com/tronprotocol/java-tron.git
-    > cd java-tron
-    > gradle build
+3.IntelliJ will open the project and start gradle syncing, which will take several minutes, depending on your network connection and your IntelliJ configuration.
 
-**Building an executable JAE**
+4.After the syncing finished, select Gradle -> Tasks -> build, and then double click build option. The project will start building, which will normally take less than one minute to finish.
 
-.. code-block:: json
-
-    > git clone https://github.com/tronprotocol/java-tron.git
-    > cd java-tron
-    > ./gradlew clean shadowJar
-    > java -jar java-tron/build/libs/java-tron.jar
+Start
+-----
 
 **Optional samples**
 
@@ -112,11 +101,7 @@ Download and build
 * [Edit Configurations...] -> [Add New Configuration] -> [Application]
 * [Edit Configurations...] -> [Main Class]: org.tron.example.Tron
 * [Edit Configurations...] -> [Use classpath of module]: java-tron_main
-* [Edit Configurations...] -> [Program arguments]: --type server
 * Run
-
-.. image:: /img/commands/default-set.gif
-:width: 100%
 
 or simply from terminal:
 
@@ -125,9 +110,6 @@ or simply from terminal:
     > ./gradlew run -Pwitness
 
 **Complete process**
-
-.. image:: /img/commands/process.gif
-:width: 100%
 
 Other nodes to join need to modify the connection ip.
 
