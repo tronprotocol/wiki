@@ -6,111 +6,71 @@ Quick Start
   :depth: 1
   :local:
 
-Set up the environment
-----------------------
-
 **Supported Operating System**
 
 Tron currently supports the following operating systems:
 
-* Centos 7.
-* Fedora 25 and higher (Fedora 27 recommended).
-* Mint 18.
-* Ubuntu 16.04 (Ubuntu 16.10 recommended).
+* Centos 7;
+* Fedora 25 and higher (Fedora 27 recommended);
+* Mint 18;
+* Ubuntu 16.04 (Ubuntu 16.10 recommended);
 * MacOS Darwin 10.12 and higher (MacOS 10.13.x recommended).
-
-How to Build
-------------
-
-**Getting the code**
-
-* Use Git from the Terminal, see the Setting up Git and Fork a Repo articles. In the shell command, type:
-
-.. code-block:: shell
-
-    git clone https://github.com/tronprotocol/java-tron.git
-
-* For Mac, you can also install GitHub for Mac then fork and clone our repository.
-* If you'd rather not use Git, use the Download ZIP button on the right to get the source directly.
 
 **Prepare dependencies**
 
 * JDK 1.8 (do not use JDK 1.9 please)
 
-**Building source code**
+**Getting the code**
 
-* Build in the Terminal
-
-.. code-block:: shell
-
-    cd java-tron
-    ./gradlew build
-
-The building will normally finish in less than one minute.
-
-* Build an executable JAE
+1. Use Git from the Terminal, see the `Setting up Git <https://help.github.com/articles/set-up-git/>`_ and `Fork a Repo <https://help.github.com/articles/fork-a-repo/>`_ articles. In the shell command, type:
 
 .. code-block:: shell
 
-    ./gradlew clean shadowJar
+    git clone https://github.com/tronprotocol/java-tron.git
 
-Build in IntelliJ IDEA (community version is enough):
+2. For Mac, you can also install `GitHub for Mac <https://desktop.github.com/>`_ then `fork and clone our repository <https://guides.github.com/activities/forking/>`_;
 
-1.Start IntelliJ Idea. Select File -> Open, then locate to the java-tron folder which you have git cloned to your local drive. Then click Open button on the right bottom.
+3. If you’d rather not use Git, use the `Download ZIP <https://github.com/tronprotocol/java-tron/archive/develop.zip>`_ button on the right to get the source directly.
 
-2.Check on Use auto-import on the Import Project from Gradle dialog. Select JDK 1.8 in the Gradle JVM option. Then click OK.
+**Importing java-tron to IntelliJ IDEA**
 
-3.IntelliJ will open the project and start gradle syncing, which will take several minutes, depending on your network connection and your IntelliJ configuration.
-
-4.After the syncing finished, select Gradle -> Tasks -> build, and then double click build option. The project will start building, which will normally take less than one minute to finish.
-
-Start
------
-
-**Optional samples**
+1. Terminal:
 
 .. code-block:: shell
 
-    > # Witness node will generate blocks
-    > java -jar java-tron.jar --witness true/false
-    > # Private key
-    > tron.jar --private-key YourPrivateKey
-    > # Store data directory
-    > java -jar java-tron.jar --output-directory OutputDirectory
-      # Addresses of seed nodes
-    > java -jar java-tron.jar --seed-nodes 127.0.0.1:7080,127.0.0.1:7081
-      # Port of node
-    > java -jar java-tron.jar --overlay-port 7080
+    > cd java-tron
+    > ./gradlew build
 
-.. note::  This repository is a IDEA project which you can simply download and import.
+2. IntelliJ IDEA:
 
-**Import project to IDEA**
+* [File] -> [New] -> [Project from existing sources...];
+* Select java-tron/build.gradle;
+* Check on Use auto-import on the Import Project from Gradle dialog. Select JDK 1.8 in the Gradle JVM option. Press [OK];
+* After the syncing finished, you can execute ./gradlew run and start a full node.
 
-* [File] -> [New] -> [Project from Existing Sources...]
-* Select java-tron/build.gradle
-* Dialog [Import Project from Gradle], confirm [Use auto-import] and [Use gradle wrapper task configuration] have been selected，then select Gradle JVM（JDK 1.8）and click [OK]
+**Build an executable Jar**
 
-**Testing**
+.. code-block:: shell
 
-**Update the configuration**
+    > cd java-tron
+    > ./gradlew clean shadowJar
+    > cd build/libs/
+    > java -jar java-tron.jar
 
-**Starting program**
+**JUnit**
 
-**IDEA:**
+.. code-block:: shell
 
-* [Edit Configurations...] -> [Add New Configuration] -> [Application]
-* [Edit Configurations...] -> [Main Class]: org.tron.example.Tron
-* [Edit Configurations...] -> [Use classpath of module]: java-tron_main
-* Run
+    > cd java-tron
+    > ./gradlew test
 
-or simply from terminal:
+**Contribution**
 
-.. code-block:: json
+Contributions are welcomed and greatly appreciated. Please see `CONTRIBUTING.md <https://github.com/tronprotocol/java-tron/blob/develop/CONTRIBUTING.md>`_ for details on submitting patches and the contribution workflow.
 
-    > ./gradlew run -Pwitness
+**Links**
 
-**Complete process**
-
-Other nodes to join need to modify the connection ip.
-
-**DOCKER:**
+* TRON Website: https://tron.network/
+* GitHub: https://github.com/tronprotocol/java-tron/
+* Community Telegram Group: https://t.me/tronnetworkEN/
+* Slack Workspace: https://tronfoundation.slack.com/

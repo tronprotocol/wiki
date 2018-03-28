@@ -6,7 +6,10 @@ Tron Protocol
     :hidden:
 
     introduction
-    tron_clients
+    quick_start
+    start_full_node
+    start_witness_node
+    start_private_blockchain
     account_management
     tronix
     the_tron_network
