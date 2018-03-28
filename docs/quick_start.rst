@@ -68,6 +68,36 @@ Tron currently supports the following operating systems:
 
 Contributions are welcomed and greatly appreciated. Please see `CONTRIBUTING.md <https://github.com/tronprotocol/java-tron/blob/develop/CONTRIBUTING.md>`_ for details on submitting patches and the contribution workflow.
 
+**Servers**
+
++----------------+-----------------+---------------------+
+| IP             | Location        | Description         |
++================+=================+=====================+
+| 47.254.16.55   | Silicon Valley  | Witness Node        |
++----------------+-----------------+---------------------+
+| 47.254.18.49   | Silicon Valley  | Witness Node        |
++----------------+-----------------+---------------------+
+| 18.188.111.53  | Ohio            | Witness Node        |
++----------------+-----------------+---------------------+
+| 54.219.41.56   | California      | Witness Node        |
++----------------+-----------------+---------------------+
+| 35.169.113.187 | Virginia        | Witness Node        |
++----------------+-----------------+---------------------+
+| 34.214.241.188 | Oregon          | Witness Node        |
++----------------+-----------------+---------------------+
+| 47.254.146.147 | Frankfurt       | Witness Node        |
++----------------+-----------------+---------------------+
+| 47.254.144.25  | Frankfurt       | Witness Node        |
++----------------+-----------------+---------------------+
+| 47.91.246.252  | Hongkong        | Witness Node        |
++----------------+-----------------+---------------------+
+| 47.91.216.69   | Hongkong        | Witness Node        |
++----------------+-----------------+---------------------+
+| 39.106.220.120 | Beijing         | Witness Node        |
++----------------+-----------------+---------------------+
+| 47.95.14.107   | Beijing         | Blockchain Explorer |
++----------------+-----------------+---------------------+
+
 **Links**
 
 * TRON Website: https://tron.network/
