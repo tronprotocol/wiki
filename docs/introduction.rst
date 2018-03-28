@@ -6,109 +6,86 @@ Introduction
     :depth: 1
     :local:
 
-TRON contains consensus engine, ABCI, UTXO, smart contracts and other modules. Consensus engine is the core, application connects with consensus engine by ABCI to form a Byzantine fault-tolerant state machine, which can be implemented in any programming language.
+TRON：Decentralize Internet Again
+--------------------------------
 
-.. image:: /img/intro/1_en_intro.png
-    :width: 100%
+TRON is dedicated to the basic construction and continual promotion of decentralized Internet. TRON protocol is one of the world’s largest decentralized application operation system protocol, which is based on blockchain and provides high-throughput, scalable, and highly-reliable underlying public-chain support for decentralized application. More application scenarios can be supported because of high TPS of TRON public chain, which exceeds tens of thousands. Besides, TRON public chain has greatly aroused enthusiasm of the ecological participants through the way of free using and high incentives. It not only meets the strict requirements of online decentralized entertainment applications that are highly concurrent, low calculation delay, and demanding much data transmission, and also delivers an amazing interactive decentralized user experience. Developers can develop their own and community applications by using TRON protocol and virtual machine. Smart contracts can be used for distributed crowdfunding and digital asset distribution. TRON protocol has been used to operate decentralized applications such as APP, Obike, Uplive, game.com, Kitty live, Mico and so on. The number of active users has exceeded 100 million, with distribution in over 100 countries around the world.
 
-TRON blockchain platform has the following characteristics:
+What is TRON?
+------------
 
-* Scalability: TRON blockchain can be extended through the side chain, which means that not only currency transactions, legally binding contracts and certificates, audio and video files can be stored in the blockchain database;
-* Decentralization: Without an agency, all nodes have the same rights and obligations, any node stopping working will not affect the overall operation of the system.
-* Trustless environment: All nodes in the system can be traded without trust. Because the operation of the database and the entire system is open and transparent, the nodes can not deceive each other;
-* Consistency: The data information between nodes is consistent;
-* Fault-tolerant: The system can accommodate 1/3 node Byzantine failure;
-* Scalability Account Model: UTXO Model + Account Abstraction. TRON has also made targeted improvements on the premise of UTXO's easy-to-parallel computing model. To make data easy to manage and easy to program, TRON introduces the world state-lightweight state tree concept, each of which maintains a global world state, the global state has the features of quickly find, can not be changed, easy to provide proof.
+TRON operates as a decentralized blockchain platform for supporting smart contract and high throughput. TRON team sees it as a future operation system which allow developers deploying their own decentralized applications.
 
+* Digital Asset Function with Chain Embedded
+  Rather than simply stress "lacking in characteristics”, TRON mainly focus on user-friendliness of different functions. For example, after fully research of current market, the develop team of TRON found that there are many decentralized platform users who do not have programming skills but have rich intrinsic value. They cannot convert their intrinsic value into external entities because of high threshold and versatility of existed smart contract. This is the reason why TRON team embeds custom digital asset functions into the main chain instead of actualizing functions in the form of smart contracts. This can be more easily and directly to achieve a number of indicators such as user-friendliness, safety, and so on.
+* TRON Operation Model
 
-Software Hierarchy
-------------------
+The Launch of Testnet
+--------------------
 
-.. image:: /img/intro/2_en_hierarchy.png
-    :width: 100%
+* TRON Milestone
 
-Software level is divided into two parts. The first part includes APIs, SDKs and CLI, which are mainly used for calling an external provider for convenient development. The second part includes Wallet Module, Blockchain Module and Smart Contract Module, provides a storage interface, making the data of each module persistent.
+.. code-block:: shell
 
+    2018.3.31 The lanuch of testnet.
+    2018.5.31 The launch of mainnet.
+    2018.6    ERC20 Token--> Migration completed
 
-UTXO
-----
+Technical proposal of exchange upgradation (including permanent support) --- Stage 4: Permanent support for exchange.
 
-In the UTXO model, it is possible to transparently trace back the history of each transaction through the public ledger. The UTXO model has parallel processing capability to initialize transactions among multiple addresses indicating the extensibility.
+.. code-block:: shell
 
-.. image:: /img/intro/3_en_utxo.png
-    :width: 100%
+    Stage 1
+    1.	Users transfer TRX (ERC20) to the wallet of exchange.
+    2.	Exchange produces public key and private key.
+    3.	Exchange provides address data first for TRON foundation. (The matching relationship between Ethereum address and TRON address)
+    4.	TRON foundation makes a manual confirmation of received address data.
 
-Additionally, the UTXO model supports privacy protection in that users can use Change Address as the output of a UTXO. The target of TRON is based on smart contracts.
+    Stage 2
+    5.	Exchange transfers TRX (REC20) to validated account of TRON foundation and informs TRON foundation to start account verification.
+    6.	TRON foundation verifies, receives and records TRX (ERC20) of address provided by exchange.
 
-Compared with the UTXO model, Ethereum is an account based system. In Ethereum, balance management resembles a bank account in the real world. Every newly generated block potentially influences the global status of other accounts. Every account has its own balance, storage and code-space base. users perform P2P transactions via client remote procedure calls. Although sending messages to each account via smart contracts is possible, these internal transactions are only visible in the balance of each account and tracking them on the public ledger of Ethereum is a challenge.
+    Stage 3
+    7.	Based on the address data received in Stage 1 and the transaction records received in Stage 2, an amount of TRX are euqal proportional to the number of TRX（ERC20）received in Stage 2, that will be sent on the TRON Mainnet.
 
-Based on the discussion above, we consider the Ethereum account model to be a scalability bottleneck. By contrast. The UTXO model of bitcoin has enhanced network efficiency with obvious advantages. Therefore, we build the block-chain based on the UTXO model and abstract the concept of the account, making it more intuitive understanding of the real world, which is the original intention of TRON.
+    Stage 4
+    8.      The only exchange will start migration from TRX (ERC20) to TRX regularly. The process is the same as above.
 
+Web 3.0: Web 3.0: A Decentralized Application Platform
+------------------------------------------------------
 
-Smart contract
---------------
+* Smart contract
+* The Content of Delegated
+* The Basic Rule of Consensus
 
-Certainty and Termination are two properties of a smart contract. When designing a smart contract system, non-deterministic factors need to be excluded.
+  * Coin holders are required to vote for nodes in accordance to their tokens that have vote right. And nodes are elected what are known as witnesses based on votes and rules, which keep a balance between block-producing speed and the number of witness.
+  * Meanwhile, voting users and nodes that are voted out will be paid for a certain sum of money for encouraging them to run for further elections.
+  * Witnesses will produce valid blocks successively based on specific distribution rules and success to do so results in highest reward.
+  * The vast majority of witnesses are chosen by votes and the rest will guarantee to be selected randomly under certain algorithm.
 
-.. image:: /img/intro/4_en_smartcontract.png
-    :width: 100%
+TRON Brief Introduction
+-----------------------
 
-Bitcoin has a set of scripting engines, the instruction set is very simple and non-Turing complete, with termination, so bitcoin smart contracts are certain. The Ethereum Virtual Machine (EVM) is a runtime environment for Ethereum smart contracts. The system functions for Ethereum smart contracts are not nondeterministic, but the contract's call path can be nondeterministic and result in a scalable performance Losses, it uses meter to achieve the termination. The Hyperledger Fabric smart contract uses Docker as the execution environment. Docker is a lightweight virtualization technology, under the blockchain Docker is a “heavier” execution environment, which is where the performance bottlenecks of Fabric, currently only up to hundreds of TPS per second, which uses a timer to achieve Termination.
+1. Early-Stage
+2. TRON Foundation and TRONIX Prersale
+3. The Development Process of TRON
+4. The Launch of Testnet, Mainnet and Exodus
 
-In order to keep with the advantages of certainty, termination, and lightweight of virtual machines and the language flexibility of container programming, TRON is poised to develop the TRON Virtual Machine as an execution environment for its smart contracts in the future. The TVM boots very fast, occupies less resources. TRON virtual machine data manipulation instructions are directly to the array and complex data structures to provide support. These will enhance the operational performance of TRON smart contracts. The TRON Network plans to charge for the operation and storage of tokens and smart contracts to achieve economic incentives to book-keeping persons and to prevent the abuse of resources.
-
-In the future TRON smart contract developers can use almost any high-level language they are good at for TRON smart contract development. The first language support are java, Go etc. Tron plans to provide compilers and plug-ins for these languages to compile high-level languages into the instruction sets supported by TRON virtual machines.
-
-The TRON smart contract model shown above is a piece of code (a smart contract) that runs on a smart contract virtual machine and is deployed on a shared, replicated ledger (blockchain). TRON has a life cycle for smart contracts management, respectively are: the establishment, deployment, development, rollback, termination. It can maintain its own status, control its own asset value and receive external information, transactions or external information and transactions to respond.
-
-
-Consensus
+Community
 ---------
 
-The consensus of TRON adopts a three-step strategy. The first step is to adopt a Kafka-based technology system to implement a centralized consensus algorithm. The purpose of TRON is to achieve system joint debugging and functional integration.
+* `Reddit <https://www.reddit.com/r/Tronix/>`_
+* Stack exchange
+* `Slack Workspace <https://tronfoundation.slack.com/>`_ （Invitation needed）
+* `Gitter Rooms <https://gitter.im/tronprotocol/java-tron/>`_
+* `Telegram <https://t.me/tronnetworkCN/>`_
+* Meetup
+* Skype
+* Forum
+* WeChat Official Accounts
+* Weibo
 
-The second step is to use Raft-based distributed consensus mechanism to realize the centralized and distributed leapfrogging. This step gradually improves the functions of network and distribution and lays the foundation for the eventual realization of a wide distribution with no logical center.
+The TRON Foundation
+------------------
 
-The third step is to realize the Consensus mechanism of PoS and realize the Byzantine Fault Tolerant Consensus based on the "Margin Mechanism + Epoch Confirmation" and the compatibility consensus between PoS and PoW.
-
-TRON is currently open source code to achieve a consensus algorithm for the first phase of the center. The second phase of the distributed consensus algorithm is under development and testing.
-
-
-Protocol Buffer based object coding and serialization
------------------------------------------------------
-
-.. image:: /img/intro/5_en.png
-    :width: 100%
-
-Example
-^^^^^^^
-
-**Proto Code**
-
-.. code-block:: json
-
-    message Block {
-        repeated Transaction transactions = 1;
-        BlockHeader blockHeader = 2;
-    }
-
-**Serialization**
-
-.. code-block:: json
-
-    Block.Builder block = Block.newBuilder()
-        .setTransactions(transactions)
-        .setBlockHeader(blockHeader)
-        .build();
-
-    byte[] blockData = block.toByteArray();
-    byte[] keyData = block.getHash();
-    DB.saveBlock(keyData, blockData);
-
-**Deserialize**
-
-.. code-block:: json
-
-    byte[] keyData = block.getHash();
-    byte[] blockData = DB.getBlock(keyData);
-    Block block = Block.parseFrom(blockData).toBuilder().build();
+* TRON foundation is community-oriented.
