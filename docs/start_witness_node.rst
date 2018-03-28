@@ -23,7 +23,7 @@ After the account is applied for as the witness, the service node can be started
 
   1. ``seed.node.ip.list``. The default is the seed node of the public test chain, which is not modified here;
   2. ``genesis.block.witnesses``, which is not modified here;
-  3. ``genesis.block.timestamp``, which is not modified here;
+  3. ``node.p2p.version``, which is not modified here;
   4. ``localWitness``. Configure the private key of the newly applied account;
   5. Add ``--witness`` to the startup parameter to specify this node as the witness node;
   6. Start the service(``./gradlew run -Pwitness``).
