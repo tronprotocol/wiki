@@ -8,13 +8,7 @@ Quick Start
 
 **Supported Operating System**
 
-Tron currently supports the following operating systems:
-
-* Centos 7;
-* Fedora 25 and higher (Fedora 27 recommended);
-* Mint 18;
-* Ubuntu 16.04 (Ubuntu 16.10 recommended);
-* MacOS Darwin 10.12 and higher (MacOS 10.13.x recommended).
+Tron supports any operating systems that can run JDK 1.8.
 
 **Prepare dependencies**
 
