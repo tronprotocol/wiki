@@ -17,7 +17,7 @@ Witness node, join the testnet. Get block information from the testnet and execu
   3. Apply as a witness;
   4. Voting to the witness, when the number of votes cast is in the top 21, it will become the witness at the next maintenance (interval 24h):
 
-After the account is applied for as the witness, the service node can be started. Before the next maintenance period, the node will only synchronize the blocks and not producing block.
+After the account is applied for as the witness, the service node can be started. Before the next maintenance period, the node will only synchronizes the blocks and not produces block.
 
 2. Start the service node.
 
