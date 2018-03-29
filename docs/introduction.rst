@@ -32,10 +32,14 @@ The Launch of Testnet
     2018.6    ERC20 Token--> Migration completed
 
 .. figure:: https://raw.githubusercontent.com/tronprotocol/wiki/Mephistopheles/docs/img/TRON%20Migration%201.png
+     :width: 633px
+     :height: 713px
 
 Technical proposal of exchange upgrade (including permanent support).
 
 .. figure:: https://raw.githubusercontent.com/tronprotocol/wiki/Mephistopheles/docs/img/TRON%20Migration%202.png
+    :width: 633px
+    :height: 713px
 
 .. code-block:: shell
 
