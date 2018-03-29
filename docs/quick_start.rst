@@ -37,10 +37,10 @@ Tron supports any operating systems that can run JDK 1.8.
 
 2. IntelliJ IDEA:
 
-* [File] -> [New] -> [Project from existing sources...];
-* Select java-tron/build.gradle;
-* Check on Use auto-import on the Import Project from Gradle dialog. Select JDK 1.8 in the Gradle JVM option. Press [OK];
-* After the syncing finished, you can execute ./gradlew run and start a full node.
+* ``File`` -> ``New`` -> ``Project from existing sources...``;
+* Select ``java-tron/build.gradle``;
+* Check on ``Use auto-import`` on the ``Import Project from Gradle`` dialog. Select JDK 1.8 in the ``Gradle JVM`` option. Press ``OK``;
+* After the syncing finished, install ``Lombok Plugin``, and set ``Enable annotation processing``, then you can execute ```./gradlew run`` and start a full node.
 
 **Build an executable Jar**
 
