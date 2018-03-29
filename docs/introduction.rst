@@ -31,13 +31,11 @@ The Launch of Testnet
     2018.5.31 The launch of mainnet.
     2018.6    ERC20 Token--> Migration completed
 
-.. figure:: /img/TRON Migration 1.png
-    :align: right
+.. figure:: https://raw.githubusercontent.com/tronprotocol/wiki/Mephistopheles/docs/img/TRON%20Migration%201.png
 
-Technical proposal of exchange upgradation (including permanent support).
+Technical proposal of exchange upgrade (including permanent support).
 
-.. figure:: /img/TRON Migration 2.png
-    :align: right
+.. figure:: https://raw.githubusercontent.com/tronprotocol/wiki/Mephistopheles/docs/img/TRON%20Migration%202.png
 
 .. code-block:: shell
 
@@ -52,7 +50,7 @@ Technical proposal of exchange upgradation (including permanent support).
     6.	TRON foundation verifies, receives and records TRX (ERC20) of address provided by exchange.
 
     Phase 3
-    7.	Based on the address data received in Stage 1 and the transaction records received in Stage 2, an amount of TRX are euqal proportional to the number of TRX（ERC20）received in Stage 2, that will be sent on the TRON Mainnet.
+    7.	Based on the address data received in Phase 1 and the transaction records received in Phase 2, an amount of TRX are euqal proportional to the number of TRX（ERC20）received in Phase 2, that will be sent on the TRON Mainnet.
 
     Phase 4
     8.      The only exchange will start migration from TRX (ERC20) to TRX regularly. The process is the same as above.
