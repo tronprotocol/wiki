@@ -6,6 +6,8 @@ Quick Start
   :depth: 1
   :local:
 
+**Current Testnet p2p version: 31（resources/config.conf:node.p2p.verson = 31）**
+
 **Supported Operating System**
 
 Tron supports any operating systems that can run JDK 1.8.
