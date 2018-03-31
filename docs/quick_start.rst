@@ -6,7 +6,7 @@ Quick Start
   :depth: 1
   :local:
 
-**Current Testnet p2p version: 31（resources/config.conf:node.p2p.verson = 31）**
+**Current Testnet p2p version: 32（resources/config.conf:node.p2p.verson = 32）**
 
 **Supported Operating System**
 
