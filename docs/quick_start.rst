@@ -2,9 +2,12 @@
 Quick Start
 ===========
 
-.. contents:: Table of contents                                                            git g
+.. contents:: Table of contents                                                           
   :depth: 1
   :local:
+
+
+**Current Testnet p2p version: 32（resources/config.conf:node.p2p.verson = 32）**
 
 **1, Clone/Download the JAVA-TRON Implementation from Github**
 
