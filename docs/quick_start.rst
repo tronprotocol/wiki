@@ -6,64 +6,64 @@ Quick Start
   :depth: 1
   :local:
 
-1,**Clone/Download the JAVA-TRON Implementation from Github**
+**1,Clone/Download the JAVA-TRON Implementation from Github**
 
-*Visit the JAVA-TRON github respository
+* Visit the JAVA-TRON github respository
 
- here: https://github.com/tronprotocol/java-tron
+here: https://github.com/tronprotocol/java-tron
 
-*Getting the source code. We use git and Github to maintain the source code. Clone the repository by:
+* Getting the source code. We use git and Github to maintain the source code. Clone the repository by:
 
 .. code-block:: shell
 
     git clone https://github.com/tronprotocol/java-tron.git
 
-*To use Git on the command line, you'll need to download, install, and configure Git on your computer. Please check `set up git <https://help.github.com/articles/set-up-git/>` and `fork a repo <https://help.github.com/articles/fork-a-repo/>`.
+* To use Git on the command line, you'll need to download, install, and configure Git on your computer. Please check `set up git <https://help.github.com/articles/set-up-git/>` and `fork a repo <https://help.github.com/articles/fork-a-repo/>`.
 
-*If you aren't familiar with using git, you can simply download `the project as a zip <https://github.com/tronprotocol/java-tron/archive/develop.zip>`and unpack it somewhere.
+* If you aren't familiar with using git, you can simply download `the project as a zip <https://github.com/tronprotocol/java-tron/archive/develop.zip>`and unpack it somewhere.
 
-*For Mac, you can also install `Github for Mac <https://desktop.github.com/>`then `fork and clone our repository <https://guides.github.com/activities/forking/>`.
+* For Mac, you can also install `Github for Mac <https://desktop.github.com/>`then `fork and clone our repository <https://guides.github.com/activities/forking/>`.
 
-2,**Installing dependencies**
+**2,Installing dependencies**
 
-*JDK 1.8 is required to be installed in the system.
+* JDK 1.8 is required to be installed in the system.
 
 *`Oracle JDK 8 <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04>` (not Open JDK 8) is required to be installed in Linux Ubuntu system (e.g. Ubuntu 16.04.4 LTS).
 
-3,**Download and Install `IntelliJ IDEA <https://www.jetbrains.com/idea/>`**
+**3,Download and Install `IntelliJ IDEA <https://www.jetbrains.com/idea/>`**
 
-*Install IDEA and launch the program once the process completes.
+* Install IDEA and launch the program once the process completes.
 
-*Click through the prompts until you get to the "Welcome to IntelliJ IDEA" screen.
+* Click through the prompts until you get to the "Welcome to IntelliJ IDEA" screen.
 
-4,**Import the JAVA-TRON Project into IDEA**
+**4,Import the JAVA-TRON Project into IDEA**
 
-*Select 'File' and navigate to the directory of the cloned (or downloaded) JAVA-TRON git project.
+* Select 'File' and navigate to the directory of the cloned (or downloaded) JAVA-TRON git project.
     ``File`` -> ``New`` -> ``Project from existing sources...``;
 
-*Highlight build.gradle and select 'OK'.
- ``java-tron/build.gradle`;
+* Highlight build.gradle and select 'OK'.
+ ``java-tron/build.gradle``;
 
-*Check the box that says "Use auto-import".
+* Check the box that says "Use auto-import".
 
-*Select the radio button that says "Use gradle wrapper task configuration".
+* Select the radio button that says "Use gradle wrapper task configuration".
 
-*Ensure that "Gradle JVM" is set to an instance of JDK 1.8.
+* Ensure that "Gradle JVM" is set to an instance of JDK 1.8.
 
-*Select "OK" to import JAVA-TRON into IDEA.
+* Select "OK" to import JAVA-TRON into IDEA.
 
-*IDEA will now begin to build the project (wait until finished doing stuff).
+* IDEA will now begin to build the project (wait until finished doing stuff).
 
-5,**Running a Full Node**
+**5,Running a Full Node**
 
-*Build in the Terminal
+* Build in the Terminal
 
 .. code-block:: shell
 
     > cd java-tron
     > ./gradlew build   
     
-*Use the executable JAE
+* Use the executable JAE
 
 .. code-block:: shell
 
