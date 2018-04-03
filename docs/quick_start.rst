@@ -30,7 +30,7 @@ Quick Start
 
 * `Oracle JDK 8 <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04>`_ (not Open JDK 8) is required to be installed in Linux Ubuntu system (e.g. Ubuntu 16.04.4 LTS).
 
-**3, Download and Install `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_ **
+**3, Download and Install `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_**
 
 * Install IDEA and launch the program once the process completes.
 
