@@ -17,5 +17,5 @@ Running a Full Node
 
 .. code-block:: shell
 
-       >cd build/libs
-       >java -jar java-tron.jar
+       > cd build/libs
+       > java -jar java-tron.jar
