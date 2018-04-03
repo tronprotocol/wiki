@@ -16,6 +16,11 @@ The following steps serve as an introduction on how to become an actively delega
 
   http://git.razko.nl/wallet-web/#/login
 
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Register.png
+
+      height: 713px
+      weight: 633px
+
 2. A certain sum of TRX is required to be transferred to your new account.
 
 * TRX for testing will be sent to your testing acoount once you successfully apply through account management.
