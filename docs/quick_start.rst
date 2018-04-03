@@ -18,19 +18,19 @@ Quick Start
 
     git clone https://github.com/tronprotocol/java-tron.git
 
-* To use Git on the command line, you'll need to download, install, and configure Git on your computer. Please check `set up git <https://help.github.com/articles/set-up-git/>_` and `fork a repo <https://help.github.com/articles/fork-a-repo/>_`.
+* To use Git on the command line, you'll need to download, install, and configure Git on your computer. Please check `set up git <https://help.github.com/articles/set-up-git/>`_ and `fork a repo <https://help.github.com/articles/fork-a-repo/>`_.
 
-* If you aren't familiar with using git, you can simply download `the project as a zip <https://github.com/tronprotocol/java-tron/archive/develop.zip>`and unpack it somewhere.
+* If you aren't familiar with using git, you can simply download `the project as a zip <https://github.com/tronprotocol/java-tron/archive/develop.zip>`_ and unpack it somewhere.
 
-* For Mac, you can also install `Github for Mac <https://desktop.github.com/>_`then `fork and clone our repository <https://guides.github.com/activities/forking/>_`.
+* For Mac, you can also install `Github for Mac <https://desktop.github.com/>`_ then `fork and clone our repository <https://guides.github.com/activities/forking/>`_.
 
 **2, Installing dependencies**
 
 * JDK 1.8 is required to be installed in the system.
 
-* `Oracle JDK 8 <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04>_` (not Open JDK 8) is required to be installed in Linux Ubuntu system (e.g. Ubuntu 16.04.4 LTS).
+* `Oracle JDK 8 <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04>`_ (not Open JDK 8) is required to be installed in Linux Ubuntu system (e.g. Ubuntu 16.04.4 LTS).
 
-**3, Download and Install `IntelliJ IDEA <https://www.jetbrains.com/idea/>_`**
+**3, Download and Install `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_**
 
 * Install IDEA and launch the program once the process completes.
 
@@ -58,7 +58,7 @@ Quick Start
 
 **5, Contribution**
 
-Contributions are greatly welcomed. Please check `CONTRIBUTING.md <https://github.com/tronprotocol/java-tron/blob/develop/CONTRIBUTING.md>_`_ for details on submitting patches and the contribution workflow.
+Contributions are greatly welcomed. Please check `CONTRIBUTING.md <https://github.com/tronprotocol/java-tron/blob/develop/CONTRIBUTING.md>`__ for details on submitting patches and the contribution workflow.
 
 **6, Servers**
 
