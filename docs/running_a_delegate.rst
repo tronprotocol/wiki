@@ -17,7 +17,6 @@ The following steps serve as an introduction on how to become an actively delega
   http://git.razko.nl/wallet-web/#/login
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Register.png
-
       height: 713px
        width: 633px
 
@@ -30,14 +29,12 @@ The following steps serve as an introduction on how to become an actively delega
 * Click the button “ Apply_for_delegate” first.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/apply%20for%20delegate.png
-
-      height: 713px
+       height: 713px
        width: 633px
 
 * Provide your personal website address. The type of address is including but not limited to: website, blog, social media account, etc.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/personal%20address.png
-
       height: 713px
        width: 633px
 
