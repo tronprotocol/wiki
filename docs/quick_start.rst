@@ -10,7 +10,7 @@ Quick Start
 
 * Visit the JAVA-TRON github respository
 
-here: https://github.com/tronprotocol/java-tron
+  here: https://github.com/tronprotocol/java-tron
 
 * Getting the source code. We use git and Github to maintain the source code. Clone the repository by:
 
@@ -18,19 +18,19 @@ here: https://github.com/tronprotocol/java-tron
 
     git clone https://github.com/tronprotocol/java-tron.git
 
-* To use Git on the command line, you'll need to download, install, and configure Git on your computer. Please check `set up git <https://help.github.com/articles/set-up-git/>` and `fork a repo <https://help.github.com/articles/fork-a-repo/>`.
+* To use Git on the command line, you'll need to download, install, and configure Git on your computer. Please check `set up git <https://help.github.com/articles/set-up-git/>_` and `fork a repo <https://help.github.com/articles/fork-a-repo/>_`.
 
 * If you aren't familiar with using git, you can simply download `the project as a zip <https://github.com/tronprotocol/java-tron/archive/develop.zip>`and unpack it somewhere.
 
-* For Mac, you can also install `Github for Mac <https://desktop.github.com/>`then `fork and clone our repository <https://guides.github.com/activities/forking/>`.
+* For Mac, you can also install `Github for Mac <https://desktop.github.com/>_`then `fork and clone our repository <https://guides.github.com/activities/forking/>_`.
 
 **2, Installing dependencies**
 
 * JDK 1.8 is required to be installed in the system.
 
-*`Oracle JDK 8 <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04>` (not Open JDK 8) is required to be installed in Linux Ubuntu system (e.g. Ubuntu 16.04.4 LTS).
+* `Oracle JDK 8 <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04>_` (not Open JDK 8) is required to be installed in Linux Ubuntu system (e.g. Ubuntu 16.04.4 LTS).
 
-**3, Download and Install `IntelliJ IDEA <https://www.jetbrains.com/idea/>`**
+**3, Download and Install `IntelliJ IDEA <https://www.jetbrains.com/idea/>_`**
 
 * Install IDEA and launch the program once the process completes.
 
@@ -39,9 +39,11 @@ here: https://github.com/tronprotocol/java-tron
 **4, Import the JAVA-TRON Project into IDEA**
 
 * Select 'File' and navigate to the directory of the cloned (or downloaded) JAVA-TRON git project.
+
     ``File`` -> ``New`` -> ``Project from existing sources...``;
 
 * Highlight build.gradle and select 'OK'.
+    
     ``java-tron/build.gradle``;
 
 * Check the box that says "Use auto-import".
@@ -54,11 +56,11 @@ here: https://github.com/tronprotocol/java-tron
 
 * IDEA will now begin to build the project (wait until finished doing stuff).
 
-**Contribution**
+**5, Contribution**
 
-Contributions are greatly welcomed. Please check `CONTRIBUTING.md <https://github.com/tronprotocol/java-tron/blob/develop/CONTRIBUTING.md>`_ for details on submitting patches and the contribution workflow.
+Contributions are greatly welcomed. Please check `CONTRIBUTING.md <https://github.com/tronprotocol/java-tron/blob/develop/CONTRIBUTING.md>_`_ for details on submitting patches and the contribution workflow.
 
-**Servers**
+**6, Servers**
 
 +----------------+-----------------+---------------------+
 | IP             | Location        | Description         |
@@ -88,7 +90,7 @@ Contributions are greatly welcomed. Please check `CONTRIBUTING.md <https://githu
 | 47.95.14.107   | Beijing         | Blockchain Explorer |
 +----------------+-----------------+---------------------+
 
-**Links**
+**7, Links**
 
 * TRON Website: https://tron.network/
 * GitHub: https://github.com/tronprotocol/java-tron/
