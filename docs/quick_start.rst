@@ -6,7 +6,7 @@ Quick Start
   :depth: 1
   :local:
 
-**1,Clone/Download the JAVA-TRON Implementation from Github**
+**1, Clone/Download the JAVA-TRON Implementation from Github**
 
 * Visit the JAVA-TRON github respository
 
@@ -24,25 +24,25 @@ here: https://github.com/tronprotocol/java-tron
 
 * For Mac, you can also install `Github for Mac <https://desktop.github.com/>`then `fork and clone our repository <https://guides.github.com/activities/forking/>`.
 
-**2,Installing dependencies**
+**2, Installing dependencies**
 
 * JDK 1.8 is required to be installed in the system.
 
 *`Oracle JDK 8 <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04>` (not Open JDK 8) is required to be installed in Linux Ubuntu system (e.g. Ubuntu 16.04.4 LTS).
 
-**3,Download and Install `IntelliJ IDEA <https://www.jetbrains.com/idea/>`**
+**3, Download and Install `IntelliJ IDEA <https://www.jetbrains.com/idea/>`**
 
 * Install IDEA and launch the program once the process completes.
 
 * Click through the prompts until you get to the "Welcome to IntelliJ IDEA" screen.
 
-**4,Import the JAVA-TRON Project into IDEA**
+**4, Import the JAVA-TRON Project into IDEA**
 
 * Select 'File' and navigate to the directory of the cloned (or downloaded) JAVA-TRON git project.
     ``File`` -> ``New`` -> ``Project from existing sources...``;
 
 * Highlight build.gradle and select 'OK'.
- ``java-tron/build.gradle``;
+    ``java-tron/build.gradle``;
 
 * Check the box that says "Use auto-import".
 
@@ -53,22 +53,6 @@ here: https://github.com/tronprotocol/java-tron
 * Select "OK" to import JAVA-TRON into IDEA.
 
 * IDEA will now begin to build the project (wait until finished doing stuff).
-
-**5,Running a Full Node**
-
-* Build in the Terminal
-
-.. code-block:: shell
-
-    > cd java-tron
-    > ./gradlew build   
-    
-* Use the executable JAE
-
-.. code-block:: shell
-
-    >cd build/libs
-    >java -jar java-tron.jar
 
 **Contribution**
 
