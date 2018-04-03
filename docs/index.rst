@@ -7,8 +7,8 @@ Tron Protocol
 
     introduction
     quick_start
-    start_full_node
-    start_witness_node
+    running_a_full_node
+    running_a_delegate
     start_private_blockchain
     account_management
     tronix
