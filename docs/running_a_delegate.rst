@@ -33,12 +33,14 @@ The following steps serve as an introduction on how to become an actively delega
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/apply%20for%20delegate.png
     :width: 842
     :height: 400
+    :align: center
 
 * Provide your personal website address. The type of address is including but not limited to: website, blog, social media account, etc.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/personal%20address.png
     :width: 746
     :height: 540
+    :align: center
 
 5. After approval voting, the top 21 delegates by total approval are selected. The state of active delegates is updated once every maintenance interval (1 day).
 
