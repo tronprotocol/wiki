@@ -17,28 +17,30 @@ The following steps serve as an introduction on how to become an actively delega
   http://git.razko.nl/wallet-web/#/login
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Register.png
-     :height: 713px
-     :width: 633px
+    :height: 181px
+    :width: 89px
 
 2. A certain sum of TRX is required to be transferred to your new account.
 
 * TRX for testing will be sent to your testing acoount once you successfully apply through account management.
 
-3. You can get started to apply to be a delegate.
+3. Users can contact the TRON staff to get TRX for testing.
+
+4. You can get started to apply to be a delegate.
 
 * Click the button “ Apply_for_delegate” first.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/apply%20for%20delegate.png
-    :height: 713px
-    :width: 633px
+    :height: 161px
+    :width: 351px
 
 * Provide your personal website address. The type of address is including but not limited to: website, blog, social media account, etc.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/personal%20address.png
-    :height: 713px
-    :width: 633px
+    :height: 161px
+    :width: 350px
 
-4. After approval voting, the top 21 delegates by total approval are selected. The state of active delegates is updated once every maintenance interval (1 day).
+5. After approval voting, the top 21 delegates by total approval are selected. The state of active delegates is updated once every maintenance interval (1 day).
 
 * Build in the Terminal
 
