@@ -30,7 +30,7 @@ The following steps serve as an introduction on how to become an actively delega
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/apply%20for%20delegate.png
     :height: 161px
-    :width: 350px
+    :width: 351px
 
 * Provide your personal website address. The type of address is including but not limited to: website, blog, social media account, etc.
 

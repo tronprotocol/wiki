@@ -6,11 +6,11 @@ TRON网络
     :depth: 1
     :local:
 
-Connecting to the Network
+连接网络
 -------------------------
 
-Test Network
+测试网
 ------------
 
-Setting up a local private testnet
+设置本地局域测试网
 ----------------------------------

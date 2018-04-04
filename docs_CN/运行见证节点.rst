@@ -34,7 +34,7 @@
     :scale: 50%
     :align: center
 
-* 请提供您的个人网站地址。个人网站、博客、社交媒体账号地址等均可称为有效地址。
+* 请提供您的个人网站地址。个人网站、博客、社交媒体账号地址等均可成为有效地址。
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/personal%20address.png
     :height: 564px
