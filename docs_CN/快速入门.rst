@@ -25,13 +25,13 @@
 
 * 如果不熟悉使用Git命令，请下载并打开 `the project as a zip <https://github.com/tronprotocol/java-tron/archive/develop.zip>`_。
 
-* Mac用户，请下载`Github for Mac <https://desktop.github.com/>`_ then `fork and clone our repository <https://guides.github.com/activities/forking/>`_.
+* Mac用户，请下载 `Github for Mac <https://desktop.github.com/>`_然后 `fork and clone our repository <https://guides.github.com/activities/forking/>`_。
 
 **2，安装dependencies**
 
 * 系统必须安装JDK 1.8。
 
-* 对于Linux Ubuntu系统(比如：Ubuntu 16.04.4 LTS)，请务必下载`Oracle JDK 8 <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04>`_ (不是 Open JDK 8)。
+* 对于Linux Ubuntu系统(比如：Ubuntu 16.04.4 LTS)，请务必下载 `Oracle JDK 8 <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04>`_(不是 Open JDK 8)。
 
 **3，下载并安装IntelliJ IDEA**
 
@@ -61,7 +61,7 @@
 
 **5，贡献**
 
-我们热烈欢迎参与者对于社区以及TRON项目的贡献。 相关信息请查看`CONTRIBUTING.md <https://github.com/tronprotocol/java-tron/blob/develop/CONTRIBUTING.md>`_。
+我们热烈欢迎参与者对于社区以及TRON项目的贡献。 相关信息请查看 `CONTRIBUTING.md <https://github.com/tronprotocol/java-tron/blob/develop/CONTRIBUTING.md>`_。
 
 **6，服务节点**
 
