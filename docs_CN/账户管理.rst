@@ -2,7 +2,7 @@
 账户管理
 ============
 
-.. contents:: Table of contents
+.. contents:: 目录
     :depth: 1
     :local:
 

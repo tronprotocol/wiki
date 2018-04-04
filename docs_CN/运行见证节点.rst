@@ -17,10 +17,10 @@
   http://git.razko.nl/wallet-web/#/login
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Register.png
-     :height: 895px
-     :width: 439px
+     :height: 158px
+     :width: 322px
 
-2。 新账户必须存有一定数量的TRX。
+2， 新账户必须存有一定数量的TRX。
 
 * 为测试需要，用户可通过账户管理中的选项申请TRX。一旦申请成功，系统会为您的账户中自动发放TRX。
 
@@ -31,14 +31,14 @@
 * 首先点击按钮 “ Apply_for_delegate” 。
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/apply%20for%20delegate.png
-    :scale: 50%
-    :align: center
+    :height: 160px
+    :width: 350px
 
 * 请提供您的个人网站地址。个人网站、博客、社交媒体账号地址等均可成为有效地址。
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/personal%20address.png
-    :height: 564px
-    :width: 699px
+    :height: 160px
+    :width: 350px
 
 5，获得投票数最高的前21各节点会被选中。节点状态每天会更新一次。
 

@@ -24,7 +24,9 @@ The following steps serve as an introduction on how to become an actively delega
 
 * TRX for testing will be sent to your testing acoount once you successfully apply through account management.
 
-3. You can get started to apply to be a delegate.
+3. Users can contact the TRON staff to get TRX for testing.
+
+4. You can get started to apply to be a delegate.
 
 * Click the button “ Apply_for_delegate” first.
 
@@ -38,7 +40,7 @@ The following steps serve as an introduction on how to become an actively delega
     :height: 161px
     :width: 350px
 
-4. After approval voting, the top 21 delegates by total approval are selected. The state of active delegates is updated once every maintenance interval (1 day).
+5. After approval voting, the top 21 delegates by total approval are selected. The state of active delegates is updated once every maintenance interval (1 day).
 
 * Build in the Terminal
 
