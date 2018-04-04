@@ -17,8 +17,8 @@ The following steps serve as an introduction on how to become an actively delega
   http://git.razko.nl/wallet-web/#/login
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Register.png
-    :height: 441px
-    :width: 216px
+    :scale: 50%
+    :align: center
 
 2. A certain sum of TRX is required to be transferred to your new account.
 
@@ -31,14 +31,14 @@ The following steps serve as an introduction on how to become an actively delega
 * Click the button “ Apply_for_delegate” first.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/apply%20for%20delegate.png
-    :height: 469px
-    :width: 1024px
+    :scale: 50%
+    :align: center
 
 * Provide your personal website address. The type of address is including but not limited to: website, blog, social media account, etc.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/personal%20address.png
-    :height: 564px
-    :width: 699px
+    :scale: 50%
+    :align: center
 
 5. After approval voting, the top 21 delegates by total approval are selected. The state of active delegates is updated once every maintenance interval (1 day).
 
