@@ -1,5 +1,5 @@
 =============
-Contributions
+贡献
 =============
 
 .. contents:: Table of contents

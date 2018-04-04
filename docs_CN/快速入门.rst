@@ -45,28 +45,28 @@
 
     ``File`` -> ``New`` -> ``Project from existing sources...``;
 
-* Highlight build.gradle and select 'OK'.
+* 标注build.gradle然后选择'OK'。
     
     ``java-tron/build.gradle``;
 
-* Check the box that says "Use auto-import".
+* 查看选项"Use auto-import".
 
-* Select the radio button that says "Use gradle wrapper task configuration".
+* 选择按钮"Use gradle wrapper task configuration"。
 
-* Ensure that "Gradle JVM" is set to an instance of JDK 1.8.
+* 确保"Gradle JVM" JDK 1.8配置匹配。
 
-* Select "OK" to import JAVA-TRON into IDEA.
+* 点击"OK"开始运行项目。
 
-* IDEA will now begin to build the project (wait until finished doing stuff).
+* IDEA开始运行项目。
 
-**5, Contribution**
+**5，贡献**
 
-Contributions are greatly welcomed. Please check `CONTRIBUTING.md <https://github.com/tronprotocol/java-tron/blob/develop/CONTRIBUTING.md>`__ for details on submitting patches and the contribution workflow.
+我们热烈欢迎参与者对于社区以及TRON项目的贡献。 相关信息请查看`CONTRIBUTING.md <https://github.com/tronprotocol/java-tron/blob/develop/CONTRIBUTING.md>`_。
 
-**6, Servers**
+**6，服务节点**
 
 +----------------+-----------------+---------------------+
-| IP             | Location        | Description         |
+| IP             | Locatio        | Description         |
 +================+=================+=====================+
 | 47.254.16.55   | Silicon Valley  | Witness Node        |
 +----------------+-----------------+---------------------+
@@ -93,9 +93,9 @@ Contributions are greatly welcomed. Please check `CONTRIBUTING.md <https://githu
 | 47.95.14.107   | Beijing         | Blockchain Explorer |
 +----------------+-----------------+---------------------+
 
-**7, Links**
+**7，相关链接**
 
-* TRON Website: https://tron.network/
+* TRON网址: https://tron.network/
 * GitHub: https://github.com/tronprotocol/java-tron/
-* Community Telegram Group: https://t.me/tronnetworkEN/
-* Slack Workspace: https://tronfoundation.slack.com/
+* Telegram社群: https://t.me/tronnetworkEN/
+* Slack工作室: https://tronfoundation.slack.com/

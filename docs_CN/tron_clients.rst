@@ -1,25 +1,25 @@
 ============
-TRON Clients
+TRON客户端
 ============
 
 .. contents:: Table of contents
     :depth: 1
     :local:
 
-Choosing a client
+选择客户端
 -----------------
 
-Why should I choose Java develop clients?
+为什么选择优先Java开发客户端
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TRON enables JAVA development—a programming language that owns the highest number of community members and is highly commercialized. The natural support capability of JAVA’s community is incomparable to others. In order to accomplish the construction of decentralized platform with a more decentralized development model, TRON hopes to effectively mobilize the strength of the community.
+Java作为社区成员最多，商业化普及程度最高的高级语言，其社区天然的支撑能力是其他程序语言社区无法相提并论的。 波场希望能有效地调动社区力量，以更加去中心化的开发模式来完成去中心化平台的建设。
 
-Multi-Language Support TRON Client in the future
+将来会有更多语言版本的TRON客户端
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TRON will support other development languages in the future, including Scala. C++, Python, Go, etc.
+TRON会在将来逐一实现其他语言的版本，包括Scala. C++, Python ,Go等语言的不同版本。
 
-How should I install on my desktop/laptop?( PC)
+用户如何安装客户端（PC端）
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Java-Tron

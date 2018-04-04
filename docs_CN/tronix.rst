@@ -6,17 +6,17 @@ TRONIX
     :depth: 1
     :local:
 
-TRON supply
+TRON发行
 -------
 
-Online wallets
+线上钱包
 -------
 
-Paper wallets
+纸钱包
 -------
 
-Sending TRX
+发送TRX
 -------
 
-Operation price
+操作价格
 -------

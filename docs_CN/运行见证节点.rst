@@ -1,5 +1,5 @@
 ===========
-运行超级节点
+运行见证节点
 ===========
 
 .. contents:: Table of contents
@@ -31,8 +31,8 @@
 * 首先点击按钮 “ Apply_for_delegate” 。
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/apply%20for%20delegate.png
-    :height: 469px
-    :width: 1024px
+    :scale: 50%
+    :align: center
 
 * 请提供您的个人网站地址。个人网站、博客、社交媒体账号地址等均可称为有效地址。
 
