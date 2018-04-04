@@ -2,7 +2,7 @@
 TRON网络
 ============
 
-.. contents:: Table of contents
+.. contents:: 目录
     :depth: 1
     :local:
 
