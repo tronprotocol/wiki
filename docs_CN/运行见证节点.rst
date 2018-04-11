@@ -16,53 +16,61 @@
 
   http://git.razko.nl/wallet-web/#/login
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Register.png
-     :height: 158px
-     :width: 322px
+* 勾选以下三项条款，然后创建账户。
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs_CN/img/intro/register.png
+     :scale: 50%
+     :align: center
 
 2， 新账户必须存有一定数量的TRX。
 
-* 为测试需要，用户可通过账户管理中的选项申请TRX。一旦申请成功，系统会为您的账户中自动发放TRX。
+* 为测试需要，用户可以申请测试使用的10000个TRX。请点击按钮"Request TRX for testing"。
 
-3，用户也可以联系相关波场的工作人员获取用于测试的TRX。
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs_CN/img/intro/TRX_request.png
+    :width: 842px
+    :height: 486px
+    :align: center
 
-4，可以申请成为见证节点。
+3，可以申请成为见证节点。
 
 * 首先点击按钮 “ Apply_for_delegate” 。
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/apply%20for%20delegate.png
-    :height: 160px
-    :width: 350px
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs_CN/img/intro/Apply_for_delegate.png
+    :width: 842px
+    :height: 486px
+    :align: center
 
 * 请提供您的个人网站地址。个人网站、博客、社交媒体账号地址等均可成为有效地址。
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/personal%20address.png
-    :height: 160px
-    :width: 350px
+    :height: 466px
+    :width: 646px
+    :align: center
 
-5，获得投票数最高的前21各节点会被选中。节点状态每天会更新一次。
+4,节点投票
 
-* 从终端创建
+* 通过账户选项点击投票按钮
 
-.. code-block:: shell
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs_CN/img/intro/vote.png
+    :width: 842
+    :height: 450
+    :align: center
 
-    ./gradlew run -Pwitness=true
+* 为候选节点投票。用户的最高投票数必须少于或者等于手持TRX的数量。请选择相应的TRX数量，提交投票。
 
-* 使用可执行文件JAE
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs_CN/img/intro/submit_vote_1.png
+    :width: 841px
+    :height: 392px
+    :align: center
 
-.. code-block:: shell
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs_CN/img/intro/submit_vote_2.png
+    :width: 842px
+    :height: 434px
+    :align: center
 
-    cd build/libs
 
-    java -jar java-tron.jar --witness true
+5，获得投票数最高的前21各节点会被选中。节点状态每天更新一次。
 
-* IntelliJ IDEA
-
-打开设置选项：
-
-项目的 arguments 选项, fill in --witness:
-
-再次运行全节点::main()。
 
 
 
