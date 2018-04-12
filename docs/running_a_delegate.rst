@@ -6,7 +6,7 @@ Running a Delegate.
   :depth: 1
   :local:
 
-The following steps serve as an introduction on how to become an actively delegate through our TRON blockchain explorer.
+The following steps serve as an introduction on how to become an delegate through our TRON blockchain explorer.
 
 **Steps**
 
@@ -16,53 +16,61 @@ The following steps serve as an introduction on how to become an actively delega
 
   http://git.razko.nl/wallet-web/#/login
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Register.png
+* Tick off the follow three items, then click the button “Create Account”.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/register.png
     :scale: 50%
     :align: center
 
 2. A certain sum of TRX is required to be transferred to your new account.
 
-* TRX for testing will be sent to your testing acoount once you successfully apply through account management.
+* 10000 TRX for testing will be sent to your testing acoount. Please click the button "Request TRX for testing".
 
-3. Users can contact the TRON staff to get TRX for testing.
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/TRX_request.png
+    :width: 842px
+    :height: 486px
+    :align: center
 
-4. You can get started to apply to be a delegate.
+3. You can get started to apply to be a delegate.
 
 * Click the button “ Apply_for_delegate” first.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/apply%20for%20delegate.png
-    :width: 842
-    :height: 400
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Apply_for_delegate.png
+    :width: 842px
+    :height: 486px
+    :align: center
 
 * Provide your personal website address. The type of address is including but not limited to: website, blog, social media account, etc.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/personal%20address.png
-    :width: 746
-    :height: 540
+    :width: 646
+    :height: 466
+    :align: center
+
+4. Vote for delegate
+
+* Click the button"Votes" through account.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/vote.png
+    :width: 842
+    :height: 450
+    :align: center
+
+* You can vote for all the delegates. The maximum number of votes is less than or equal to the number of TRX users hold each time. Please choose the number of TRX and submit votes.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/submit_vote_1.png
+    :width: 841px
+    :height: 392px
+    :align: center
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/submit_vote_2.png
+    :width: 842px
+    :height: 434px
+    :align: center
 
 5. After approval voting, the top 21 delegates by total approval are selected. The state of active delegates is updated once every maintenance interval (1 day).
 
-* Build in the Terminal
 
-.. code-block:: shell
-
-    ./gradlew run -Pwitness=true
-
-* Use the executable JAE
-
-.. code-block:: shell
-
-    cd build/libs
-
-    java -jar java-tron.jar --witness true
-
-* In IntelliJ IDEA
-
-Open the configuration panel:
-
-In the Program arguments option, fill in --witness:
-
-Then, run FullNode::main() again.
 
 
 
