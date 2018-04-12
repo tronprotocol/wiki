@@ -16,6 +16,10 @@ The following steps serve as an introduction on how to become an delegate throug
 
   http://git.razko.nl/wallet-web/#/login
 
+* Direct visit to Tron blockchain explorer and the Web wallet can be made through
+
+  https://trxscan.org
+
 * Tick off the follow three items, then click the button “Create Account”.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/register.png
@@ -43,8 +47,8 @@ The following steps serve as an introduction on how to become an delegate throug
 * Provide your personal website address. The type of address is including but not limited to: website, blog, social media account, etc.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/personal%20address.png
-    :width: 646
-    :height: 466
+    :width: 646px
+    :height: 466px
     :align: center
 
 4. Vote for delegate
@@ -52,8 +56,8 @@ The following steps serve as an introduction on how to become an delegate throug
 * Click the button"Votes" through account.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/vote.png
-    :width: 842
-    :height: 450
+    :width: 842px
+    :height: 450px
     :align: center
 
 * You can vote for all the delegates. The maximum number of votes is less than or equal to the number of TRX users hold each time. Please choose the number of TRX and submit votes.

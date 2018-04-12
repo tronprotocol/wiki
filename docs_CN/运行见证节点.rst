@@ -16,6 +16,8 @@
 
   http://git.razko.nl/wallet-web/#/login
 
+  现在可以通过 https://trxscan.org 直接访问TRON区块链浏览器和Web钱包
+
 * 勾选以下三项条款，然后创建账户。
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs_CN/img/intro/register.png
@@ -52,8 +54,8 @@
 * 通过账户选项点击投票按钮
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs_CN/img/intro/vote.png
-    :width: 842
-    :height: 450
+    :width: 842px
+    :height: 450px
     :align: center
 
 * 为候选节点投票。用户的最高投票数必须少于或者等于手持TRX的数量。请选择相应的TRX数量，提交投票。
