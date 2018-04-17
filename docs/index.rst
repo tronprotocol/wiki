@@ -5,11 +5,9 @@ Tron Protocol
 .. toctree::
     :hidden:
 
-    introduction
-    quick_start
-    running_a_full_node
-    running_a_delegate
-    start_private_blockchain
+    Introduction
+    Quick_Start
+    Super_Represnetatve
     account_management
     tronix
     the_tron_network

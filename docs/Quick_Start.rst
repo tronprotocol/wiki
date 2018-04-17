@@ -105,7 +105,7 @@ Running
 
     1. After the building finishes, locate ``FullNode`` in the project structure view panel, which is on the path ``java-tron/src/main/java/org.tron/program/FullNode``.
 
-    2.Select ``FullNode``, right click on it, and select ``Run 'FullNode.main()``, then ``FullNod`` starts running.
+    2. Select ``FullNode``, right click on it, and select ``Run 'FullNode.main()``, then ``FullNod`` starts running.
 
 **Running a Witness Node**
 
@@ -127,11 +127,11 @@ Show Output
 
 - In IntelliJ IDEA
 
-1.Open the configuration panel:
+    1. Open the configuration panel:
 
-2.In the ``Program arguments``option, fill in ``--witness``:
+    2. In the ``Program arguments``option, fill in ``--witness``:
 
-Then, run ``FullNode::main()`` again.
+    Then, run ``FullNode::main()`` again.
 
 **Running multi-nodes**
 
