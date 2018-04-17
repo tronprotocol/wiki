@@ -54,7 +54,7 @@ TRON Brief Introduction
 Community
 ---------
 
-* Tron community always finds guidance in its principles of sharing, equity, freedom and mutual support. The communal space of Tron community provides all supporters and participants with more accessible and comprehensive resources and information on the projects of Tron. No participant will come across any restriction during resource acquisition or communicative exchanges, as long as they conform to community regulations and be actively engaged in community construction and maintenance.
+Tron community always finds guidance in its principles of sharing, equity, freedom and mutual support. The communal space of Tron community provides all supporters and participants with more accessible and comprehensive resources and information on the projects of Tron. No participant will come across any restriction during resource acquisition or communicative exchanges, as long as they conform to community regulations and be actively engaged in community construction and maintenance.
 
 **Reddit**
 
@@ -68,7 +68,7 @@ Current Reddit threads:
 
 **Slack**
 
-* Keeping in touch with outstanding contributors on Github, the tech team of Tron communicates with and finds itself deeply inspired by developers on `slack <https://tronfoundation.slack.com/messages/C6DKKSU8G/details>`_ . The platform makes it easier for developers to discuss and solve technical problems together with the tech team of Tron in a timely fashion. Join us on Slack at our invitation or by your own request. We also welcome developers making a remarkable contribution to be a part of the Tron team.
+Keeping in touch with outstanding contributors on Github, the tech team of Tron communicates with and finds itself deeply inspired by developers on `slack <https://tronfoundation.slack.com/messages/C6DKKSU8G/details>`_ . The platform makes it easier for developers to discuss and solve technical problems together with the tech team of Tron in a timely fashion. Join us on Slack at our invitation or by your own request. We also welcome developers making a remarkable contribution to be a part of the Tron team.
 
 **Gitter Rooms**
 
@@ -87,7 +87,7 @@ http://tronsr.org/
 TRON Foundation
 ---------------
 
-* Forging ahead with the development of new technologies and applications jointly with all developers, Tron Foundation is devoted to the healthy development of Tron ecosystem.
+Forging ahead with the development of new technologies and applications jointly with all developers, Tron Foundation is devoted to the healthy development of Tron ecosystem.
 
 - Tron Foundation open to the community
 
@@ -120,7 +120,7 @@ TRON Foundation
 Contributors
 ------------
 
-* We would like to express our deepest gratitude to the following participants who have made great contributions to the community:
+We would like to express our deepest gratitude to the following participants who have made great contributions to the community:
 
 - TRON Github Contributor:
 
