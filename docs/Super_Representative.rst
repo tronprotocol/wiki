@@ -2,7 +2,7 @@
 Super Representative
 ====================
 
-.. contents:: 目录
+.. contents:: Table of contents
     :depth: 1
     :local:
 
