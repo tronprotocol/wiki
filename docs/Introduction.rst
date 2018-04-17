@@ -62,8 +62,9 @@ To its host of supporters and developers converging here,TRON `reddit <https://w
 
 Current Reddit threads:
 
-- `/r/TRXTrading <https://www.reddit.com/r/TRXTrading/>`_  – TRON trading, price and market.
-- `/r/tronsupport <https://www.reddit.com/r/tronsupport>`_ – Support for any TRON-related questions.
+`/r/TRXTrading <https://www.reddit.com/r/TRXTrading/>`_  – TRON trading, price and market.
+
+`/r/tronsupport <https://www.reddit.com/r/tronsupport>`_ – Support for any TRON-related questions.
 
 **Slack**
 
@@ -74,7 +75,9 @@ Current Reddit threads:
 Log on to gitter with your github account to participate in Tron’s discussions. Accessible Gitter channels revolve around the topic of a certain database. Please select a suitable channel and topic and maintain the relevance of your posts.
 
 `java-tron <https://github.com/tronprotocol/java-tron>`_  – about full node, the launch of mainnet, testnet.
+
 `wallet-web <https://github.com/tronprotocol/wallet-web>`_ – blockchain explorer and web wallet developed by community.
+
 `wallet-cli <https://github.com/tronprotocol/wallet-cli>`_  – the official blockchain explorer and web wallet.
 
 **TRON Forum**
@@ -88,21 +91,31 @@ TRON Foundation
 
 - Tron Foundation open to the community
 
-`Official Website <https://tron.network/en.html>`_
-`Twitter <https://twitter.com/tronfoundation>`_
-`Facebook <https://www.facebook.com/TronFoundation>`_
-`Slack <https://tronfoundation.slack.com>`_
-`CoinMarketCap <https://coinmarketcap.com/currencies/tron/>`_
-`Github <https://github.com/tronprotocol>`_
-`Telegram <https://t.me/tronnetworkEN>`_
-`E-mail <service@tron.network>`_
+    `Official Website <https://tron.network/en.html>`_
+
+    `Twitter <https://twitter.com/tronfoundation>`_
+
+    `Facebook <https://www.facebook.com/TronFoundation>`_
+
+    `Slack <https://tronfoundation.slack.com>`_
+
+    `CoinMarketCap <https://coinmarketcap.com/currencies/tron/>`_
+
+    `Github <https://github.com/tronprotocol>`_
+
+    `Telegram <https://t.me/tronnetworkEN>`_
+
+    `E-mail <service@tron.network>`_
 
 - Other community platforms for international usership.
 
-`TRON SOUTH KOREA <https://t.me/tronnetworkKR>`_
-`TRON RUSSIA <https://t.me/tronnetworkRU>`_
-`TRON SPAIN <https://t.me/tronnetworkES>`_
-`TRON ARABIC <https://t.me/tronnetworkAR>`_
+    `TRON SOUTH KOREA <https://t.me/tronnetworkKR>`_
+
+    `TRON RUSSIA <https://t.me/tronnetworkRU>`_
+
+    `TRON SPAIN <https://t.me/tronnetworkES>`_
+
+    `TRON ARABIC <https://t.me/tronnetworkAR>`_
 
 Contributors
 ------------
@@ -111,38 +124,68 @@ Contributors
 
 - TRON Github Contributor:
 
-`Roy van Kaathoven <https://github.com/Rovak>`_
-`seanrobbins <https://github.com/seanrobbins>`_
-`AhnSinYong <https://github.com/AhnSinYong>`_
-`Jean-Philippe Quéméner <https://github.com/JohnnyQQQQ>`_
-`sdargutev <https://github.com/sdargutev>`_
-`ryukato <https://github.com/ryukato>`_
-`farukonder <https://github.com/farukonder>`_
-`nguyentruongtho <https://github.com/nguyentruongtho>`_
-`Blake Jackson <https://github.com/blaketastic2>`_
-`ruchern <https://github.com/ruchern>`_
-`jun-Sogang <https://github.com/jun-Sogang>`_
-`colbywhite <https://github.com/colbywhite>`_
-`svenanders <https://github.com/svenanders>`_
-`jromero <https://github.com/jromero>`_
-`jungrammer <https://github.com/jungrammer>`_
-`Eyesonly88 <https://github.com/Eyesonly88>`_
-`wailo <https://github.com/wailo>`_
-`xiaolin <https://github.com/xiaolin>`_
-`styk-tv <https://github.com/styk-tv>`_
-`khuezy <https://github.com/khuezy>`_
-`jackforest2014 <https://github.com/jackforest2014>`_
-`Yangdaidai <https://github.com/Yangdaidai>`_
-`James Michael DuPont <https://github.com/h4ck3rm1k3>`_
-`Kamil Zieliński <https://github.com/KamilZielinski>`_
-`Wendy Sanarwanto <https://github.com/WendySanarwanto>`_
+    `Roy van Kaathoven <https://github.com/Rovak>`_
+
+    `seanrobbins <https://github.com/seanrobbins>`_
+
+    `AhnSinYong <https://github.com/AhnSinYong>`_
+
+    `Jean-Philippe Quéméner <https://github.com/JohnnyQQQQ>`_
+
+    `sdargutev <https://github.com/sdargutev>`_
+
+    `ryukato <https://github.com/ryukato>`_
+
+    `farukonder <https://github.com/farukonder>`_
+
+    `nguyentruongtho <https://github.com/nguyentruongtho>`_
+
+    `Blake Jackson <https://github.com/blaketastic2>`_
+
+    `ruchern <https://github.com/ruchern>`_
+
+    `jun-Sogang <https://github.com/jun-Sogang>`_
+
+    `colbywhite <https://github.com/colbywhite>`_
+
+    `svenanders <https://github.com/svenanders>`_
+
+    `jromero <https://github.com/jromero>`_
+
+    `jungrammer <https://github.com/jungrammer>`_
+
+    `Eyesonly88 <https://github.com/Eyesonly88>`_
+
+    `wailo <https://github.com/wailo>`_
+
+    `xiaolin <https://github.com/xiaolin>`_
+
+    `styk-tv <https://github.com/styk-tv>`_
+
+    `khuezy <https://github.com/khuezy>`_
+
+    `jackforest2014 <https://github.com/jackforest2014>`_
+
+    `Yangdaidai <https://github.com/Yangdaidai>`_
+
+    `James Michael DuPont <https://github.com/h4ck3rm1k3>`_
+
+    `Kamil Zieliński <https://github.com/KamilZielinski>`_
+
+    `Wendy Sanarwanto <https://github.com/WendySanarwanto>`_
 
 - TRON Translation Contributor:
 
-`fbsobreira <https://crowdin.com/profile/fbsobreira>`_
-`PiterSpain <https://crowdin.com/profile/PiterSpain>`_
-`Dev Obs <https://crowdin.com/profile/devobs1>`_
-`johnsavadkuhi <https://crowdin.com/profile/johnsavadkuhi>`_
-`JYW <https://crowdin.com/profile/JYW>`_
-`J4ck1986 <https://crowdin.com/profile/J4ck1986>`_
-`Felix <https://crowdin.com/profile/FlxGut>`_
+    `fbsobreira <https://crowdin.com/profile/fbsobreira>`_
+
+    `PiterSpain <https://crowdin.com/profile/PiterSpain>`_
+
+    `Dev Obs <https://crowdin.com/profile/devobs1>`_
+
+    `johnsavadkuhi <https://crowdin.com/profile/johnsavadkuhi>`_
+
+    `JYW <https://crowdin.com/profile/JYW>`_
+
+    `J4ck1986 <https://crowdin.com/profile/J4ck1986>`_
+
+    `Felix <https://crowdin.com/profile/FlxGut>`_
