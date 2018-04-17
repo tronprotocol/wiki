@@ -80,10 +80,8 @@ Import the JAVA-TRON Project into IDEA
 
 * After the syncing finished, select Gradle -> Tasks -> build, and then double click build option.
 
-Running
--------
-
-**Running a Private Testnet**
+Running a Private Testnet
+-------------------------
 
 **Running a full node**
 
@@ -131,7 +129,7 @@ Show Output
 
     2. In the ``Program arguments``option, fill in ``--witness``:
 
-    Then, run ``FullNode::main()`` again.
+     Then, run ``FullNode::main()`` again.
 
 **Running multi-nodes**
 
