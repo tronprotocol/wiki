@@ -20,13 +20,13 @@ The following steps serve as an introduction on how to become a Super Representa
 
 2, Tick off the follow three items, then click the button “Create Account”.
 
-.. image::https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/running_a_delegate/create_account.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/running_a_delegate/create_account.png
     :scale: 50%
     :align: center
 
 3, A certain sum of TRX is required in your new account.   10000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
 
-.. image::https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/running_a_delegate/request_for_testing.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/running_a_delegate/request_for_testing.png
     :width: 842px
     :height: 486px
     :align: center
