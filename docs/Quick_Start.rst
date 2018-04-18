@@ -135,7 +135,7 @@ Show Output
 
 To run TRON on more than one node, you need to specify several seed nodes ``IPs in config.conf in seed.node.ip.list``: For private testnet, the IPs are allocated by yourself.
 
-Running a local node and connecting to the public testnet
+Running a Public Testnet
 ---------------------------------------------------------
 
 **Running a Full Node**

@@ -7,7 +7,7 @@ Tron Protocol
 
     Introduction
     Quick_Start
-    Super_Represnetatve
+    Super_Represnetative
     account_management
     tronix
     the_tron_network
