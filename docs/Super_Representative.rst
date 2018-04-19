@@ -69,14 +69,9 @@ The following steps serve as an introduction on how to vote for a Super Represen
 - The final votes will be tallied at 24 o'clock and the list of delegates will be updated.
 - TRX for testing will not be consumed in the voting process.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/submit_votes_1.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/submit_vote.png
     :width: 841px
-    :height: 392px
-    :align: center
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/submit_votes_2.png
-    :width: 842px
-    :height: 434px
+    :height: 572px
     :align: center
 
 Running a Super Representative
@@ -140,14 +135,9 @@ The following steps serve as an introduction on how to become a Super Representa
 
 * The maximum number of votes is no more than the user’s amount of TRX holding at a given time. Please choose the number of TRX and submit your votes.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/submit_votes_1.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/submit_vote.png
     :width: 841px
-    :height: 392px
-    :align: center
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/submit_votes_2.png
-    :width: 842px
-    :height: 434px
+    :height: 572px
     :align: center
 
 8, After approval voting, the top 27 SRs by total approval are selected. The state of active SRs is updated once every maintenance interval (1 day).
