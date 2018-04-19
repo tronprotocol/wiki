@@ -15,13 +15,13 @@ The following steps serve as an introduction on how to create, send and receive 
 
 * In order to use TRON blockchain explorer, you will need to register an account, please visit our website:
 
-    https://tronscan.org/#/login
+https://tronscan.org/#/login
 
-        * Direct visit to Tron blockchain explorer and the Web wallet can be made through
+* Direct visit to Tron blockchain explorer and the Web wallet can be made through
 
 https://tronscan.org
 
-    2, Tick off the follow three items, then click the button “Create Account”.
+2, Tick off the follow three items, then click the button “Create Account”.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/create_account.png
     :scale: 50%
@@ -48,10 +48,15 @@ https://tronscan.org
 * It is very easy to create your own tokens in TRON’s ecosystem. With the parameters of token name, the number of tokens in circulation, token description, address of personal website, exchange rate to TRX, and participation, you will be able to issue your own tokens.
 
     **Token name**
+
     **Total Supply**: Total amount of tokens which will be in circulation.
+
     **Token description**
+
     **Address of personal website**: A website where users can find more information about the token.
+
     **Exchange rate to TRX**: Specify the price of a single token by defining how many tokens a participant will receive for every TRX they spend.
+
     **Participation**: Specify the participation period in which tokens will be issued. During the participation period users can exchange TRX for tokens.
 
 *  You will be charged 1024 TRX for your creation of tokens.
@@ -73,7 +78,7 @@ https://tronscan.org
     :height: 335px
     :align: center
 
-7, To purchase issued tokens with TRX, click “participate”.
+7, To purchase issued tokens with TRX, click “Participate”.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/view.png
     :width: 841px
