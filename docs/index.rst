@@ -7,7 +7,7 @@ Tron Protocol
 
     Introduction
     Quick_Start
-    Super_Represnetative
+    Super_Representative
     Token_Creation
     account_management
     tronix
