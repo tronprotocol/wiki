@@ -127,9 +127,9 @@ Show Output
 
     1. Open the configuration panel:
 
-    2. In the ``Program arguments``option, fill in ``--witness``:
+    2. In the ``Program arguments`` option, fill in ``--witness``:
 
-     Then, run ``FullNode::main()`` again.
+Then, run ``FullNode::main()`` again.
 
 **Running multi-nodes**
 
