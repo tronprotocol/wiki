@@ -51,7 +51,7 @@ The following steps serve as an introduction on how to vote for a Super Represen
     :height: 486px
     :align: center
 
-4, Vote for delegate  .
+4, Vote for delegate.
 
 * Click the button "Votes" in account options.
 
