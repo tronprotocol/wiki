@@ -56,27 +56,13 @@ Clone/Download the JAVA-TRON Implementation from Github
 
 **6,  Build in IntelliJ IDEA (community version is enough)**
 
-Import the JAVA-TRON Project into IDEA
+* Start IntelliJ. Select ``File`` -> ``Open`` , then locate to the java-tron folder which you have git cloned to your local drive. Then click ``Open`` button on the right bottom.
 
-* Select 'File' and navigate to the directory of the cloned (or downloaded) JAVA-TRON git project.
-
-    ``File`` -> ``New`` -> ``Project from existing sources...``
-
-* Highlight `build.gradle` and select 'OK'.
-    
-    ``java-tron/build.gradle``
-
-* Check the box that says "Use auto-import".
-
-* Select the radio button that says "Use gradle wrapper task configuration".
-
-* Ensure that "Gradle JVM" is set to an instance of JDK 1.8.
-
-* Select "OK" to import JAVA-TRON into IDEA.
+* Check on ``Use auto-import`` on the ``Import Project from Gradle`` dialog. Select JDK 1.8 in the ``Gradle JVM`` option. Then click ``OK``.
 
 * IntelliJ will open the project and start gradle syncing, which will take several minutes, depending on your network connection and your IntelliJ configuration
 
-* After the syncing finished, select Gradle -> Tasks -> build, and then double click build option.
+* After the syncing finished, select ``Gradle``  -> ``Tasks`` -> ``build`` , and then double click ``build`` option.
 
 Running a Private Testnet
 -------------------------
