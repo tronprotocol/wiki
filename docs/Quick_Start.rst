@@ -9,8 +9,6 @@ Quick Start
 How to Build
 ------------
 
-**Current Testnet p2p version: 32（resources/config.conf:node.p2p.verson = 32）**
-
 **1, Getting the code**
 
 Clone/Download the JAVA-TRON Implementation from Github
@@ -64,7 +62,7 @@ Import the JAVA-TRON Project into IDEA
 
     ``File`` -> ``New`` -> ``Project from existing sources...``;
 
-* Highlight build.gradle and select 'OK'.
+* Highlight `build.gradle` and select 'OK'.
     
     ``java-tron/build.gradle``;
 
@@ -103,7 +101,7 @@ Running a Private Testnet
 
     1. After the building finishes, locate ``FullNode`` in the project structure view panel, which is on the path ``java-tron/src/main/java/org.tron/program/FullNode``.
 
-    2. Select ``FullNode``, right click on it, and select ``Run 'FullNode.main()``, then ``FullNod`` starts running.
+    2. Select ``FullNode``, right click on it, and select ``Run FullNode.main()``, then ``FullNode`` starts running.
 
 **Running a Witness Node**
 
