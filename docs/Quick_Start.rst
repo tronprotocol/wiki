@@ -60,11 +60,11 @@ Import the JAVA-TRON Project into IDEA
 
 * Select 'File' and navigate to the directory of the cloned (or downloaded) JAVA-TRON git project.
 
-    ``File`` -> ``New`` -> ``Project from existing sources...``;
+    ``File`` -> ``New`` -> ``Project from existing sources...``
 
 * Highlight `build.gradle` and select 'OK'.
     
-    ``java-tron/build.gradle``;
+    ``java-tron/build.gradle``
 
 * Check the box that says "Use auto-import".
 
