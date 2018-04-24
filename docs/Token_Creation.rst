@@ -31,7 +31,7 @@ https://tronscan.org
 
 * 10000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
 
-    .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/request_for_testing.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/request_for_testing.png
     :width: 842px
     :height: 371px
     :align: center
