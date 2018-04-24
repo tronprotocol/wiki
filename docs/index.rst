@@ -1,15 +1,14 @@
-========================
+=============
 Tron Protocol
-========================
+=============
 
 .. toctree::
     :hidden:
 
-    introduction
-    quick_start
-    start_full_node
-    start_witness_node
-    start_private_blockchain
+    Introduction
+    Quick_Start
+    Super_Representative
+    Token_Creation
     account_management
     tronix
     the_tron_network
