@@ -129,7 +129,7 @@ Show Output
 
     2. In the ``Program arguments`` option, fill in ``--witness``:
 
-    Then, run ``FullNode::main()`` again.
+Then, run ``FullNode::main()`` again.
 
 **Running multi-nodes**
 
