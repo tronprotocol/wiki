@@ -122,7 +122,7 @@ The following steps serve as an introduction on how to become a Super Representa
     :width: 646px
     :align: center
 
-6, Vote for delegate  .
+6, Vote for delegate.
 
 * Click the button "Votes" in account options.
 

@@ -174,6 +174,24 @@ We would like to express our deepest gratitude to the following participants who
 
     `Wendy Sanarwanto <https://github.com/WendySanarwanto>`_
 
+    `Johnsavadkuhi <https://github.com/Johnsavadkuhi>`
+
+    `Francisco Pena <https://github.com/daiky00>`
+
+    `Fernando Sobreira <https://github.com/fbsobreira>`
+
+    `lazaro <https://github.com/lazarovicedo>`
+
+    `Shanadas <https://github.com/shanadas>`
+
+    `DevObs1 <https://github.com/DevObs1>`
+
+    `Daivy van de Graaf <https://github.com/Daivyy>`
+
+    `Jacob Schuster <https://github.com/Jacob8765>`
+
+    `Diogenes Buarque Ianakiara <https://github.com/dbuarque>`
+
 - TRON Translation Contributor:
 
     `fbsobreira <https://crowdin.com/profile/fbsobreira>`_
@@ -189,3 +207,23 @@ We would like to express our deepest gratitude to the following participants who
     `J4ck1986 <https://crowdin.com/profile/J4ck1986>`_
 
     `Felix <https://crowdin.com/profile/FlxGut>`_
+
+    `Miimiis_Pets <https://crowdin.com/profile/Miimiis_Pets>`
+
+    `robmarti <https://crowdin.com/profile/robmarti>`
+
+    `Lorenzo Addazi <https://crowdin.com/profile/loradd>`
+
+    `tomcritic <https://crowdin.com/profile/tomcritic>`
+
+    `Uğur Civak <https://crowdin.com/profile/ugurcivak>`
+
+    `Lernaarias <https://crowdin.com/profile/Lernaarias>`
+
+    `El Petito Nicolas <https://crowdin.com/profile/salocinigrub>`
+
+    `khanhnd69 <https://crowdin.com/profile/khanhnd69>`
+
+
+
+

@@ -1,5 +1,5 @@
 =============
-Tron Protocol
+Tron Odyssey
 =============
 
 .. toctree::
@@ -9,6 +9,7 @@ Tron Protocol
     Quick_Start
     Super_Representative
     Token_Creation
+    TRON_Protocol
     account_management
     tronix
     the_tron_network
