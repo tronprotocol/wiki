@@ -174,23 +174,23 @@ We would like to express our deepest gratitude to the following participants who
 
     `Wendy Sanarwanto <https://github.com/WendySanarwanto>`_
 
-    `Johnsavadkuhi <https://github.com/Johnsavadkuhi>`
+    `Johnsavadkuhi <https://github.com/Johnsavadkuhi>`_
 
-    `Francisco Pena <https://github.com/daiky00>`
+    `Francisco Pena <https://github.com/daiky00>`_
 
-    `Fernando Sobreira <https://github.com/fbsobreira>`
+    `Fernando Sobreira <https://github.com/fbsobreira>`_
 
-    `lazaro <https://github.com/lazarovicedo>`
+    `lazaro <https://github.com/lazarovicedo>`_
 
-    `Shanadas <https://github.com/shanadas>`
+    `Shanadas <https://github.com/shanadas>`_
 
-    `DevObs1 <https://github.com/DevObs1>`
+    `DevObs1 <https://github.com/DevObs1>`_
 
-    `Daivy van de Graaf <https://github.com/Daivyy>`
+    `Daivy van de Graaf <https://github.com/Daivyy>`_
 
-    `Jacob Schuster <https://github.com/Jacob8765>`
+    `Jacob Schuster <https://github.com/Jacob8765>`_
 
-    `Diogenes Buarque Ianakiara <https://github.com/dbuarque>`
+    `Diogenes Buarque Ianakiara <https://github.com/dbuarque>`_
 
 - TRON Translation Contributor:
 
@@ -208,21 +208,21 @@ We would like to express our deepest gratitude to the following participants who
 
     `Felix <https://crowdin.com/profile/FlxGut>`_
 
-    `Miimiis_Pets <https://crowdin.com/profile/Miimiis_Pets>`
+    `Miimiis_Pets <https://crowdin.com/profile/Miimiis_Pets>`_
 
-    `robmarti <https://crowdin.com/profile/robmarti>`
+    `robmarti <https://crowdin.com/profile/robmarti>`_
 
-    `Lorenzo Addazi <https://crowdin.com/profile/loradd>`
+    `Lorenzo Addazi <https://crowdin.com/profile/loradd>`_
 
-    `tomcritic <https://crowdin.com/profile/tomcritic>`
+    `tomcritic <https://crowdin.com/profile/tomcritic>`_
 
-    `Uğur Civak <https://crowdin.com/profile/ugurcivak>`
+    `Uğur Civak <https://crowdin.com/profile/ugurcivak>`_
 
-    `Lernaarias <https://crowdin.com/profile/Lernaarias>`
+    `Lernaarias <https://crowdin.com/profile/Lernaarias>`_
 
-    `El Petito Nicolas <https://crowdin.com/profile/salocinigrub>`
+    `El Petito Nicolas <https://crowdin.com/profile/salocinigrub>`_
 
-    `khanhnd69 <https://crowdin.com/profile/khanhnd69>`
+    `khanhnd69 <https://crowdin.com/profile/khanhnd69>`_
 
 
 

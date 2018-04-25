@@ -27,25 +27,24 @@ TRON Protobuf Protocol
 
 * An ``Account`` contains 7 parameters:
     
-``account_name`` : the name for this account – e.g. “_BillsAccount_”.
+``account_name`` : the name for this account – e.g. *“_BillsAccount_”*.
 
-``type`` : what type of this account is – e.g. _0_ stands for type ``Normal`` .
+``type`` : what type of this account is – e.g. *0* stands for type ``Normal`` .
 
-``balance`` : balance of this account – e.g. _4213312_.
+``balance`` : balance of this account – e.g. *4213312*.
 
-``votes`` : received votes on this account – e.g. _{(“0x1b7w…9xj3”,323), (“0x8djq…j12m”,88),…,(“0x82nd…mx6i”,10001)}_.
+``votes`` : received votes on this account – e.g. *{(“0x1b7w…9xj3”,323), (“0x8djq…j12m”,88),…,(“0x82nd…mx6i”,10001)}*.
 
-``asset``: other assets except TRX in this account – e.g. _{<“WishToken”,66666>,<”Dogie”,233>}_.
+``asset``: other assets except TRX in this account – e.g. *{<“WishToken”,66666>,<”Dogie”,233>}*.
 
 ``latest_operation_time``: the latest operation time of this account.
 
     .. code-block:: shell
 
-    // Account 
         message Account {
             message Vote {
-            bytes vote_address = 1;
-            int64 vote_count = 2;   }
+                bytes vote_address = 1;
+                int64 vote_count = 2;   }
             bytes accout_name = 1;
             AccountType type = 2;
             bytes address = 3;
@@ -55,7 +54,7 @@ TRON Protobuf Protocol
             int64 latest_operation_time = 10;
         }
 
-A `Witness` contains 8 parameters:
+A ``Witness`` contains 8 parameters:
     `address`: the address of this witness – e.g. “_0xu82h…7237_”.
 `voteCount`: number of received votes on this witness – e.g. _234234_.
     `pubKey`: the public key for this witness – e.g. “_0xu82h…7237_”.
