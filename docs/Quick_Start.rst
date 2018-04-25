@@ -140,9 +140,30 @@ Running a Public Testnet
 
 **Running a Full Node**
 
+* Use the executable JAR(Recommend the way)
+
+```bash
+cd build/libs
+java -jar java-tron.jar
+```
+* In the Terminal
+
+```bash
+./gradlew run
+```
+
 It is almost the same as that does in the private testnet, except that the IPs in the ``config.conf`` are officially declared by TRON.
 
-**Running a Witness Node**
+**Running a Super Node**
+* Use the executable JAR(Recommend the way)
+
+```bash
+cd build/libs
+java -jar java-tron.jar -p yourself private key --witness -c yourself config.conf
+Example:
+java -jar java-tron.jar -p 650950B193DDDDB35B6E48912DD28F7AB0E7140C1BFDEFD493348F02295BD812 --witness -c /data/java-tron/config.conf
+
+```
 
 It is almost the same as that does in the private testnet, except that the IPs in the ``config.conf`` are officially declared by TRON.
 
