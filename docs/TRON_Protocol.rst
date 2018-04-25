@@ -15,7 +15,7 @@ TRON Protobuf Protocol
 
 **A basic account is able to apply to be a validation node, which has serval parameters, including extra attributes, public key, URL, voting statistics, history performance, etc.**
 
-* There are three different `Account types`: `Normal`, `AssetIssue`, `Contract`.
+* There are three different ``Account types`` : ``Normal`` , ``AssetIssue`` , ``Contract`` .
 
     .. code-block:: shell
 
@@ -25,19 +25,19 @@ TRON Protobuf Protocol
             Contract = 2;
         }
 
-* An `Account` contains 7 parameters:
+* An ``Account`` contains 7 parameters:
+    
+``account_name`` : the name for this account – e.g. “_BillsAccount_”.
 
-    `account_name`: the name for this account – e.g. “_BillsAccount_”.
+``type`` : what type of this account is – e.g. _0_ stands for type ``Normal`` .
 
-    `type`: what type of this account is – e.g. _0_ stands for type `Normal`.
+``balance`` : balance of this account – e.g. _4213312_.
 
-    `balance`: balance of this account – e.g. _4213312_.
+``votes`` : received votes on this account – e.g. _{(“0x1b7w…9xj3”,323), (“0x8djq…j12m”,88),…,(“0x82nd…mx6i”,10001)}_.
 
-    `votes`: received votes on this account – e.g. _{(“0x1b7w…9xj3”,323), (“0x8djq…j12m”,88),…,(“0x82nd…mx6i”,10001)}_.
+``asset``: other assets except TRX in this account – e.g. _{<“WishToken”,66666>,<”Dogie”,233>}_.
 
-    `asset`: other assets except TRX in this account – e.g. _{<“WishToken”,66666>,<”Dogie”,233>}_.
-
-    `latest_operation_time`: the latest operation time of this account.
+``latest_operation_time``: the latest operation time of this account.
 
     .. code-block:: shell
 
