@@ -29,7 +29,7 @@ An ``Account`` contains 7 parameters:
     
 ``account_name`` : the name for this account – e.g. *“BillsAccount”*.
 
-``type`` : what type of this account is – e.g. *0* stands for type ``Normal`` .
+``type`` : what type of this account is – e.g. *0* stands for type ``Normal``.
 
 ``balance`` : balance of this account – e.g. *4213312*.
 
@@ -75,16 +75,16 @@ A ``Witness`` contains 8 parameters:
 
     .. code-block:: shell
 
-    message Witness{
-        bytes address = 1;
-        int64 voteCount = 2;
-        bytes pubKey = 3;
-        string url = 4;
-        int64 totalProduced = 5;
-        int64 totalMissed = 6;
-        int64 latestBlockNum = 7;
-        bool isJobs = 9;
-    }
+        message Witness{
+            bytes address = 1;
+            int64 voteCount = 2;
+            bytes pubKey = 3;
+            string url = 4;
+            int64 totalProduced = 5;
+            int64 totalMissed = 6;
+            int64 latestBlockNum = 7;
+            bool isJobs = 9;
+        }
 
 **A block typically contains transaction data and a blockheader, which is a list of basic block information, including timestamp, signature, parent hash, root of Merkle tree and so on**.
 
@@ -96,10 +96,10 @@ A block contains ``transactions`` and a ``block_header`` .
 
     .. code-block:: shell
 
-    message Block {
-        repeated Transaction transactions = 1;
-        BlockHeader block_header = 2;
-    }
+        message Block {
+            repeated Transaction transactions = 1;
+            BlockHeader block_header = 2;
+        }
 
 A ``BlockHeader`` contains ``raw_data`` and ``witness_signature``.
 
@@ -123,20 +123,20 @@ A message ``raw`` contains 6 parameters:
 
     .. code-block:: shell
 
-    message BlockHeader {
-        message raw {
-            int64 timestamp = 1;
-            bytes txTrieRoot = 2;
-            bytes parentHash = 3;
-            //bytes nonce = 5; 
-            //bytes difficulty = 6; 
-            uint64 number = 7;
-            uint64 witness_id = 8;
-            bytes witness_address = 9;
+        message BlockHeader {
+            message raw {
+                int64 timestamp = 1;
+                bytes txTrieRoot = 2;
+                bytes parentHash = 3;
+                //bytes nonce = 5; 
+                //bytes difficulty = 6; 
+                uint64 number = 7;
+                uint64 witness_id = 8;
+                bytes witness_address = 9;
+            }
+            raw raw_data = 1;
+            bytes witness_signature = 2;
         }
-         raw raw_data = 1;
-        bytes witness_signature = 2;
-    }
 
 message ``ChainInventory`` contains ``BlockId`` and ``remain_num``.
 
@@ -150,14 +150,16 @@ A ``BlockId`` contains 2 parameters:
 
 ``number`` : the height of block.
 
-    message ChainInventory {
-        message BlockId {
-            bytes hash = 1;
-            int64 number = 2;
+    .. code-block:: shell
+
+        message ChainInventory {
+            message BlockId {
+                bytes hash = 1;
+                int64 number = 2;
+            }
+            repeated BlockId ids = 1;
+            int64 remain_num = 2;
         }
-        repeated BlockId ids = 1;
-        int64 remain_num = 2;
-    }
 
 **Transaction contracts mainly includes account create contract, account update contract transfer contract, transfer asset contract, vote asset contract, vote witness contract, witness creation contract, witness update contract, asset issue contract, participate asset issue contract and deploy contract.**
 
@@ -167,11 +169,13 @@ An ``AccountCreateContract`` contains 3 parameters:
                                                                 `account_name`: the name for this account – e.g.”_Billsaccount_”.
 ``owner_address`` : the address of contract owner – e.g. *“0xu82h…7237”*.
 
-    message AccountCreateContract {
-        AccountType type = 1;
-        bytes account_name = 2;
-        bytes owner_address = 3;
-    }
+    .. code-block:: shell
+
+        message AccountCreateContract {
+            AccountType type = 1;
+            bytes account_name = 2;
+            bytes owner_address = 3;
+        }
 
 A ``AccountUpdateContract`` contains 2 paremeters:
 
@@ -179,12 +183,14 @@ A ``AccountUpdateContract`` contains 2 paremeters:
 
 ``owner_address`` : the address of contract owner – e.g. *“0xu82h…7237”*.
 
-    message AccountUpdateContract {
-        bytes account_name = 1;
-        bytes owner_address = 2;
-    }
+    .. code-block:: shell
 
-A `TransferContract` contains 3 parameters:
+        message AccountUpdateContract {
+            bytes account_name = 1;
+            bytes owner_address = 2;
+        }
+
+A ``TransferContract` contains 3 parameters:
     `amount`: the amount of TRX – e.g. _12534_.
     `to_address`: the receiver address – e.g. “_0xu82h…7237_”.
 `owner_address`: the address of contract owner – e.g. “_0xu82h…7237_”.
