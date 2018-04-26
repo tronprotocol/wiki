@@ -15,7 +15,7 @@ TRON Protobuf Protocol
 
 **A basic account is able to apply to be a validation node, which has serval parameters, including extra attributes, public key, URL, voting statistics, history performance, etc.**
 
-* There are three different ``Account types`` : ``Normal`` , ``AssetIssue`` , ``Contract`` .
+There are three different ``Account types`` : ``Normal`` , ``AssetIssue`` , ``Contract`` .
 
     .. code-block:: shell
 
@@ -25,9 +25,9 @@ TRON Protobuf Protocol
             Contract = 2;
         }
 
-* An ``Account`` contains 7 parameters:
+An ``Account`` contains 7 parameters:
     
-``account_name`` : the name for this account – e.g. *“_BillsAccount_”*.
+``account_name`` : the name for this account – e.g. *“BillsAccount”*.
 
 ``type`` : what type of this account is – e.g. *0* stands for type ``Normal`` .
 
@@ -44,7 +44,8 @@ TRON Protobuf Protocol
         message Account {
             message Vote {
                 bytes vote_address = 1;
-                int64 vote_count = 2;   }
+                int64 vote_count = 2; 
+            }
             bytes accout_name = 1;
             AccountType type = 2;
             bytes address = 3;
@@ -55,104 +56,133 @@ TRON Protobuf Protocol
         }
 
 A ``Witness`` contains 8 parameters:
-    `address`: the address of this witness – e.g. “_0xu82h…7237_”.
-`voteCount`: number of received votes on this witness – e.g. _234234_.
-    `pubKey`: the public key for this witness – e.g. “_0xu82h…7237_”.
-`url`: the url for this witness – e.g. “_https://www.noonetrust.com_”.
-    `totalProduced`: the number of blocks this witness produced – e.g. _2434_.
-    `totalMissed`: the number of blocks this witness missed – e.g. _7_.
-    `latestBlockNum`: the latest height of block – e.g. _4522_.
-    `isjobs`: a bool flag.
 
-    // Witness 
+``address`` : the address of this witness – e.g. *“0xu82h…7237”*.
+
+``voteCount`` : number of received votes on this witness – e.g. *234234*.
+
+``pubKey`` : the public key for this witness – e.g. “*0xu82h…7237*”.
+
+``url`` : the url for this witness – e.g. *“https://www.noonetrust.com”*.
+
+``totalProduced`` : the number of blocks this witness produced – e.g. *2434*.
+
+``totalMissed`` : the number of blocks this witness missed – e.g. *7*.
+
+``latestBlockNum`` : the latest height of block – e.g. *4522*.
+
+``isjobs`` : a bool flag.
+
+    .. code-block:: shell
+
     message Witness{
-    bytes address = 1;
-    int64 voteCount = 2;
-    bytes pubKey = 3;
-    string url = 4;
-    int64 totalProduced = 5;
-    int64 totalMissed = 6;
-    int64 latestBlockNum = 7;
-    bool isJobs = 9;
-}
-
-+	A block typically contains transaction data and a blockheader, which is a list of basic block information, including timestamp, signature, parent hash, root of Merkle tree and so on.
-
-    A block contains `transactions` and a `block_header`.
-    `transactions`: transaction data of this block.
-    `block_header`: one part of a block.
-
-    // block
-    message Block {
-    repeated Transaction transactions = 1;
-    BlockHeader block_header = 2;
-}
-
-A `BlockHeader` contains `raw_data` and `witness_signature`.
-    `raw_data`: a `raw` message.
-    `witness_signature`: signature for this block header from witness node.
-
-    A message `raw` contains 6 parameters:
-    `timestamp`: timestamp of this message – e.g. _14356325_.
-    `txTrieRoot`: the root of Merkle Tree in this block – e.g. “_7dacsa…3ed_.”
-     `parentHash`: the hash of last block – e.g. “_7dacsa…3ed_.”
-     `number`: the height of this block – e.g. _13534657_.
-    `witness_id`: the id of witness which packed this block – e.g. “_0xu82h…7237_”.
-`witness_address`: the adesss of the witness packed this block – e.g. “_0xu82h…7237_”.
-
-message BlockHeader {
-    message raw {
-        int64 timestamp = 1;
-        bytes txTrieRoot = 2;
-        bytes parentHash = 3;
-        //bytes nonce = 5; 
-        //bytes difficulty = 6; 
-        uint64 number = 7;
-        uint64 witness_id = 8;
-        bytes witness_address = 9;
+        bytes address = 1;
+        int64 voteCount = 2;
+        bytes pubKey = 3;
+        string url = 4;
+        int64 totalProduced = 5;
+        int64 totalMissed = 6;
+        int64 latestBlockNum = 7;
+        bool isJobs = 9;
     }
-    raw raw_data = 1;
-    bytes witness_signature = 2;
-}
 
-message `ChainInventory` contains `BlockId` and `remain_num`.
-    `BlockId`: the identification of block.
-    `remain_num`：the remain number of blocks in the synchronizing process.
+**A block typically contains transaction data and a blockheader, which is a list of basic block information, including timestamp, signature, parent hash, root of Merkle tree and so on**.
 
-    A `BlockId` contains 2 parameters:
-    `hash`: the hash of block.
-    `number`: the height of block.
+A block contains ``transactions`` and a ``block_header`` .
+
+``transactions`` : transaction data of this block.
+
+``block_header`` : one part of a block.
+
+    .. code-block:: shell
+
+    message Block {
+        repeated Transaction transactions = 1;
+        BlockHeader block_header = 2;
+    }
+
+A ``BlockHeader`` contains ``raw_data`` and ``witness_signature``.
+
+``raw_data`` : a ``raw`` message.
+
+``witness_signature`` : signature for this block header from witness node.
+
+A message ``raw`` contains 6 parameters:
+
+``timestamp`` : timestamp of this message – e.g. *14356325*.
+
+``txTrieRoot``: the root of Merkle Tree in this block – e.g. *“7dacsa…3ed.”*
+
+``parentHash`` : the hash of last block – e.g. *“7dacsa…3ed.”*
+
+``number`` : the height of this block – e.g. *135346578*.
+
+``witness_id`` : the id of witness which packed this block – e.g. *“0xu82h…7237”*.
+
+``witness_address`` : the adesss of the witness packed this block – e.g. *“0xu82h…7237”*.
+
+    .. code-block:: shell
+
+    message BlockHeader {
+        message raw {
+            int64 timestamp = 1;
+            bytes txTrieRoot = 2;
+            bytes parentHash = 3;
+            //bytes nonce = 5; 
+            //bytes difficulty = 6; 
+            uint64 number = 7;
+            uint64 witness_id = 8;
+            bytes witness_address = 9;
+        }
+         raw raw_data = 1;
+        bytes witness_signature = 2;
+    }
+
+message ``ChainInventory`` contains ``BlockId`` and ``remain_num``.
+
+``BlockId`` : the identification of block.
+
+``remain_num`` ：the remain number of blocks in the synchronizing process.
+
+A ``BlockId`` contains 2 parameters:
+
+``hash`` : the hash of block.
+
+``number`` : the height of block.
 
     message ChainInventory {
-    message BlockId {
-        bytes hash = 1;
-        int64 number = 2;
+        message BlockId {
+            bytes hash = 1;
+            int64 number = 2;
+        }
+        repeated BlockId ids = 1;
+        int64 remain_num = 2;
     }
-    repeated BlockId ids = 1;
-    int64 remain_num = 2;
-}
 
-+	Transaction contracts mainly includes account create contract, account update contract transfer contract, transfer asset contract, vote asset contract, vote witness contract, witness creation contract, witness update contract, asset issue contract, participate asset issue contract and deploy contract.
+**Transaction contracts mainly includes account create contract, account update contract transfer contract, transfer asset contract, vote asset contract, vote witness contract, witness creation contract, witness update contract, asset issue contract, participate asset issue contract and deploy contract.**
 
-    An `AccountCreateContract` contains 3 parameters:
-    `type`: What type this account is – e.g. _0_ stands for `Normal`.
+An ``AccountCreateContract`` contains 3 parameters:
+
+``type`` : What type this account is – e.g. *0* stands for ``Normal``.
                                                                 `account_name`: the name for this account – e.g.”_Billsaccount_”.
-`owner_address`: the address of contract owner – e.g. “_0xu82h…7237_”.
+``owner_address`` : the address of contract owner – e.g. *“0xu82h…7237”*.
 
-message AccountCreateContract {
-    AccountType type = 1;
-    bytes account_name = 2;
-    bytes owner_address = 3;
-}
+    message AccountCreateContract {
+        AccountType type = 1;
+        bytes account_name = 2;
+        bytes owner_address = 3;
+    }
 
-A `AccountUpdateContract` contains 2 paremeters:
-    `account_name`: the name for this account – e.g.”_Billsaccount_”.
-`owner_address`: the address of contract owner – e.g. “_0xu82h…7237_”.
+A ``AccountUpdateContract`` contains 2 paremeters:
 
-message AccountUpdateContract {
-    bytes account_name = 1;
-    bytes owner_address = 2;
-}
+``account_name`` : the name for this account – e.g. *”Billsaccount”*.
+
+``owner_address`` : the address of contract owner – e.g. *“0xu82h…7237”*.
+
+    message AccountUpdateContract {
+        bytes account_name = 1;
+        bytes owner_address = 2;
+    }
 
 A `TransferContract` contains 3 parameters:
     `amount`: the amount of TRX – e.g. _12534_.
