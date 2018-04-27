@@ -366,253 +366,331 @@ A ``DeployContract`` contains 2 parameters:
             bytes script = 2;
         }                       t
 
-+	Each transaction contains several TXInputs, TXOutputs and other related qualities.
-    Input, transaction and head block all require signature.
+**Each transaction contains several TXInputs, TXOutputs and other related qualities. Input, transaction and head block all require signature.**
 
-    message `Transaction` contains `raw_data` and `signature`.
-    `raw_data`: message `raw`.
-    `signature`: signatures form all input nodes.
+message ``Transaction`` contains ``raw_data`` and ``signature``.
 
-    `raw` contains 8 parameters:
-    `type`: the transaction type of `raw` message.
-    `vin`: input values.
-    `vout`: output values.
-    `expiration`: the expiration date of transaction – e.g._20170312_.
-    `data`: data.
-    `contract`: contracts in this transaction.
-    `scripts`:scripts in the transaction.
-    `timestamp`: timestamp of this raw data – e.g. _14356325_.
+``raw_data`` : message ``raw``.
 
-    message `Contract` contains `type` and `parameter`.
-    `type`: what type of the message contract.
-    `parameter`: It can be any form.
+``signature`` : signatures form all input nodes.
 
-    There are 8 different of contract types: `AccountCreateContract`, `TransferContract`, `TransferAssetContract`, `VoteAssetContract`, `VoteWitnessContract`,`WitnessCreateContract`, `AssetIssueContract` and `DeployContract`.
-    `TransactionType` have two types: `UtxoType` and `ContractType`.
+``raw`` contains 8 parameters:
 
-    message Transaction {
-    enum TranscationType {
-        UtxoType = 0;
-    ContractType = 1;
-}
-    message Contract {
-        enum ContractType {
-            AccountCreateContract = 0;
-        TransferContract = 1;
-        TransferAssetContract = 2;
-        VoteAssetContract = 3;
-        VoteWitnessContract = 4;
-        WitnessCreateContract = 5;
-        AssetIssueContract = 6;
-        DeployContract = 7;
-        WitnessUpdateContract = 8;
-        ParticipateAssetIssueContract = 9
-    }
-        ContractType type = 1;
-        google.protobuf.Any parameter = 2;
-    }
-    message raw {
-        TranscationType type = 2;
-        repeated TXInput vin = 5;
-        repeated TXOutput vout = 7;
-        int64 expiration = 8;
-        bytes data = 10;
-        repeated Contract contract = 11;
-        bytes scripts = 16;
-        int64 timestamp = 17;
-    }
-    raw raw_data = 1;
-    repeated bytes signature = 5;
-}
+``type`` : the transaction type of ``raw`` message.
 
-message `TXOutputs` contains `outputs`.
-    `outputs`: an array of `TXOutput`.
+``vin`` : input values.
 
-    message TXOutputs {
-    repeated TXOutput outputs = 1;
-}
+``vout`` : output values.
 
-message `TXOutput` contains `value` and `pubKeyHash`.
-    `value`: output value.
-    `pubKeyHash`: Hash of public key
+``expiration`` : the expiration date of transaction – e.g. *20170312*.
 
-message TXOutput {
-    int64 value = 1;
-    bytes pubKeyHash = 2;
-}
+``data`` : data.
 
-message `TXInput` contains `raw_data` and `signature`.
-    `raw_data`: a message `raw`.
-    `signature`: signature for this `TXInput`.
+``contract`` : contracts in this transaction.
 
-                                   message `raw` contains `txID`, `vout` and `pubKey`.
-    `txID`: transaction ID.
-    `vout`: value of last output.
-    `pubKey`: public key.
+``scripts`` :scripts in the transaction.
 
-    message TXInput {
-    message raw {
-        bytes txID = 1;
-        int64 vout = 2;
-        bytes pubKey = 3;
-    }
-    raw raw_data = 1;
-    bytes signature = 4;
-}
+``timestamp`` : timestamp of this raw data – e.g. *14356325*.
 
-message `Result` contains `fee` and `ret`.
-    `ret`: the state of transaction.
-    `fee`: the fee for transaction.
+message ``Contract`` contains ``type`` and ``parameter``.
 
-                           `code` is the enumerator that defines `ret` property and can be  2 types：`SUCCESS` and `FAILED`.
+``type`` : what type of the message contract.
 
-    message Result {
-    enum code {
-        SUCESS = 0;
-    FAILED = 1;
-}
-    int64 fee = 1;
-    code ret = 2;
-}
+``parameter`` : It can be any form.
 
-+	Inventory is mainly used to inform peer nodes the list of items.
+There are 8 different of contract types: ``AccountCreateContract``, ``TransferContract``, ``TransferAssetContract``, ``VoteAssetContract``, ``VoteWitnessContract``,``WitnessCreateContract``, ``AssetIssueContract`` and ``DeployContract``.``TransactionType`` have two types: ``UtxoType`` and ``ContractType``.
 
-    `Inventory` contains `type` and `ids`.
-    `type`: what type this `Inventory` is. – e.g. _0_ stands for `TRX`.
-                                                                     `ids`: ID of things in this `Inventory`.
+    .. code-block:: shell
 
-    Two `Inventory` types: `TRX` and `BLOCK`.
-    `TRX`: transaction.
-    `BLOCK`: block.
+        message Transaction {
+            enum TranscationType {
+                UtxoType = 0;
+                ContractType = 1;
+            }
+            message Contract {
+                enum ContractType {
+                    AccountCreateContract = 0;
+                    TransferContract = 1;
+                    TransferAssetContract = 2;
+                    VoteAssetContract = 3;
+                    VoteWitnessContract = 4;
+                    WitnessCreateContract = 5;
+                    AssetIssueContract = 6;
+                    DeployContract = 7;
+                    WitnessUpdateContract = 8;
+                    ParticipateAssetIssueContract = 9
+                }
+                ContractType type = 1;
+                google.protobuf.Any parameter = 2;
+            }
+            message raw {
+                TranscationType type = 2;
+                repeated TXInput vin = 5;
+                repeated TXOutput vout = 7;
+                int64 expiration = 8;
+                bytes data = 10;
+                repeated Contract contract = 11;
+                bytes scripts = 16;
+                int64 timestamp = 17;
+            }
+            raw raw_data = 1;
+            repeated bytes signature = 5;
+        }
 
-    // Inventory 
-    message Inventory {
-    enum InventoryType {
-        TRX = 0;
-    BLOCK = 1;
-}
-    InventoryType type = 1;
-    repeated bytes ids = 2;
-}
+message ``TXOutputs`` contains ``outputs``.
 
-message `Items` contains 4 parameters:
-    `type`: type of items – e.g. _1_ stands for `TRX`.
-                                                    `blocks`: blocks in `Items` if there is any.
-    `block_headers`: block headers if there is any.
-    `transactions`: transactions if there is any.
+``outputs`` : an array of ``TXOutput``.
 
-    `Items` have four types: `ERR`, `TRX`, `BLOCK` and `BLOCKHEADER`.
-    `ERR`: error.
-    `TRX`: transaction.
-    `BLOCK`: block.
-    `BLOCKHEADER`: block header.
+    .. code-block:: shell
+
+        message TXOutputs {
+            repeated TXOutput outputs = 1;
+        }
+
+message ``TXOutput`` contains ``value`` and ``pubKeyHash``.
+    ``value``: output value.
+    ``pubKeyHash`` : Hash of public key
+
+    .. code-block:: shell
+
+        message TXOutput {
+            int64 value = 1;
+            bytes pubKeyHash = 2;
+        }
+
+message ``TXInput`` contains ``raw_data`` and ``signature``.
+
+``raw_data`` : a message ``raw``.
+
+``signature``: signature for this ``TXInput``.
+
+message ``raw`` contains ``txID``, ``vout`` and ``pubKey``.
+
+``txID``: transaction ID.
+
+``vout``: value of last output.
+
+``pubKey``: public key.
+
+    .. code-block:: shell
+
+        message TXInput {
+            message raw {
+            bytes txID = 1;
+            int64 vout = 2;
+            bytes pubKey = 3;
+        }
+        raw raw_data = 1;
+        bytes signature = 4;
+        }
+
+message ``Result`` contains ``fee`` and ``ret``.
+
+``ret`` : the state of transaction.
+
+``fee`` : the fee for transaction.
+
+``code`` is the enumerator that defines ``ret`` property and can be  2 types：``SUCCESS`` and ``FAILED``.
+
+    .. code-block:: shell
+
+        message Result {
+            enum code {
+                SUCESS = 0;
+                FAILED = 1;
+            }
+            int64 fee = 1;
+            code ret = 2;
+        }
+
+**Inventory is mainly used to inform peer nodes the list of items.**
+
+``Inventory`` contains ``type`` and ``ids``.
+
+``type`` : what type this ``Inventory`` is. – e.g. *0* stands for ``TRX``.
+
+``ids`` : ID of things in this ``Inventory``.
+
+Two ``Inventory`` types: ``TRX`` and ``BLOCK``.
+
+``TRX`` : transaction.
+
+``BLOCK`` : block.
+
+    .. code-block:: shell
+
+        // Inventory 
+        message Inventory {
+            enum InventoryType {
+                TRX = 0;
+                BLOCK = 1;
+            }
+            InventoryType type = 1;
+            repeated bytes ids = 2;
+        }
+
+message ``Items`` contains 4 parameters:
+
+``type`` : type of items – e.g. *1* stands for ``TRX``.
+
+``blocks`` : blocks in ``Items`` if there is any.
+
+``block_headers`` : block headers if there is any.
+
+``transactions`` : transactions if there is any.
+
+``Items`` have four types: ``ERR``, ``TRX``, ``BLOCK`` and ``BLOCKHEADER``.
+
+``ERR`` : error.
+
+``TRX`` : transaction.
+
+``BLOCK`` : block.
+
+``BLOCKHEADER`` : block header.
+
+    .. code-block:: shell
 
     message Items {
-    enum ItemType {
-        ERR = 0;
-    TRX = 1;
-    BLOCK = 2;
-    BLOCKHEADER = 3;
-}
-    ItemType type = 1;
-    repeated Block blocks = 2;
-    repeated BlockHeader
-    block_headers = 3;
-    repeated Transaction transactions = 4;
-}
-
-`InventoryItems` contains `type` and `items`.
-    `type`: what type of inventory.
-    `items`: the list of inventory.
-
-    message InventoryItems {
-    int32 type = 1;
-    repeated bytes items = 2;
-}
-
-message `BlockInventory` contains `type`.
-    `type`: what type of inventory.
-
-    There are 3 types:`SYNC`, `ADVTISE`, `FETCH`.
-
-    // Inventory
-    message BlockInventory {
-    enum Type {
-        SYNC = 0;
-    ADVTISE = 1;
-    FETCH = 2;
-}
-
-    message `BlockId` contains `ids` and `type`.
-        `ids`: the identification of block.
-        `type`: what type of the block.
-
-        `ids` contains 2 parameters:
-        `hash`: the hash of block.
-        `number`: the height of block.
-
-        message BlockId {
-        bytes hash = 1;
-        int64 number = 2;
+        enum ItemType {
+            ERR = 0;
+            TRX = 1;
+            BLOCK = 2;
+            BLOCKHEADER = 3;
+        }
+        ItemType type = 1;
+        repeated Block blocks = 2;
+        repeated BlockHeader
+        block_headers = 3;
+        repeated Transaction transactions = 4;
     }
-    repeated BlockId ids = 1;
-    Type type = 2;
-}
 
-`ReasonCode`: the type of reason.
+``InventoryItems`` contains ``type`` and ``items``.
 
-    `ReasonCode` contains 15 types of disconnect reasons:
-    `REQUESTED`
-        `TCP_ERROR`
-        `BAD_PROTOCOL`
-        `USELESS_PEER`
-        `TOO_MANY_PEERS`
-        `DUPLICATE_PEER`
-        `INCOMPATIBLE_PROTOCOL`
-        `NULL_IDENTITY`
-        `PEER_QUITING`
-        `UNEXPECTED_IDENTITY`
-        `LOCAL_IDENTITY`
-        `PING_TIMEOUT`
-        `USER_REASON`
-        `RESET`
-        `UNKNOWN`
+``type`` : what type of inventory.
 
-enum ReasonCode {
-    REQUESTED = 0;
-TCP_ERROR = 1;
-BAD_PROTOCOL = 2;
-USELESS_PEER = 3;
-TOO_MANY_PEERS = 4;
-DUPLICATE_PEER = 5;
-INCOMPATIBLE_PROTOCOL = 6;
-NULL_IDENTITY = 7;
-PEER_QUITING = 8;
-UNEXPECTED_IDENTITY = 9;
-LOCAL_IDENTITY = 10;
-PING_TIMEOUT = 11;
-USER_REASON = 12;
-RESET = 16;
-UNKNOWN = 255;
-}
+``items`` : the list of inventory.
 
-message`DisconnectMessage` contains `reason`.
-    `DisconnectMessage`: the message when disconnection occurs.
-    `reason`: the reason for disconnecting.
+    .. code-block:: shell
 
-                                 message`HelloMessage` contains 2 parameters:
-    `HelloMessage`: the message for building connection.
-    `from`: the nodes that request for building connection.
-    `version`: the version when connection is built.
+        message InventoryItems {
+            int32 type = 1;
+            repeated bytes items = 2;
+        }
+
+message ``BlockInventory`` contains ``type``.
+
+``type`` : what type of inventory.
+
+There are 3 types:``SYNC``, ``ADVTISE``, ``FETCH``.
+
+    .. code-block:: shell
+
+        // Inventory
+        message BlockInventory {
+            enum Type {
+                SYNC = 0;
+                ADVTISE = 1;
+                FETCH = 2;
+            }
+
+message ``BlockId`` contains ``ids`` and ``type``.
+
+``ids`` : the identification of block.
+
+``type`` : what type of the block.
+
+``ids`` contains 2 parameters:
+
+``hash`` : the hash of block.
+
+``number`` : the height of block.
+
+     .. code-block:: shell
+
+            message BlockId {
+                bytes hash = 1;
+                int64 number = 2;
+             }
+             repeated BlockId ids = 1;
+             Type type = 2;
+            }
+
+``ReasonCode`` : the type of reason.
+
+``ReasonCode`` contains 15 types of disconnect reasons:
+
+``REQUESTED``
+
+``TCP_ERROR``
+
+``BAD_PROTOCOL``
+
+``USELESS_PEER``
+
+``TOO_MANY_PEERS``
+
+``DUPLICATE_PEER``
+
+``INCOMPATIBLE_PROTOCOL``
+
+``NULL_IDENTITY``
+
+``PEER_QUITING``
+
+``UNEXPECTED_IDENTITY``
+
+``LOCAL_IDENTITY``
+
+``PING_TIMEOUT``
+
+``USER_REASON``
+
+``RESET``
+
+``UNKNOWN``
+
+    .. code-block:: shell
+
+        enum ReasonCode {
+            REQUESTED = 0;
+            TCP_ERROR = 1;
+            BAD_PROTOCOL = 2;
+            USELESS_PEER = 3;
+            TOO_MANY_PEERS = 4;
+            DUPLICATE_PEER = 5;
+            INCOMPATIBLE_PROTOCOL = 6;
+            NULL_IDENTITY = 7;
+            PEER_QUITING = 8;
+            UNEXPECTED_IDENTITY = 9;
+            LOCAL_IDENTITY = 10;
+            PING_TIMEOUT = 11;
+            USER_REASON = 12;
+            RESET = 16;
+            UNKNOWN = 255;
+        }
 
 
+message``DisconnectMessage`` contains ``reason``.
 
-+	Wallet Service RPC and blockchain explorer
+``DisconnectMessage`` : the message when disconnection occurs.
 
-    `Wallet` service contains several RPCs.
-    __`GetBalance`__ :
-    Return balance of an `Account`.
-    __`CreateTransaction`__ ：
+``reason`` : the reason for disconnecting.
+
+message``HelloMessage`` contains 2 parameters:
+
+``HelloMessage`` : the message for building connection.
+
+``from`` : the nodes that request for building connection.
+
+``version`` : the version when connection is built.
+
++ Wallet Service RPC and blockchain explorer
+
+    ``Wallet`` service contains several RPCs.
+    **``GetBalance``** :
+    Return balance of an ``Account``.
+    **``CreateTransaction``**：
     Create a transaction by giving a `TransferContract`. A Transaction containing a transaction creation will be returned.
     __`BroadcastTransaction`__ :
     Broadcast a `Transaction`. A `Return` will be returned indicating if broadcast is success of not.
