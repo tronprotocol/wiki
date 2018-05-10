@@ -225,9 +225,9 @@ Running a Private Testnet
     :height: 348px
     :align: center
 
-*In the ``Program arguments`` option, fill in ``--witness``:
+*In the ``Program arguments`` option, fill in ``--witness``:*
 
-Then, run ``FullNode::main()`` again.*
+*Then, run ``FullNode::main()`` again.*
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Quick_Start/set_witness_param.jpeg
 
