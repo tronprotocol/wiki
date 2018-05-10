@@ -186,7 +186,8 @@ Running a Private Testnet
     java -jar java-tron.jar -p 650950B193DDDDB35B6E48912DD28F7AB0E7140C1BFDEFD493348F02295BD812 --witness -c /data/java-tron/config.conf
 
 - In the Terminal
-in the config.conf localwitness add yourself private key
+
+    in the config.conf localwitness add yourself private key
 
 .. code-block:: shell
 
@@ -280,16 +281,11 @@ in the config.conf localwitness add yourself private key
     20:39:50.003 INFO [o.t.c.s.WitnessService] It's not my turn
     20:39:50.003 INFO [o.t.c.s.WitnessService] Sleep : 4997 ms,next time:2018-03-22T20:39:55.000+08:00
 
-```
+- In IntelliJ IDEA
 
-</details>
+**Open the configuration panel:**
 
-* In IntelliJ IDEA
 
-<details>
-<summary>
-
-    Open the configuration panel:
 
     </summary>
 
