@@ -192,9 +192,9 @@ in the config.conf localwitness add yourself private key
 
     ./gradlew run -Pwitness=true
 
-[Show Output]_
+|Show Output|
 
-.. [Show Output]
+.. |Show Output| text ::
 
     > ./gradlew run -Pwitness=true
 
