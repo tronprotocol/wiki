@@ -47,19 +47,19 @@ The following steps serve as an introduction on how to create, send and receive 
 
 * It is very easy to create your own tokens in TRON’s ecosystem. With the parameters of token name, the number of tokens in circulation, token description, address of personal website, exchange rate to TRX, and participation, you will be able to issue your own tokens.
 
-    **Token name**
+**Token name**
 
-    **Total Supply**: Total amount of tokens which will be in circulation.
+**Total Supply**: Total amount of tokens which will be in circulation.
 
-    **Token description**
+**Token description**
 
-    **Address of personal website**: A website where users can find more information about the token.
+**Address of personal website**: A website where users can find more information about the token.
 
-    **Exchange rate to TRX**: Specify the price of a single token by defining how many tokens a participant will receive for every TRX they spend.
+**Exchange rate to TRX**: Specify the price of a single token by defining how many tokens a participant will receive for every TRX they spend.
 
-    **Participation**: Specify the participation period in which tokens will be issued. During the participation period users can exchange TRX for tokens.
+**Participation**: Specify the participation period in which tokens will be issued. During the participation period users can exchange TRX for tokens.
 
-*  You will be charged 1024 TRX for your creation of tokens.
+                                                                                                                                               *  You will be charged 1024 TRX for your creation of tokens.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Create1.png
     :width: 841px

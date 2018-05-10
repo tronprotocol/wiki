@@ -6,15 +6,12 @@ Tron Odyssey
     :hidden:
 
     Introduction
-    Quick_Start
-    Super_Representative
-    Token_Creation
     TRON_Protocol
-    account_management
-    tronix
-    the_tron_network
-    validated_witness_packaging
-    asset_issue_and_trade
+    Blockchain_Explorer_and_Web_Wallet
+    Wallet_Client
+    TRON_Event
+    Frequently_Asked_Questions
+
 
 TRON
 --------------

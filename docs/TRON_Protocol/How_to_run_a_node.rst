@@ -1,6 +1,6 @@
-===========
-Quick Start
-===========
+=================
+How to run a node
+=================
 
 .. contents:: Table of contents                                                           
   :depth: 1
