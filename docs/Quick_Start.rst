@@ -230,7 +230,6 @@ Running a Private Testnet
 *Then, run ``FullNode::main()`` again.*
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Quick_Start/set_witness_param.jpeg
-
     :width: 842px
     :height: 623px
     :align: center
