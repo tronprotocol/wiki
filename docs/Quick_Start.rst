@@ -147,7 +147,7 @@ Running a Private Testnet
 
     ./gradlew run
 
-— Use the executable JAR
+- Use the executable JAR
 
     cd build/libs
 
@@ -192,19 +192,18 @@ in the config.conf localwitness add yourself private key
 
     ./gradlew run -Pwitness=true
 
-.. code-block:: shell
+[Show Output]_
 
-<details>
-<summary>Show Output</summary>
+.. [Show Output]
 
-> ./gradlew run -Pwitness=true
+    > ./gradlew run -Pwitness=true
 
-> Task :generateProto UP-TO-DATE
-Using TaskInputs.file() with something that doesn't resolve to a File object has been deprecated and is scheduled to be removed in Gradle 5.0. Use TaskInputs.files() instead.
+    > Task :generateProto UP-TO-DATE
+    Using TaskInputs.file() with something that doesn't resolve to a File object has been deprecated and is scheduled to be removed in Gradle 5.0. Use TaskInputs.files() instead.
 
-> Task :run 
-20:39:22.749 INFO [o.t.c.c.a.Args] private.key = 63e62a71ed39e30bac7223097a173924aad5855959de517ff2987b0e0ec89f1a
-20:39:22.816 WARN [o.t.c.c.a.Args] localwitness size must be one, get the first one
+    > Task :run
+    20:39:22.749 INFO [o.t.c.c.a.Args] private.key = 63e62a71ed39e30bac7223097a173924aad5855959de517ff2987b0e0ec89f1a
+    20:39:22.816 WARN [o.t.c.c.a.Args] localwitness size must be one, get the first one
 20:39:22.832 INFO [o.t.p.FullNode] Here is the help message.output-directory/
 三月 22, 2018 8:39:23 下午 org.tron.core.services.RpcApiService start
 信息: Server started, listening on 50051
