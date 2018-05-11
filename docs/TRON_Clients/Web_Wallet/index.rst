@@ -1,6 +1,6 @@
-##################################
-Blockchain Explorer and Web Wallet
-##################################
+##########
+Web_Wallet
+##########
 
 Quick Start
 ================================================================================
@@ -42,9 +42,9 @@ Details
 .. toctree::
     :hidden:
 
-    What_is_a_Super_Representative
-    How_to_run_a_Super_Representative
-    How_to_vote
-    How_to_create_token
+    What_is_a_Super_Representative.rst
+    How_to_run_a_Super_Representative.rst
+    How_to_vote.rst
+    How_to_create_token.rst
 
 
