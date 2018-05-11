@@ -9,8 +9,6 @@ Quick Start
 How to Build
 ------------
 
-**Current Testnet p2p version: 32（resources/config.conf:node.p2p.verson = 32）**
-
 **1, Getting the code**
 
 Clone/Download the JAVA-TRON Implementation from Github
@@ -58,27 +56,13 @@ Clone/Download the JAVA-TRON Implementation from Github
 
 **6,  Build in IntelliJ IDEA (community version is enough)**
 
-Import the JAVA-TRON Project into IDEA
+* Start IntelliJ. Select ``File`` -> ``Open`` , then locate to the java-tron folder which you have git cloned to your local drive. Then click ``Open`` button on the right bottom.
 
-* Select 'File' and navigate to the directory of the cloned (or downloaded) JAVA-TRON git project.
-
-    ``File`` -> ``New`` -> ``Project from existing sources...``;
-
-* Highlight build.gradle and select 'OK'.
-    
-    ``java-tron/build.gradle``;
-
-* Check the box that says "Use auto-import".
-
-* Select the radio button that says "Use gradle wrapper task configuration".
-
-* Ensure that "Gradle JVM" is set to an instance of JDK 1.8.
-
-* Select "OK" to import JAVA-TRON into IDEA.
+* Check on ``Use auto-import`` on the ``Import Project from Gradle`` dialog. Select JDK 1.8 in the ``Gradle JVM`` option. Then click ``OK``.
 
 * IntelliJ will open the project and start gradle syncing, which will take several minutes, depending on your network connection and your IntelliJ configuration
 
-* After the syncing finished, select Gradle -> Tasks -> build, and then double click build option.
+* After the syncing finished, select ``Gradle``  -> ``Tasks`` -> ``build`` , and then double click ``build`` option.
 
 Running a Private Testnet
 -------------------------
@@ -103,7 +87,7 @@ Running a Private Testnet
 
     1. After the building finishes, locate ``FullNode`` in the project structure view panel, which is on the path ``java-tron/src/main/java/org.tron/program/FullNode``.
 
-    2. Select ``FullNode``, right click on it, and select ``Run 'FullNode.main()``, then ``FullNod`` starts running.
+    2. Select ``FullNode``, right click on it, and select ``Run FullNode.main()``, then ``FullNode`` starts running.
 
 **Running a Witness Node**
 
@@ -127,9 +111,9 @@ Show Output
 
     1. Open the configuration panel:
 
-    2. In the ``Program arguments``option, fill in ``--witness``:
+    2. In the ``Program arguments`` option, fill in ``--witness``:
 
-     Then, run ``FullNode::main()`` again.
+    3. Then, run ``FullNode::main()`` again.
 
 **Running multi-nodes**
 
@@ -137,12 +121,34 @@ To run TRON on more than one node, you need to specify several seed nodes ``IPs 
 
 Running a Public Testnet
 ---------------------------------------------------------
+* Ensure that the version number is consistent with the version number of the test network. If it is not consistent, Please modify the node.p2p.version in the config.conf file, and delete the out-directory directory (if it exists)
 
 **Running a Full Node**
 
+* Use the executable JAR(Recommend the way)
+
+```bash
+cd build/libs
+java -jar java-tron.jar
+```
+* In the Terminal
+
+```bash
+./gradlew run
+```
+
 It is almost the same as that does in the private testnet, except that the IPs in the ``config.conf`` are officially declared by TRON.
 
-**Running a Witness Node**
+**Running a Super Representative Node**
+* Use the executable JAR(Recommend the way)
+
+```bash
+cd build/libs
+java -jar java-tron.jar -p yourself private key --witness -c yourself config.conf
+Example:
+java -jar java-tron.jar -p 650950B193DDDDB35B6E48912DD28F7AB0E7140C1BFDEFD493348F02295BD812 --witness -c /data/java-tron/config.conf
+
+```
 
 It is almost the same as that does in the private testnet, except that the IPs in the ``config.conf`` are officially declared by TRON.
 
