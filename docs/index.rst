@@ -4,8 +4,9 @@ Tron Odyssey
 .. toctree::
    :maxdepth:4
 
-    Introduction/index.rst
-    TRON_Clients/index.rst
+    Introduction.rst
+    Command_Line_Interface_Walle.rst
+    Web_Wallet.rst
     Account_Management.rst
     TRON_Event.rst
     Frequently_Asked_Questions.rst
