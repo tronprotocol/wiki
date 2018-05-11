@@ -16,19 +16,20 @@ The following steps serve as an introduction on how to become a Super Representa
 
     https://tronscan.org
 
-2, Tick off the follow three items, then click the button “Create Account”.
+2, Tick off the follow two items, then click the button “Create Account”.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/create_account.png
-    :scale: 50%
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/web_wallet/create_an_account的副本.jpg
+    :width: 842
+    :height: 1122
     :align: center
 
 3, A certain sum of TRX is required in your new account.
 
-* 10000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
+* 1000,0000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/request_for_testing.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/web_wallet/request_for_testing的副本.jpg
     :width: 842px
-    :height: 486px
+    :height: 623px
     :align: center
 
 4, You can get started to apply to be a delegate.
@@ -42,9 +43,9 @@ The following steps serve as an introduction on how to become a Super Representa
 
 5, Provide your personal website address. The type of address includes but is not limited to: website, blog, social media account, etc.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/personal_address.png
-    :height: 466px
-    :width: 646px
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/web_wallet/personal_address的副本.jpg
+    :height: 830px
+    :width: 842px
     :align: center
 
 6, Vote for delegate.

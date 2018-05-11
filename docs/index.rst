@@ -6,8 +6,8 @@ Tron Odyssey
     :hidden:
 
     Introduction
-    TRON_Protocol
-    Blockchain_Explorer_and_Web_Wallet
+    TRON_Client
+    Account_Management
     Wallet_Client
     TRON_Event
     Frequently_Asked_Questions

@@ -29,7 +29,7 @@ Log on to gitter with your github account to participate in Tron’s discussions
 
     `wallet-web <https://github.com/tronprotocol/wallet-web>`_ – blockchain explorer and web wallet developed by community.
 
-    `wallet-cli <https://github.com/tronprotocol/wallet-cli>`_  – the official blockchain explorer and web wallet.
+    `wallet-cli <https://github.com/tronprotocol/wallet-cli>`_  – the command line interface wallet.
 
 TRON Forum
 ==========
