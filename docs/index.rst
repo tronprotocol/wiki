@@ -1,19 +1,17 @@
 =============
-Tron Protocol
+Tron Odyssey
 =============
 
 .. toctree::
     :hidden:
 
     Introduction
-    Quick_Start
-    Super_Representative
-    Token_Creation
-    account_management
-    tronix
-    the_tron_network
-    validated_witness_packaging
-    asset_issue_and_trade
+    TRON_Client
+    Account_Management
+    Wallet_Client
+    TRON_Event
+    Frequently_Asked_Questions
+
 
 TRON
 --------------

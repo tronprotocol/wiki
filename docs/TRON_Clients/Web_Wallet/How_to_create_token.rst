@@ -21,19 +21,20 @@ The following steps serve as an introduction on how to create, send and receive 
 
     https://tronscan.org
 
-2, Tick off the follow three items, then click the button “Create Account”.
+2, Tick off the follow two items, then click the button “Create Account”.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/create_account.png
-    :scale: 50%
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/web_wallet/create_an_account的副本.jpg
+    :width: 842
+    :height: 1122
     :align: center
 
 3, A certain sum of TRX is required in your new account.
 
-* 10000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
+* 1000,0000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/request_for_testing.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/web_wallet/request_for_testing的副本.jpg
     :width: 842px
-    :height: 371px
+    :height: 623px
     :align: center
 
 4, To create token, please click “Tokens” to enter the following webpage.
@@ -47,19 +48,19 @@ The following steps serve as an introduction on how to create, send and receive 
 
 * It is very easy to create your own tokens in TRON’s ecosystem. With the parameters of token name, the number of tokens in circulation, token description, address of personal website, exchange rate to TRX, and participation, you will be able to issue your own tokens.
 
-    **Token name**
+**Token name**
 
-    **Total Supply**: Total amount of tokens which will be in circulation.
+**Total Supply**: Total amount of tokens which will be in circulation.
 
-    **Token description**
+**Token description**
 
-    **Address of personal website**: A website where users can find more information about the token.
+**Address of personal website**: A website where users can find more information about the token.
 
-    **Exchange rate to TRX**: Specify the price of a single token by defining how many tokens a participant will receive for every TRX they spend.
+**Exchange rate to TRX**: Specify the price of a single token by defining how many tokens a participant will receive for every TRX they spend.
 
-    **Participation**: Specify the participation period in which tokens will be issued. During the participation period users can exchange TRX for tokens.
+**Participation**: Specify the participation period in which tokens will be issued. During the participation period users can exchange TRX for tokens.
 
-*  You will be charged 1024 TRX for your creation of tokens.
+                                                                                                                                               *  You will be charged 1024 TRX for your creation of tokens.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Create1.png
     :width: 841px
