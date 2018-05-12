@@ -525,6 +525,92 @@ Then SolidityNode can be switched on：
 Test Network
 ------------
 
+Odyssey-v1.0 for test net
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Odyssey-v1.0.1 for test net
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* improvement
+
+1. more stable version.
+
+Odyssey-v1.0.2 for test net
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* improvement
+
+1. the block chain
+
+2. tdp support.
+
+3. web wallet && explorer support..
+
+Odyssey-v1.0.3
+~~~~~~~~~~~~~~
+
+* feature
+
+1. transaction executed twice in some condition.
+
+2. test case break down cause the memory not release.
+
+3. test other bugs.
+
+* improvement
+
+1. performance improvement.
+
+Odyssey-v1.0.4
+~~~~~~~~~~~~~~
+
+* feature
+
+1. incorrect disconnection during sync block.
+
+2. a minor error when process fork chain.
+
+3. the inconsistent of witness.
+
+4, other small bugs.
+
+* improvement
+
+1. add more exception.
+
+2. remove the head in manager.
+
+3. other improve.
+
+* Other:
+
+p2p version -> 51 for testnet
+
+Odyssey-v1.0.5
+~~~~~~~~~~~~~~
+
+* improvement
+
+1. add database index module for block explorer
+
+2. redesign the block id, merge block num in big endian
+
+3. improve the performance of database.
+
+4. add tapos support.
+
+* feature
+
+1. fix cache transaction exception.
+
+2. fix dup message .
+
+3. fix witness disorder exception.
+
+* other
+
+1. support the grpc_web_proxy.
+
 Odyssey-v1.0.6
 ~~~~~~~~~~~~~~
 

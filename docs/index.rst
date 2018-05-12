@@ -17,7 +17,7 @@ Tron Odyssey
 
 
 
-TRON: The Internet as it was meant to be
+TRON: The Internet as It Was Meant to Be
 --------------
 
 .. figure:: /img/500-tron.jpg
