@@ -103,8 +103,8 @@ Token migration:
 
 Users vote for SR candidates using wallets. SRs are responsible for transaction packaging and block generation.
 
-Developer
-~~~~~~~~~
+Developer Guide
+~~~~~~~~~~~~~~~
 
 - Please note that you have to finish development before May 31st (GMT+8).
 - Please note that the mainnet testing will be from June 1 to June 24 (GMT+8) and please participate.
@@ -131,8 +131,8 @@ On June 15th (GMT+8), the TRON team will review and select the official recommen
 
 TRX users vote for SR candidates using wallets.
 
-Exchange
-~~~~~~~~
+Exchange Guide
+~~~~~~~~~~~~~~
 
 - Please take note of token migration order.
 - Please note that TRX withdrawals will be suspended from June 21st to June 24th (GMT+8). Both TRX deposits and withdrawals on exchanges will be suspended on June 25th (GMT+8). Deposits and withdrawals of TRX will resume on June 26th.
@@ -169,8 +169,8 @@ Permanent token-exchange counter designated by TRON will retain the deposit chan
 
 **Note**: Exchanges don’t need snapshots and don’t need to suspend trading of TRX.
 
-SR
-~~~
+SR Guide
+~~~~~~~~
 
 - Please pay deposit before May 31st (GMT+8).
 - Please take part in the mainnet test voting and run test nodes from June 1st to June 24th (GMT+8).
@@ -204,8 +204,8 @@ Deposit will be returned to designated Tron mainnet addresses at midnight June 2
 
 27 candidates who receive most votes will become official SRs. They are eligible to generate blocks and get rewards in TRX.
 
-Users
-~~~~~
+Users Guide
+~~~~~~~~~~~
 
 - Please keep an eye on token migration.
 - Please note that the test voting will be from June 1 to June 24 (GMT+8).
@@ -234,7 +234,7 @@ From June 26th (GMT+8), deposits and withdrawals of TRX will resume. Users need 
 
 **Note**: User's token migration is not perceptible. Please deposit TRX to an exchange before June 25th (GMT+8), and TRX's normal trading will not be affected.
 
-Transition Manual for Exchanges and TRX
+Transition manual for exchanges and TRX
 ---------------------------------------
 
 It is suggested that exchanges deploy a Full Node and a Solidity Node in Tron blockchain for improved security. The Full Node will synchronize all data in the blockain, while the Solidity Node will only synchronize data from irreversible blocks already confirmed. Transaction broadcasting can be conducted through the Full Node. With the Solidity Node, users can check their account balance.
