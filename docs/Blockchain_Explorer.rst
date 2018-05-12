@@ -25,7 +25,7 @@ The following steps serve as an introduction on how to become a Super Representa
 
 2, Tick off the follow two items, then click the button “Create Account”.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/web_wallet/create_an_account的副本.jpg
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/create_an_account的副本.jpg
     :width: 842
     :height: 1122
     :align: center
@@ -34,7 +34,7 @@ The following steps serve as an introduction on how to become a Super Representa
 
 * 1000,0000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/web_wallet/request_for_testing的副本.jpg
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/request_for_testing的副本.jpgg
     :width: 842px
     :height: 623px
     :align: center
@@ -50,7 +50,7 @@ The following steps serve as an introduction on how to become a Super Representa
 
 5, Provide your personal website address. The type of address includes but is not limited to: website, blog, social media account, etc.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/web_wallet/personal_address的副本.jpg
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/personal_address的副本.jpg
     :height: 830px
     :width: 842px
     :align: center
@@ -94,7 +94,7 @@ The following steps serve as an introduction on how to vote for a Super Represen
 
 2, Tick off the follow two items, then click the button “Create Account”.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/web_wallet/create_an_account的副本.jpg
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/create_an_account的副本.jpg
     :width: 842
     :height: 1122
     :align: center
@@ -103,7 +103,7 @@ The following steps serve as an introduction on how to vote for a Super Represen
 
 * 1000,0000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/web_wallet/request_for_testing的副本.jpg
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/request_for_testing的副本.jpg
     :width: 842px
     :height: 623px
     :align: center
@@ -150,7 +150,7 @@ The following steps serve as an introduction on how to create, send and receive 
 
 2, Tick off the follow two items, then click the button “Create Account”.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/web_wallet/create_an_account的副本.jpg
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/create_an_account的副本.jpg
     :width: 842
     :height: 1122
     :align: center
@@ -159,7 +159,7 @@ The following steps serve as an introduction on how to create, send and receive 
 
 * 1000,0000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/web_wallet/request_for_testing的副本.jpg
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/request_for_testing的副本.jpg
     :width: 842px
     :height: 623px
     :align: center
