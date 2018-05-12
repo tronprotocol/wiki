@@ -1,27 +1,29 @@
-Tron Odyssey
+=============
+Tron Protocol
 =============
 
 .. toctree::
-   :maxdepth:4
+    :hidden:
 
-    Introduction.rst
-    Command_Line_Interface_Walle.rst
-    Web_Wallet.rst
-    Account_Management.rst
-    TRON_Event.rst
-    Frequently_Asked_Questions.rst
+    Introduction
+    Web_Wallet
+    Command_Line_Interface_Wallet
+    Account_Management
+    The_TRON_Network
+    TRON_Event
+    Frequently_Asked_Questions
 
 
-TRON: The Internet as it was meant to be
------------------------------------------
 
-TRON is an ambitious project dedicated to building the infrastructure for a truly decentralized Internet.
+TRON
+--------------
 
-The Tron Protocol, one of the largest blockchain based operating systems in the world, offers scalable, robust and high-throughput support that underlies all the decentralized applications in the TRON ecosystem.
+.. figure:: /img/500-tron.jpg
+    :align: right
 
-TRON enables large-scale development and engagement. With over ten thousand transactions per second, high concurrency, low latency and massive data transmission, TRON is ideal for building decentralized entertainment applications. Free features and incentive systems allow developers to create premium app experiences for users.
+*TRON is a blockchain-based open source decentralized content entertainment protocol.*
 
-TRON Protocol and the TVM allow anyone to develop DAPPs for themselves or their communities, with smart contracts making decentralized crowdfunding and token issuance easier than ever.
+It is committed to the use of blockchain and distributed storage technology to build a worldwide free content entertainment system that allows each user the freedom to publish, store, have data, and through decentralized form of autonomy,
 
-Tron DAPP projects already include Peiwo, Uplive, game.com, Kitty live and Mico,  with 100M+ active users from more than 100 countries and regions around the world.
+To digital asset distribution, circulation, trading methods to determine the distribution of content, subscribe, push, enable content creators, the formation of decentralized content entertainment ecology.
 

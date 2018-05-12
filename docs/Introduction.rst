@@ -1,6 +1,13 @@
-#############
+============
+Introduction
+============
+
+.. contents:: Table of contents
+    :depth: 1
+    :local:
+
 What_is_TRON?
-#############
+-------------
 
 TRON operates as a decentralized blockchain platform for supporting smart contract and high throughput. TRON team sees it as a future operation system which allow developers deploying their own decentralized applications.
 
@@ -9,22 +16,16 @@ Rather than simply stress "lacking in characteristics”, TRON mainly focus on u
 
 * TRON Operation Model
 
-========================================
 TRON：The Internet as it was meant to be
-========================================
+----------------------------------------
 
 TRON is an ambitious project dedicated to building the infrastructure for a truly decentralized Internet. The Tron Protocol, one of the largest blockchain based operating systems in the world, offers scalable, high-availability and high-throughput support that underlies all the decentralized applications in the TRON ecosystem. TRON enables large-scale development and engagement. With over ten thousand transactions per second, high concurrency, low latency and massive data transmission, TRON is ideal for building decentralized entertainment applications. Free features and incentive systems allow developers to create premium app experiences for users. TRON Protocol and the TVM allow anyone to develop DAPPs for themselves or their communities, with smart contracts making decentralized crowdfunding and token issuance easier than ever. Tron DAPP projects already include Peiwo, Uplive, game.com, Kitty live and Mico,  with 100M+ active users from more than 100 countries and regions around the world.
 
-====================
 TRON Virtual Machine
-====================
-
-################
-TRON_Development
-################
+--------------------
 
 TRON Milestone
-==============
+---------------
 
 - 2017      Early-Stage
 
@@ -36,30 +37,29 @@ TRON Milestone
 
 - 2018.6    ERC20 Token--> Migration completed
 
-#########
 Community
-#########
+---------
 
 Tron community always finds guidance in its principles of sharing, equity, freedom and mutual support. The communal space of Tron community provides all supporters and participants with more accessible and comprehensive resources and information on the projects of Tron. No participant will come across any restriction during resource acquisition or communicative exchanges, as long as they conform to community regulations and be actively engaged in community construction and maintenance.
 
 Reddit
-======
+~~~~~~
 
 To its host of supporters and developers converging here,TRON `reddit <https://www.reddit.com/r/Tronix/>`_ is the dream venue for brainstorming and the exchange of ideas. With a firm belief in the freedom of speech, Tron community as a non-profit community accommodates all perspectives, with the aim for all participants to achieve progress through sharing.
 
-    Current Reddit threads:
+Current Reddit threads:
 
     `/r/TRXTrading <https://www.reddit.com/r/TRXTrading/>`_  – TRON trading, price and market.
 
     `/r/tronsupport <https://www.reddit.com/r/tronsupport>`_ – Support for any TRON-related questions.
 
 Slack
-=====
+~~~~~
 
 Keeping in touch with outstanding contributors on Github, the tech team of Tron communicates with and finds itself deeply inspired by developers on `slack <https://tronfoundation.slack.com/messages/C6DKKSU8G/details>`_ . The platform makes it easier for developers to discuss and solve technical problems together with the tech team of Tron in a timely fashion. Join us on Slack at our invitation or by your own request. We also welcome developers making a remarkable contribution to be a part of the Tron team.
 
 Gitter Rooms
-============
+~~~~~~~~~~~~
 
 Log on to gitter with your github account to participate in Tron’s discussions. Accessible Gitter channels revolve around the topic of a certain database. Please select a suitable channel and topic and maintain the relevance of your posts.
 
@@ -70,18 +70,17 @@ Log on to gitter with your github account to participate in Tron’s discussions
     `wallet-cli <https://github.com/tronprotocol/wallet-cli>`_  – the command line interface wallet.
 
 TRON Forum
-==========
+~~~~~~~~~~~
 
     http://tronsr.org/
 
-###############
 TRON_Foundation
-###############
+---------------
 
 Forging ahead with the development of new technologies and applications jointly with all developers, Tron Foundation is devoted to the healthy development of Tron ecosystem.
 
 Tron Foundation open to the community
-=====================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     `Official Website <https://tron.network/en.html>`_
 
@@ -100,7 +99,7 @@ Tron Foundation open to the community
     `E-mail <service@tron.network>`_
 
 Other community platforms for international usership.
-=====================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `TRON SOUTH KOREA <https://t.me/tronnetworkKR>`_
 
@@ -110,14 +109,13 @@ Other community platforms for international usership.
 
     `TRON ARABIC <https://t.me/tronnetworkAR>`_
 
-############
 Contributors
-############
+------------
 
 We would like to express our deepest gratitude to the following participants who have made great contributions to the community:
 
 TRON Github Contributor:
-========================
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 `Roy van Kaathoven <https://github.com/Rovak>`_
 
@@ -188,7 +186,7 @@ TRON Github Contributor:
     `Diogenes Buarque Ianakiara <https://github.com/dbuarque>`_
 
 TRON Translation Contributor:
-=============================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `fbsobreira <https://crowdin.com/profile/fbsobreira>`_
 
