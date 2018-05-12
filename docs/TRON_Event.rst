@@ -216,13 +216,11 @@ Whether the project promises potentials for future development.
 Evaluation Form
 ~~~~~~~~~~~~~~~
 
-    =============================  ===========  =============  ==============  ====================  ===========  ===========  =============  ==========  =========
-               Item                                  Basic criteria                                                 Bonus criteria
-    -----------------------------  -----------  -------------  --------------  --------------------  -----------  -----------  -------------  ----------  ---------
-        Individual/Team Name       Originality  Compatibility  Witness voting  Offline Signature     Spirit of    Enggagement  Functionality  Innovation  Extension
-                                                               (Wallets)       (Wallets for Windows  competition
-                                                                               /iOS/Android)
-    =============================   ==========  =============  ==============  ====================  ===========  ===========  =============  ==========  =========
+    +------------------------------+-----------------------------+-----------------------+--------------------------------------------------+---------------------+--------------+--------------+--------------+--------------+
+    |Item                          |Basic criteria|Basic criteria|Basic criteria         |Basic criteria                                    |Bonus criteria       |Bonus criteria|Bonus criteria|Bonus criteria|Bonus criteria|
+    +==============================+==============+==============+=======================+==================================================+=====================+==============+==============+==============+==============+
+    |Individual/Team Name*         |Originality   |Compatibility |Witness voting(Wallets)|Offline Signature(Wallets for Windows/iOS/Android)|Spirit of competition|Enggagement   |Functionality |Innovation    |Extension     |                            |
+    +------------------------------+--------------+--------------+-----------------------+--------------------------------------------------+---------------------+--------------+--------------+--------------+--------------+
 
 Notes to the evaluation form:
 
@@ -445,7 +443,7 @@ Note:
     |when they vote for Super Representatives? (optional)               |                                                                            |
     +-------------------------------------------------------------------+----------------------------------------------------------------------------+
     |How should TRON evaluate independence, integrity and visibility?   |                                                                            |
-    | (optional)                                                        |                                                                            |
+    |(optional)                                                         |                                                                            |
     +-------------------------------------------------------------------+----------------------------------------------------------------------------+
 
 Step 3.
