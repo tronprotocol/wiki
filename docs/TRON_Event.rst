@@ -105,11 +105,11 @@ Application  Procedure
     +------------------------------+------------------------------------------+
     |E-mail*                       |                                          |
     +------------------------------+------------------------------------------+
-    |Phone include country code  * |                                          |
+    |Phone include(country code)  *|                                          |
     +------------------------------+------------------------------------------+
     |Project Name*                 |                                          |
     +------------------------------+------------------------------------------+
-    |Project Type single option  * |- (  ) Wallet based on Windows            |
+    |Project Type (single option)* |- (  ) Wallet based on Windows            |
     |                              |- (  ) Wallet based on Mac                |
     |                              |- (  ) Wallet based on iOS/Android        |
     |                              |- (  ) Wallet embedded with Google Chrome |
@@ -129,38 +129,112 @@ Project Submission
 
 **Submission Form**
 
-    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-    |Type                                                               |Information                                                               |
-    +===================================================================+==========================================================================+
-    |Individual/Team Name*                                              |                                                                          |
-    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-    |Country*                                                           |                                                                          |
-    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-    |Name of Contact Person*                                            |                                                                          |
-    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-    |E-mail*                                                            |                                                                          |
-    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-    |Phone include country code  *                                      |                                                                          |
-    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-    |Project Name*                                                      |                                                                          |
-    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-    |Project Type single option  *                                      |- (  ) Wallet based on Windows                                            |
-    |                                                                   |- (  ) Wallet based on Mac                                                |
-    |                                                                   |- (  ) Wallet based on iOS/Android                                        |
-    |                                                                   |- (  ) Wallet embedded with Google Chrome                                 |
-    |                                                                   |- (  )Blockchain Explorer                                                 |
-    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-    |Project Description* In the form of link,installation package, etc.|Please send instllation package or other related forms in the attachement.|
-    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-    |Github*                                                            |                                                                          |
-    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-    |Video Introduction                                                 |                                                                          |
-    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-    |Name of Attachment                                                 |                                                                          |
-    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------+
+    |Type                                                               |Information                                                                 |
+    +===================================================================+============================================================================+
+    |Individual/Team Name*                                              |                                                                            |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------+
+    |Country*                                                           |                                                                            |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------+
+    |Name of Contact Person*                                            |                                                                            |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------+
+    |E-mail*                                                            |                                                                            |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------+
+    |Phone include (country code)  *                                    |                                                                            |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------+
+    |Project Name*                                                      |                                                                            |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------+
+    |Project Type (single option)  *                                    |- (  ) Wallet based on Windows                                              |
+    |                                                                   |- (  ) Wallet based on Mac                                                  |
+    |                                                                   |- (  ) Wallet based on iOS/Android                                          |
+    |                                                                   |- (  ) Wallet embedded with Google Chrome                                   |
+    |                                                                   |- (  )Blockchain Explorer                                                   |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------+
+    |Project Description* (In the form of link,installation package, etc.|Please send instllation package or other related forms in the attachement.)|
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------+
+    |Github*                                                            |                                                                            |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------+
+    |Video Introduction                                                 |                                                                            |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------+
+    |Name of Attachment                                                 |                                                                            |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------+
 
     Attention: item with * is required.
 
 - Step 2. Applicants will receive a confirmation email upon successful project submission:
 
     You have successfully submitted your project. We will evaluate the submitted project carefully. Announcement of the results of Tron Programming Contest will be made on May 27, 2018. Thank you for your participation!
+
+Standard of Evaluation for TRON Programming Contest
+---------------------------------------------------
+
+We will score projects submitted for the programming contest based on the following criteria. This score is highly associated with the final outcome of the contest.
+
+Basic criteria
+~~~~~~~~~~~~~~
+
+1. Originality：
+
+The submitted project must be the original creation of the applicant. We will not tolerate plagiarism.
+
+2. Compatibility：
+
+The project/product should be applicable to TRON's mainnet.
+
+3. Voting function for wallet projects：
+
+For wallet projects, whether the submitted wallet supports witness voting is directly linked to chances of winning.
+
+4. Offline signature for Windows/iOS/Android-based wallets:
+
+Wallet projects for Windows/iOS/Android platforms must support offline signature. It's also preferable for wallets for Mac to support offline signature.
+
+Bonus criteria
+~~~~~~~~~~~~~~
+
+1. The spirit of competition:
+
+There is no severe violation of competition guidelines or departure from the spirit of fair competition.
+
+2. Engagement:
+
+Make sure to be fully communicative with TRON. We will assess your engagement based on our interaction through email and Slack.
+
+3. Functionality:
+
+Completeness of product functions or is it lacking essential functions. Whether the product is user-friendly.
+
+4. Innovation：
+
+How innovative and unique the project is.
+
+5. Extension：
+
+Whether the project promises potentials for future development.
+
+
+Evaluation Form
+~~~~~~~~~~~~~~~
+
+    +----------------------------------------------------------------------+--------------------+----------------------------------------------------------+
+    |   Individual/Team Name    |                    Basic criteria                             |                   Bonus criteria    |                    |
+    |                           |============+=============+===============+====================+===========+===========+=============+====================+
+    |                           | Originality|Compatibility|Witness voting |Offline Signature   |Spirit of  |Enggagement|Functionality|Innovation|Extension|                                                                      |
+    |                           |            |             |(Wallet)       |(Wallet for Windows/|competition|           |             |                    |
+    |                           |            |             |               |iOS/Android)        |           |           |             |                    |
+    |                           |            |             |               |                    |           |           |             |                    |
+    |                           |            |             |               |                    |           |           |             |                    |
+    +===========================+------------+-------------+---------------+--------------------+-----------+-----------+-------------+--------------------+
+    |                           |            |             |               |                    |           |           |             |                    |
+    +---------------------------+------------+-------------+---------------+--------------------+-----------+-----------+-------------+--------------------+
+    |                           |            |             |               |                    |           |           |             |                    |
+    +---------------------------+------------+-------------+---------------+--------------------+-----------+-----------+-------------+--------------------+
+    |                           |            |             |               |                    |           |           |             |                    |
+    +---------------------------+------------+-------------+---------------+--------------------+-----------+-----------+-------------+--------------------+
+
+
+Notes to the evaluation form:
+
+1. Applicants' chances of winning are directly tied to your score for the basic criteria.
+
+2. There is a better chance of winning if submitted projects scores high points for the bonus criteria.
