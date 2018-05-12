@@ -216,7 +216,7 @@ Whether the project promises potentials for future development.
 Evaluation Form
 ~~~~~~~~~~~~~~~
 
-    +----------------------------------------------------------------------+--------------------+----------------------------------------------------------+
+    +---------------------------+---------------------------------------------------------------+----------------------------------------------------------+
     |          Item             |                    Basic criteria                             |                    Bonus criteria                        |                      |
     +===========================+============+=============+===============+====================+===========+===========+=============+====================+
     |  Individual/Team Name     | Originality|Compatibility|Witness voting |Offline Signature   |Spirit of  |Enggagement|Functionality|Innovation|Extension|                                                                      |
