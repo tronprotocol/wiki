@@ -163,7 +163,7 @@ Project Submission
 
 - Step 2. Applicants will receive a confirmation email upon successful project submission:
 
-    You have successfully submitted your project. We will evaluate the submitted project carefully. Announcement of the results of Tron Programming Contest will be made on May 27, 2018. Thank you for your participation!
+You have successfully submitted your project. We will evaluate the submitted project carefully. Announcement of the results of Tron Programming Contest will be made on May 27, 2018. Thank you for your participation!
 
 Standard of Evaluation for TRON Programming Contest
 ---------------------------------------------------
@@ -216,15 +216,13 @@ Whether the project promises potentials for future development.
 Evaluation Form
 ~~~~~~~~~~~~~~~
 
-    +---------------------------+---------------------------------------------------------------+----------------------------------------------------------+
-    |          Item             |                    Basic criteria                             |                    Bonus criteria                        |                      |
-    +===========================+============+=============+===============+====================+===========+===========+=============+====================+
-    |  Individual/Team Name     | Originality|Compatibility|Witness voting |Offline Signature   |Spirit of  |Enggagement|Functionality|Innovation|Extension|                                                                      |
-    |                           |            |             |(Wallet)       |(Wallet for Windows/|competition|           |             |                    |
-    |                           |            |             |               |iOS/Android)        |           |           |             |                    |
-    |                           |            |             |               |                    |           |           |             |                    |
-    |                           |            |             |               |                    |           |           |             |                    |
-    +---------------------------+------------+-------------+---------------+--------------------+-----------+-----------+-------------+--------------------+
+    =============================  ===========  =============  ==============  ====================  ===========  ===========  =============  ==========  =========
+               Item                                  Basic criteria                                                 Bonus criteria
+    -----------------------------  -----------  -------------  --------------  --------------------  -----------  -----------  -------------  ----------  ---------
+        Individual/Team Name       Originality  Compatibility  Witness voting  Offline Signature     Spirit of    Enggagement  Functionality  Innovation  Extension
+                                                               (Wallets)       (Wallets for Windows  competition
+                                                                               /iOS/Android)
+    =============================   ==========  =============  ==============  ====================  ===========  ===========  =============  ==========  =========
 
 Notes to the evaluation form:
 
