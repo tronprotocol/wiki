@@ -9,7 +9,7 @@ TRX
 What is TRX?
 ------------
 
-TRX Supply
+TRX supply
 ----------
 
 Getting TRX

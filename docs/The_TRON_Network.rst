@@ -6,7 +6,7 @@ The TRON Network
     :depth: 1
     :local:
 
-How to Build
+How to build
 ------------
 
 **1, Getting the code**
@@ -65,7 +65,7 @@ here: https://github.com/tronprotocol/java-tron
 
 * After the syncing finished, select ``Gradle``  -> ``Tasks`` -> ``build`` , and then double click ``build`` option.
 
-Running a Private Testnet
+Running a private testnet
 -------------------------
 
 **How to run a full node**
@@ -243,7 +243,7 @@ To run TRON on more than one node, you need to specify several seed nodes IPs in
 For private testnet, the IPs are allocated by yourself.
 
 Running a local node and connecting to the public testnet
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------
 
 - Ensure that the version number is consistent with the version number of the test network. If it is not consistent, Please modify the node.p2p.version in the config.conf file, and delete the out-directory directory (if it exists).
 
@@ -522,7 +522,7 @@ Then SolidityNode can be switched on：
 
     nohup java -jar java-tron.jar -c config.conf&
 
-Test Network
+Test network
 ------------
 
 Odyssey-v1.0 for test net

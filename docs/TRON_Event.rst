@@ -6,7 +6,7 @@ TRON Event
     :depth: 1
     :local:
 
-The First TRON Programming Contest
+The first TRON programming contest
 ----------------------------------
 
 **April 17-May 27, 2018**
@@ -165,7 +165,7 @@ Project Submission
 
 You have successfully submitted your project. We will evaluate the submitted project carefully. Announcement of the results of Tron Programming Contest will be made on May 27, 2018. Thank you for your participation!
 
-Standard of Evaluation for TRON Programming Contest
+Standard of Evaluation for TRON programming Contest
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We will score projects submitted for the programming contest based on the following criteria. This score is highly associated with the final outcome of the contest.
@@ -267,7 +267,7 @@ Further clarification
 
 8. All rights of interpretation for Bug Bounty are reserved to TRON.
 
-TRON Loan
+TRON loan
 ---------
 
 Introduction
@@ -327,7 +327,7 @@ How to Apply
 
 2. We will reach out to developers who pass our assessment. Fund disbursement of USD$100,000 in direct convertible loans will be completed in a timely fashion.
 
-A Guide to Recommended Super Representative Candidate
+A guide to recommended Super Representative candidate
 -----------------------------------------------------
 
 How can I become a recommended Super Representative Candidate?
