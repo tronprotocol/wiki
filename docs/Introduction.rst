@@ -111,7 +111,7 @@ TRON Forum
 
     http://tronsr.org/
 
-TRON_Foundation
+TRON Foundation
 ---------------
 
 Forging ahead with the development of new technologies and applications jointly with all developers, Tron Foundation is devoted to the healthy development of Tron ecosystem.

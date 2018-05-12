@@ -166,12 +166,11 @@ Project Submission
 You have successfully submitted your project. We will evaluate the submitted project carefully. Announcement of the results of Tron Programming Contest will be made on May 27, 2018. Thank you for your participation!
 
 Standard of Evaluation for TRON Programming Contest
----------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We will score projects submitted for the programming contest based on the following criteria. This score is highly associated with the final outcome of the contest.
 
-Basic criteria
-~~~~~~~~~~~~~~
+**Basic criteria**
 
 1. Originality：
 
@@ -189,8 +188,7 @@ For wallet projects, whether the submitted wallet supports witness voting is dir
 
 Wallet projects for Windows/iOS/Android platforms must support offline signature. It's also preferable for wallets for Mac to support offline signature.
 
-Bonus criteria
-~~~~~~~~~~~~~~
+**Bonus criteria**
 
 1. The spirit of competition:
 
@@ -212,8 +210,7 @@ How innovative and unique the project is.
 
 Whether the project promises potentials for future development.
 
-Evaluation Form
-~~~~~~~~~~~~~~~
+**Evaluation Form**
 
 Notes to the evaluation form:
 

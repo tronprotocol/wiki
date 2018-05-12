@@ -274,6 +274,17 @@ How to withdraw block producing reward
 
 Upon complete block production, reward will be sent to allowance in user’s account. Withdrawal can be made once every 24 hours, transferring reward from allowance to balance. Asset in allowance cannot be locked or traded.
 
+How to create TRX
+-----------------
+
+    You can gen one keypair and address by command line, then modify java-tron config.conf set genesis.block.assets address to yours.
+
+    Now that you have a lot of trx, you can send it to any address.
+
+    With enough trx, you can issue assets, participate in asset, apply for witnesses, and more.
+
+
+
 How to create witness
 ---------------------
 
