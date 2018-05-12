@@ -212,9 +212,7 @@ How innovative and unique the project is.
 
 Whether the project promises potentials for future development.
 
-
-Evaluation Form
-~~~~~~~~~~~~~~~
+**Evaluation Form**
 
     +------------------------------+-----------------------------+-----------------------+--------------------------------------------------+---------------------+--------------+--------------+--------------+--------------+
     |Item                          |Basic criteria|Basic criteria|Basic criteria         |Basic criteria                                    |Bonus criteria       |Bonus criteria|Bonus criteria|Bonus criteria|Bonus criteria|
@@ -402,7 +400,6 @@ Note:
 4.	For those who wish to be on this week’s list of recommended Super Representatives, please submit the application form to sr@tron.network by 23:59 (GMT+8), Tuesday.
 5.	To qualify as TRON’s recommended Super Representative, candidates have to meet all requirements.
 6.	Please fill in as many items in the application form as possible for better and more precise ranking.
-
 
     +-------------------------------------------------------------------+----------------------------------------------------------------------------+
     |Type                                                               |Information                                                                 |
