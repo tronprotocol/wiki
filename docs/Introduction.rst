@@ -6,7 +6,7 @@ Introduction
     :depth: 1
     :local:
 
-What_is_TRON?
+What is TRON?
 -------------
 
 TRON operates as a decentralized blockchain platform for supporting smart contract and high throughput. TRON team sees it as a future operation system which allow developers deploying their own decentralized applications.
@@ -16,7 +16,7 @@ Rather than simply stress "lacking in characteristics”, TRON mainly focus on u
 
 * TRON Operation Model
 
-TRON：The Internet as it was meant to be
+TRON：The Internet as It Was Meant to Be
 ----------------------------------------
 
 TRON is an ambitious project dedicated to building the infrastructure for a truly decentralized Internet. The Tron Protocol, one of the largest blockchain based operating systems in the world, offers scalable, high-availability and high-throughput support that underlies all the decentralized applications in the TRON ecosystem. TRON enables large-scale development and engagement. With over ten thousand transactions per second, high concurrency, low latency and massive data transmission, TRON is ideal for building decentralized entertainment applications. Free features and incentive systems allow developers to create premium app experiences for users. TRON Protocol and the TVM allow anyone to develop DAPPs for themselves or their communities, with smart contracts making decentralized crowdfunding and token issuance easier than ever. Tron DAPP projects already include Peiwo, Uplive, game.com, Kitty live and Mico,  with 100M+ active users from more than 100 countries and regions around the world.
@@ -35,7 +35,44 @@ TRON Milestone
 
 - 2018.5.31 The launch of mainnet.
 
-- 2018.6    ERC20 Token--> Migration completed
+- 2018.6    ERC20 Token-->  TRX Migration completed
+
+What is a Super Representative
+------------------------------
+
+Token holders in the TRON community fall into the following categories:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Token holder: Individual holding any amount of TRX.
+
+2. Super Representative candidate: 100 individuals elected through voting by the entire token holder community. Elections are held once every 24 hours.
+
+3. Super Representative: 27 individuals elected through voting by all token holders every 24 hours. Super Representatives play a key role in governing the TRON community by ensuring basic functions, e.g. block generation and bookkeeping, and obtain corresponding earnings.    Super Representatives can produce blocks and verify transactions. Meanwhile, Super Representatives can make an actual profit from creating blocks.
+
+Super Representative
+~~~~~~~~~~~~~~~~~~~~~
+
+-The TRON Protocol network will generate one block per second, with each block awarding 32 TRX to super representatives. A total of 1,009,152,000 TRX will be awarded annually to twenty-seven super representatives.
+
+- There will be no inflation on the TRON network before January 1, 2021, and the TRON Foundation will award all block rewards prior to that date.
+
+- Users can get SR information from TRON blockchain explorer, the detailed information shown as below:**
+
+- The account address of delegate.
+
+- The total votes that delegate gets.
+
+- The url of personal website.
+
+- The total produced blocks of delegate.
+
+- The total missed blocks of delegate.
+
+Super Representative Recommendations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Every token holder has the opportunity to become a TRON Super Representative. However, for the network and community to operate more smoothly and effectively, we have created a set of standards and regulations for eligible candidates to become recommended Super Representatives. We will promote recommended SRs to increase their chances of being elected. New recommended Super Representatives are updated and posted once a week.
+
 
 Community
 ---------
@@ -101,7 +138,7 @@ Tron Foundation open to the community
 Other community platforms for international usership.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`TRON SOUTH KOREA <https://t.me/tronnetworkKR>`_
+    `TRON SOUTH KOREA <https://t.me/tronnetworkKR>`_
 
     `TRON RUSSIA <https://t.me/tronnetworkRU>`_
 
@@ -117,7 +154,7 @@ We would like to express our deepest gratitude to the following participants who
 TRON Github Contributor:
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-`Roy van Kaathoven <https://github.com/Rovak>`_
+    `Roy van Kaathoven <https://github.com/Rovak>`_
 
     `seanrobbins <https://github.com/seanrobbins>`_
 
@@ -188,7 +225,7 @@ TRON Github Contributor:
 TRON Translation Contributor:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`fbsobreira <https://crowdin.com/profile/fbsobreira>`_
+    `fbsobreira <https://crowdin.com/profile/fbsobreira>`_
 
     `PiterSpain <https://crowdin.com/profile/PiterSpain>`_
 

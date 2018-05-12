@@ -134,7 +134,7 @@ Questions on the Super Representative election
 
     A: Set your own private key in the configuration file. With a successful vote a block will be produced.
 
-13.	Q: How should I configurate my node after I’ve generated my private key?
+13. Q: How should I configurate my node after I’ve generated my private key?
 
     A: Find localwitness within the configuration file and set your private key for the voting account.
 
