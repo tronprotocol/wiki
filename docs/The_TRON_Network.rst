@@ -15,7 +15,7 @@ Clone/Download the JAVA-TRON Implementation from Github
 
 * Visit the JAVA-TRON github respository
 
-    here: https://github.com/tronprotocol/java-tron
+here: https://github.com/tronprotocol/java-tron
 
 * Getting the source code. We use git and Github to maintain the source code. Clone the repository by:
 
@@ -529,17 +529,29 @@ Odyssey-v1.0.6
 ~~~~~~~~~~~~~~
 
 * feature
+
 1.  frozen and unfrozen balance for voting and bandwidth.
+
 2.  transaction bandwidth control to avoid ddos.
+
 3.  add testNG.
+
 * improvement
+
 1. parallel validate signature.
+
 2. increate the speed of block producing.
+
 3. reduce the memory usage of index service.
+
 4. increase the speed of broadcast  block.
+
 5. improve the  handshake mechanism.
+
 * bug fix
+
 1. Out of memory exception.
+
 2. dup message
 
 Odyssey-v1.0.6.3
