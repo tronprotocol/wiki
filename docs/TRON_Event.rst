@@ -127,21 +127,37 @@ Project Submission
 
 - Step 1. Please submit your project, along with your application form, to program@tron.network by May 20, 2018 (GMT+8). Please name the subject of the email in the format of “Project submission_Individual/Team name_Participating project”(e.g. “Project submission_Tron team_Blockchain explorer”), or the email will be categorized as spam, leading to an unsuccessful submission.
 
-    **Submission Form**
+**Submission Form**
 
-    |Type|Information|
-    |---|---|
-    |Individual/Team Name*|
-    |Country*|
-    |Name of Contact Person*|
-    |E-mail*|
-    |Phone*（include country code）|
-    |Project Name*|
-    |Project Type*（singel option）|(  ) Wallet based on Windows; (  ) Wallet based on Mac; (  ) Wallet based on iOS/Android; (  ) Wallet embedded with Google Chrome; (  )Blockchain Explorer;|
-    |Project Description*（In the form of link,installation package，etc.）|Please send instllation package or other related forms in the attachement. |
-    |Github*|
-    |Video Introduction|
-    |Name of Attachement|
+    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
+    |Type                                                               |Information                                                               |
+    +===================================================================+==========================================================================+
+    |Individual/Team Name*                                              |                                                                          |
+    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
+    |Country*                                                           |                                                                          |
+    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
+    |Name of Contact Person*                                            |                                                                          |
+    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
+    |E-mail*                                                            |                                                                          |
+    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
+    |Phone include country code  *                                      |                                                                          |
+    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
+    |Project Name*                                                      |                                                                          |
+    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
+    |Project Type single option  *                                      |- (  ) Wallet based on Windows                                            |
+    |                                                                   |- (  ) Wallet based on Mac                                                |
+    |                                                                   |- (  ) Wallet based on iOS/Android                                        |
+    |                                                                   |- (  ) Wallet embedded with Google Chrome                                 |
+    |                                                                   |- (  )Blockchain Explorer                                                 |
+    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
+    |Project Description* In the form of link,installation package, etc.|Please send instllation package or other related forms in the attachement.|
+    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
+    |Github*                                                            |                                                                          |
+    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
+    |Video Introduction                                                 |                                                                          |
+    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
+    |Name of Attachment                                                 |                                                                          |
+    +-------------------------------------------------------------------+--------------------------------------------------------------------------+
 
     Attention: item with * is required.
 
