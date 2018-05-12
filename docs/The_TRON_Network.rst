@@ -559,11 +559,11 @@ Odyssey-v1.0.6.3
 
 * fix bug
 
-fix the bandwidth timestamp error.
+1. fix the bandwidth timestamp error.
 
 * improvement
 
-batch transaction send & receive.
+1. batch transaction send & receive.
 
 
 

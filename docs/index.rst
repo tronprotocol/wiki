@@ -7,7 +7,7 @@ Tron Odyssey
 
     Introduction
     The_TRON_Network
-    Web_Wallet
+    Blockchain_Ecplorer
     Wallet_Cli
     Account_Management
     TRON_Event

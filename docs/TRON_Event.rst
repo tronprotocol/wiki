@@ -215,12 +215,6 @@ Whether the project promises potentials for future development.
 Evaluation Form
 ~~~~~~~~~~~~~~~
 
-    +------------------------------+-----------------------------+-----------------------+--------------------------------------------------+---------------------+--------------+--------------+--------------+--------------+
-    |Item                          |Basic criteria|Basic criteria|Basic criteria         |Basic criteria                                    |Bonus criteria       |Bonus criteria|Bonus criteria|Bonus criteria|Bonus criteria|
-    +==============================+==============+==============+=======================+==================================================+=====================+==============+==============+==============+==============+
-    |Individual/Team Name*         |Originality   |Compatibility |Witness voting(Wallets)|Offline Signature(Wallets for Windows/iOS/Android)|Spirit of competition|Enggagement   |Functionality |Innovation    |Extension     |                            |
-    +------------------------------+--------------+--------------+-----------------------+--------------------------------------------------+---------------------+--------------+--------------+--------------+--------------+
-
 Notes to the evaluation form:
 
 1. Applicants' chances of winning are directly tied to your score for the basic criteria.

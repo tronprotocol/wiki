@@ -232,7 +232,7 @@ Assets can be unfrozen after the date to unfreeze.
 
 **Unfreeze command is as follows:：**
 
-    .. code-block:: shell
+.. code-block:: shell
 
     unfreezebalance password
 
