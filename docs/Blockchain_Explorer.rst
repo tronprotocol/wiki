@@ -34,7 +34,7 @@ The following steps serve as an introduction on how to become a Super Representa
 
 * 1000,0000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/request_for_testing的副本.jpgg
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/request_for_testing的副本.jpg
     :width: 842px
     :height: 623px
     :align: center
