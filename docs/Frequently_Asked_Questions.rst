@@ -1,5 +1,5 @@
 ==========================
-Frequently_Asked_Questions
+Frequently Asked Questions
 ==========================
 
 .. contents:: Table of contents
