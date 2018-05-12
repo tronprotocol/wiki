@@ -20,7 +20,9 @@ Tron Odyssey
 TRON: The Internet as It Was Meant to Be
 --------------
 
-.. figure:: /img/500-tron.jpg
+.. figure:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/logo红黑色英文竖版.png
+    :width: 301px
+    :height: 327
     :align: right
 
 TRON is an ambitious project dedicated to building the infrastructure for a truly decentralized Internet.
