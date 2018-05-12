@@ -10,8 +10,9 @@ Tron Odyssey
     Blockchain_Explorer
     Wallet_Cli
     Account_Management
-    TRON_Event
+    Contracts_and_Transactions
     TRX
+    TRON_Event
     Frequently_Asked_Questions
 
 
