@@ -180,7 +180,7 @@ Others
 
     A: For now, yes. But we are uncertain if that’s going to change, because we need to further think it through as the address base if enourmous.
 
-12.	Q: How many decimal places is there for the balance?
+12. Q: How many decimal places is there for the balance?
 
     A: Six.
 
