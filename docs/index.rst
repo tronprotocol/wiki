@@ -11,6 +11,7 @@ Tron Odyssey
     Wallet_Cli
     Account_Management
     TRON_Event
+    TRX
     Frequently_Asked_Questions
 
 
