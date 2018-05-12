@@ -212,7 +212,64 @@ How innovative and unique the project is.
 
 Whether the project promises potentials for future development.
 
-**Evaluation Form**
+Evaluation Form
+~~~~~~~~~~~~~~~
+
+<table class="tg" style="undefined;table-layout: fixed; width: 848px">
+<colgroup>
+<col style="width: 109px">
+<col style="width: 74px">
+<col style="width: 92px">
+<col style="width: 72px">
+<col style="width: 89px">
+<col style="width: 84px">
+<col style="width: 91px">
+<col style="width: 90px">
+<col style="width: 76px">
+<col style="width: 71px">
+</colgroup>
+  <tr>
+    <th class="tg-c3ow" rowspan="2">Individual/Team<br>Name</th>
+    <th class="tg-c3ow" colspan="4">Basic criteria</th>
+    <th class="tg-c3ow" colspan="5">Bonus criteria</th>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Originality</td>
+    <td class="tg-us36">Compatibility</td>
+    <td class="tg-us36">Witness voting <br>(wallets)</td>
+    <td class="tg-us36">Offline signature<br>(wallets for Windows<br>/iOS/Android)</td>
+    <td class="tg-us36">Spirit of competition</td>
+    <td class="tg-us36">Engagement</td>
+    <td class="tg-us36">Functionality</td>
+    <td class="tg-us36">Innovation</td>
+    <td class="tg-us36">extension</td>
+  </tr>
+  <tr>
+    <td class="tg-us36"></td>
+    <td class="tg-us36"></td>
+    <td class="tg-us36"></td>
+    <td class="tg-us36"></td>
+    <td class="tg-us36"></td>
+    <td class="tg-us36"></td>
+    <td class="tg-us36"></td>
+    <td class="tg-us36"></td>
+    <td class="tg-us36"></td>
+    <td class="tg-us36"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+
 
     +------------------------------+-----------------------------+-----------------------+--------------------------------------------------+---------------------+--------------+--------------+--------------+--------------+
     |Item                          |Basic criteria|Basic criteria|Basic criteria         |Basic criteria                                    |Bonus criteria       |Bonus criteria|Bonus criteria|Bonus criteria|Bonus criteria|
