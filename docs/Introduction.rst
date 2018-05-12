@@ -56,7 +56,7 @@ Super Representative
 
 - There will be no inflation on the TRON network before January 1, 2021, and the TRON Foundation will award all block rewards prior to that date.
 
-- Users can get SR information from TRON blockchain explorer, the detailed information shown as below:**
+- Users can get SR information from TRON blockchain explorer, the detailed information shown as below:
 
 - The account address of delegate.
 
