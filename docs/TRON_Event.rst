@@ -92,24 +92,24 @@ Application  Procedure
 
 - Step 1. Please submit your application to program@tron.network by May 20, 2018. Please name the subject in the format of “Application_Individual/Team name_Participating project” (e.g. “Application_Tron team_blockchain explorer”), or the email will be categorized as spam, leading to an unsuccessful application.
 
-    **Application Form**
+**Application Form**
 
-    +-----------------------+---------------------+
-    |Type                   |Information          |
-    +=======================+=====================+
-    |Individual/Team Name*  |                     |
-    +-----------------------+---------------------+
-    |Country*               |                     |
-    +-----------------------+---------------------+
-    |Name of Contact Person*|                     |
-    +-----------------------+----------------------
-    |E-mail*                |
-    +-----------------------+----------------------
-    |Phone（include country code）*|
-    +-----------------------+---------------------
-    |Project Name*|
     +------------------------------+------------------------------------------+
-    |Project Type（single option）* | - (  ) Wallet based on Windows          |
+    |Type                          |Information                               |
+    +==============================+==========================================+
+    |Individual/Team Name*         |                                          |
+    +------------------------------+------------------------------------------+
+    |Country*                      |                                          |
+    +------------------------------+------------------------------------------+
+    |Name of Contact Person*       |                                          |
+    +------------------------------+------------------------------------------+
+    |E-mail*                       |                                          |
+    +------------------------------+------------------------------------------+
+    |Phone include country code  * |                                          |
+    +------------------------------+------------------------------------------+
+    |Project Name*                 |                                          |
+    +------------------------------+------------------------------------------+
+    |Project Type single option  * |- (  ) Wallet based on Windows            |
     |                              |- (  ) Wallet based on Mac                |
     |                              |- (  ) Wallet based on iOS/Android        |
     |                              |- (  ) Wallet embedded with Google Chrome |
