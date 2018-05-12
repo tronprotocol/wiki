@@ -100,7 +100,9 @@ Questions on the Super Representative election
 
    A: The selection of these 100 candidates is based on the result of the vote. Currently we intend to let prospective nodes test in advance by running an election.
 
-4. Q: Since TRX is required to obtain the right to vote, do we need to deposit a certain amount of TRX into Tronscan wallet? A: Yes, TRX deposit is needed for application for witness node and for voting.
+4. Q: Since TRX is required to obtain the right to vote, do we need to deposit a certain amount of TRX into Tronscan wallet?
+
+   A: Yes, TRX deposit is needed for application for witness node and for voting.
 
 5. Q: Is there a threshold for the daily election of 27 Super Representatives? Or is it encouraged to compete freely?
 
@@ -178,11 +180,11 @@ Others
 
     A: For now, yes. But we are uncertain if that’s going to change, because we need to further think it through as the address base if enourmous.
 
-12.	Q:  How many decimal places is there for the balance?
+12.	Q: How many decimal places is there for the balance?
 
     A: Six.
 
-13.	Q: Is the machines of the nodes in Beijing? Is the wall an issue?
+13. Q: Is the machines of the nodes in Beijing? Is the wall an issue?
 
     A: Only 39.106.220.120 is in Beijing. The rest are in the US, Europe and Hong Kong.
 
