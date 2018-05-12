@@ -10,7 +10,6 @@ Tron Odyssey
     Web_Wallet
     Wallet_Cli
     Account_Management
-    The_TRON_Network
     TRON_Event
     Frequently_Asked_Questions
 
