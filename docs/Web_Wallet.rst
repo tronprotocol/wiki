@@ -1,12 +1,16 @@
-What is a Super Representative
-==============================
+==========
+Web Wallet
+==========
 
 .. contents:: Table of contents
     :depth: 1
     :local:
 
+What is a Super Representative
+------------------------------
+
 Token holders in the TRON community fall into the following categories:
-----------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Token holder: Individual holding any amount of TRX.
 
@@ -15,7 +19,7 @@ Token holders in the TRON community fall into the following categories:
 3. Super Representative: 27 individuals elected through voting by all token holders every 24 hours. Super Representatives play a key role in governing the TRON community by ensuring basic functions, e.g. block generation and bookkeeping, and obtain corresponding earnings.    Super Representatives can produce blocks and verify transactions. Meanwhile, Super Representatives can make an actual profit from creating blocks.
 
 Super Representative
---------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 -The TRON Protocol network will generate one block per second, with each block awarding 32 TRX to super representatives. A total of 1,009,152,000 TRX will be awarded annually to twenty-seven super representatives.
 
@@ -34,12 +38,12 @@ Super Representative
 - The total missed blocks of delegate.
 
 Super Representative Recommendations
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Every token holder has the opportunity to become a TRON Super Representative. However, for the network and community to operate more smoothly and effectively, we have created a set of standards and regulations for eligible candidates to become recommended Super Representatives. We will promote recommended SRs to increase their chances of being elected. New recommended Super Representatives are updated and posted once a week.
 
 How to run a Super Representative
-=================================
+---------------------------------
 
 The following steps serve as an introduction on how to become a Super Representative through our TRON blockchain explorer.
 
@@ -108,7 +112,7 @@ The following steps serve as an introduction on how to become a Super Representa
 8, After approval voting, the top 27 SRs by total approval are selected. The state of active SRs is updated once every maintenance interval (1 day).
 
 How to Vote
-===========
+-----------
 
 The following steps serve as an introduction on how to vote for a Super Representative through our TRON blockchain explorer.
 
@@ -164,7 +168,7 @@ The following steps serve as an introduction on how to vote for a Super Represen
     :align: center
 
 How to create token
-====================
+-------------------
 
 The following steps serve as an introduction on how to create, send and receive tokens.
 
@@ -220,7 +224,6 @@ The following steps serve as an introduction on how to create, send and receive 
 **Participation**: Specify the participation period in which tokens will be issued. During the participation period users can exchange TRX for tokens.
 
                                                                                                                                                *  You will be charged 1024 TRX for your creation of tokens.
-
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Create1.png
     :width: 841px
     :height: 385px

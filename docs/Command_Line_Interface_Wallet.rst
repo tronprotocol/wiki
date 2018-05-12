@@ -1,16 +1,16 @@
-#############################
-Command_Line_Interface_Wallet
-#############################
-
-How to run a node
-=================
+=============================
+Command Line Interface Wallet
+=============================
 
 .. contents:: Table of contents
     :depth: 1
     :local:
 
+How to run a node
+-----------------
+
 How to Build
-------------
+~~~~~~~~~~~~
 
 **1, Getting the code**
 
@@ -68,9 +68,8 @@ git clone https://github.com/tronprotocol/java-tron.git
 
 * After the syncing finished, select ``Gradle``  -> ``Tasks`` -> ``build`` , and then double click ``build`` option.
 
-
 Running a Private Testnet
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **How to run a full node**
 
@@ -122,7 +121,7 @@ Running a Private Testnet
 
     java -jar java-tron.jar -p yourself private key --witness -c yourself config.conf(Example：/data/java-tron/config.conf)
 
-Example:
+    Example:
 
     java -jar java-tron.jar -p 650950B193DDDDB35B6E48912DD28F7AB0E7140C1BFDEFD493348F02295BD812 --witness -c /data/java-tron/config.conf
 
@@ -247,9 +246,9 @@ To run TRON on more than one node, you need to specify several seed nodes IPs in
 For private testnet, the IPs are allocated by yourself.
 
 Running a local node and connecting to the public testnet
----------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
- - Ensure that the version number is consistent with the version number of the test network. If it is not consistent, Please modify the node.p2p.version in the config.conf file, and delete the out-directory directory (if it exists).
+- Ensure that the version number is consistent with the version number of the test network. If it is not consistent, Please modify the node.p2p.version in the config.conf file, and delete the out-directory directory (if it exists).
 
 **Running a Full Node**
 
@@ -279,7 +278,7 @@ It is almost the same as that does in the private testnet, except that the IPs i
 
     java -jar java-tron.jar -p yourself private key --witness -c yourself config.conf(Example：/data/java-tron/config.conf)
 
-Example:
+    Example:
 
     java -jar java-tron.jar -p 650950B193DDDDB35B6E48912DD28F7AB0E7140C1BFDEFD493348F02295BD812 --witness -c /data/java-tron/config.conf
 
@@ -433,7 +432,7 @@ Example:
     Then observe whether block synchronization success，If synchronization successfully explains the success of the super node
 
 Download java-tron and wallet-cli
-=================================
+---------------------------------
 
 .. code-block:: shell
 
@@ -442,7 +441,7 @@ Download java-tron and wallet-cli
     git clone https://github.com/tronprotocol/wallet-cli.git
 
 Build and run java-tron
-=======================
+-----------------------
 
 .. code-block:: shell
 
@@ -453,7 +452,7 @@ Build and run java-tron
     ./gradlew run -Pwitness
 
 Build and run wallet-cli by command line
-========================================
+----------------------------------------
 
 Create a new command line terminal window.
 
@@ -466,7 +465,7 @@ Create a new command line terminal window.
     ./gradlew run -Pcmd
 
 Build and run web wallet
-========================
+------------------------
 
 .. code-block:: shell
 
@@ -481,7 +480,7 @@ cd wallet-cli
     java -jar wallet-1.0-SNAPSHOT.jar
 
 How wallet-cli connects to java-tron
-=====================================
+------------------------------------
 
 Wallet-cli connect to java-tron by grpc protocol.
 
@@ -490,7 +489,7 @@ Java-tron nodes can be deployed locally or remotely.
 We can set the connected java-tron node IP in config.conf of wallet-cli.
 
 Java-tron provides grpc api list
-================================
+--------------------------------
 
 Please refer to the link for details.
 
@@ -539,14 +538,14 @@ rpc UnfreezeBalance (UnfreezeBalanceContract) returns (Transaction)
 rpc WithdrawBalance (WithdrawBalanceContract) returns (Transaction)
 
 Web wallet host
-===============
+---------------
 
     127.0.0.0:8088
 
 **Note:** make sure the baseUrl configured in interface.js is what you want, for example 127.0.0.1:8088.
 
 Wallet-cli supported command list
-=================================
+---------------------------------
 
 RegisterWallet
 --------------
@@ -615,7 +614,7 @@ help
 **Input any one of then, you will get more tips.**
 
 How to get trx
-==============
+--------------
 
 You can gen one keypair and address by command line, then modify java-tron config.conf set genesis.block.assets address to yours.
 
@@ -624,7 +623,7 @@ Now that you have a lot of trx, you can send it to any address.
 With enough trx, you can issue assets, participate in asset, apply for witnesses, and more.
 
 How to freeze/unfreeze balance
-==============================
+------------------------------
 
 Once balance is frozen, users will received a proportionate amount of shares and bandwidth.
 
@@ -663,7 +662,7 @@ Assets can be unfrozen after the date to unfreeze.
     unfreezebalance password
 
 How to vote
-===========
+-----------
 
 Voting requires shares, which can be obtained through balance freezing.
 
@@ -685,10 +684,10 @@ Example：
 The final result of the above commands is 10 votes for witness1 and no vote for witness2.
 
 How to calculate bandwidth
-==========================
+--------------------------
 
 The bandwidth calculation rule is：
-----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: shell
 
@@ -705,12 +704,12 @@ If a new operation exceeds a given amount of time (10s) from the last contract, 
 Bandwith is not removed for balance freezing. New bandwidths will be accumulated upon acts of balance freezing.
 
 How to withdraw block producing reward
-======================================
+---------------------------------------
 
 Upon complete block production, reward will be sent to allowance in user’s account. Withdrawal can be made once every 24 hours, transferring reward from allowance to balance. Asset in allowance cannot be locked or traded.
 
 How to create witness
-=====================
+---------------------
 
 It takes 100,000 TRX to become establish a witness account. These TRX will be burnt immediately.
 
@@ -720,7 +719,7 @@ How to create account
 Accounts cannot be created directly. New accounts can only be created by making transfers to inexistent accounts, with a minimum transfer of 1 TRX.
 
 Command line operation flow example
-===================================
+-----------------------------------
 
 .. code-block:: shell
 

@@ -6,14 +6,14 @@ Tron Protocol
     :hidden:
 
     Introduction
-    Quick_Start
-    Super_Representative
-    Token_Creation
-    account_management
-    tronix
-    the_tron_network
-    validated_witness_packaging
-    asset_issue_and_trade
+    Web_Wallet
+    Command_Line_Interface_Wallet
+    Account_Management
+    The_TRON_Network
+    TRON_Event
+    Frequently_Asked_Questions
+
+
 
 TRON
 --------------
