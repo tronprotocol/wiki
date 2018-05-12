@@ -75,7 +75,7 @@ The following steps serve as an introduction on how to become a Super Representa
 
 8, After approval voting, the top 27 SRs by total approval are selected. The state of active SRs is updated once every maintenance interval (1 day).
 
-How to Vote
+How to vote
 -----------
 
 The following steps serve as an introduction on how to vote for a Super Representative through our TRON blockchain explorer.
