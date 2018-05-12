@@ -16,15 +16,15 @@ Rather than simply stress "lacking in characteristics”, TRON mainly focus on u
 
 * TRON Operation Model
 
-TRON：The Internet as It Was Meant to Be
+TRON：The Internet as it was meant to be
 ----------------------------------------
 
 TRON is an ambitious project dedicated to building the infrastructure for a truly decentralized Internet. The Tron Protocol, one of the largest blockchain based operating systems in the world, offers scalable, high-availability and high-throughput support that underlies all the decentralized applications in the TRON ecosystem. TRON enables large-scale development and engagement. With over ten thousand transactions per second, high concurrency, low latency and massive data transmission, TRON is ideal for building decentralized entertainment applications. Free features and incentive systems allow developers to create premium app experiences for users. TRON Protocol and the TVM allow anyone to develop DAPPs for themselves or their communities, with smart contracts making decentralized crowdfunding and token issuance easier than ever. Tron DAPP projects already include Peiwo, Uplive, game.com, Kitty live and Mico,  with 100M+ active users from more than 100 countries and regions around the world.
 
-TRON Virtual Machine
+TRON virtual machine
 --------------------
 
-TRON Milestone
+TRON milestone
 ---------------
 
 - 2017      Early-Stage
@@ -68,7 +68,7 @@ Super Representative
 
 - The total missed blocks of delegate.
 
-Super Representative Recommendations
+Super Representative recommendations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Every token holder has the opportunity to become a TRON Super Representative. However, for the network and community to operate more smoothly and effectively, we have created a set of standards and regulations for eligible candidates to become recommended Super Representatives. We will promote recommended SRs to increase their chances of being elected. New recommended Super Representatives are updated and posted once a week.
@@ -111,7 +111,7 @@ TRON Forum
 
     http://tronsr.org/
 
-TRON Foundation
+TRON foundation
 ---------------
 
 Forging ahead with the development of new technologies and applications jointly with all developers, Tron Foundation is devoted to the healthy development of Tron ecosystem.

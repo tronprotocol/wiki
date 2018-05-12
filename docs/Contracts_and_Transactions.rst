@@ -12,5 +12,5 @@ Contracts
 Dapps
 -----
 
-Developer Tools
+Developer tools
 ---------------
