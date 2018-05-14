@@ -150,7 +150,7 @@ Project Submission
     |                                                                   |- (  ) Wallet embedded with Google Chrome                                   |
     |                                                                   |- (  )Blockchain Explorer                                                   |
     +-------------------------------------------------------------------+----------------------------------------------------------------------------+
-    |Project Description* (In the form of link,installation package, etc.|Please send instllation package or other related forms in the attachement.)|
+    |Project Description* (In the form of link,installation package, etc.|Please send installation package or other related forms in the attachement.)|
     +-------------------------------------------------------------------+----------------------------------------------------------------------------+
     |Github*                                                            |                                                                            |
     +-------------------------------------------------------------------+----------------------------------------------------------------------------+

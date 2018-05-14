@@ -1,5 +1,5 @@
 =============
-Tron Odyssey
+TRON Odyssey
 =============
 
 .. toctree::
