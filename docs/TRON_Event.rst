@@ -116,11 +116,11 @@ Application  Procedure
     |                              |- (  )Blockchain Explorer                 |
     +------------------------------+------------------------------------------+
 
-.. Notes:: item with * is required.
+    .. Note:: item with * is required.
 
 - Step 2. Applicants will receive a confirmation email upon successful application:
 
-    You have successfully signed up for Tron Programming Contest. Please submit your project to program@tron.network by 23:59 on May 20, 2018 (GMT+8). Submission after the deadline is regarded as withdrawal from the contest. Thank you for your participation!
+You have successfully signed up for Tron Programming Contest. Please submit your project to program@tron.network by 23:59 on May 20, 2018 (GMT+8). Submission after the deadline is regarded as withdrawal from the contest. Thank you for your participation!
 
 Project Submission
 ~~~~~~~~~~~~~~~~~~
