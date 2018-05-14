@@ -85,7 +85,7 @@ Justin Sun: CEO of Tron
 
 Lucien Chen: CTO of Tron
 
-Marcus Zhao: Director of Technology, Tron
+Marcus Zhao: Director of Technology of Tron
 
 Application  Procedure
 ~~~~~~~~~~~~~~~~~~~~~~

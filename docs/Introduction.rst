@@ -336,16 +336,12 @@ Contributing to Crowdin
     :height: 200px
     :align: left
 
-
-
-
 Contributors
-------------
+~~~~~~~~~~~~
 
 We would like to express our deepest gratitude to the following participants who have made great contributions to the community:
 
-TRON Github Contributor:
-~~~~~~~~~~~~~~~~~~~~~~~~
+- TRON Github Contributor:
 
     `Roy van Kaathoven <https://github.com/Rovak>`_
 
@@ -415,8 +411,7 @@ TRON Github Contributor:
 
     `Diogenes Buarque Ianakiara <https://github.com/dbuarque>`_
 
-TRON Translation Contributor:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- TRON Translation Contributor:
 
     `fbsobreira <https://crowdin.com/profile/fbsobreira>`_
 

@@ -525,15 +525,6 @@ Then SolidityNode can be switched on：
 Test network
 ------------
 
-
-
-
-
-
-
-
-
-    
 Odyssey-v1.0.6.3
 ~~~~~~~~~~~~~~~~
 
