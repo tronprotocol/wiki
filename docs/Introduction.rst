@@ -249,7 +249,7 @@ Log on to gitter with your github account to participate in Tron’s discussions
 TRON Forum
 ~~~~~~~~~~~
 
-    http://tronsr.org/
+http://tronsr.org/
 
 TRON foundation
 ---------------
@@ -285,6 +285,59 @@ Other community platforms for international usership.
     `TRON SPAIN <https://t.me/tronnetworkES>`_
 
     `TRON ARABIC <https://t.me/tronnetworkAR>`_
+
+Contributions
+-------------
+
+Contributing to java-tron
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: https://raw.githubusercontent.com/tronprotocol/wiki/master/images/java-tron.png
+    :width: 200px
+    :height: 240px
+    :align: left
+
+
+java-tron is an open source project.
+
+It is the work of contributors. We appreciate your help!
+
+Here are instructions to get you started. They are not perfect, so please let us know if anything feels wrong or incomplete.
+
+Contribution guidelines
+~~~~~~~~~~~~~~~~~~~~~~~
+
+- Pull requests
+
+First of all, java-tron follows gitflow workflow. Please open pull requests to the develop branch. Once approved, we will close the pull request and merge into master branch.
+
+We are always happy to receive pull requests, and do our best to review them as fast as possible. Not sure if that typo is worth a pull request? Do it! We would appreciate it.
+
+If your pull request is not accepted on the first try, don't be discouraged as it can be a possible oversight. Please explain your code as detailed as possible to make it easier for us to understand.
+
+- Create issues
+
+Any significant improvement should be documented as a GitHub issue before anyone starts working on it.
+
+When filing an issue, make sure to answer these three questions:
+
+    - What did you do?
+    - What did you expect to see?
+    - What did you see instead?
+    - Please check existing issues and docs first!
+
+Please take a moment to check that your bug report or improvement proposal doesn't already exist. If it does, please add a quick "+1" or "I have this problem too". This will help prioritize the most common problems and requests.
+
+Contributing to Crowdin
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/images/crowdin-logo-2.png
+    :width: 200px
+    :height: 200px
+    :align: left
+
+
+
 
 Contributors
 ------------

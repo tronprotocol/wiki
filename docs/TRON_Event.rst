@@ -150,7 +150,7 @@ Project Submission
     |                                                                   |- (  ) Wallet embedded with Google Chrome                                   |
     |                                                                   |- (  )Blockchain Explorer                                                   |
     +-------------------------------------------------------------------+----------------------------------------------------------------------------+
-    |Project Description* (In the form of link,installation package, etc.|Please send installation package or other related forms in the attachement.)|
+    |Project Description* (In the form of link,installation package, etc.|Please send installation package or other related forms in the attachment.)|
     +-------------------------------------------------------------------+----------------------------------------------------------------------------+
     |Github*                                                            |                                                                            |
     +-------------------------------------------------------------------+----------------------------------------------------------------------------+
@@ -159,7 +159,7 @@ Project Submission
     |Name of Attachment                                                 |                                                                            |
     +-------------------------------------------------------------------+----------------------------------------------------------------------------+
 
-    Attention: item with * is required.
+    .. Note:: item with * is required.
 
 - Step 2. Applicants will receive a confirmation email upon successful project submission:
 
@@ -377,7 +377,7 @@ Please make a list of node names for community testnet participation.
 
 Please give us the name of your social media account, which could be Twitter, Telegram, Reddit, etc. There should be at least 500 followers/subscribers to your account.
 
-**Note:** The information mentioned above will be posted on Tron’s official website (http://tronsr.org/) and our Reddit page (https://www.reddit.com/r/Tronix/) once provided us.
+.. Note:: The information mentioned above will be posted on Tron’s official website (http://tronsr.org/) and our Reddit page (https://www.reddit.com/r/Tronix/) once provided us.
 
 Step 2.
 

@@ -167,7 +167,7 @@ After confirmation of exchanges, deposits and withdrawals of TRX will resume.
 
 Permanent token-exchange counter designated by TRON will retain the deposit channel for ERC20 TRX. Users can migrate from ERC20 TRX to mainnet tokens on a regular basis.
 
-**Note**: Exchanges don’t need snapshots and don’t need to suspend trading of TRX.
+.. Note:: Exchanges don’t need snapshots and don’t need to suspend trading of TRX.
 
 SR Guide
 ~~~~~~~~
@@ -232,7 +232,7 @@ From June 26th (GMT+8), deposits and withdrawals of TRX will resume. Users need 
 
 4. If your TRX is held in a wallet and you were not aware of the migration notice, or saw the migration notice after June 25th, please visit our permanent token-exchange counter to exchange your tokens for Mainnet TRX.
 
-**Note**: User's token migration is not perceptible. Please deposit TRX to an exchange before June 25th (GMT+8), and TRX's normal trading will not be affected.
+.. Note:: User's token migration is not perceptible. Please deposit TRX to an exchange before June 25th (GMT+8), and TRX's normal trading will not be affected.
 
 Transition manual for exchanges and TRX
 ---------------------------------------
@@ -339,7 +339,7 @@ GRPC interface is available on Solidity Node, providing Http interface for gRPC 
     //addressbase58=
     //27mAse8NBVPM4M7Mpp5sxZcLcYkpSqrcoHX
 
-Please note: All addresses of transactions and bock storage should be in byte[] as it has 14 bytes less than the base58check format (21 vs 35). Besides the initial address and the witness address in the configuration file, which adopt the base58check format, all other addresses in blockchain nodes should maintain their original format. Where it involves input and output for the wallet, format conversion has to be made, but what is presented to users should be in base58check format. Addresses should be validated before being converted to base58check format.
+.. Note:: All addresses of transactions and bock storage should be in byte[] as it has 14 bytes less than the base58check format (21 vs 35). Besides the initial address and the witness address in the configuration file, which adopt the base58check format, all other addresses in blockchain nodes should maintain their original format. Where it involves input and output for the wallet, format conversion has to be made, but what is presented to users should be in base58check format. Addresses should be validated before being converted to base58check format.
 
 6，Connecting with Solidity Node or grpc-gateway to check your balance
 
