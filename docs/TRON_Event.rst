@@ -88,7 +88,7 @@ Lucien Chen: CTO of Tron
 Marcus Zhao: Director of Technology, Tron
 
 Application  Procedure
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 - Step 1. Please submit your application to program@tron.network by May 20, 2018. Please name the subject in the format of “Application_Individual/Team name_Participating project” (e.g. “Application_Tron team_blockchain explorer”), or the email will be categorized as spam, leading to an unsuccessful application.
 
@@ -116,7 +116,7 @@ Application  Procedure
     |                              |- (  )Blockchain Explorer                 |
     +------------------------------+------------------------------------------+
 
-    Attention: item with * is required.
+.. Notes:: item with * is required.
 
 - Step 2. Applicants will receive a confirmation email upon successful application:
 
