@@ -331,10 +331,10 @@ Please take a moment to check that your bug report or improvement proposal doesn
 Contributing to Crowdin
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/tronprotocol/wiki/master/images/java-tron.png
-        :width: 200px
-        :height: 200px
-        :align: left
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/images/crowdin-logo-2.png
+    :width: 200px
+    :height: 200px
+    :align: left
 
 
 
