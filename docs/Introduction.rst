@@ -6,90 +6,258 @@ Introduction
     :depth: 1
     :local:
 
-TRON：The Internet as it was meant to be
----------------------------------
-
-TRON is an ambitious project dedicated to building the infrastructure for a truly decentralized Internet. The Tron Protocol, one of the largest blockchain based operating systems in the world, offers scalable, high-availability and high-throughput support that underlies all the decentralized applications in the TRON ecosystem. TRON enables large-scale development and engagement. With over ten thousand transactions per second, high concurrency, low latency and massive data transmission, TRON is ideal for building decentralized entertainment applications. Free features and incentive systems allow developers to create premium app experiences for users. TRON Protocol and the TVM allow anyone to develop DAPPs for themselves or their communities, with smart contracts making decentralized crowdfunding and token issuance easier than ever. Tron DAPP projects already include Peiwo, Obike, Uplive, game.com, Kitty live and Mico,  with 100M+ active users from more than 100 countries and regions around the world.
-
 What is TRON?
-------------
+-------------
 
-TRON operates as a decentralized blockchain platform for supporting smart contract and high throughput. TRON team sees it as a future operation system which allow developers deploying their own decentralized applications.
+Architecture
+~~~~~~~~~~~~~
 
-* Digital Asset Function with Chain Embedded
-  Rather than simply stress "lacking in characteristics”, TRON mainly focus on user-friendliness of different functions. For example, after fully research of current market, the develop team of TRON found that there are many decentralized platform users who do not have programming skills but have rich intrinsic value. They cannot convert their intrinsic value into external entities because of high threshold and versatility of existed smart contract. This is the reason why TRON team embeds custom digital asset functions into the main chain instead of actualizing functions in the form of smart contracts. This can be more easily and directly to achieve a number of indicators such as user-friendliness, safety, and so on.
-* TRON Operation Model
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Architecture的副本.png
+    :width: 842px
+    :height: 462px
+    :align: center
 
-The Launch of Testnet
+Tron adopts a 3-layer architecture comprised of storage layer, core layer and application layer.
+
+- Storage Layer
+
+The tech team of TRON designed a unique distributed storage protocol consisting of block storage and state storage.
+
+The notion of graph database was introduced into the design of the storage layer to better meet the need for diversified data storage in the real world.
+
+- Core Layer
+
+Smart contract module, account management module and consensus module are three modules of the core layer. It’s Tron’s vision to base its functions on a stacked virtual machine and optimized instruction set.
+
+In order to better serve the development of dAPPs, Java is designated as the language for smart contracts, which is to be further supplemented by other high-level programming languages.
+
+In addition, innovations are made to Tron’s consensus on the basis of DPOS to fulfill its special needs.
+
+- Application Layer
+
+Developers can utilize interfaces for the realization of diverse dAPPs and customized wallets.
+
+The protocol of TRON adheres in entirety to Google Protobuf, intrinsically supporting multi-language extension.
+
+Consensus
+~~~~~~~~~
+
+- Improved Consensus Mechanism based on DPOS
+
+High energy consumption, low efficiency and low TPS are always an issue with POW consensus, which is highly inconsistent with Tron’s values and footing. Under the guidance of our architectural philosophy, we have chosen to adopt the POS mechanism as the basis of Tron consensus. Having gained knowledge on constructive ideas in the blockchain community through research, we made improvements to the DPOS mechianism to meet up with our demands, thereby coming up with the Tron consensus.
+
+- Basic Rules of the Consensus Mechanism
+
+    - Coin holders are to vote for nodes in accordance with their holding of coins with a ballot. And nodes are elected to become what are known as witnesses based on the result of the votes and certain other rules, which tries, to its utmost capacity, to strike a balance between speed of block production and the number of witnesses.
+    - Meanwhile, compensation will be made to unelected nodes, voters for both elected nodes and unelected nodes, in order to encourage them to run for future elections.
+    - Witnesses will produce valid blocks successively based on specific distribution rules and success to do so results in the highest reward.
+    - The vast majority of witnesses are chosen through votes and the rest are selected with an equal chance under a certain algorithm.
+
+Storage Structure
+~~~~~~~~~~~~~~~~~
+
+- KhaosDB
+
+TRON has a KhaosDB in the full-node memory that can store all the new fork chains generated within a certain period of time and supports witnesses to switch their own active chain swiftly into a new main chain.
+
+- Level DB
+
+Level DB will be initially adopted with the primary goal to meet the requirements of fast R/W and rapid development. After launching the main net, TRON will upgrade its database to an entirely customized one catered to its very own needs.
+
+Token Module
+~~~~~~~~~~~~
+
+- Configuration
+
+Users can customize their own token through TKC (token configuration) functions.
+
+Customizable parameters include, but are not exclusive to, token name, abbreviation, LOGO, total capitalization, exchange rate of TRX, starting date, expiring date, attenuation coefficient, controlled inflation model, inflation period, description, etc.
+
+Users can chose to stay with the default parameters of the system if it’s their option to not customize their own.
+
+- Issue/Deployment
+
+Users can issue their tokens after setting up the parameters (manually customized or system default).
+
+System comes with operations and functions, and that allow issuers to deploy digital token, which has already been validated and customized. (Customized and validated tokens can proceed to function and operation setup for deployment.)
+
+Customized token is deployed once witnesses successfully validate, and can be freely circulated on TRON network. (Once validated by the witness, customized token is successfully deployed, which enters into online circulation.)
+
+- API
+
+API is mainly used for the development of client terminals. With API support, token issuance platform can be designed by developers themselves.
+
+Smart Contract/ Virtual Machine
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The smart contract module of TRON allows users to custominze contracts to their own needs.
+
+TRON is home to its own virtual machin, on which Smart contract operates, allowing for developers to customize for diverse and complex functions.
+
+Third Party Applications
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Token Deployment Platform
+
+Third party developers are granted access to Tron’s network for the development of their own platforms. With the use of Tron’s token module, users of these platforms could also customize their own tokens.
+
+- Wallet
+
+With the wallet, users can view their holding of TRX as well as other assets, or initiate or take transactions.
+
+- Blockchain Explorer
+
+Blockchain explorer is used for the viewing of block records, list of nodes, node deploymeng and real-time operation of Tron.
+
+ERC20 Token Migration
+~~~~~~~~~~~~~~~~~~~~~
+
+Before the launch of TRON’s main net, the migration from ERC20 to TRX, the official token of Tron, will be initiated by TRON foundation. The migration exchange rate is 1:1. The specificities of migration entails further clarification, to which may involve revision might be made before official execution.
+
+Community Plan
+~~~~~~~~~~~~~~~
+
+The community is always an integral part of any blockchain project, so it is our hope to evoke the members’ passion for full participation in Tron’s construction. This is a belief that we have unwaveringly held since the very inception of our project.
+
+There are numerous ways for Tron’s community members to be a part of the project, for instance, through participation in core programming tasks or third-party development through APIs to be opened up by Tron. Furthermore, a wide variety of competitions open to all users will be held for LOGO design, essay writing, poster design, competitive programming, etc.
+
+    - Providing Code Types
+    - feat: A new feature
+    - fix: A bug fix
+    - docs: Files of revision
+    - perf: A code change that improves performance
+    - refactor: A code change that neither fixes a bug nor adds a feature
+    - style: A change in text format (excessive blank space, format proofreading, missing punctuation marks, etc.)
+    - test: Addition of missing tests or correction to existing tests
+
+- Reward Plan
+
+We would like to offer reward to all those who have contributed to the progression and development of Tron’s network and community. A special committee is set up by Tron to conduct close assessment on all participants’ contribution, based on the result of which TRX tokens, gifts, and other forms of reward are offered.
+
+
+Protocol
+~~~~~~~~~
+
+Tron adheres to the Google Protobuf protocol, which covers multiple aspects such as accounts, blocks and transfers.
+
+There are 3 types of accounts: basic account, asset release account, and contract account. Each of those three types has six properties: name, type, address, balance and related asset.
+
+A basic account can apply to be a witness, which possesses other attributes and parameters including voting statistics, public key, URL, history performance, etc.
+
+A block typically consists of several transactions and a blockheader, which is comprised of basic block information like timestamp, root of Merkle tree, parent hash, signature, to name just a few.
+
+There are eight categories of contract transaction: account creation contract, transfer contract, asset transfer contract, asset voting contract, witness voting contract, witness creation contract, asset issuance contract and deployment contract.
+
+Each transaction contains several TXInputs, TXOutputs and other properties.
+
+Signature is required for input, transaction and block header.
+
+Inventory, protocol involved in transfers, is mainly used to inform recipient nodes of transmitted data.
+
+Please find in the appendix the detailed protocol. The specificities of the protocol is subject to change with program upgrading, so please always make reference to the latest version available.
+
+TRON：The Internet as it was meant to be
+----------------------------------------
+
+TRON is an ambitious project dedicated to building the infrastructure for a truly decentralized Internet. The Tron Protocol, one of the largest blockchain based operating systems in the world, offers scalable, high-availability and high-throughput support that underlies all the decentralized applications in the TRON ecosystem. TRON enables large-scale development and engagement. With over ten thousand transactions per second, high concurrency, low latency and massive data transmission, TRON is ideal for building decentralized entertainment applications. Free features and incentive systems allow developers to create premium app experiences for users. TRON Protocol and the TVM allow anyone to develop DAPPs for themselves or their communities, with smart contracts making decentralized crowdfunding and token issuance easier than ever. Tron DAPP projects already include Peiwo, Uplive, game.com, Kitty live and Mico,  with 100M+ active users from more than 100 countries and regions around the world.
+
+TRON virtual machine
 --------------------
 
-* TRON Milestone
+TRON milestone
+---------------
 
-.. code-block:: shell
+- 2017      Early-Stage
 
-    2018.3.31 The lanuch of testnet.
-    2018.5.31 The launch of mainnet.
-    2018.6    ERC20 Token--> Migration completed
+- 2017      TRON Foundation and TRONIX Prersale
 
-Web 3.0: Web 3.0: A Decentralized Application Platform
-------------------------------------------------------
+- 2018.3.31 The lanuch of testnet.
 
-* Smart contract
-* The Content of Delegated
-* The Basic Rule of Consensus
+- 2018.5.31 The launch of mainnet.
 
-  * Coin holders are required to vote for nodes in accordance to their tokens that have vote right. And nodes are elected what are known as witnesses based on votes and rules, which keep a balance between block-producing speed and the number of witness.
-  * Meanwhile, voting users and nodes that are voted out will be paid for a certain sum of money for encouraging them to run for further elections.
-  * Witnesses will produce valid blocks successively based on specific distribution rules and success to do so results in highest reward.
-  * The vast majority of witnesses are chosen by votes and the rest will guarantee to be selected randomly under certain algorithm.
+- 2018.6    ERC20 Token-->  TRX Migration completed
 
-TRON Brief Introduction
------------------------
+What is a Super Representative
+------------------------------
 
-1. Early-Stage
-2. TRON Foundation and TRONIX Prersale
-3. The Development Process of TRON
-4. The Launch of Testnet, Mainnet and Exodus
+Token holders in the TRON community fall into the following categories:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Token holder: Individual holding any amount of TRX.
+
+2. Super Representative candidate: 100 individuals elected through voting by the entire token holder community. Elections are held once every 24 hours.
+
+3. Super Representative: 27 individuals elected through voting by all token holders every 24 hours. Super Representatives play a key role in governing the TRON community by ensuring basic functions, e.g. block generation and bookkeeping, and obtain corresponding earnings.    Super Representatives can produce blocks and verify transactions. Meanwhile, Super Representatives can make an actual profit from creating blocks.
+
+Super Representative
+~~~~~~~~~~~~~~~~~~~~~
+
+-The TRON Protocol network will generate one block per second, with each block awarding 32 TRX to super representatives. A total of 1,009,152,000 TRX will be awarded annually to twenty-seven super representatives.
+
+- There will be no inflation on the TRON network before January 1, 2021, and the TRON Foundation will award all block rewards prior to that date.
+
+- Users can get SR information from TRON blockchain explorer, the detailed information shown as below:
+
+- The account address of delegate.
+
+- The total votes that delegate gets.
+
+- The url of personal website.
+
+- The total produced blocks of delegate.
+
+- The total missed blocks of delegate.
+
+Super Representative recommendations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Every token holder has the opportunity to become a TRON Super Representative. However, for the network and community to operate more smoothly and effectively, we have created a set of standards and regulations for eligible candidates to become recommended Super Representatives. We will promote recommended SRs to increase their chances of being elected. New recommended Super Representatives are updated and posted once a week.
+
 
 Community
 ---------
 
 Tron community always finds guidance in its principles of sharing, equity, freedom and mutual support. The communal space of Tron community provides all supporters and participants with more accessible and comprehensive resources and information on the projects of Tron. No participant will come across any restriction during resource acquisition or communicative exchanges, as long as they conform to community regulations and be actively engaged in community construction and maintenance.
 
-**Reddit**
+Reddit
+~~~~~~
 
 To its host of supporters and developers converging here,TRON `reddit <https://www.reddit.com/r/Tronix/>`_ is the dream venue for brainstorming and the exchange of ideas. With a firm belief in the freedom of speech, Tron community as a non-profit community accommodates all perspectives, with the aim for all participants to achieve progress through sharing.
 
 Current Reddit threads:
 
-`/r/TRXTrading <https://www.reddit.com/r/TRXTrading/>`_  – TRON trading, price and market.
+    `/r/TRXTrading <https://www.reddit.com/r/TRXTrading/>`_  – TRON trading, price and market.
 
-`/r/tronsupport <https://www.reddit.com/r/tronsupport>`_ – Support for any TRON-related questions.
+    `/r/tronsupport <https://www.reddit.com/r/tronsupport>`_ – Support for any TRON-related questions.
 
-**Slack**
+Slack
+~~~~~
 
 Keeping in touch with outstanding contributors on Github, the tech team of Tron communicates with and finds itself deeply inspired by developers on `slack <https://tronfoundation.slack.com/messages/C6DKKSU8G/details>`_ . The platform makes it easier for developers to discuss and solve technical problems together with the tech team of Tron in a timely fashion. Join us on Slack at our invitation or by your own request. We also welcome developers making a remarkable contribution to be a part of the Tron team.
 
-**Gitter Rooms**
+Gitter Rooms
+~~~~~~~~~~~~
 
 Log on to gitter with your github account to participate in Tron’s discussions. Accessible Gitter channels revolve around the topic of a certain database. Please select a suitable channel and topic and maintain the relevance of your posts.
 
-`java-tron <https://github.com/tronprotocol/java-tron>`_  – about full node, the launch of mainnet, testnet.
+    `java-tron <https://github.com/tronprotocol/java-tron>`_  – about full node, the launch of mainnet, testnet.
 
-`wallet-web <https://github.com/tronprotocol/wallet-web>`_ – blockchain explorer and web wallet developed by community.
+    `wallet-web <https://github.com/tronprotocol/wallet-web>`_ – blockchain explorer and web wallet developed by community.
 
-`wallet-cli <https://github.com/tronprotocol/wallet-cli>`_  – the official blockchain explorer and web wallet.
+    `wallet-cli <https://github.com/tronprotocol/wallet-cli>`_  – the command line interface wallet.
 
-**TRON Forum**
+TRON Forum
+~~~~~~~~~~~
 
 http://tronsr.org/
 
-TRON Foundation
+TRON foundation
 ---------------
 
 Forging ahead with the development of new technologies and applications jointly with all developers, Tron Foundation is devoted to the healthy development of Tron ecosystem.
 
-- Tron Foundation open to the community
+Tron Foundation open to the community
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     `Official Website <https://tron.network/en.html>`_
 
@@ -107,7 +275,8 @@ Forging ahead with the development of new technologies and applications jointly 
 
     `E-mail <service@tron.network>`_
 
-- Other community platforms for international usership.
+Other community platforms for international usership.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     `TRON SOUTH KOREA <https://t.me/tronnetworkKR>`_
 
@@ -117,8 +286,58 @@ Forging ahead with the development of new technologies and applications jointly 
 
     `TRON ARABIC <https://t.me/tronnetworkAR>`_
 
+Contributions
+-------------
+
+Contributing to java-tron
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: https://raw.githubusercontent.com/tronprotocol/wiki/master/images/java-tron.png
+    :width: 200px
+    :height: 240px
+    :align: left
+
+
+java-tron is an open source project.
+
+It is the work of contributors. We appreciate your help!
+
+Here are instructions to get you started. They are not perfect, so please let us know if anything feels wrong or incomplete.
+
+Contribution guidelines
+~~~~~~~~~~~~~~~~~~~~~~~
+
+- Pull requests
+
+First of all, java-tron follows gitflow workflow. Please open pull requests to the develop branch. Once approved, we will close the pull request and merge into master branch.
+
+We are always happy to receive pull requests, and do our best to review them as fast as possible. Not sure if that typo is worth a pull request? Do it! We would appreciate it.
+
+If your pull request is not accepted on the first try, don't be discouraged as it can be a possible oversight. Please explain your code as detailed as possible to make it easier for us to understand.
+
+- Create issues
+
+Any significant improvement should be documented as a GitHub issue before anyone starts working on it.
+
+When filing an issue, make sure to answer these three questions:
+
+    - What did you do?
+    - What did you expect to see?
+    - What did you see instead?
+    - Please check existing issues and docs first!
+
+Please take a moment to check that your bug report or improvement proposal doesn't already exist. If it does, please add a quick "+1" or "I have this problem too". This will help prioritize the most common problems and requests.
+
+Contributing to Crowdin
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/images/crowdin-logo-2.png
+    :width: 200px
+    :height: 200px
+    :align: left
+
 Contributors
-------------
+~~~~~~~~~~~~
 
 We would like to express our deepest gratitude to the following participants who have made great contributions to the community:
 
@@ -174,6 +393,24 @@ We would like to express our deepest gratitude to the following participants who
 
     `Wendy Sanarwanto <https://github.com/WendySanarwanto>`_
 
+    `Johnsavadkuhi <https://github.com/Johnsavadkuhi>`_
+
+    `Francisco Pena <https://github.com/daiky00>`_
+
+    `Fernando Sobreira <https://github.com/fbsobreira>`_
+
+    `lazaro <https://github.com/lazarovicedo>`_
+
+    `Shanadas <https://github.com/shanadas>`_
+
+    `DevObs1 <https://github.com/DevObs1>`_
+
+    `Daivy van de Graaf <https://github.com/Daivyy>`_
+
+    `Jacob Schuster <https://github.com/Jacob8765>`_
+
+    `Diogenes Buarque Ianakiara <https://github.com/dbuarque>`_
+
 - TRON Translation Contributor:
 
     `fbsobreira <https://crowdin.com/profile/fbsobreira>`_
@@ -189,3 +426,23 @@ We would like to express our deepest gratitude to the following participants who
     `J4ck1986 <https://crowdin.com/profile/J4ck1986>`_
 
     `Felix <https://crowdin.com/profile/FlxGut>`_
+
+    `Miimiis_Pets <https://crowdin.com/profile/Miimiis_Pets>`_
+
+    `robmarti <https://crowdin.com/profile/robmarti>`_
+
+    `Lorenzo Addazi <https://crowdin.com/profile/loradd>`_
+
+    `tomcritic <https://crowdin.com/profile/tomcritic>`_
+
+    `Uğur Civak <https://crowdin.com/profile/ugurcivak>`_
+
+    `Lernaarias <https://crowdin.com/profile/Lernaarias>`_
+
+    `El Petito Nicolas <https://crowdin.com/profile/salocinigrub>`_
+
+    `khanhnd69 <https://crowdin.com/profile/khanhnd69>`_
+
+
+
+

@@ -1,29 +1,35 @@
 =============
-Tron Protocol
+TRON Odyssey
 =============
 
 .. toctree::
     :hidden:
 
     Introduction
-    Quick_Start
-    Super_Representative
-    Token_Creation
-    account_management
-    tronix
-    the_tron_network
-    validated_witness_packaging
-    asset_issue_and_trade
+    The_TRON_Network
+    Blockchain_Explorer
+    Wallet_Cli
+    Account_Management
+    Contracts_and_Transactions
+    TRX
+    TRON_Event
+    Frequently_Asked_Questions
 
-TRON
+
+
+TRON: The Internet as It Was Meant to Be
 --------------
 
-.. figure:: /img/500-tron.jpg
+.. figure:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/logo红黑色英文竖版.png
+    :width: 301px
+    :height: 327px
     :align: right
 
-*TRON is a blockchain-based open source decentralized content entertainment protocol.*
+TRON is an ambitious project dedicated to building the infrastructure for a truly decentralized Internet.
 
-It is committed to the use of blockchain and distributed storage technology to build a worldwide free content entertainment system that allows each user the freedom to publish, store, have data, and through decentralized form of autonomy,
+The Tron Protocol, one of the largest blockchain based operating systems in the world, offers scalable, robust and high-throughput support that underlies all the decentralized applications in the TRON ecosystem.
 
-To digital asset distribution, circulation, trading methods to determine the distribution of content, subscribe, push, enable content creators, the formation of decentralized content entertainment ecology.
+TRON enables large-scale development and engagement. With over ten thousand transactions per second, high concurrency, low latency and massive data transmission, TRON is ideal for building decentralized entertainment applications. Free features and incentive systems allow developers to create premium app experiences for users.
+
+TRON Protocol and the TVM allow anyone to develop DAPPs for themselves or their communities, with smart contracts making decentralized crowdfunding and token issuance easier than ever.Tron DAPP projects already include Peiwo, Uplive, game.com, Kitty live and Mico,  with 100M+ active users from more than 100 countries and regions around the world.
 
