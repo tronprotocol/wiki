@@ -63,7 +63,7 @@ Storage Structure
 
 TRON has a KhaosDB in the full-node memory that can store all the new fork chains generated within a certain period of time and supports witnesses to switch their own active chain swiftly into a new main chain.
 
-- Level DB
+**Level DB**
 
 Level DB will be initially adopted with the primary goal to meet the requirements of fast R/W and rapid development. After launching the main net, TRON will upgrade its database to an entirely customized one catered to its very own needs.
 
@@ -291,8 +291,8 @@ Contributing to java-tron
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/images/java-tron.jpg
-    :width: 200px
-    :height: 240px
+    :width: 300px
+    :height: 300px
     :align: left
 
 Java-tron is an open source project.
@@ -300,12 +300,6 @@ Java-tron is an open source project.
 It is the work of contributors. We appreciate your help!
 
 Here are instructions to get you started. They are not perfect, so please let us know if anything feels wrong or incomplete.
-
-
-
-
-
-
 
 Contribution guidelines
 ~~~~~~~~~~~~~~~~~~~~~~~
