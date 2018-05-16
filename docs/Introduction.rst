@@ -17,7 +17,7 @@ Architecture
     :height: 462px
     :align: center
 
-Tron adopts a 3-layer architecture comprised of storage layer, core layer and application layer.
+TRON adopts a 3-layer architecture comprised of storage layer, core layer and application layer.
 
 - Storage Layer
 
@@ -27,11 +27,11 @@ The notion of graph database was introduced into the design of the storage layer
 
 - Core Layer
 
-Smart contract module, account management module and consensus module are three modules of the core layer. It’s Tron’s vision to base its functions on a stacked virtual machine and optimized instruction set.
+Smart contract module, account management module and consensus module are three modules of the core layer. It’s TRON’s vision to base its functions on a stacked virtual machine and optimized instruction set.
 
 In order to better serve the development of dAPPs, Java is designated as the language for smart contracts, which is to be further supplemented by other high-level programming languages.
 
-In addition, innovations are made to Tron’s consensus on the basis of DPOS to fulfill its special needs.
+In addition, innovations are made to TRON’s consensus on the basis of DPOS to fulfill its special needs.
 
 - Application Layer
 
@@ -44,7 +44,7 @@ Consensus
 
 - Improved Consensus Mechanism based on DPOS
 
-High energy consumption, low efficiency and low TPS are always an issue with POW consensus, which is highly inconsistent with Tron’s values and footing. Under the guidance of our architectural philosophy, we have chosen to adopt the POS mechanism as the basis of Tron consensus. Having gained knowledge on constructive ideas in the blockchain community through research, we made improvements to the DPOS mechianism to meet up with our demands, thereby coming up with the Tron consensus.
+High energy consumption, low efficiency and low TPS are always an issue with POW consensus, which is completely opposite from TRON’s values and design. Under the guidance of our architectural philosophy, we have chosen to adopt the POS mechanism as the basis of TRON consensus. Having gained knowledge on constructive ideas in the blockchain community through research, we made improvements to the DPOS mechianism to meet up with our demands, thereby coming up with the TRON consensus.
 
 - Basic Rules of the Consensus Mechanism
 
@@ -99,7 +99,7 @@ Third Party Applications
 
 - Token Deployment Platform
 
-Third party developers are granted access to Tron’s network for the development of their own platforms. With the use of Tron’s token module, users of these platforms could also customize their own tokens.
+Third party developers are granted access to TRON’s network for the development of their own platforms. With the use of TRON’s token module, users of these platforms could also customize their own tokens.
 
 - Wallet
 
@@ -107,12 +107,12 @@ With the wallet, users can view their holding of TRX as well as other assets, or
 
 - Blockchain Explorer
 
-Blockchain explorer is used for the viewing of block records, list of nodes, node deploymeng and real-time operation of Tron.
+Blockchain explorer is used for the viewing of block records, list of nodes, node deploymeng and real-time operation of TRON.
 
 ERC20 Token Migration
 ~~~~~~~~~~~~~~~~~~~~~
 
-Before the launch of TRON’s main net, the migration from ERC20 to TRX, the official token of Tron, will be initiated by TRON foundation. The migration exchange rate is 1:1. The specificities of migration entails further clarification, to which may involve revision might be made before official execution.
+Before the launch of TRON’s main net, the migration from ERC20 to TRX, the official token of TRON, will be initiated by TRON foundation. The migration exchange rate is 1:1. The specificities of migration entails further clarification, to which may involve revision might be made before official execution.
 
 Community Plan
 ~~~~~~~~~~~~~~~
@@ -138,9 +138,9 @@ We would like to offer reward to all those who have contributed to the progressi
 Protocol
 ~~~~~~~~~
 
-Tron adheres to the Google Protobuf protocol, which covers multiple aspects such as accounts, blocks and transfers.
+TRON adheres to the Google Protobuf protocol, which covers multiple aspects such as accounts, blocks and transfers.
 
-There are 3 types of accounts: basic account, asset release account, and contract account. Each of those three types has six properties: name, type, address, balance and related asset.
+There are 3 types of accounts: basic account, asset release account, and contract account. Each of those three types has five properties: name, type, address, balance and related asset.
 
 A basic account can apply to be a witness, which possesses other attributes and parameters including voting statistics, public key, URL, history performance, etc.
 
@@ -217,7 +217,7 @@ Every token holder has the opportunity to become a TRON Super Representative. Ho
 Community
 ---------
 
-Tron community always finds guidance in its principles of sharing, equity, freedom and mutual support. The communal space of Tron community provides all supporters and participants with more accessible and comprehensive resources and information on the projects of Tron. No participant will come across any restriction during resource acquisition or communicative exchanges, as long as they conform to community regulations and be actively engaged in community construction and maintenance.
+TRON community is driven by principles of sharing, equality,freedom of speech and personal expression where community members supporting each other. The Tron community social system provides all supporters and participants with more accessible and comprehensive resources and information on the projects of Tron. All participants will have full freedom with out of any restrictions in talent expression, new ideas suggestions, providing different opinions and taking discussion about different topics, as long as they follow community regulations and being actively engaged in community development at all levels.
 
 Reddit
 ~~~~~~
@@ -298,6 +298,17 @@ Contributing to java-tron
     :align: left
 
 
+
+
+
+
+
+
+
+
+
+
+
 java-tron is an open source project.
 
 It is the work of contributors. We appreciate your help!
@@ -330,11 +341,6 @@ Please take a moment to check that your bug report or improvement proposal doesn
 
 Contributing to Crowdin
 ~~~~~~~~~~~~~~~~~~~~~~~
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/images/crowdin-logo-2.png
-    :width: 200px
-    :height: 200px
-    :align: left
 
 Contributors
 ~~~~~~~~~~~~
