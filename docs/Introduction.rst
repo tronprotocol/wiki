@@ -291,8 +291,8 @@ Contributing to java-tron
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/images/java-tron.jpg
-    :width: 385px
-    :height: 385px
+    :width: 500px
+    :height: 500px
     :align: left
 
 Java-tron is an open source project.
