@@ -295,9 +295,15 @@ Contributing to java-tron
     :height: 300px
     :align: left
 
+
+
 Java-tron is an open source project.
 
+
+
 It is the work of contributors. We appreciate your help!
+
+
 
 Here are instructions to get you started. They are not perfect, so please let us know if anything feels wrong or incomplete.
 
