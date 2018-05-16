@@ -21,23 +21,23 @@ TRON adopts a 3-layer architecture comprised of storage layer, core layer and ap
 
 - Storage Layer
 
-The tech team of TRON designed a unique distributed storage protocol consisting of block storage and state storage.
+    The tech team of TRON designed a unique distributed storage protocol consisting of block storage and state storage.
 
-The notion of graph database was introduced into the design of the storage layer to better meet the need for diversified data storage in the real world.
+    The notion of graph database was introduced into the design of the storage layer to better meet the need for diversified data storage in the real world.
 
 - Core Layer
 
-Smart contract module, account management module and consensus module are three modules of the core layer. It’s TRON’s vision to base its functions on a stacked virtual machine and optimized instruction set.
+    Smart contract module, account management module and consensus module are three modules of the core layer. It’s TRON’s vision to base its functions on a stacked virtual machine and optimized instruction set.
 
-In order to better serve the development of dAPPs, Java is designated as the language for smart contracts, which is to be further supplemented by other high-level programming languages.
+    In order to better serve the development of dAPPs, Java is designated as the language for smart contracts, which is to be further supplemented by other high-level programming languages.
 
-In addition, innovations are made to TRON’s consensus on the basis of DPOS to fulfill its special needs.
+    In addition, innovations are made to TRON’s consensus on the basis of DPOS to fulfill its special needs.
 
 - Application Layer
 
-Developers can utilize interfaces for the realization of diverse dAPPs and customized wallets.
+    Developers can utilize interfaces for the realization of diverse dAPPs and customized wallets.
 
-The protocol of TRON adheres in entirety to Google Protobuf, intrinsically supporting multi-language extension.
+    The protocol of TRON adheres in entirety to Google Protobuf, intrinsically supporting multi-language extension.
 
 Consensus
 ~~~~~~~~~
