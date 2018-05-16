@@ -19,44 +19,47 @@ Architecture
 
 TRON adopts a 3-layer architecture comprised of storage layer, core layer and application layer.
 
-- Storage Layer
+**Storage Layer**
 
-    The tech team of TRON designed a unique distributed storage protocol consisting of block storage and state storage.
+The tech team of TRON designed a unique distributed storage protocol consisting of block storage and state storage.
 
-    The notion of graph database was introduced into the design of the storage layer to better meet the need for diversified data storage in the real world.
+The notion of graph database was introduced into the design of the storage layer to better meet the need for diversified data storage in the real world.
 
-- Core Layer
+**Core Layer**
 
-    Smart contract module, account management module and consensus module are three modules of the core layer. It’s TRON’s vision to base its functions on a stacked virtual machine and optimized instruction set.
+Smart contract module, account management module and consensus module are three modules of the core layer. It’s TRON’s vision to base its functions on a stacked virtual machine and optimized instruction set.
 
-    In order to better serve the development of dAPPs, Java is designated as the language for smart contracts, which is to be further supplemented by other high-level programming languages.
+In order to better serve the development of dAPPs, Java is designated as the language for smart contracts, which is to be further supplemented by other high-level programming languages.
 
-    In addition, innovations are made to TRON’s consensus on the basis of DPOS to fulfill its special needs.
+In addition, innovations are made to TRON’s consensus on the basis of DPOS to fulfill its special needs.
 
-- Application Layer
+**Application Layer**
 
-    Developers can utilize interfaces for the realization of diverse dAPPs and customized wallets.
+Developers can utilize interfaces for the realization of diverse dAPPs and customized wallets.
 
-    The protocol of TRON adheres in entirety to Google Protobuf, intrinsically supporting multi-language extension.
+The protocol of TRON adheres in entirety to Google Protobuf, intrinsically supporting multi-language extension.
 
 Consensus
 ~~~~~~~~~
 
-- Improved Consensus Mechanism based on DPOS
+**Improved Consensus Mechanism based on DPOS**
 
 High energy consumption, low efficiency and low TPS are always an issue with POW consensus, which is completely opposite from TRON’s values and design. Under the guidance of our architectural philosophy, we have chosen to adopt the POS mechanism as the basis of TRON consensus. Having gained knowledge on constructive ideas in the blockchain community through research, we made improvements to the DPOS mechianism to meet up with our demands, thereby coming up with the TRON consensus.
 
-- Basic Rules of the Consensus Mechanism
+**Basic Rules of the Consensus Mechanism**
 
-    - Coin holders are to vote for nodes in accordance with their holding of coins with a ballot. And nodes are elected to become what are known as witnesses based on the result of the votes and certain other rules, which tries, to its utmost capacity, to strike a balance between speed of block production and the number of witnesses.
-    - Meanwhile, compensation will be made to unelected nodes, voters for both elected nodes and unelected nodes, in order to encourage them to run for future elections.
-    - Witnesses will produce valid blocks successively based on specific distribution rules and success to do so results in the highest reward.
-    - The vast majority of witnesses are chosen through votes and the rest are selected with an equal chance under a certain algorithm.
+- Coin holders are to vote for nodes in accordance with their holding of coins with a ballot. And nodes are elected to become what are known as witnesses based on the result of the votes and certain other rules, which tries, to its utmost capacity, to strike a balance between speed of block production and the number of witnesses.
+
+- Meanwhile, compensation will be made to unelected nodes, voters for both elected nodes and unelected nodes, in order to encourage them to run for future elections.
+
+- Witnesses will produce valid blocks successively based on specific distribution rules and success to do so results in the highest reward.
+
+- The vast majority of witnesses are chosen through votes and the rest are selected with an equal chance under a certain algorithm.
 
 Storage Structure
 ~~~~~~~~~~~~~~~~~
 
-- KhaosDB
+**KhaosDB**
 
 TRON has a KhaosDB in the full-node memory that can store all the new fork chains generated within a certain period of time and supports witnesses to switch their own active chain swiftly into a new main chain.
 
@@ -67,7 +70,7 @@ Level DB will be initially adopted with the primary goal to meet the requirement
 Token Module
 ~~~~~~~~~~~~
 
-- Configuration
+**Configuration**
 
 Users can customize their own token through TKC (token configuration) functions.
 
@@ -75,7 +78,7 @@ Customizable parameters include, but are not exclusive to, token name, abbreviat
 
 Users can chose to stay with the default parameters of the system if it’s their option to not customize their own.
 
-- Issue/Deployment
+**Issue/Deployment**
 
 Users can issue their tokens after setting up the parameters (manually customized or system default).
 
@@ -83,7 +86,7 @@ System comes with operations and functions, and that allow issuers to deploy dig
 
 Customized token is deployed once witnesses successfully validate, and can be freely circulated on TRON network. (Once validated by the witness, customized token is successfully deployed, which enters into online circulation.)
 
-- API
+**API**
 
 API is mainly used for the development of client terminals. With API support, token issuance platform can be designed by developers themselves.
 
@@ -97,15 +100,15 @@ TRON is home to its own virtual machin, on which Smart contract operates, allowi
 Third Party Applications
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Token Deployment Platform
+**Token Deployment Platform**
 
 Third party developers are granted access to TRON’s network for the development of their own platforms. With the use of TRON’s token module, users of these platforms could also customize their own tokens.
 
-- Wallet
+**Wallet**
 
 With the wallet, users can view their holding of TRX as well as other assets, or initiate or take transactions.
 
-- Blockchain Explorer
+**Blockchain Explorer**
 
 Blockchain explorer is used for the viewing of block records, list of nodes, node deploymeng and real-time operation of TRON.
 
@@ -130,7 +133,7 @@ There are numerous ways for Tron’s community members to be a part of the proje
     - style: A change in text format (excessive blank space, format proofreading, missing punctuation marks, etc.)
     - test: Addition of missing tests or correction to existing tests
 
-- Reward Plan
+**Reward Plan**
 
 We would like to offer reward to all those who have contributed to the progression and development of Tron’s network and community. A special committee is set up by Tron to conduct close assessment on all participants’ contribution, based on the result of which TRX tokens, gifts, and other forms of reward are offered.
 
@@ -155,11 +158,6 @@ Signature is required for input, transaction and block header.
 Inventory, protocol involved in transfers, is mainly used to inform recipient nodes of transmitted data.
 
 Please find in the appendix the detailed protocol. The specificities of the protocol is subject to change with program upgrading, so please always make reference to the latest version available.
-
-TRON：The Internet as it was meant to be
-----------------------------------------
-
-TRON is an ambitious project dedicated to building the infrastructure for a truly decentralized Internet. The Tron Protocol, one of the largest blockchain based operating systems in the world, offers scalable, high-availability and high-throughput support that underlies all the decentralized applications in the TRON ecosystem. TRON enables large-scale development and engagement. With over ten thousand transactions per second, high concurrency, low latency and massive data transmission, TRON is ideal for building decentralized entertainment applications. Free features and incentive systems allow developers to create premium app experiences for users. TRON Protocol and the TVM allow anyone to develop DAPPs for themselves or their communities, with smart contracts making decentralized crowdfunding and token issuance easier than ever. Tron DAPP projects already include Peiwo, Uplive, game.com, Kitty live and Mico,  with 100M+ active users from more than 100 countries and regions around the world.
 
 TRON virtual machine
 --------------------
@@ -192,7 +190,7 @@ Token holders in the TRON community fall into the following categories:
 Super Representative
 ~~~~~~~~~~~~~~~~~~~~~
 
--The TRON Protocol network will generate one block per second, with each block awarding 32 TRX to super representatives. A total of 1,009,152,000 TRX will be awarded annually to twenty-seven super representatives.
+- The TRON Protocol network will generate one block per second, with each block awarding 32 TRX to super representatives. A total of 1,009,152,000 TRX will be awarded annually to twenty-seven super representatives.
 
 - There will be no inflation on the TRON network before January 1, 2021, and the TRON Foundation will award all block rewards prior to that date.
 
@@ -249,7 +247,7 @@ Log on to gitter with your github account to participate in Tron’s discussions
 TRON Forum
 ~~~~~~~~~~~
 
-http://tronsr.org/
+    http://tronsr.org/
 
 TRON foundation
 ---------------
