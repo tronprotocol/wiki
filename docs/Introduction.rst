@@ -290,33 +290,27 @@ Contributions
 Contributing to java-tron
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/tronprotocol/wiki/master/images/java-tron.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/images/java-tron.jpg
     :width: 200px
     :height: 240px
     :align: left
 
-
-
-
-
-
-
-
-
-
-
-
-
-java-tron is an open source project.
+Java-tron is an open source project.
 
 It is the work of contributors. We appreciate your help!
 
 Here are instructions to get you started. They are not perfect, so please let us know if anything feels wrong or incomplete.
 
+
+
+
+
+
+
 Contribution guidelines
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-- Pull requests
+**Pull requests**
 
 First of all, java-tron follows gitflow workflow. Please open pull requests to the develop branch. Once approved, we will close the pull request and merge into master branch.
 
@@ -324,7 +318,7 @@ We are always happy to receive pull requests, and do our best to review them as 
 
 If your pull request is not accepted on the first try, don't be discouraged as it can be a possible oversight. Please explain your code as detailed as possible to make it easier for us to understand.
 
-- Create issues
+**Create issues**
 
 Any significant improvement should be documented as a GitHub issue before anyone starts working on it.
 
@@ -345,7 +339,7 @@ Contributors
 
 We would like to express our deepest gratitude to the following participants who have made great contributions to the community:
 
-- TRON Github Contributor:
+**TRON Github Contributor:**
 
     `Roy van Kaathoven <https://github.com/Rovak>`_
 
@@ -415,7 +409,7 @@ We would like to express our deepest gratitude to the following participants who
 
     `Diogenes Buarque Ianakiara <https://github.com/dbuarque>`_
 
-- TRON Translation Contributor:
+**TRON Translation Contributor:**
 
     `fbsobreira <https://crowdin.com/profile/fbsobreira>`_
 
