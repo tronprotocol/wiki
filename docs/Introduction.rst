@@ -12,9 +12,9 @@ What is TRON?
 Architecture
 ~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Architecture的副本.png
-    :width: 842px
-    :height: 462px
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/architecture.jpg
+    :width: 700px
+    :height: 700px
     :align: center
 
 TRON adopts a 3-layer architecture comprised of storage layer, core layer and application layer.

@@ -8,6 +8,10 @@ The documentation is currently hosted on http://wiki.tron.network
 
 ## How to participate
 
+Guide to Wiki file revision
+
+We encourage TRON community members to participate in the revision of our Wiki files regarding their content and format.
+
 1, Sign in to Github. Enter [Wiki repository](https://github.com/tronprotocol/wiki) on TRON Protocol homepage and create a new fork.
 
 ![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/fork.jpg)
