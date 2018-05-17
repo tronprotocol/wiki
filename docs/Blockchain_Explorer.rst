@@ -6,229 +6,264 @@ Blockchain Explorer
     :depth: 1
     :local:
 
-How to run a Super Representative
----------------------------------
-
-The following steps serve as an introduction on how to become a Super Representative through our TRON blockchain explorer.
-
-**Steps**
-
-1, A registered account is required in TRON blockchain explorer.
-
-* In order to use TRON blockchain explorer, you will need to register an account, please visit our website:
-
-    https://tronscan.org/#/login
-
-* Direct visit to Tron blockchain explorer and the Web wallet can be made through
-
-    https://tronscan.org
-
-2, Tick off the follow two items, then click the button “Create Account”.
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/create_an_account的副本.jpg
-    :width: 842
-    :height: 1122
-    :align: center
-
-3, A certain sum of TRX is required in your new account.
-
-* 1000,0000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/request_for_testing的副本.jpg
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/scan.jpg
     :width: 842px
-    :height: 623px
+    :height: 212px
     :align: center
 
-4, You can get started to apply to be a delegate.
+Tronscan Super Representative Template
+--------------------------------------
 
-* Click the button “ Apply_for_delegate” first.
+Intro
+~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/apply_for_super_representative.png
+Tronscan provides a way for Super Representatives to publish their information right where the voters are, on Tronscan!
+
+Super Representatives can use this template to build a static page which will be shown on Tronscan. The link will be placed in the voting overview page right next to the name.
+
+By editing files in the repository on Github the Super Representative can manage their own content.
+
+How to use
+~~~~~~~~~~
+
+This guide assumes that you already have an account which has Super Representative (candidate) status.
+
+**Step 1: Copy/Fork the template on Github.**
+
+- Go to https://github.com/tronscan/tronsr-template
+
+- Fork the repository
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/Tronscan_Template/fork-repo的副本.png
     :width: 842px
-    :height: 486px
+    :height: 539px
     :align: center
 
-5, Provide your personal website address. The type of address includes but is not limited to: website, blog, social media account, etc.
+After forking the repository you will be navigated to your own `tronsr-template` version of the repository where you can make changes.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/personal_address的副本.jpg
-    :height: 830px
+**Step 2: Fill in the template.**
+
+The template can now be modified by editing files on Github.
+
+- Click the file you want to edit
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/Tronscan_Template/github-open-file的副本.png
     :width: 842px
+    :height: 361px
     :align: center
 
-6, Vote for delegate.
+- Open edit modus
 
-* Click the button "Votes" in account options.
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/votes.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/Tronscan_Template/github-edit-file的副本.png
     :width: 842px
-    :height: 450px
+    :height: 281px
     :align: center
 
-7, You can vote for all the delegates.
+- Add some information to the file
 
-* The maximum number of votes is no more than the user’s amount of TRX holding at a given time. Please choose the number of TRX and submit your votes.
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/submit_vote.png
-    :width: 841px
-    :height: 572px
-    :align: center
-
-8, After approval voting, the top 27 SRs by total approval are selected. The state of active SRs is updated once every maintenance interval (1 day).
-
-How to vote
------------
-
-The following steps serve as an introduction on how to vote for a Super Representative through our TRON blockchain explorer.
-
-**Steps**
-
-1, A registered account is required in TRON blockchain explorer.
-
-* In order to use TRON blockchain explorer, you will need to register an account, please visit our website:
-
-    https://tronscan.org/#/login
-
-* Direct visit to Tron blockchain explorer and the Web wallet can be made through
-
-    https://tronscan.org
-
-2, Tick off the follow two items, then click the button “Create Account”.
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/create_an_account的副本.jpg
-    :width: 842
-    :height: 1122
-    :align: center
-
-3, A certain sum of TRX is required in your new account.
-
-* 1000,0000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/request_for_testing的副本.jpg
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/Tronscan_Template/edit-team-intro的副本.png
     :width: 842px
-    :height: 623px
+    :height: 529px
     :align: center
 
-4, Vote for delegate.
+Files are written in markdown format. An excellent intro can be found at https://guides.github.com/features/mastering-markdown/
 
-* Click the button "Votes" in account options.
+- Update the logo.png and banner.png
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/votes.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/Tronscan_Template/github-upload-files的副本.png
     :width: 842px
-    :height: 450px
+    :height: 298px
     :align: center
 
-5, You can vote for all the delegates. Please choose the number of TRX and submit your votes.
+Then click on "choose your files" and make sure the logo or banner you want to upload is named `logo.png` or `banner.jpg` to overwrite the placeholder images.
 
-**Rules:**
+After you filled in the template it can now be published on https://tronscan.org
 
-- The maximum number of votes is no more than the user’s amount of TRX holding at a given time.
-- Each account can vote for several delegates for several times.
-- The final votes will be tallied at 24 o'clock and the list of delegates will be updated.
-- TRX for testing will not be consumed in the voting process.
+**Step 3: Publish to Tronscan**
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/submit_vote.png
-    :width: 841px
-    :height: 572px
-    :align: center
+- Navigate to https://tronscan.org
 
-How to create token
--------------------
+- Login to your account. In this example it shows using the private key, but you may use any login method.
 
-The following steps serve as an introduction on how to create, send and receive tokens.
-
-**Steps**
-
-1, A registered account is required in TRON blockchain explorer.
-
-* In order to use TRON blockchain explorer, you will need to register an account, please visit our website:
-
-    https://tronscan.org/#/login
-
-* Direct visit to Tron blockchain explorer and the Web wallet can be made through
-
-    https://tronscan.org
-
-2, Tick off the follow two items, then click the button “Create Account”.
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/create_an_account的副本.jpg
-    :width: 842
-    :height: 1122
-    :align: center
-
-3, A certain sum of TRX is required in your new account.
-
-* 1000,0000 TRX for testing will be sent to your testing account. Please click the button "Request TRX for testing".
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/request_for_testing的副本.jpg
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/Tronscan_Template/login-with-private-key的副本.png
     :width: 842px
-    :height: 623px
+    :height: 557px
     :align: center
 
-4, To create token, please click “Tokens” to enter the following webpage.
+- Open account and make sure the "Representative" label is visible
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Tokens.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/Tronscan_Template/open-account的副本.png
     :width: 842px
-    :height: 450px
+    :height: 522px
     :align: center
 
-5, Click “create” to enter token creation page. Fill in required information and then click “Issue Token” to issue your tokens.
+- Scroll to the bottom and click "Set Github Link"
 
-* It is very easy to create your own tokens in TRON’s ecosystem. With the parameters of token name, the number of tokens in circulation, token description, address of personal website, exchange rate to TRX, and participation, you will be able to issue your own tokens.
-
-**Token name**
-
-**Total Supply**: Total amount of tokens which will be in circulation.
-
-**Token description**
-
-**Address of personal website**: A website where users can find more information about the token.
-
-**Exchange rate to TRX**: Specify the price of a single token by defining how many tokens a participant will receive for every TRX they spend.
-
-**Participation**: Specify the participation period in which tokens will be issued. During the participation period users can exchange TRX for tokens.
-
-                                                                                                                                               *  You will be charged 1024 TRX for your creation of tokens.
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Create1.png
-    :width: 841px
-    :height: 385px
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/Tronscan_Template/set-github-link的副本.png
+    :width: 842px
+    :height: 382px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Create2.png
-    :width: 841px
-    :height: 385px
+- Input your Github username and then press "Link Github"
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/Tronscan_Template/input-username的副本.png
+    :width: 842px
+    :height: 529px
     :align: center
 
-6, Click “view” to see the details of your issued tokens.
+- View your new Page!
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/view.png
-    :width: 841px
-    :height: 335px
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/Tronscan_Template/view-page的副本.png
+    :width: 842px
+    :height: 250px
     :align: center
 
-7, To purchase issued tokens with TRX, click “Participate”.
+Example
+~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/view.png
-    :width: 841px
-    :height: 291px
+The example shows which files are presented where. Whenever the files on Github are modified the page will instantly be updated
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/Tronscan_Template/example-page的副本.png
+    :width: 842px
+    :height: 250px
     :align: center
 
-8, Select the amount of tokens you’d like to purchase based on their value. Click “Confirm Transaction” to confirm your transaction.
+FAQ
+~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/participate.png
-    :width: 841px
-    :height: 375px
+- I've modified a file but the changes aren't visible on tronscan.org?
+
+Contents from the repository are served using the Github CDN which uses aggressive caching. It may take a few minutes before the changes are reflected on tronscan.org.
+
+- Why are HTML elements visible on Github but not on tronscan.org?
+
+Tronscan.org will sanitize all HTML tags for security reasons, only standard markdown tags are allowed.
+
+Guide to voting on the new block explorer
+-----------------------------------------
+
+Open TRON block explorer or log in to your wallet.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    https://tronscan.org/#/
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/登陆1的副本.png
+    :width: 842px
+    :height: 314px
     :align: center
 
-9, Click “Account” to view the balance of your tokens.
+Enter your password and download encrypted private key.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Tokens%20Balance.png
-    :width: 841px
-    :height: 397px
+Password will encrypt private key. Both password and private key are needed to log in to your wallet.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/输入密码的副本2.png
+    :width: 842px
+    :height: 314px
     :align: center
 
-10,  Click “send” to initiate a transfer. Enter the recipient address, the amount of tokens you’d like to transfer and select a token type.
+Download encrypted private key.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/send.png
-    :width: 841px
-    :height: 414px
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/下载密钥的副本3.png
+    :width: 842px
+    :height: 460px
     :align: center
+
+Save your private key (by copy-paste or printing). Enter the account page upon successful log-in.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/保存密钥的副本4.png
+    :width: 842px
+    :height: 460px
+    :align: center
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/打印保存的副本5.png
+    :width: 842px
+    :height: 297px
+    :align: center
+
+Enter the account page upon successful log-in.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/注册成功的副本6.png
+    :width: 842px
+    :height: 536px
+    :align: center
+
+Only users with TRX are allowed to vote.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+10,000TRX can be claimed at the bottom of the account page to vote and only one claim can be made by every account. Once TRX is successfully claimed, account balance can be viewed in WALLET.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/testnet的副本.png
+    :width: 842px
+    :height: 536px
+    :align: center
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/钱包7的副本.png
+    :width: 400px
+    :height: 481px
+    :align: center
+
+An amount of TRX has to be frozen in order to vote for Super Representatives.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To freeze balance, click the FREEZE button in ACCOUNT, enter the amount of TRX you’d like to freeze, check the box to confirm freezing ****TRX for at least 3 days, and click FREEZE BALANCE to complete your freeze.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/冻结8的副本.png
+    :width: 842px
+    :height: 158px
+    :align: center
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/9的副本.png
+    :width: 842px
+    :height: 408px
+    :align: center
+
+.. Note:: Only TRX can be frozen. Two things can be obtained through balance freezing: TRON Power and entropy points. TRON Power are used for voting. In the event of unfrozen balance, votes previously casted will no longer be valid, which can be prevented by refreezing balance. Entropy points will not be cleared when balance unfreezes, instead, new entropy points will be accumulated at the next freeze.
+
+Vote for Super Representatives.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Click on VOTES in the navigation bar to enter voting page and then click START VOTING.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/10的副本.png
+    :width: 842px
+    :height: 539px
+    :align: center
+
+Select “Super Representative” to vote.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+On voting page, enter an amount of votes, click SUBMIT VOTES to submit and your will be notified if submission is successful.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/11的副本.png
+    :width: 842px
+    :height: 462px
+    :align: center
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/12的副本.png
+    :width: 676px
+    :height: 524px
+    :align: center
+
+Click RESET to reset the amount of votes entered for the current Super Representative.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/13的副本.png
+    :width: 842px
+    :height: 399px
+    :align: center
+
+.. Note:: Once you have submitted the amount of votes, the vote is complete. Voting requires TRON Power, which can be obtained by freezing TRX, one TRON Power for each frozen TRX and one vote for each TRON Power. Previous votes will no longer be valid when TRX is unfrozen, which can be avoided by refreezing. Voting will be successful as long as total votes casted do not exceed total TRON Power. There is no limit to the number of votes casted for a single Super Representative. A successful vote will consume 10^5 entropy points, unless it is more than 10s from the previous contract (vote, transfer, asset migration and balance freeze). When TRON Power are insufficient, user will be alerted on insufficient frozen balance. Only the last vote will be recorded, meaning that the last vote replaces all previous voting records.
+
+.. Voting Guidelines::
+
++ The maximum votes a user has must be no more than his/her holding of TRX.
++ Every user can vote for multiple candidates for multiple times.
++ The Super Representative list is updated every 6 hours.
++ No TRX will be consumed for voting.
+
+
+
