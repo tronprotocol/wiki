@@ -222,7 +222,7 @@ Reddit
 
 To its host of supporters and developers converging here,TRON `reddit <https://www.reddit.com/r/Tronix/>`_ is the dream venue for brainstorming and the exchange of ideas. With a firm belief in the freedom of speech, Tron community as a non-profit community accommodates all perspectives, with the aim for all participants to achieve progress through sharing.
 
-Current Reddit threads:
+Current Official Subreddits:
 
     `/r/TRXTrading <https://www.reddit.com/r/TRXTrading/>`_  – TRON trading, price and market.
 
@@ -291,8 +291,8 @@ Contributing to java-tron
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/images/java-tron.jpg
-    :width: 385px
-    :height: 385px
+    :width: 400px
+    :height: 400px
     :align: center
 
 Java-tron is an open source project.
@@ -327,6 +327,11 @@ Please take a moment to check that your bug report or improvement proposal doesn
 
 Contributing to Crowdin
 ~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: https://raw.githubusercontent.com/tronprotocol/wiki/master/images/crowdin-logo-2.png
+    :width: 400px
+    :height: 400px
+    :align: center
 
 Contributors
 ~~~~~~~~~~~~
@@ -403,7 +408,7 @@ We would like to express our deepest gratitude to the following participants who
 
     `Diogenes Buarque Ianakiara <https://github.com/dbuarque>`_
 
-**TRON Translation Contributor:**
+**Translation Contributor:**
 
     `fbsobreira <https://crowdin.com/profile/fbsobreira>`_
 
