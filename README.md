@@ -39,3 +39,21 @@ We encourage TRON community members to participate in the revision of our Wiki f
 3.	Once you’ve completed your revision, please submit it to the future branch in Wiki repository.
 
 4.	Please make sure to revise the existing files or create new files in docs folder.
+
+对于不了解Sphinx的用户，我们希望你们直接参与到文档内容的修改，而无需关注文章排版以及展现形式。只需关注docs文件里的所有rst文档，不必对wiki文件夹的其他文件进行修改。
+
+在docs文件下，请注意以下几点：
+
+1. 请不要删除和改动rst格式以外的其他文档，比如conf.py，index.html，Makefile等等。
+
+2. 通过修改index.rst文档内容可以直接改变文档目录。
+
+![]()
+
+3. 针对单一rst文档。
+
++ ====表示一级标题。----表示二级标题。~~~~表示三级标题。
++ ====下的标题可以通过改变index.rst内容改变文档的总目录形式。
++ ----与~~~~下的标题用来改变对单一rst文档目录展现形式。
+
+![]()
