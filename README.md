@@ -40,20 +40,20 @@ We encourage TRON community members to participate in the revision of our Wiki f
 
 4.	Please make sure to revise the existing files or create new files in docs folder.
 
-对于不了解Sphinx的用户，我们希望你们直接参与到文档内容的修改，而无需关注文章排版以及展现形式。只需关注docs文件里的所有rst文档，不必对wiki文件夹的其他文件进行修改。
+For user not knowing how to use Sphinx, we welcome you participate in the revision of file contents and be concerned about file layout or format. You needless spare your attention to other files in the Wiki folder besides RST files in the docs folder.
 
-在docs文件下，请注意以下几点：
+Regarding docs files, please note the following:
 
-1. 请不要删除和改动rst格式以外的其他文档，比如conf.py，index.html，Makefile等等。
+1， Don’t delete or edit any file that’s not in RST format, e.g. conf.py, inde.html, Makefile etc.
 
-2. 通过修改index.rst文档内容可以直接改变文档目录。
+2， Changes in index.rst files will be directly reflected in file directory.
 
-![]()
+![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/index.jpg)
 
-3. 针对单一rst文档。
+3， Headings for RST files:
 
-+ ====表示一级标题。----表示二级标题。~~~~表示三级标题。
-+ ====下的标题可以通过改变index.rst内容改变文档的总目录形式。
-+ ----与~~~~下的标题用来改变对单一rst文档目录展现形式。
++ ==== symbolizes H1, ---- symbolizes H2 and ~~~~ symbolizes H3. 
++ Changes to headings under  ==== in the index.rst file will alter the general directory.
++ Changes to headings under  ---- and ~~~~ will alter the table of contents in individual RST files.
 
-![]()
+![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/category.jpg)
