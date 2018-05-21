@@ -8,9 +8,9 @@ The documentation is currently hosted on http://wiki.tron.network
 
 ## How to participate
 
-Guide to Wiki file revision
+#### Guide to Wiki file revision
 
-We encourage TRON community members to participate in the revision of our Wiki files regarding their content and format.
+##### We encourage TRON community members to participate in the revision of our Wiki files regarding their content and format.
 
 1, Sign in to Github. Enter [Wiki repository](https://github.com/tronprotocol/wiki) on TRON Protocol homepage and create a new fork.
 
@@ -40,7 +40,7 @@ We encourage TRON community members to participate in the revision of our Wiki f
 
 4.	Please make sure to revise the existing files or create new files in docs folder.
 
-For user not knowing how to use Sphinx, we welcome you participate in the revision of file contents and be concerned about file layout or format. You needless spare your attention to other files in the Wiki folder besides RST files in the docs folder.
+##### For user not knowing how to use Sphinx, we welcome you participate in the revision of file contents and be concerned about file layout or format. You needless spare your attention to other files in the Wiki folder besides RST files in the docs folder.
 
 Regarding docs files, please note the following:
 
