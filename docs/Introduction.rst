@@ -167,9 +167,9 @@ TRON milestone
 
 - 2017      Early-Stage
 
-- 2017      TRON Foundation and TRONIX Prersale
+- 2017      TRON Foundation and TRONIX Presale
 
-- 2018.3.31 The lanuch of testnet.
+- 2018.3.31 The launch of testnet.
 
 - 2018.5.31 The launch of mainnet.
 
