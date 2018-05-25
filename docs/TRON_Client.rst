@@ -1,10 +1,11 @@
-===================
-Blockchain Explorer
-===================
 
 .. contents:: Table of contents
     :depth: 1
     :local:
+
+========
+Tronscan
+========
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/scan.jpg
     :width: 842px
@@ -16,7 +17,6 @@ Tronscan Super Representative Template
 
 Intro
 ~~~~~
-
 Tronscan provides a way for Super Representatives to publish their information right where the voters are, on Tronscan!
 
 Super Representatives can use this template to build a static page which will be shown on Tronscan. The link will be placed in the voting overview page right next to the name.
@@ -265,5 +265,7 @@ Click RESET to reset the amount of votes entered for the current Super Represent
 + The Super Representative list is updated every 6 hours.
 + No TRX will be consumed for voting.
 
-
+==============
+Android Wallet
+==============
 

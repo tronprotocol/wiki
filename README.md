@@ -12,23 +12,15 @@ The documentation is currently hosted on http://wiki.tron.network
 
 **We encourage TRON community members to participate in the revision of our Wiki files regarding their content and format.**
 
-1, Sign in to Github. Enter [Wiki repository](https://github.com/tronprotocol/wiki) on TRON Protocol homepage and create a new fork.
-
-![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/fork.jpg)
-
-2, Clone the Wiki repository to your local repository.
-
-![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/clone.jpg)
-
-3, Submit your revised file to future branch in Wiki repository.
-
-![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/future.jpg)
-
-4, Revise the existing files or create new files in the docs folder. Save images to the img folder in the docs folder.
-
-![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/docs.jpg)
-
-5, Submit your revised file to the future branch in Wiki repository.
+1. Sign in to Github. Enter [Wiki repository](https://github.com/tronprotocol/wiki) on TRON Protocol homepage and create a new fork.  
+![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/fork.jpg)  
+2. Clone the Wiki repository to your local repository.  
+![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/clone.jpg)  
+3. Submit your revised file to future branch in Wiki repository.  
+![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/future.jpg)  
+4. Revise the existing files or create new files in the docs folder. Save images to the img folder in the docs folder.  
+![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/docs.jpg)  
+5. Submit your revised file to the future branch in Wiki repository.
 
 **Notes**
 
@@ -44,13 +36,10 @@ The documentation is currently hosted on http://wiki.tron.network
 
 Regarding docs files, please note the following:
 
-1， Don’t delete or edit any file that’s not in RST format, e.g. conf.py, inde.html, Makefile etc.
-
-2， Changes in index.rst files will be directly reflected in file directory.
-
-![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/index.jpg)
-
-3， Headings for RST files:
+1. Don’t delete or edit any file that’s not in RST format, e.g. conf.py, inde.html, Makefile etc.
+2. Changes in index.rst files will be directly reflected in file directory.  
+![](https://raw.githubusercontent.com/ybhgenius/wiki/master/images/index.jpg)  
+3. Headings for RST files:
 
 + ==== symbolizes H1, ---- symbolizes H2 and ~~~~ symbolizes H3. 
 + Changes to headings under  ==== in the index.rst file will alter the general directory.

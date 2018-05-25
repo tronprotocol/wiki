@@ -7,7 +7,7 @@ TRON Odyssey
 
     Introduction
     The_TRON_Network
-    Blockchain_Explorer
+    TRON_Client
     Wallet_Cli
     Account_Management
     Contracts_and_Transactions
