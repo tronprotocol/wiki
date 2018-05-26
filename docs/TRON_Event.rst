@@ -64,8 +64,8 @@ First-place winners for the following five applications will take home a reward 
 - Wallet embedded with Google Chrome: $180,000
 - Blockchain Explorer: $280,000.
 
-The developer of any product we deem to be complete will receive a $100,000 TRON LOAN. For more information please refer to
-https://github.com/tronprotocol/Documentation/blob/master/English_Documentation/TRON_Loan.md
+The developer of any product we deem to be complete will receive a $100,000 TRON Accelerator. For more information please refer to
+https://github.com/tronprotocol/Documentation/blob/master/English_Documentation/TRON_Accelerator.md
 
 Timeline
 ~~~~~~~~
@@ -267,8 +267,8 @@ Further clarification
 
 8. All rights of interpretation for Bug Bounty are reserved to TRON.
 
-TRON loan
----------
+TRON Accelerator
+----------------
 
 Introduction
 ~~~~~~~~~~~~
@@ -282,7 +282,7 @@ Loan Amount: USD$100,000
 
 Disbursement: Within 6 – 24 hours
 
-Disbursement Method: Once eligibility for TRON LOAN is verified, applicants will receive the equivalent of USD$100,000 in digital assets from the Tron Foundation. After funds are disbursed, TRON will publicize information on participating projects and funding flows on official TRON channels.
+Disbursement Method: Once eligibility for TRON Accelerator is verified, applicants will receive the equivalent of USD$100,000 in digital assets from the Tron Foundation. After funds are disbursed, TRON will publicize information on participating projects and funding flows on official TRON channels.
 
 Repayment
 ~~~~~~~~~
@@ -290,9 +290,9 @@ Repayment
 There are currently two repayment methods:
 
 - If the developer’s project completes a new round of financing, the loan of USD$100,000 will be converted to its equivalent in equity, at 80% of the company’s new valuation amount. [USD$100,000 / (0.80 x New Valuation)]
-- Loans provided through TRON LOAN will be interest-free for the first 18 months. The  developer shall repay the principal balance of USD$100,000 within 18 months, either in USD or mainstream digital asset equivalent at the time of repayment.
+- Loans provided through TRON Accelerator will be interest-free for the first 18 months. The  developer shall repay the principal balance of USD$100,000 within 18 months, either in USD or mainstream digital asset equivalent at the time of repayment.
 
-By setting up TRON LOAN, TRON aims to expand and strengthen its network ecosystem, instead of seeking short-term commercial gains. If projects fail due to force majeure, the developer does not need to repay the principal balance.
+By setting up TRON Accelerator, TRON aims to expand and strengthen its network ecosystem, instead of seeking short-term commercial gains. If projects fail due to force majeure, the developer does not need to repay the principal balance.
 
 Application Requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~
