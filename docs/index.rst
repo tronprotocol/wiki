@@ -8,7 +8,7 @@ TRON Odyssey
     Introduction
     The_TRON_Network
     TRON_Client
-    Wallet_Cli
+    TRON_Virtual_Machine
     Account_Management
     Contracts_and_Transactions
     TRX
