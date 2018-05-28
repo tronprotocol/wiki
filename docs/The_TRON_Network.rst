@@ -65,7 +65,7 @@ here: https://github.com/tronprotocol/java-tron
 
 * After the syncing finished, select ``Gradle``  -> ``Tasks`` -> ``build`` , and then double click ``build`` option.
 
-Running a private testnet
+Running a Private Testnet
 -------------------------
 
 **How to run a full node**
@@ -236,7 +236,7 @@ Then, run ``FullNode::main()`` again.
     :height: 623px
     :align: center
 
-**Running multi-nodes**
+**Running Multi-nodes**
 
 To run TRON on more than one node, you need to specify several seed nodes IPs in ``config.conf`` in ``seed.node.ip.list``:
 
@@ -521,7 +521,7 @@ Then SolidityNode can be switched on：
 
     nohup java -jar java-tron.jar -c config.conf&
 
-Test network
+Test Network
 ------------
 
 Odyssey-v1.0.6.3

@@ -37,7 +37,7 @@ Developers can call these interfaces to deploy, trigger or check smart contracts
 How TVM works
 ~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/scan.jpg
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Virtual_Machine/虚拟机的副本.png
     :width: 842px
     :height: 915px
     :align: center

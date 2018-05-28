@@ -9,8 +9,6 @@ TRON Odyssey
     The_TRON_Network
     TRON_Client
     TRON_Virtual_Machine
-    Account_Management
-    Contracts_and_Transactions
     TRX
     TRON_Event
     Frequently_Asked_Questions

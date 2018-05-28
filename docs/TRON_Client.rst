@@ -10,7 +10,7 @@ Tronscan
 --------
 
 Tronscan Super Representative Template
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/scan.jpg
     :width: 842px
@@ -257,34 +257,33 @@ On voting page, enter an amount of votes, click SUBMIT VOTES to submit and your 
 Super Representative
 ~~~~~~~~~~~~~~~~~~~~~
 
-**Token holders in the TRON community fall into the following categories:**
+Token holders in the TRON community fall into the following categories:
 
 1. Token holder: Individual holding any amount of TRX.
+2. Super Representative candidates: 127 individuals elected through voting by the entire token holder community. Votes are updated once every 24 hours.
+3. Super Representatives: top 27 individuals among the 127 candidates, voted once every 24 hours. Super Representatives play a key role in governing the TRON community by ensuring basic functions, e.g. block generation and bookkeeping, and obtain corresponding earnings.
 
-2. Super Representative candidate: 100 individuals elected through voting by the entire token holder community. Elections are held once every 24 hours.
+**Rewards**
 
-3. Super Representative: 27 individuals elected through voting by all token holders every 24 hours. Super Representatives play a key role in governing the TRON community by ensuring basic functions, e.g. block generation and bookkeeping, and obtain corresponding earnings.    Super Representatives can produce blocks and verify transactions. Meanwhile, Super Representatives can make an actual profit from creating blocks.
+1.	Candidate reward: 127 candidates updated once every 6 hours will share 230,400 TRX. The reward will be split in accordance to the votes each candidate receives. Each year, candidate reward will total 336,384,000 TRX.
+2.	Super Representative reward: The TRON Protocol network will generate one block every 3 seconds, with each block awarding 32 TRX to super representatives. A total of 336,384,000 TRX will be awarded annually to twenty-seven super representatives.
+3.	There will be no inflation on the TRON network before January 1, 2021, and the TRON Foundation will award all block rewards and candidate rewards prior to that date.
 
-- The TRON Protocol network will generate one block per second, with each block awarding 32 TRX to super representatives. A total of 1,009,152,000 TRX will be awarded annually to twenty-seven super representatives.
+**Super Representative**
 
-- There will be no inflation on the TRON network before January 1, 2021, and the TRON Foundation will award all block rewards prior to that date.
+Users can get SR information from TRON blockchain explorer, the detailed information shown as below:
 
-- Users can get SR information from TRON blockchain explorer, the detailed information shown as below:
++ The account address of the delegate.
++ The total votes that the delegate received.
++ The url of personal website.
++ The total of blocks produced by the delegate.
++ The total missed blocks of delegate.
 
-- The account address of delegate.
+**Super Representative Recommendations**
 
-- The total votes that delegate gets.
+Every token holder has the opportunity to become a TRON Super Representative. However, for the network and community to operate more smoothly and effectively, we have created a set of standards and regulations for eligible candidates to become recommended Super Representatives. We will promote recommended SRs to increase their chances of being elected.
 
-- The url of personal website.
-
-- The total produced blocks of delegate.
-
-- The total missed blocks of delegate.
-
-Super Representative recommendations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Every token holder has the opportunity to become a TRON Super Representative. However, for the network and community to operate more smoothly and effectively, we have created a set of standards and regulations for eligible candidates to become recommended Super Representatives. We will promote recommended SRs to increase their chances of being elected. New recommended Super Representatives are updated and posted once a week.
+New recommended Super Representatives are updated and posted once a week.
 
 
 Android Wallet
@@ -797,9 +796,9 @@ Input any one of then, you will get more tips.
 How to freeze/unfreeze balance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once balance is frozen, users will received a proportionate amount of shares and bandwidth.
+Once balance is frozen, users will received a proportionate amount of TRON Power and bandwidth.
 
-The shares are your votes and bandwidth is used for transactions.
+The TRON Power are your votes and bandwidth is used for transactions.
 
 Their usage and means of calculation will be introduced in following sections.
 
@@ -823,7 +822,7 @@ For example：
 
 Frozen assets will transfer from account Balance to Frozen, which will be reversed once balance unfreezes. Frozen assets cannot be used for transactions.
 
-When in need of more shares or bandwidth, users can freeze more balance to obtain more shares and bandwidth. Date to unfreeze balance will be renewed to 3 days after the latest freeze.
+When in need of more TRON Power or bandwidth, users can freeze more balance to obtain more TRON Power and bandwidth. Date to unfreeze balance will be renewed to 3 days after the latest freeze.
 
 Assets can be unfrozen after the date to unfreeze.
 
@@ -833,12 +832,61 @@ Assets can be unfrozen after the date to unfreeze.
 
     unfreezebalance password
 
+Creating an account
+~~~~~~~~~~~~~~~~~~~
+
+Accounts cannot be created directly. New accounts can only be created by making transfers to inexistent accounts, with a minimum transfer of 1 TRX.
+
+**Command line operation flow example**
+
+.. code-block:: shell
+
+    cd wallet-cli
+
+    ./gradlew build
+
+    ./gradlew run -Pcmd
+
+    RegisterWallet 123456      (password = 123456)
+
+    login 123456
+
+    getAddress                 (Print ``address = f286522619d962e6f93235ca27b2cb67a9e5c27b``, backup it)
+
+    BackupWallet 123456        (Print ``priKey = 22be575f19b9ac6e94c7646a19a4c89e06fe99e2c054bd242c0af2b6282a65e9``, backup it) (BackupWallet2Base64 option)
+
+    getbalance                 (Print 'Balance = 0')
+
+    //set genesis.block.assets address to yours. restart java-tron.
+
+    getbalance
+
+    assetIssue 123456 testAssetIssue00001 10000000000000000 1 100 2018-4-1 2018-4-30 1 just-test https://github.com/tronprotocol/wallet-cli/
+
+    getaccount  f286522619d962e6f93235ca27b2cb67a9e5c27b
+
+    (Print balance: 9999900000
+
+    asset {
+
+    key: "testAssetIssue00001"
+
+    value: 10000000000000000
+
+    })
+
+    (cost trx 1000 trx for assetIssue)
+
+    (You can query the trx balance and other asset balances for any account )
+
+    TransferAsset 123456 649DDB4AB82D558AD6809C7AB2BA43D1D1054B3F testAssetIssue00001 10000
+
 How to vote
 ~~~~~~~~~~~
 
-Voting requires shares, which can be obtained through balance freezing.
+Voting requires TRON Power, which can be obtained through balance freezing.
 
-- Calculation of shares: 1 share for 1 frozen TRX.
+- Calculation of TRON Power: 1 TRON Power for 1 frozen TRX.
 - Once unfrozen, previous votes casted will be invalid, which can be prevented by refreezing balance.
 
 .. Note:: TRON network only keeps record of the latest votes, meaning that every new vote you make will replace all previous records.
@@ -847,18 +895,18 @@ Example：
 
 .. code-block:: shell
 
-    freezebalance 123455 10_000_000 3// 10 shares for 10 frozen TRX
+    freezebalance password 10_000_000 3// 10 TRON Power for 10 frozen TRX
 
-    votewitness123455 witness1 4 witness2 6//4 votes for witness1 and 6 votes for witness2
+    votewitness password witness1 4 witness2 6//4 votes for witness1 and 6 votes for witness2
 
-    vote witness 123455 witness1 10// 10 votes for witness1
+    vote witness password witness1 3 witness2 7 // 3 votes for witness1 and 7 votes for witness 2
 
 The final result of the above commands is 10 votes for witness1 and no vote for witness2.
 
 How to calculate bandwidth
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**The bandwidth calculation rule is:**
+**The bandwidth calculation rule is:*
 
 .. code-block:: shell
 
