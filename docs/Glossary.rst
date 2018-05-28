@@ -6,6 +6,9 @@ Glossary
     :depth: 1
     :local:
 
+Items
+-----
+
     Account
         There are 3 types of account—basic account, asset release account and contract account, and attributes included in each account are name, types, address, balance and related asset.
     Address
