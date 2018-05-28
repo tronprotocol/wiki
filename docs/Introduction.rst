@@ -159,7 +159,7 @@ Inventory, protocol involved in transfers, is mainly used to inform recipient no
 
 Please find in the appendix the detailed protocol. The specificities of the protocol is subject to change with program upgrading, so please always make reference to the latest version available.
 
-TRON milestone
+TRON Milestone
 ---------------
 
 - 2017      Early-Stage
@@ -209,7 +209,7 @@ TRON Forum
 
     http://tronsr.org/
 
-TRON foundation
+TRON Foundation
 ---------------
 
 Forging ahead with the development of new technologies and applications jointly with all developers, Tron Foundation is devoted to the healthy development of Tron ecosystem.
@@ -261,7 +261,7 @@ It is the work of contributors. We appreciate your help!
 
 Here are instructions to get you started. They are not perfect, so please let us know if anything feels wrong or incomplete.
 
-Contribution guidelines
+Contribution Guidelines
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 **Pull requests**
