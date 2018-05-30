@@ -191,7 +191,7 @@ Password will encrypt private key. Both password and private key are needed to l
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/testnet的副本.png
     :width: 842px
-    :height: 536px
+    :height: 130px
     :align: center
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/钱包7的副本.png
@@ -297,15 +297,18 @@ TRON Wallet is a multifunctional Android wallet for the TRON network. It gives y
 **Features**
 
 Create Wallet
+
 + encrypts private information with a password
 + creates a private/public key pair
 + creates a 24 words recovery phrase (human readable private key recovery phrase) (BIP39)
 
 **Import Wallet**
+
 + import with private key or 24 words recovery phrase
 + import public address only (watch only setup)
 
 **Wallet Functionalities**
+
 + check balance (TRX, tokens)
 + toggle market price view
 + check frozen amount
@@ -318,6 +321,7 @@ Create Wallet
 + manually set your node connection
 
 **Block Explorer**
+
 + see latest blocks
 + see latest transactions
 + see representative candidates
@@ -329,17 +333,20 @@ Create Wallet
 **Wallet Setups**
 
 Watch only setup
+
 + import only your public address
 + completely safe because no private information is accessible
 + you have a full overview of your account
 + creates unsigned transactions (used in combination with a cold wallet setup)
 
 Hot Wallet Setup
+
 + owns public and private key
 + full overview of account
 + full access (sending, freezing, voting, ...)
 
 Cold Wallet Setup
+
 + minimalistic and safest wallet
 + owns public and private key
 + never connects to the internet (to be completely secure you should never connect your device to the internet)
@@ -420,6 +427,7 @@ Create account
     :align: center
 
 3. Tap CREATE WALLET.
+
 + Cold wallet creation: toggle COLD WALLET SETUP and tick I AM AWARE OF THE RISKS.
 + Hot wallet creation: don’t toggle COLD WALLET SETUP and tick I AM AWARE OF THE RISKS.
 

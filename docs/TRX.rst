@@ -71,7 +71,6 @@ Many exchanges has listed TRX, you can get TRX through these exchanges:
 
     `Gatecoin <https://www.gatecoin.com>`_
 
-
 Sending TRX
 -----------
 
@@ -197,21 +196,21 @@ TRX users vote for SR candidates using wallets.
 
 1.	Campaigning 4/27-5/31 (GMT+8)
 
-SR election campaigning period allows SRs to attract more votes from TRX holders.
+    SR election campaigning period allows SRs to attract more votes from TRX holders.
 
 2.	Candidates transfer deposit:
 
-Candidates will be informed on May 15th (GMT+8) to transfer
+    Candidates will be informed on May 15th (GMT+8) to transfer
 
-200K TRX to Tron Foundation by May 31st as deposit. Deposit will be returned to designated Tron mainnet addresses at midnight June 25th (GMT+8).
+    200K TRX to Tron Foundation by May 31st as deposit. Deposit will be returned to designated Tron mainnet addresses at midnight June 25th (GMT+8).
 
 3.	Election test period: 6/1 - 6/24 (GMT+8)
 
-Supporters can do test voting. Run test nodes and generate blocks.
+    Supporters can do test voting. Run test nodes and generate blocks.
 
 4.	Candidates’ deposit is returned:
 
-Deposit will be returned to designated Tron mainnet addresses at midnight June 25th (GMT+8).
+    Deposit will be returned to designated Tron mainnet addresses at midnight June 25th (GMT+8).
 
 5.	Apply to become an SR candidate using the wallet and call on supporters to vote.
 
@@ -357,4 +356,4 @@ GRPC interface is available on Solidity Node, providing Http interface for gRPC 
 
 6，Connecting with Solidity Node or grpc-gateway to check your balance
 
-With the address generated in step 5, connect with Solidity Node to view balance through gRPC interface GetAccount. Or you can access http://localhost:8080/Wallet/GetAccount interface for your balance through grpc-gateway.
+    With the address generated in step 5, connect with Solidity Node to view balance through gRPC interface GetAccount. Or you can access http://localhost:8080/Wallet/GetAccount interface for your balance through grpc-gateway.
