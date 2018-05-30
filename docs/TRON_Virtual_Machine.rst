@@ -20,25 +20,25 @@ Features of TVM
 
 1. Lightweight
 
-TVM adopts a lightweight architecture with the aim of reducing resource consumption to guarantee system performance.
+    TVM adopts a lightweight architecture with the aim of reducing resource consumption to guarantee system performance.
 
 2. Stability and security
 
-With a meticulous design paradigm and fine-grained underlying operation code, TVM can guarantee the preciseness of every step of a computation, diminishing ambiguity to the largest extent. Out of security reasons, transfers and smart contract running cost only bandwidth points, not TRX, which exempts TRON from being attacked similarly to Ethereum for its mode of gas consumption. Stability of bandwidth consumption is achieved while the cost of each computational step is fixed.
+    With a meticulous design paradigm and fine-grained underlying operation code, TVM can guarantee the preciseness of every step of a computation, diminishing ambiguity to the largest extent. Out of security reasons, transfers and smart contract running cost only bandwidth points, not TRX, which exempts TRON from being attacked similarly to Ethereum for its mode of gas consumption. Stability of bandwidth consumption is achieved while the cost of each computational step is fixed.
 
 3. Compatibility
 
-Currently, TVM is compatible with EVM and will be with more mainstream VMs in the future. Thereby, all smart contracts on EVM are executable on TVM. By connecting seamlessly to existing development ecosystem, higher efficiency can be achieved by developers. Needless to learn a new programming language, they can use mainstream programming languages for smart contract such as Solidity to develop, debug and compile smart contracts in the Remix environment, which greatly reduces development costs.
+    Currently, TVM is compatible with EVM and will be with more mainstream VMs in the future. Thereby, all smart contracts on EVM are executable on TVM. By connecting seamlessly to existing development ecosystem, higher efficiency can be achieved by developers. Needless to learn a new programming language, they can use mainstream programming languages for smart contract such as Solidity to develop, debug and compile smart contracts in the Remix environment, which greatly reduces development costs.
 
 4. Developer-friendly
 
-Thanks to TVM’s bandwidth setup, developments costs are reduced and developers can focus on the logic of their contract code. TVM also offers all-in-one interfaces for contract deployment, triggering and viewing, for the convenience of developers.
+    Thanks to TVM’s bandwidth setup, developments costs are reduced and developers can focus on the logic of their contract code. TVM also offers all-in-one interfaces for contract deployment, triggering and viewing, for the convenience of developers.
 
-The following interfaces are available in Tron Wallet-CLI:
+    The following interfaces are available in Tron Wallet-CLI:
 
-+ deploycontract(password, contractAddress, ABI, code, data, value)
-+ triggercontract(password, contractAddress, selector, data, value)
-+ getcontract(contractAddress)
+    + deploycontract(password, contractAddress, ABI, code, data, value)
+    + triggercontract(password, contractAddress, selector, data, value)
+    + getcontract(contractAddress)
 
 Developers can call these interfaces to deploy, trigger or check smart contracts.
 
@@ -65,15 +65,15 @@ Future development of TVM
 
 1. More developer-friendly debugging tools
 
-Tron will be committed to the development of optimized debugging tools and the establishment of standardized symbol and data format, for improved developer efficiency.
+    Tron will be committed to the development of optimized debugging tools and the establishment of standardized symbol and data format, for improved developer efficiency.
 
 2. Fulfillment of diversified processing demands
 
-Different from gas consumption mechanism for every transaction on EVM, there is no charge on TVM. Each operation only occupies bandwidth, which will be released within a certain amount of time after completion of transaction. It takes developers very little to develop smart contracts with more complex logic. It is our belief that besides being used for digital asset transactions, smart contracts could also be suitably applied to areas such as game development, financial risk modeling and scientific computing. The design of TVM inherently supports multi-scenario tasks, and further optimizations of processing speed, response time, and floating point compatibility.
+    Different from gas consumption mechanism for every transaction on EVM, there is no charge on TVM. Each operation only occupies bandwidth, which will be released within a certain amount of time after completion of transaction. It takes developers very little to develop smart contracts with more complex logic. It is our belief that besides being used for digital asset transactions, smart contracts could also be suitably applied to areas such as game development, financial risk modeling and scientific computing. The design of TVM inherently supports multi-scenario tasks, and further optimizations of processing speed, response time, and floating point compatibility.
 
 3. Improvement of Just-In-Time (JIT) compilation speed and integration of WebAssembly
 
-Improving JIT compilation speed is conducive to faster interpretation and optimized compilation of local code.
+    Improving JIT compilation speed is conducive to faster interpretation and optimized compilation of local code.
 
 Meanwhile, Tron is planning to further optimize its TVM based on WebAssembly (WASM). WebAssembly, spearheaded by Apple, Google, Microsoft and Mozzila, is designed to break bottlenecks of current Web browsers and can be generated through compiling C/C++ and other programming languages.
 
@@ -132,7 +132,7 @@ bc72e90029
 
     deploycontract(Password, ContractAddress, ABI, Code, Data, Value)
 
-    4. Invoke contract
+4. Invoke contract
 
     Selector: function selector
 
