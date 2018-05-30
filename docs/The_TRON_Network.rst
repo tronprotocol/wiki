@@ -130,7 +130,9 @@ in the config.conf localwitness add yourself private key
 
     ./gradlew run -Pwitness=true
 
-*Show Output*
+*Show Output_*
+
+.. _Show Output:
 
 .. code-block:: shell
 

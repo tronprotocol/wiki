@@ -219,7 +219,7 @@ Tron Foundation open to the community
 
     `Official Website <https://tron.network/en.html>`_
 
-     `Twitter <https://twitter.com/tronfoundation>`_
+    `Twitter <https://twitter.com/tronfoundation>`_
 
     `Facebook <https://www.facebook.com/TronFoundation>`_
 
