@@ -31,6 +31,8 @@ There will be no subsequent offering of TRX before 2021 and profits of witnesses
 Getting TRX
 -------------
 
+Many exchanges has listed TRX, you can get TRX through these exchanges:
+
     `Binance <https://www.binance.com>`_
 
     `Bittrex <https://bittrex.com>`_
