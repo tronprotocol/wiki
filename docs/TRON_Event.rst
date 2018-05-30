@@ -174,41 +174,41 @@ We will score projects submitted for the programming contest based on the follow
 
 1. Originality：
 
-The submitted project must be the original creation of the applicant. We will not tolerate plagiarism.
+    The submitted project must be the original creation of the applicant. We will not tolerate plagiarism.
 
 2. Compatibility：
 
-The project/product should be applicable to TRON's mainnet.
+    The project/product should be applicable to TRON's mainnet.
 
 3. Voting function for wallet projects：
 
-For wallet projects, whether the submitted wallet supports witness voting is directly linked to chances of winning.
+    For wallet projects, whether the submitted wallet supports witness voting is directly linked to chances of winning.
 
 4. Offline signature for Windows/iOS/Android-based wallets:
 
-Wallet projects for Windows/iOS/Android platforms must support offline signature. It's also preferable for wallets for Mac to support offline signature.
+    Wallet projects for Windows/iOS/Android platforms must support offline signature. It's also preferable for wallets for Mac to support offline signature.
 
 **Bonus criteria**
 
 1. The spirit of competition:
 
-There is no severe violation of competition guidelines or departure from the spirit of fair competition.
+    There is no severe violation of competition guidelines or departure from the spirit of fair competition.
 
 2. Engagement:
 
-Make sure to be fully communicative with TRON. We will assess your engagement based on our interaction through email and Slack.
+    Make sure to be fully communicative with TRON. We will assess your engagement based on our interaction through email and Slack.
 
 3. Functionality:
 
-Completeness of product functions or is it lacking essential functions. Whether the product is user-friendly.
+    Completeness of product functions or is it lacking essential functions. Whether the product is user-friendly.
 
 4. Innovation：
 
-How innovative and unique the project is.
+    How innovative and unique the project is.
 
 5. Extension：
 
-Whether the project promises potentials for future development.
+    Whether the project promises potentials for future development.
 
 **Evaluation Form**
 

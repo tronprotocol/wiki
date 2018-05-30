@@ -19,15 +19,23 @@ Features of TVM
 ~~~~~~~~~~~~~~~
 
 1. Lightweight
+
 TVM adopts a lightweight architecture with the aim of reducing resource consumption to guarantee system performance.
+
 2. Stability and security
+
 With a meticulous design paradigm and fine-grained underlying operation code, TVM can guarantee the preciseness of every step of a computation, diminishing ambiguity to the largest extent. Out of security reasons, transfers and smart contract running cost only bandwidth points, not TRX, which exempts TRON from being attacked similarly to Ethereum for its mode of gas consumption. Stability of bandwidth consumption is achieved while the cost of each computational step is fixed.
+
 3. Compatibility
+
 Currently, TVM is compatible with EVM and will be with more mainstream VMs in the future. Thereby, all smart contracts on EVM are executable on TVM. By connecting seamlessly to existing development ecosystem, higher efficiency can be achieved by developers. Needless to learn a new programming language, they can use mainstream programming languages for smart contract such as Solidity to develop, debug and compile smart contracts in the Remix environment, which greatly reduces development costs.
+
 4. Developer-friendly
+
 Thanks to TVM’s bandwidth setup, developments costs are reduced and developers can focus on the logic of their contract code. TVM also offers all-in-one interfaces for contract deployment, triggering and viewing, for the convenience of developers.
 
 The following interfaces are available in Tron Wallet-CLI:
+
 + deploycontract(password, contractAddress, ABI, code, data, value)
 + triggercontract(password, contractAddress, selector, data, value)
 + getcontract(contractAddress)
@@ -56,9 +64,13 @@ Future development of TVM
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. More developer-friendly debugging tools
+
 Tron will be committed to the development of optimized debugging tools and the establishment of standardized symbol and data format, for improved developer efficiency.
+
 2. Fulfillment of diversified processing demands
+
 Different from gas consumption mechanism for every transaction on EVM, there is no charge on TVM. Each operation only occupies bandwidth, which will be released within a certain amount of time after completion of transaction. It takes developers very little to develop smart contracts with more complex logic. It is our belief that besides being used for digital asset transactions, smart contracts could also be suitably applied to areas such as game development, financial risk modeling and scientific computing. The design of TVM inherently supports multi-scenario tasks, and further optimizations of processing speed, response time, and floating point compatibility.
+
 3. Improvement of Just-In-Time (JIT) compilation speed and integration of WebAssembly
 
 Improving JIT compilation speed is conducive to faster interpretation and optimized compilation of local code.
@@ -72,7 +84,7 @@ Guide to TVM (smart contract deploymeng)
 
 1. Compile contract
 
-Contract compilation address: https://remix.ethereum.org
+    Contract compilation address: https://remix.ethereum.org
 
 2. Get ABI and bytecode
 
@@ -104,32 +116,32 @@ bc72e90029
 
 3. Deploy contract
 
-Wallet-cli-vm branch: https://github.com/tronprotocol/wallet-cli/tree/wallet-cli-vm
+    Wallet-cli-vm branch: https://github.com/tronprotocol/wallet-cli/tree/wallet-cli-vm
 
-Java-tron-vm branch: https://github.com/tronprotocol/java-tron/tree/develop_vm
+    Java-tron-vm branch: https://github.com/tronprotocol/java-tron/tree/develop_vm
 
-Password: password of client-end wallet
+    Password: password of client-end wallet
 
-ContractAddress: customized contract address (in Tron’s required format)
+    ContractAddress: customized contract address (in Tron’s required format)
 
-ABI: interface description
+    ABI: interface description
 
-Data: parameters of the initial function
+    Data: parameters of the initial function
 
-Value: reserve
+    Value: reserve
 
-deploycontract(Password, ContractAddress, ABI, Code, Data, Value)
+    deploycontract(Password, ContractAddress, ABI, Code, Data, Value)
 
-4. Invoke contract
+    4. Invoke contract
 
-Selector: function selector
+    Selector: function selector
 
-Data: parameters
+    Data: parameters
 
-triggercontract(Password, ContractAddress, Selector, Data, Value)
+    triggercontract(Password, ContractAddress, Selector, Data, Value)
 
 5. Check contract
 
-getcontract(ContractAddress)
+    getcontract(ContractAddress)
 
-The above is an introduction of Tron Virtual Machine and a guide to deployment. We welcome everyone to check out TVM and give us your thoughts and suggestions. We will continue to perfect and update TMV for optimal performance on TRON main
+    The above is an introduction of Tron Virtual Machine and a guide to deployment. We welcome everyone to check out TVM and give us your thoughts and suggestions. We will continue to perfect and update TMV for optimal performance on TRON main
