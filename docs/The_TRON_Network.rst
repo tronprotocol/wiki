@@ -65,7 +65,7 @@ here: https://github.com/tronprotocol/java-tron
 
 * After the syncing finished, select ``Gradle``  -> ``Tasks`` -> ``build`` , and then double click ``build`` option.
 
-Running a private testnet
+Running a Private Testnet
 -------------------------
 
 **How to run a full node**
@@ -131,13 +131,12 @@ in the config.conf localwitness add yourself private key
     ./gradlew run -Pwitness=true
 
 *Show Output*
-
+    
 .. code-block:: shell
 
     > ./gradlew run -Pwitness=true
 
     > Task :generateProto UP-TO-DATE
-
     Using TaskInputs.file() with something that doesn't resolve to a File object has been deprecated and is scheduled to be removed in Gradle 5.0. Use TaskInputs.files() instead.
 
     > Task :run
@@ -149,7 +148,7 @@ in the config.conf localwitness add yourself private key
     20:39:23.706 INFO [o.t.c.o.n.GossipLocalNode] listener message
     20:39:23.712 INFO [o.t.c.o.n.GossipLocalNode] sync group = a41d27f10194c53703be90c6f8735bb66ffc53aa10ea9024d92dbe7324b1aee3
     20:39:23.716 INFO [o.t.c.s.WitnessService] Sleep : 1296 ms,next time:2018-03-22T20:39:25.000+08:00
-    20:39:23.734 WARN [i.s.t.BootstrapFactory] Env does not support epoll transport
+    20:39:23.734 WARN [i.s.t.BootstrapFactory] Env doesn't support epoll transport
     20:39:23.746 INFO [i.s.t.TransportImpl] Bound to: 192.168.10.163:7080
     20:39:23.803 INFO [o.t.c.n.n.NodeImpl] other peer is nil, please wait ...
     20:39:25.019 WARN [o.t.c.d.Manager] nextFirstSlotTime:[2018-03-22T17:57:20.001+08:00],now[2018-03-22T20:39:25.067+08:00]
@@ -160,7 +159,7 @@ in the config.conf localwitness add yourself private key
     20:39:30.003 INFO [o.t.c.s.WitnessService] ScheduledWitness[6c22c1af7bfbb2b0e07148ecba27b56f81a54fcf],slot[1947]
     20:39:30.003 INFO [o.t.c.s.WitnessService] It's not my turn
     20:39:30.003 INFO [o.t.c.s.WitnessService] Sleep : 4997 ms,next time:2018-03-22T20:39:35.000+08:00
-    20:39:33.803 INFO [o.t.c.n.n.NodeImpl] other peer is nil, pleasnote wait ...
+    20:39:33.803 INFO [o.t.c.n.n.NodeImpl] other peer is nil, please wait ...
     20:39:35.005 WARN [o.t.c.d.Manager] nextFirstSlotTime:[2018-03-22T17:57:20.001+08:00],now[2018-03-22T20:39:35.054+08:00]
     20:39:35.005 INFO [o.t.c.s.WitnessService] ScheduledWitness[48e447ec869216de76cfeeadf0db37a3d1c8246d],slot[1948]
     20:39:35.005 INFO [o.t.c.s.WitnessService] It's not my turn
@@ -236,7 +235,7 @@ Then, run ``FullNode::main()`` again.
     :height: 623px
     :align: center
 
-**Running multi-nodes**
+**Running Multi-nodes**
 
 To run TRON on more than one node, you need to specify several seed nodes IPs in ``config.conf`` in ``seed.node.ip.list``:
 
@@ -521,131 +520,188 @@ Then SolidityNode can be switched on：
 
     nohup java -jar java-tron.jar -c config.conf&
 
-Test network
+Test Network
 ------------
+
+Odyssey-v1.1.1
+~~~~~~~~~~~~~~~
+
+* Feature
+
+1. New bandwidth model
+
+* Improvement
+
+1. More stable sync module.
+
+2. Improve the database performance.
+
+Odyssey-v1.1
+~~~~~~~~~~~~
+
+* Feature
+
+1. Remove the TronSR minimum balance limit.
+
+2. Token transaction consumes bandwidth of the token issuer.
+
+3. Avoid flood attack
+
+4. Add token frozen
+
+5. When an account issues an asset, it can promise the public to freeze multiple assets. The asset can be unfrozen manually after maturity
+
+* Improvement
+
+1. Remove duplicate verification
+
+2. Improve the message package speed
+
+3. Avoid the dup validate
+
+* Bug Fix
+
+1. Fix the now timestamp bug.
+
+2. Fix the dup trans
+
+3. Fix the dead lock during sync.
+
+Odyssey with VM
+~~~~~~~~~~~~~~~
+
+* Feature
+
+1. Fully support EVM.
+
+2. Implement the vm-adapter.
+
+* Notics
+
+1. This is a test version.
 
 Odyssey-v1.0.6.3
 ~~~~~~~~~~~~~~~~
 
-* fix bug
+* Bug Fix
 
-1. fix the bandwidth timestamp error.
+1. Fix the bandwidth timestamp error.
 
-* improvement
+* Improvement
 
-1. batch transaction send & receive.
+1. Batch transaction send & receive.
 
 Odyssey-v1.0.6
 ~~~~~~~~~~~~~~
 
-* feature
+* Feature
 
-1.  frozen and unfrozen balance for voting and bandwidth.
+1.  Frozen and unfrozen balance for voting and bandwidth.
 
-2.  transaction bandwidth control to avoid ddos.
+2.  Transaction bandwidth control to avoid ddos.
 
-3.  add testNG.
+3.  Add testNG.
 
-* improvement
+* Improvement
 
-1. parallel validate signature.
+1. Parallel validate signature.
 
-2. increate the speed of block producing.
+2. Increate the speed of block producing.
 
-3. reduce the memory usage of index service.
+3. Reduce the memory usage of index service.
 
-4. increase the speed of broadcast  block.
+4. Increase the speed of broadcast  block.
 
-5. improve the  handshake mechanism.
+5. Improve the  handshake mechanism.
 
-* bug fix
+* Bug Fix
 
 1. Out of memory exception.
 
-2. dup message
+2. Dup message
 
 Odyssey-v1.0.5
 ~~~~~~~~~~~~~~
 
-* improvement
+* Improvement
 
-1. add database index module for block explorer
+1. Add database index module for block explorer
 
-2. redesign the block id, merge block num in big endian
+2. Redesign the block id, merge block num in big endian
 
-3. improve the performance of database.
+3. Improve the performance of database.
 
-4. add tapos support.
+4. Add tapos support.
 
-* feature
+* Feature
 
-1. fix cache transaction exception.
+1. Fix cache transaction exception.
 
-2. fix dup message .
+2. Fix dup message .
 
-3. fix witness disorder exception.
+3. Fix witness disorder exception.
 
-* other
+* Other
 
-1. support the grpc_web_proxy.
+1. Support the grpc_web_proxy.
 
 Odyssey-v1.0.4
 ~~~~~~~~~~~~~~
 
-* feature
+* Feature
 
-1. incorrect disconnection during sync block.
+1. Incorrect disconnection during sync block.
 
-2. a minor error when process fork chain.
+2. A minor error when process fork chain.
 
-3. the inconsistent of witness.
+3. The inconsistent of witness.
 
-4, other small bugs.
+4, Other small bugs.
 
-* improvement
+* Improvement
 
-1. add more exception.
+1. Add more exception.
 
-2. remove the head in manager.
+2. Remove the head in manager.
 
-3. other improve.
+3. Other improve.
 
 * Other:
 
-p2p version -> 51 for testnet
+1. p2p version -> 51 for testnet
 
 Odyssey-v1.0.3
 ~~~~~~~~~~~~~~
 
-* feature
+* Feature
 
-1. transaction executed twice in some condition.
+1. Transaction executed twice in some condition.
 
-2. test case break down cause the memory not release.
+2. Test case break down cause the memory not release.
 
-3. test other bugs.
+3. Test other bugs.
 
-* improvement
+* Improvement
 
-1. performance improvement.
+1. Performance improvement.
 
 Odyssey-v1.0.2 for test net
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* improvement
+* Improvement
 
-1. the block chain
+1. The block chain
 
-2. tdp support.
+2. Tdp support.
 
-3. web wallet && explorer support.
+3. Web wallet && explorer support.
 
 Odyssey-v1.0.1 for test net
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* improvement
+* Improvement
 
-1. more stable version.
+1. More stable version.
 
 Odyssey-v1.0 for test net
 ~~~~~~~~~~~~~~~~~~~~~~~~~

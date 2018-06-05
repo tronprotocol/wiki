@@ -7,14 +7,14 @@ TRON Odyssey
 
     Introduction
     The_TRON_Network
-    Blockchain_Explorer
-    Wallet_Cli
-    Account_Management
-    Contracts_and_Transactions
+    TRON_Client
+    TRON_Virtual_Machine
+    TRON_Technologies
+    TRON_DAapp_Development
     TRX
     TRON_Event
     Frequently_Asked_Questions
-
+    Glossary
 
 
 TRON: The Internet as It Was Meant to Be
