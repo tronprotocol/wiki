@@ -65,7 +65,7 @@ here: https://github.com/tronprotocol/java-tron
 
 * After the syncing finished, select ``Gradle``  -> ``Tasks`` -> ``build`` , and then double click ``build`` option.
 
-Running a private testnet
+Running a Private Testnet
 -------------------------
 
 **How to run a full node**
@@ -131,13 +131,12 @@ in the config.conf localwitness add yourself private key
     ./gradlew run -Pwitness=true
 
 *Show Output*
-
+    
 .. code-block:: shell
 
     > ./gradlew run -Pwitness=true
 
     > Task :generateProto UP-TO-DATE
-
     Using TaskInputs.file() with something that doesn't resolve to a File object has been deprecated and is scheduled to be removed in Gradle 5.0. Use TaskInputs.files() instead.
 
     > Task :run
@@ -220,23 +219,23 @@ in the config.conf localwitness add yourself private key
 
 - In IntelliJ IDEA
 
-*Open the configuration panel:*
+**Open the configuration panel:**
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Quick_Start/program_configure.png
     :width: 842px
     :height: 348px
     :align: center
 
-*In the ``Program arguments`` option, fill in ``--witness``:*
+In the ``Program arguments`` option, fill in ``--witness``:
 
-*Then, run ``FullNode::main()`` again.*
+Then, run ``FullNode::main()`` again.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Quick_Start/set_witness_param.jpeg
     :width: 842px
     :height: 623px
     :align: center
 
-**Running multi-nodes**
+**Running Multi-nodes**
 
 To run TRON on more than one node, you need to specify several seed nodes IPs in ``config.conf`` in ``seed.node.ip.list``:
 
@@ -286,9 +285,8 @@ It is almost the same as that does in the private testnet, except that the IPs i
 .. code-block:: shell
 
     20:43:18.138 INFO  [main] [o.t.p.FullNode](FullNode.java:21) Full node running.
-    20:43:18.486 INFO  [main] [o.t.c.c.a.Args](Args.java:429) Bind address wasn't set, Punching to identify it...
-    20:43:18.493 INFO  [main] [o.t.c.c.a.Args](Args.java:433) UDP local bound to: 10.0.8.146
-    20:43:18.495 INFO  [main] [o.t.c.c.a.Args](Args.java:448) External IP wasn't set, using checkip.amazonaws.com to identify it...
+    20:43:18.486 INFO  [main] [o.t.c.c.a.Args](Args.java:429) Bind address was not set, Punching to identify it...20:43:18.493 INFO  [main] [o.t.c.c.a.Args](Args.java:433) UDP local bound to: 10.0.8.146
+    20:43:18.495 INFO  [main] [o.t.c.c.a.Args](Args.java:448) External IP wasn  set, using checkip.amazonaws.com to identify it...
     20:43:19.450 INFO  [main] [o.t.c.c.a.Args](Args.java:461) External address identified: 47.74.147.87
     20:43:19.599 INFO  [main] [o.s.c.a.AnnotationConfigApplicationContext](AbstractApplicationContext.java:573) Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@124c278f: startup date [Fri Apr 27 20:43:19 CST 2018]; root of context hierarchy
     20:43:19.972 INFO  [main] [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
@@ -379,16 +377,16 @@ It is almost the same as that does in the private testnet, except that the IPs i
     20:43:21.238 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:200) Add new node: NodeHandler[state: Discovered, node: 47.91.246.252:18888, id=c1dbf350], size=9
     20:43:21.241 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:200) Add new node: NodeHandler[state: Discovered, node: 47.91.216.69:18888, id=07cc3858], size=10
     20:43:21.241 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:200) Add new node: NodeHandler[state: Discovered, node: 39.106.220.120:18888, id=e9c9ffda], size=11
-    20:43:21.278 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 39.106.220.120:18888, id=e9c9ffda] new Node{ host='39.106.220.120', port=18888, id=ffaba569088f7497e60c5d4b9a9c110151f09be6e17e448e92086cb8336e1602aa42abd59a6dd0fdbdcfd78bb9360e3574866ae5a624dd8445d4906f0245c75d}, size =11
-    20:43:21.285 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 47.91.246.252:18888, id=c1dbf350] new Node{ host='47.91.246.252', port=18888, id=aed3688f52718c895d3181eb8223f6556f0689f6515862fb08e70200b5970aae7f6c97fc304946630db595c3f9d75a5e056496045e536dc55a1a143ccc49925d}, size =11
-    20:43:21.287 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 47.91.216.69:18888, id=07cc3858] new Node{ host='47.91.216.69', port=18888, id=b45aa0d92931e47cb6a3d3ef5f8fd3ba88c74413d7ea539175d1466bff875900e15390a52599b504830d6cb7e7e2d9c68412e23434dbced7b13230914af2276e}, size =11
-    20:43:21.435 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 47.254.16.55:18888, id=791191e1] new Node{ host='47.254.16.55', port=18888, id=1a70d710248c6832b5bce762bd8dd09e0bb401a3e57c360db7d502c6e80b023226f0540635a72c6f1589d134568d4dc2fe1e9ff49a66601d924d28fdc12303a9}, size =11
-    20:43:21.445 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 47.254.18.49:18888, id=e82c773d] new Node{ host='47.254.18.49', port=18888, id=28da8efcc5f2d7c7ddc74487b99ef232fe4a97c2eb6b8bcc32edc97d1d4ef357eb8d2347e824ff898fe7936efae70f0b29861dec8c22923a40998230cf1db08f}, size =11
-    20:43:21.454 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 34.214.241.188:18888, id=df0b9f01] new Node{ host='34.214.241.188', port=18888, id=7380f11f7b1ed4a715c41131ffb66234cef21d83973aef89f75d3cea7036b221dea1acbf580e8df4a315845faf25e94d3ffc3c02507f687931ebac9725f59961}, size =11
-    20:43:21.480 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 18.188.111.53:18888, id=96db4efd] new Node{ host='18.188.111.53', port=18888, id=23de133437c136b856b2a6906ff21fb6fe74736efc0496a8f7850460a9a600ee6f02d79d7ca15954f69b36411e36e96ec70c5a1c0d4891db0ffb70db19503a23}, size =11
-    20:43:21.503 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 35.169.113.187:18888, id=80c10f5e] new Node{ host='35.169.113.187', port=18888, id=156dc977b34fa77a1377e5c4f9e2862f34b2c5309f9d86220b5dd4200383f4fb1859c3de90a8acecf9d91edff697a8f0a59346a239e3d5e269aed0b0186c8bc5}, size =11
-    20:43:21.533 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 47.254.144.25:18888, id=e22a29e9] new Node{ host='47.254.144.25', port=18888, id=273eb89021d9741f0ff47c99c4e03d88776606acf39c970d7549512baf8444166883016e3c0859f7df3042fcfebf52b0af3d6cb216145b677eba10c6161c0cbc}, size =11
-    20:43:21.543 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 47.254.146.147:18888, id=976440e3] new Node{ host='47.254.146.147', port=18888, id=1868f20b346420dcc1826551cc1427df36313f21fb077ba714210beb270b05a865516d53a734ccdd00468e23d21f1beef6c12299e7a4eda40408bf242ba6a2f8}, size =11
+    20:43:21.278 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 39.106.220.120:18888, id=e9c9ffda] new Node{ host= ''39.106.220.120'', port=18888, id=ffaba569088f7497e60c5d4b9a9c110151f09be6e17e448e92086cb8336e1602aa42abd59a6dd0fdbdcfd78bb9360e3574866ae5a624dd8445d4906f0245c75d}, size =11
+    20:43:21.285 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 47.91.246.252:18888, id=c1dbf350] new Node{ host= ''47.91.246.252'', port=18888, id=aed3688f52718c895d3181eb8223f6556f0689f6515862fb08e70200b5970aae7f6c97fc304946630db595c3f9d75a5e056496045e536dc55a1a143ccc49925d}, size =11
+    20:43:21.287 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 47.91.216.69:18888, id=07cc3858] new Node{ host= ''47.91.216.69'', port=18888, id=b45aa0d92931e47cb6a3d3ef5f8fd3ba88c74413d7ea539175d1466bff875900e15390a52599b504830d6cb7e7e2d9c68412e23434dbced7b13230914af2276e}, size =11
+    20:43:21.435 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 47.254.16.55:18888, id=791191e1] new Node{ host= ''47.254.16.55'', port=18888, id=1a70d710248c6832b5bce762bd8dd09e0bb401a3e57c360db7d502c6e80b023226f0540635a72c6f1589d134568d4dc2fe1e9ff49a66601d924d28fdc12303a9}, size =11
+    20:43:21.445 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 47.254.18.49:18888, id=e82c773d] new Node{ host= ''47.254.18.49'', port=18888, id=28da8efcc5f2d7c7ddc74487b99ef232fe4a97c2eb6b8bcc32edc97d1d4ef357eb8d2347e824ff898fe7936efae70f0b29861dec8c22923a40998230cf1db08f}, size =11
+    20:43:21.454 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 34.214.241.188:18888, id=df0b9f01] new Node{ host= ''34.214.241.188'', port=18888, id=7380f11f7b1ed4a715c41131ffb66234cef21d83973aef89f75d3cea7036b221dea1acbf580e8df4a315845faf25e94d3ffc3c02507f687931ebac9725f59961}, size =11
+    20:43:21.480 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 18.188.111.53:18888, id=96db4efd] new Node{ host= ''18.188.111.53'', port=18888, id=23de133437c136b856b2a6906ff21fb6fe74736efc0496a8f7850460a9a600ee6f02d79d7ca15954f69b36411e36e96ec70c5a1c0d4891db0ffb70db19503a23}, size =11
+    20:43:21.503 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 35.169.113.187:18888, id=80c10f5e] new Node{ host=''35.169.113.187'', port=18888, id=156dc977b34fa77a1377e5c4f9e2862f34b2c5309f9d86220b5dd4200383f4fb1859c3de90a8acecf9d91edff697a8f0a59346a239e3d5e269aed0b0186c8bc5}, size =11
+    20:43:21.533 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 47.254.144.25:18888, id=e22a29e9] new Node{ host=''47.254.144.25'', port=18888, id=273eb89021d9741f0ff47c99c4e03d88776606acf39c970d7549512baf8444166883016e3c0859f7df3042fcfebf52b0af3d6cb216145b677eba10c6161c0cbc}, size =11
+    20:43:21.543 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:202) Change node: old NodeHandler[state: Discovered, node: 47.254.146.147:18888, id=976440e3] new Node{ host=''47.254.146.147'', port=18888, id=1868f20b346420dcc1826551cc1427df36313f21fb077ba714210beb270b05a865516d53a734ccdd00468e23d21f1beef6c12299e7a4eda40408bf242ba6a2f8}, size =11
     20:43:21.729 INFO  [Thread-5] [o.t.c.s.WitnessService](WitnessService.java:141) Try Produce Block
     20:43:21.792 INFO  [Thread-5] [o.t.c.s.WitnessService](WitnessService.java:107) Not sync
     20:43:22.047 INFO  [nioEventLoopGroup-2-1] [NodeManager](NodeManager.java:200) Add new node: NodeHandler[state: Discovered, node: 119.61.19.34:10846, id=d456c5af], size=12
@@ -522,131 +520,188 @@ Then SolidityNode can be switched on：
 
     nohup java -jar java-tron.jar -c config.conf&
 
-Test network
+Test Network
 ------------
+
+Odyssey-v1.1.1
+~~~~~~~~~~~~~~~
+
+* Feature
+
+1. New bandwidth model
+
+* Improvement
+
+1. More stable sync module.
+
+2. Improve the database performance.
+
+Odyssey-v1.1
+~~~~~~~~~~~~
+
+* Feature
+
+1. Remove the TronSR minimum balance limit.
+
+2. Token transaction consumes bandwidth of the token issuer.
+
+3. Avoid flood attack
+
+4. Add token frozen
+
+5. When an account issues an asset, it can promise the public to freeze multiple assets. The asset can be unfrozen manually after maturity
+
+* Improvement
+
+1. Remove duplicate verification
+
+2. Improve the message package speed
+
+3. Avoid the dup validate
+
+* Bug Fix
+
+1. Fix the now timestamp bug.
+
+2. Fix the dup trans
+
+3. Fix the dead lock during sync.
+
+Odyssey with VM
+~~~~~~~~~~~~~~~
+
+* Feature
+
+1. Fully support EVM.
+
+2. Implement the vm-adapter.
+
+* Notics
+
+1. This is a test version.
 
 Odyssey-v1.0.6.3
 ~~~~~~~~~~~~~~~~
 
-* fix bug
+* Bug Fix
 
-1. fix the bandwidth timestamp error.
+1. Fix the bandwidth timestamp error.
 
-* improvement
+* Improvement
 
-1. batch transaction send & receive.
+1. Batch transaction send & receive.
 
 Odyssey-v1.0.6
 ~~~~~~~~~~~~~~
 
-* feature
+* Feature
 
-1.  frozen and unfrozen balance for voting and bandwidth.
+1.  Frozen and unfrozen balance for voting and bandwidth.
 
-2.  transaction bandwidth control to avoid ddos.
+2.  Transaction bandwidth control to avoid ddos.
 
-3.  add testNG.
+3.  Add testNG.
 
-* improvement
+* Improvement
 
-1. parallel validate signature.
+1. Parallel validate signature.
 
-2. increate the speed of block producing.
+2. Increate the speed of block producing.
 
-3. reduce the memory usage of index service.
+3. Reduce the memory usage of index service.
 
-4. increase the speed of broadcast  block.
+4. Increase the speed of broadcast  block.
 
-5. improve the  handshake mechanism.
+5. Improve the  handshake mechanism.
 
-* bug fix
+* Bug Fix
 
 1. Out of memory exception.
 
-2. dup message
+2. Dup message
 
 Odyssey-v1.0.5
 ~~~~~~~~~~~~~~
 
-* improvement
+* Improvement
 
-1. add database index module for block explorer
+1. Add database index module for block explorer
 
-2. redesign the block id, merge block num in big endian
+2. Redesign the block id, merge block num in big endian
 
-3. improve the performance of database.
+3. Improve the performance of database.
 
-4. add tapos support.
+4. Add tapos support.
 
-* feature
+* Feature
 
-1. fix cache transaction exception.
+1. Fix cache transaction exception.
 
-2. fix dup message .
+2. Fix dup message .
 
-3. fix witness disorder exception.
+3. Fix witness disorder exception.
 
-* other
+* Other
 
-1. support the grpc_web_proxy.
+1. Support the grpc_web_proxy.
 
 Odyssey-v1.0.4
 ~~~~~~~~~~~~~~
 
-* feature
+* Feature
 
-1. incorrect disconnection during sync block.
+1. Incorrect disconnection during sync block.
 
-2. a minor error when process fork chain.
+2. A minor error when process fork chain.
 
-3. the inconsistent of witness.
+3. The inconsistent of witness.
 
-4, other small bugs.
+4, Other small bugs.
 
-* improvement
+* Improvement
 
-1. add more exception.
+1. Add more exception.
 
-2. remove the head in manager.
+2. Remove the head in manager.
 
-3. other improve.
+3. Other improve.
 
 * Other:
 
-p2p version -> 51 for testnet
+1. p2p version -> 51 for testnet
 
 Odyssey-v1.0.3
 ~~~~~~~~~~~~~~
 
-* feature
+* Feature
 
-1. transaction executed twice in some condition.
+1. Transaction executed twice in some condition.
 
-2. test case break down cause the memory not release.
+2. Test case break down cause the memory not release.
 
-3. test other bugs.
+3. Test other bugs.
 
-* improvement
+* Improvement
 
-1. performance improvement.
+1. Performance improvement.
 
 Odyssey-v1.0.2 for test net
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* improvement
+* Improvement
 
-1. the block chain
+1. The block chain
 
-2. tdp support.
+2. Tdp support.
 
-3. web wallet && explorer support.
+3. Web wallet && explorer support.
 
 Odyssey-v1.0.1 for test net
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* improvement
+* Improvement
 
-1. more stable version.
+1. More stable version.
 
 Odyssey-v1.0 for test net
 ~~~~~~~~~~~~~~~~~~~~~~~~~
