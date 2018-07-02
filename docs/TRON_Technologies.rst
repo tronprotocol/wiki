@@ -14,7 +14,7 @@ The protocol of TRON is defined by Google Protobuf and contains a range of layer
 + There are 3 types of account—basic account, asset release account and contract account, and attributes included in each account are name, types, address, balance and related asset.
 + A basic account is able to apply to be a validation node, which has serval parameters, including extra attributes, public key, URL, voting statistics, history performance, etc.
 
-    There are three different ``Account types``: ``Normal``, ``AssetIssue``, ``Contract``.
+There are three different ``Account types``: ``Normal``, ``AssetIssue``, ``Contract``.
 
 .. code-block:: shell
 
@@ -1333,49 +1333,87 @@ GetTransactionsToThis
 
     rpc CreateAccount (AccountCreateContract) returns (Transaction){}; 
 
-    4.2 Node Fullnode.
+    4.2 Node Full
+
+    node.
      
-    4.3 Parameters AccountCreateContract: account type and account address.
+    4.3 Parameters 
+
+    AccountCreateContract: account type and account address.
  
-    4.4 Returns Transaction: returns transaction of account creation. Request broadcasting after obtaining wallet signature.
+    4.4 Returns
+
+     Transaction: returns transaction of account creation. Request broadcasting after obtaining wallet signature.
  
-    4.5 Function Account creation. Creating an account (or opting otherwise) when registering a wallet.
+    4.5 Function 
+
+    Account creation. Creating an account (or opting otherwise) when registering a wallet.
 
 5. Account update
 
-    5.1 Interface statement rpc UpdateAccount (AccountUpdateContract) returns (Transaction){}; 
+    5.1 Interface statement 
 
-    5.2 Node Fullnode.
+    rpc UpdateAccount (AccountUpdateContract) returns (Transaction){}; 
 
-     5.3 Parameters AccountUpdateContract: account name and address.
+    5.2 Node Full
+
+    node.
+
+     5.3 Parameters 
+
+    AccountUpdateContract: account name and address.
  
-    5.4 Returns Transaction: Returns transaction of account update. Request broadcasting after the transaction is signed by wallet. 
+    5.4 Returns 
 
-    5.5 Function Account name update.
+    Transaction: Returns transaction of account update. Request broadcasting after the transaction is signed by wallet. 
+
+    5.5 Function 
+
+    Account name update.
 
 6. Vote
 
-    6.1 Interface statement rpc VoteWitnessAccount (VoteWitnessContract) returns (Transaction){};
+    6.1 Interface statement
 
-     6.2 Node Fullnode.
+     rpc VoteWitnessAccount (VoteWitnessContract) returns (Transaction){};
+
+     6.2 Node Full
+
+    node.
  
-    6.3 Parameters VoteWitnessContract: voter address and list of candidates which includes candidate address and number of votes received.
+    6.3 Parameters 
 
-     6.4 Returns Transaction: returns transaction of votes. Request broadcasting after the transaction is signed by wallet. 
+    VoteWitnessContract: voter address and list of candidates which includes candidate address and number of votes received.
 
-    6.5 Function Vote. Coin holders can only vote for Super Representative candidates, with no more votes than the amount of locked balance (see also 25. Balance freeze).
+     6.4 Returns 
+
+    Transaction: returns transaction of votes. Request broadcasting after the transaction is signed by wallet. 
+
+    6.5 Function 
+
+    Vote. Coin holders can only vote for Super Representative candidates, with no more votes than the amount of locked balance (see also 25. Balance freeze).
 
 7. Token issuance
 
-    7.1 Interface statement rpc CreateAssetIssue (AssetIssueContract) returns (Transaction) {};
+    7.1 Interface statement 
 
-     7.2 Node Fullnode.
+    rpc CreateAssetIssue (AssetIssueContract) returns (Transaction) {};
 
-     7.3 Parameters AssetIssueContract: issuer address, token name, total capitalization, exchange rate to TRX, starting date, expiry date, attenuation coefficient, votes, detailed description, url, maximum bandwidth consumption, total bandwidth consumption and frozen token.
+     7.2 Node Full
+
+    node.
+
+     7.3 Parameters
+
+     AssetIssueContract: issuer address, token name, total capitalization, exchange rate to TRX, starting date, expiry date, attenuation coefficient, votes, detailed description, url, maximum bandwidth consumption, total bandwidth consumption and frozen token.
  
-    7.4 Returns Transaction: returns transaction of token issuance. Request for transaction broadcasting after the transaction is signed by wallet. 
+    7.4 Returns
 
-    7.5 Function Token issuance. All users can issue tokens at the cost of 1024 TRX. Following a successful issuance, users can exchange for tokens with TRX before the designated expiry date.
+    Transaction: returns transaction of token issuance. Request for transaction broadcasting after the transaction is signed by wallet. 
+
+    7.5 Function 
+
+    Token issuance. All users can issue tokens at the cost of 1024 TRX. Following a successful issuance, users can exchange for tokens with TRX before the designated expiry date.
 
     Sample:
 
@@ -1387,206 +1425,389 @@ GetTransactionsToThis
 
 8. Query of list of Super Representative candidates
 
-    8.1 Interface statement rpc ListWitnesses (EmptyMessage) returns (WitnessList) {}; 
+    8.1 Interface statement 
 
-    8.2 Nodes Fullnode and soliditynode. 8.3 parameters EmptyMessage: null. 
+    rpc ListWitnesses (EmptyMessage) returns (WitnessList) {}; 
 
-    8.4 Returns WitnessList: list of witnesses including detailed information of the candidates.
+    8.2 Nodes
 
-     8.5 Function Query of all candidates prior to voting returning detailed information on each candidate for users’ reference.
+     Fullnode and soliditynode. 
+
+    8.3 parameters
+
+     EmptyMessage: null. 
+
+    8.4 Returns
+
+     WitnessList: list of witnesses including detailed information of the candidates.
+
+     8.5 Function 
+
+    Query of all candidates prior to voting returning detailed information on each candidate for users’ reference.
 
 9. Application for Super Representative
 
-    9.1 Interface statement rpc CreateWitness (WitnessCreateContract) returns (Transaction) {}; 
+    9.1 Interface statement 
 
-    9.2 Node Fullnode.
+    rpc CreateWitness (WitnessCreateContract) returns (Transaction) {}; 
 
-     9.3 Parameters WitnessCreateContract: account address and Url.
+    9.2 Node Full
 
-     9.4 Returns Transaction: Returns a transaction of candidate application. Request broadcasting after the transaction is signed by wallet. 
+    node.
 
-    9.5 function All users with an account created on the blockchain can apply to become TRON’s Super Representative candidate.
+     9.3 Parameters 
+
+    WitnessCreateContract: account address and Url.
+
+     9.4 Returns
+
+     Transaction: Returns a transaction of candidate application. Request broadcasting after the transaction is signed by wallet. 
+
+    9.5 function
+
+     All users with an account created on the blockchain can apply to become TRON’s Super Representative candidate.
 
 10. Information update of Super Representative candidates
 
-    10.1 Interface statement rpc UpdateWitness (WitnessUpdateContract) returns (Transaction) {};
+    10.1 Interface statement 
+
+    rpc UpdateWitness (WitnessUpdateContract) returns (Transaction) {};
  
-    10.2 Node Fullnode. 10.3 Parameters WitnessUpdateContract: an account address and Url. 
+    10.2 Node Full
 
-    10.4 Returns Transaction: returns transaction of SR application. Request broadcasting after the transaction is signed by wallet. 
+    node. 
 
-    10.5 Function Updating the url of SRs.
+    10.3 Parameters
+
+     WitnessUpdateContract: an account address and Url. 
+
+    10.4 Returns
+
+     Transaction: returns transaction of SR application. Request broadcasting after the transaction is signed by wallet. 
+
+    10.5 Function 
+
+    Updating the url of SRs.
 
 11. Token transfer
 
-    11.1 Interface statement rpc TransferAsset (TransferAssetContract) returns (Transaction){}; 
+    11.1 Interface statement 
 
-    11.2 Node Fullnode. 
+    rpc TransferAsset (TransferAssetContract) returns (Transaction){}; 
 
-    11.3 Parameters TransferAssetContract: token name, sender address, recipient address, and the amount of tokens. 
+    11.2 Node Full
 
-    11.4 Returns Transaction: returns transaction of token transfer. Request broadcasting after the transaction is signed by wallet.
+    node. 
 
-     11.5 Function Token transfer. Creates a transaction of token transfer.
+    11.3 Parameters 
+
+    TransferAssetContract: token name, sender address, recipient address, and the amount of tokens. 
+
+    11.4 Returns 
+
+    Transaction: returns transaction of token transfer. Request broadcasting after the transaction is signed by wallet.
+
+     11.5 Function 
+
+    Token transfer. Creates a transaction of token transfer.
 
 12. Participation in token offering
 
-    12.1 Interface statement rpc ParticipateAssetIssue (ParticipateAssetIssueContract) returns (Transaction){}; 
+    12.1 Interface statement 
 
-    12.2 Node Fullnode. 
+    rpc ParticipateAssetIssue (ParticipateAssetIssueContract) returns (Transaction){}; 
 
-    12.3 Parameters ParticipateAssetIssueContract: participant address, issuer address, token name, and amount of token (in sun). 
+    12.2 Node Full
 
-    12.4 Returns Transaction: returns transaction of participation in token offering. Request broadcasting after the transaction is signed by wallet. 
+    node. 
 
-    12.5 Function Participation in token offering.
+    12.3 Parameters
+
+     ParticipateAssetIssueContract: participant address, issuer address, token name, and amount of token (in sun). 
+
+    12.4 Returns 
+
+    Transaction: returns transaction of participation in token offering. Request broadcasting after the transaction is signed by wallet. 
+
+    12.5 Function 
+
+    Participation in token offering.
 
 13. Query of all nodes
 
-    13.1 Interface statement rpc ListNodes (EmptyMessage) returns (NodeList) {}; 
+    13.1 Interface statement 
 
-    13.2 Nodes Fullnode and soliditynode. 13.3 Parameters EmptyMessage: null. 
+    rpc ListNodes (EmptyMessage) returns (NodeList) {}; 
 
-    13.4 Returns NodeList: returns a list of nodes, including their IPs and ports. 
+    13.2 Nodes Full
 
-    14.5 Function Listing the IPs and ports of current nodes.
+    node and soliditynode. 13.3 Parameters EmptyMessage: null. 
+
+    13.4 Returns
+
+     NodeList: returns a list of nodes, including their IPs and ports. 
+
+    14.5 Function
+
+     Listing the IPs and ports of current nodes.
 
 14. Query of list of all tokens
 
-    14.1 Interface statement rpc GetAssetIssueList (EmptyMessage) returns (AssetIssueList) {}; 
+    14.1 Interface statement
 
-    14.2 Node Fullnode and soliditynode. 
+     rpc GetAssetIssueList (EmptyMessage) returns (AssetIssueList) {}; 
 
-    14.3 Parameters EmptyMessage: null. 
+    14.2 Node 
 
-    14.4 Returns AssetIssueList: AssetIssueContract list containing information on all issued tokens. 
+    Fullnode and soliditynode. 
 
-    14.5 Function List of all issued tokens. Display of all issued tokens for user’s reference.
+    14.3 Parameters
+
+     EmptyMessage: null. 
+
+    14.4 Returns
+
+     AssetIssueList: AssetIssueContract list containing information on all issued tokens. 
+
+    14.5 Function 
+
+    List of all issued tokens. Display of all issued tokens for user’s reference.
 
 15. Query of tokens issued by a given account
 
-    15.1 Interface statement rpc GetAssetIssueByAccount (Account) returns (AssetIssueList) {}; 
+    15.1 Interface statement
 
-    15.2 Nodes Fullnode and soliditynode. 15.3 Parameters Account: address. 
+     rpc GetAssetIssueByAccount (Account) returns (AssetIssueList) {}; 
 
-    15.4 Returns AssetIssueList: AssetIssueContract list containing information on all issued tokens. 
+    15.2 Nodes
 
-    15.5 Function Query of all tokens issued by a given account.
+     Fullnode and soliditynode. 
+
+    15.3 Parameters
+
+     Account: address. 
+
+    15.4 Returns 
+
+    AssetIssueList: AssetIssueContract list containing information on all issued tokens. 
+
+    15.5 Function
+
+     Query of all tokens issued by a given account.
 
 16. Query of token information by token name
 
-    16.1 Interface statement rpc GetAssetIssueByName (BytesMessage) returns (AssetIssueContract) {};
- 
-    16.2 Nodes Fullnode and soliditynode. 16.3 Parameters BytesMessage: token name.
- 
-    16.4 Returns AssetIssueContract: information on the token.
+    16.1 Interface statement 
 
-     17.5 Function Query of token information with the name. The exclusiveness of token name is ensured on TRON’s network.
+    rpc GetAssetIssueByName (BytesMessage) returns (AssetIssueContract) {};
+ 
+    16.2 Nodes 
+
+    Fullnode and soliditynode. 
+
+    16.3 Parameters
+
+     BytesMessage: token name.
+ 
+    16.4 Returns
+
+     AssetIssueContract: information on the token.
+
+     17.5 Function 
+
+    Query of token information with the name. The exclusiveness of token name is ensured on TRON’s network.
 
 17. Query of current tokens by timestamp
 
-    17.1 Interface statement rpc GetAssetIssueListByTimestamp (NumberMessage) returns (AssetIssueList){};
+    17.1 Interface statement 
 
-    17.2 Node Soliditynode. 
+    rpc GetAssetIssueListByTimestamp (NumberMessage) returns (AssetIssueList){};
 
-    17.3 Parameters NumberMessage: current timestamp (the number of milliseconds since 1970) .
+    17.2 Node 
 
-    17.4 Returns AssetIssueList: AssetIssueContract list including detailed information of the tokens. 
+    Soliditynode. 
 
-    17.5 Function List of issued tokens by timestamp. Display of current nodes for users’ reference.
+    17.3 Parameters
+
+     NumberMessage: current timestamp (the number of milliseconds since 1970) .
+
+    17.4 Returns 
+
+    AssetIssueList: AssetIssueContract list including detailed information of the tokens. 
+
+    17.5 Function 
+
+    List of issued tokens by timestamp. Display of current nodes for users’ reference.
 
 18. Get current block
 
-    18.1 Interface statement rpc GetNowBlock (EmptyMessage) returns (Block) {}; 
+    18.1 Interface statement 
 
-    18.2 Nodes Fullnode and soliditynode. 18.3 Parameters EmptyMessage: null. 
+    rpc GetNowBlock (EmptyMessage) returns (Block) {}; 
 
-    18.4 Returns Block: information on current block. 
+    18.2 Nodes 
 
-    18.5 Function Inquire the latest block.
+    Fullnode and soliditynode. 
+
+    18.3 Parameters 
+
+    EmptyMessage: null. 
+
+    18.4 Returns 
+
+    Block: information on current block. 
+
+    18.5 Function
+
+     Inquire the latest block.
 
 19. Get block by block height
 
-    19.1 Interface statement rpc GetBlockByNum (NumberMessage) returns (Block) {}; 
+    19.1 Interface statement 
 
-    19.2 nodes Fullnode and soliditynode. 
+    rpc GetBlockByNum (NumberMessage) returns (Block) {}; 
 
-    19.3 parameters NumberMessage: block height.
+    19.2 nodes 
+
+    Fullnode and soliditynode. 
+
+    19.3 parameters
+
+     NumberMessage: block height.
  
-    19.4 Returns Block: block information. 
+    19.4 Returns 
 
-    19.5 function Accessing the block at designated height, otherwise returning to the genesis block.
+    Block: block information. 
+
+    19.5 function 
+
+    Accessing the block at designated height, otherwise returning to the genesis block.
 
 20. Get total number of transactions
 
-    20.1 Interface statement rpc TotalTransaction (EmptyMessage) returns (NumberMessage) {}; 
+    20.1 Interface statement
 
-    20.2 Nodes Fullnode and soliditynode.
+     rpc TotalTransaction (EmptyMessage) returns (NumberMessage) {}; 
 
-     20.3 Parameters EmptyMessage: null. 
+    20.2 Nodes
 
-    20.4 Returns NumberMessage: Total number of transactions. 
+     Fullnode and soliditynode.
 
-    20.5 Function Inquiring the total number of transactions.
+     20.3 Parameters
+
+     EmptyMessage: null. 
+
+    20.4 Returns 
+
+    NumberMessage: Total number of transactions. 
+
+    20.5 Function 
+
+    Inquiring the total number of transactions.
 
 21. Query of transaction by ID
 
-    21.1 Interface statement rpc getTransactionById (BytesMessage) returns (Transaction) {}; 
+    21.1 Interface statement
 
-    21.2 Node Soliditynode. 
+     rpc getTransactionById (BytesMessage) returns (Transaction) {}; 
 
-    21.3 Parameters BytesMessage: transaction ID or Hash.
+    21.2 Node 
+
+    Soliditynode. 
+
+    21.3 Parameters 
+
+    BytesMessage: transaction ID or Hash.
  
+    21.4 Returns 
 
-    21.4 Returns Transaction: Queried transaction. 
+    Transaction: Queried transaction. 
 
-    21.5 Function Query of transaction details by ID which is the Hash of transaction.
+    21.5 Function
+
+     Query of transaction details by ID which is the Hash of transaction.
 
 22. Query of transaction by timestamp
 
-    22.1 Interface statement rpc getTransactionsByTimestamp (TimeMessage) returns (TransactionList) {};
+    22.1 Interface statement 
 
-     22.2 Node Soliditynode.
+    rpc getTransactionsByTimestamp (TimeMessage) returns (TransactionList) {};
+
+     22.2 Node 
+
+    Soliditynode.
  
-    22.3 Parameters TimeMessage: starting time and ending time. 
+    22.3 Parameters
 
-    22.4 Returns TransactionList: transaction list.
+     TimeMessage: starting time and ending time. 
 
-     22.5 Function Query of transactions by starting and ending time.
+    22.4 Returns 
+
+    TransactionList: transaction list.
+
+     22.5 Function
+
+     Query of transactions by starting and ending time.
 
 23. Query of transaction initiations by address
 
-    23.1 Interface statement rpc getTransactionsFromThis (Account) returns (TransactionList) {}; 
+    23.1 Interface statement 
 
-    23.2 Node Soliditynode. 
+    rpc getTransactionsFromThis (Account) returns (TransactionList) {}; 
 
-    23.3 Parameters Account: initiator‘s account (address). 
+    23.2 Node 
 
-    23.4 Returns TransactionList: transaction list. 
+    Soliditynode. 
 
-    23.5 Function Query of transaction initiations by account address.
+    23.3 Parameters
+
+     Account: initiator‘s account (address). 
+
+    23.4 Returns 
+
+    TransactionList: transaction list. 
+
+    23.5 Function 
+
+    Query of transaction initiations by account address.
 
 24. Query of transaction receptions by address
 
-    24.1 Interface statement rpc getTransactionsToThis (Account) returns (NumberMessage) {};
+    24.1 Interface statement 
+
+    rpc getTransactionsToThis (Account) returns (NumberMessage) {};
  
-    24.2 Node Soliditynode. 
+    24.2 Node 
 
-    24.3 Parameters Account: Recipient account (address). 
+    Soliditynode
 
-    24.4 Returns TransactionList: transaction list. 
+    24.3 Parameters 
 
-    24.5 Function Query of all transactions accepted by one given account.
+    Account: Recipient account (address). 
+
+    24.4 Returns 
+
+    TransactionList: transaction list. 
+
+    24.5 Function
+
+     Query of all transactions accepted by one given account.
 
 25. Freeze Balance
 
-    25.1 Interface statement rpc FreezeBalance (FreezeBalanceContract) returns (Transaction) {}; 
+    25.1 Interface statement
+     rpc FreezeBalance (FreezeBalanceContract) returns (Transaction) {}; 
 
-    25.2 Node Full Node. 
+    25.2 Node 
+    Full Node. 
 
-    25.3 Parameters FreezeBalanceContract: address, amount of trx to freeze and frozen duration. Currently balance can only be frozen for 3 days. 
+    25.3 Parameters 
 
-    25.4 Returns Transaction: Return includes a transaction of balance. Request transaction broadcasting after signed by wallet.
+    FreezeBalanceContract: address, amount of trx to freeze and frozen duration. Currently balance can only be frozen for 3 days. 
+
+    25.4 Returns 
+
+    Transaction: Return includes a transaction of balance. Request transaction broadcasting after signed by wallet.
  
     25.5 Function
 
@@ -1598,27 +1819,47 @@ GetTransactionsToThis
 
 26. Unfreeze Balance
 
-    26.1 Interface statement rpc UnfreezeBalance (UnfreezeBalanceContract) returns (Transaction) {}; 
+    26.1 Interface statement 
 
-    26.2 Node Full Node. 
+    rpc UnfreezeBalance (UnfreezeBalanceContract) returns (Transaction) {}; 
 
-    26.3 Parameters UnfreezeBalanceContract: address. 
+    26.2 Node 
 
-    26.4 Returns Transaction: returns transaction. Request transaction broadcasting after signed by wallet.
+    FullNode. 
+
+    26.3 Parameters
+
+     UnfreezeBalanceContract: address. 
+
+    26.4 Returns
+
+     Transaction: returns transaction. Request transaction broadcasting after signed by wallet.
  
-    26.5 Function Balance can be unfrozen only 3 days after the latest freeze. Voting records will be cleared upon unfrozen balance, while bandwidth points won’t be. Frozen balance will not be automatically unfrozen after 3 days’ duration.
+    26.5 Function 
+
+    Balance can be unfrozen only 3 days after the latest freeze. Voting records will be cleared upon unfrozen balance, while bandwidth points won’t be. Frozen balance will not be automatically unfrozen after 3 days’ duration.
 
 27. Block-production reward redemption
 
-    27.1 Interface statement rpc WithdrawBalance (WithdrawBalanceContract) returns (Transaction) {};
+    27.1 Interface statement 
+
+    rpc WithdrawBalance (WithdrawBalanceContract) returns (Transaction) {};
  
-    27.2 Node Full Node. 
+    27.2 Node
+     
+    FullNode. 
 
-    27.3 Parameters WithdrawBalanceContract: address. 
+    27.3 Parameters 
 
-    27.4 Returns Transaction: returns transaction. Request transaction broadcasting after signed by wallet. 
+    WithdrawBalanceContract: address. 
 
-    27.5 Function This interface is only accessible to Super Representatives. Super Representative can obtain reward after successful account keeping. Instead of saved to account balance, rewards will be held independently in account allowance, with 1 permitted withdrawal to account balance every 24 hours.
+    27.4 Returns
+     
+    Transaction: returns transaction. Request transaction broadcasting after signed by wallet. 
+
+    27.5 Function 
+
+    This interface is only accessible to Super Representatives. Super Representative can obtain reward after successful account keeping. Instead of saved to account balance, rewards will be held independently in account allowance, with 1 permitted withdrawal to account balance every 24 hours.
 
 28. Unfreeze balance
 
