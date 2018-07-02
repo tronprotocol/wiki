@@ -1343,7 +1343,7 @@ GetTransactionsToThis
 
     4.4 Returns
 
-     Transaction: returns transaction of account creation. Request broadcasting after obtaining wallet signature.
+    Transaction: returns transaction of account creation. Request broadcasting after obtaining wallet signature.
  
     4.5 Function 
 
@@ -1385,7 +1385,7 @@ GetTransactionsToThis
 
     VoteWitnessContract: voter address and list of candidates which includes candidate address and number of votes received.
 
-     6.4 Returns 
+    6.4 Returns 
 
     Transaction: returns transaction of votes. Request broadcasting after the transaction is signed by wallet. 
 
@@ -1405,7 +1405,7 @@ GetTransactionsToThis
 
      7.3 Parameters
 
-     AssetIssueContract: issuer address, token name, total capitalization, exchange rate to TRX, starting date, expiry date, attenuation coefficient, votes, detailed description, url, maximum bandwidth consumption, total bandwidth consumption and frozen token.
+    AssetIssueContract: issuer address, token name, total capitalization, exchange rate to TRX, starting date, expiry date, attenuation coefficient, votes, detailed description, url, maximum bandwidth consumption, total bandwidth consumption and frozen token.
  
     7.4 Returns
 
@@ -1431,17 +1431,17 @@ GetTransactionsToThis
 
     8.2 Nodes
 
-     Fullnode and soliditynode. 
+    Fullnode and soliditynode. 
 
     8.3 parameters
 
-     EmptyMessage: null. 
+    EmptyMessage: null. 
 
     8.4 Returns
 
      WitnessList: list of witnesses including detailed information of the candidates.
 
-     8.5 Function 
+    8.5 Function 
 
     Query of all candidates prior to voting returning detailed information on each candidate for users’ reference.
 
