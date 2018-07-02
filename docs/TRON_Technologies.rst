@@ -1340,7 +1340,7 @@ GetTransactionsToThis
     4.3 Parameters 
 
     AccountCreateContract: account type and account address.
- 
+
     4.4 Returns
 
      Transaction: returns transaction of account creation. Request broadcasting after obtaining wallet signature.
@@ -1359,7 +1359,7 @@ GetTransactionsToThis
 
     Fullnode.
 
-     5.3 Parameters 
+    5.3 Parameters 
 
     AccountUpdateContract: account name and address.
  
@@ -1375,7 +1375,7 @@ GetTransactionsToThis
 
     6.1 Interface statement
 
-     rpc VoteWitnessAccount (VoteWitnessContract) returns (Transaction){};
+    rpc VoteWitnessAccount (VoteWitnessContract) returns (Transaction){};
 
      6.2 Node
 
