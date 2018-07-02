@@ -510,6 +510,25 @@ message ``Result`` contains ``fee`` and ``ret``.
           code ret = 2;
         }
 
+message TransactionInfocontainsid，fee，blockNumber and blockTimeStamp.
+
+`id`：transaction ID.
+
+`fee`： transaction fee
+
+`blockNumber`:the height of the block where the transaction is located.
+
+`blockTimeStamp`:the timestamp of block.
+
+.. code-block:: shell
+
+        message TransactionInfo { 
+             bytes id = 1;
+             int64 fee = 2;
+             int64 blockNumber = 3;
+             int64 blockTimeStamp = 4;
+             }
+
 + Inventory is mainly used to inform peer nodes the list of items.
 
 ``Inventory`` contains ``type`` and ``ids``.
@@ -912,6 +931,9 @@ message ``HelloMessage`` contains 3 parameters:
 *GetAssetIssueList*:
 
 ``GetAssetIssueList`` takes a parameter of EmptyMessage, and returns ``AssetIssueList`` object.
+*GetPaginatedAssetIssueList*
+
+``GetPaginatedAssetIssueList`` takes a parameter of PaginatedMessage, and returns ``AssetIssueList`` object.
 *GetAssetIssueListByTimeStamp*:
 
 ``GetAssetIssueListByTimeStamp`` takes a parameter of EmptyMessage, and returns ``AsssetIssueList`` object.
@@ -942,6 +964,9 @@ message ``HelloMessage`` contains 3 parameters:
 *getTransactionsToThis*:
 
 ``getTransactionsToThis`` takes a parameter of Account, and returns ``NumberMessage`` object.
+*GetTransactionInfoById*
+
+``GetTransactionInfoById`` takes a parameter of BytesMessage and returns ``TransactionInfo`` object.
 
 .. code-block:: shell
 
@@ -1168,10 +1193,73 @@ message ``Neighbours`` contains 3 parameters:
           int64 timestamp = 3;
          }
 
+``EasyTransferMessage``: TRX easy transfer message.
+
+``passPhrase``: password.
+
+``toAddress``: recipient address.
+
+``amount``: amount of trx to transfer.
+
+.. code-block:: shell
+
+    message EasyTransferMessage{
+       bytes passPhrase = 1;
+       bytes toAddress = 2;
+       int64 amount = 3;
+     }
+
+``EasyTransferResponse``: TRX easy transfer response message.
+
+``transaction``: transaction created by transfer.
+
+``result``: result of transaction broadcasting.
+
+.. code-block:: shell
+
+    message EasyTransferResponse{
+       Transaction transaction = 1;
+       Return result = 2;
+     }
+
+``TransactionSign``：the parameter of signature.
+
+``transaction``: transaction to be signed.
+
+``privateKey``: private key for signing.
+
+.. code-block:: shell
+
+    message TransactionSign {
+       Transaction transaction = 1;
+       bytes privateKey = 2;
+     }
+
 Please check detailed protocol document that may change with the iteration of the program at any time. Please refer to the latest version.
 
 TRON Wallet RPC-API
 -------------------
+
+For the specific definition of API, please refer to the following link:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+https://github.com/tronprotocol/java-tron/blob/develop/src/main/protos/api/api.proto
+
+Frequently used APIs:
+~~~~~~~~~~~~~~~~~~~~
+
+1. Get general info of the wallet (similar to bitcoin getinfo)
+GetAccount
+2. Get balance of an address (similar to bitcoin getbalance)
+GetAccount
+3. Create a new address (similar to bitcoin getnewaddress)
+You can create an address at the local system.
+And you can create a new address on blockchain by calling rpc api createAccount, TransferAsset or CreateTransaction (TransferContract) to make a transfer from an existing account to the new address.
+4. Retrieve the list of transaction history by address (similar to bitcoin listtransactions)
+GetTransactionsFromThis
+GetTransactionsToThis
+5. check address is valid or not (regex or API command)
++ Local check--- After decode58check at local, you can get a 21-byte byte array starting with 0x41 (mainnet) or 0xa0 (testnet).
++ If you want to verify whether an address exists on the blockchain, you can call GetAccount.
 
 1. Getting account information
 
@@ -1181,7 +1269,7 @@ TRON Wallet RPC-API
 
     1.2	Nodes
 
-    Fullnode and SolidityNode.
+    FullNode and SolidityNode.
 
     1.3	Parameters
 
@@ -1239,758 +1327,479 @@ TRON Wallet RPC-API
 
     Transfer, vote, issuance of token, or participation in token offering. Sending signed transaction information to node, and broadcasting it to the entire network after witness verification.
 
-4. Query of account list
+4. Creating account
 
-    4.1	Interface statement
+    4.1 Interface statement 
 
-    rpc ListAccounts (EmptyMessage) returns (AccountList);
+    rpc CreateAccount (AccountCreateContract) returns (Transaction){}; 4.2 Node Fullnode.
+     
+    4.3 Parameters AccountCreateContract: account type and account address.
+ 
+    4.4 Returns Transaction: returns transaction of account creation. Request broadcasting after obtaining wallet signature.
+ 
+    4.5 Function Account creation. Creating an account (or opting otherwise) when registering a wallet.
 
-    4.2	Node
+5. Account update
 
-    Fullnode and SolidityNode.
+    5.1 Interface statement rpc UpdateAccount (AccountUpdateContract) returns (Transaction){}; 
 
-    4.3	Parameters
+    5.2 Node Fullnode.
 
-    EmptyMessage: null.
+     5.3 Parameters AccountUpdateContract: account name and address.
+ 
+    5.4 Returns Transaction: Returns transaction of account update. Request broadcasting after the transaction is signed by wallet. 
 
-    4.4	Returns
+    5.5 Function Account name update.
 
-    AccountList: Account list.
+6. Vote
 
-    4.5	Function
+    6.1 Interface statement rpc VoteWitnessAccount (VoteWitnessContract) returns (Transaction){};
 
-    Query of all account information currently stored in the blockchain.
+     6.2 Node Fullnode.
+ 
+    6.3 Parameters VoteWitnessContract: voter address and list of candidates which includes candidate address and number of votes received.
 
-5. Creating account (deleted, no longer available)
+     6.4 Returns Transaction: returns transaction of votes. Request broadcasting after the transaction is signed by wallet. 
 
-    5.1	Interface statement
+    6.5 Function Vote. Coin holders can only vote for Super Representative candidates, with no more votes than the amount of locked balance (see also 25. Balance freeze).
 
-    rpc CreateAccount (AccountCreateContract) returns (Transaction){};
+7. Token issuance
 
-    5.2	Node
+    7.1 Interface statement rpc CreateAssetIssue (AssetIssueContract) returns (Transaction) {};
+
+     7.2 Node Fullnode.
+
+     7.3 Parameters AssetIssueContract: issuer address, token name, total capitalization, exchange rate to TRX, starting date, expiry date, attenuation coefficient, votes, detailed description, url, maximum bandwidth consumption, total bandwidth consumption and frozen token.
+ 
+    7.4 Returns Transaction: returns transaction of token issuance. Request for transaction broadcasting after the transaction is signed by wallet. 
+
+    7.5 Function Token issuance. All users can issue tokens at the cost of 1024 TRX. Following a successful issuance, users can exchange for tokens with TRX before the designated expiry date.
+
+    Sample:
+
+    `assetissue password abc 1000000 1 1 2018-5-31 2018-6-30 abcdef a.com 1000 1000000 200000 180 300000 365`
+
+    With the above command the token named abc is issued with a total capitalization of 1 million tokens at an exchange rate of 1:1 to trx. Its offering is from May 31-June 30, 2018. It is described as abcdef and can be found at a.com.
+
+    A maximum of 1000 bandwidth points can be charged from the issuer’s account per account per day. The maximum bandwidth points to be charged from the issuer per day is 1000,000. 200,000 tokens will be locked for 180 days while another 300,000 tokens will be locked for 365 days.
+
+8. Query of list of Super Representative candidates
+
+    8.1 Interface statement rpc ListWitnesses (EmptyMessage) returns (WitnessList) {}; 
+
+    8.2 Nodes Fullnode and soliditynode. 8.3 parameters EmptyMessage: null. 
+
+    8.4 Returns WitnessList: list of witnesses including detailed information of the candidates.
+
+     8.5 Function Query of all candidates prior to voting returning detailed information on each candidate for users’ reference.
+
+9. Application for Super Representative
+
+    9.1 Interface statement rpc CreateWitness (WitnessCreateContract) returns (Transaction) {}; 
+
+    9.2 Node Fullnode.
+
+     9.3 Parameters WitnessCreateContract: account address and Url.
+
+     9.4 Returns Transaction: Returns a transaction of candidate application. Request broadcasting after the transaction is signed by wallet. 
+
+    9.5 function All users with an account created on the blockchain can apply to become TRON’s Super Representative candidate.
+
+10. Information update of Super Representative candidates
+
+    10.1 Interface statement rpc UpdateWitness (WitnessUpdateContract) returns (Transaction) {};
+ 
+    10.2 Node Fullnode. 10.3 Parameters WitnessUpdateContract: an account address and Url. 
+
+    10.4 Returns Transaction: returns transaction of SR application. Request broadcasting after the transaction is signed by wallet. 
+
+    10.5 Function Updating the url of SRs.
+
+11. Token transfer
+
+    11.1 Interface statement rpc TransferAsset (TransferAssetContract) returns (Transaction){}; 
+
+    11.2 Node Fullnode. 
+
+    11.3 Parameters TransferAssetContract: token name, sender address, recipient address, and the amount of tokens. 
+
+    11.4 Returns Transaction: returns transaction of token transfer. Request broadcasting after the transaction is signed by wallet.
+
+     11.5 Function Token transfer. Creates a transaction of token transfer.
+
+12. Participation in token offering
+
+    12.1 Interface statement rpc ParticipateAssetIssue (ParticipateAssetIssueContract) returns (Transaction){}; 
+
+    12.2 Node Fullnode. 
+
+    12.3 Parameters ParticipateAssetIssueContract: participant address, issuer address, token name, and amount of token (in sun). 
+
+    12.4 Returns Transaction: returns transaction of participation in token offering. Request broadcasting after the transaction is signed by wallet. 
+
+    12.5 Function Participation in token offering.
+
+13. Query of all nodes
+
+    13.1 Interface statement rpc ListNodes (EmptyMessage) returns (NodeList) {}; 
+
+    13.2 Nodes Fullnode and soliditynode. 13.3 Parameters EmptyMessage: null. 
+
+    13.4 Returns NodeList: returns a list of nodes, including their IPs and ports. 
+
+    14.5 Function Listing the IPs and ports of current nodes.
+
+14. Query of list of all tokens
+
+    14.1 Interface statement rpc GetAssetIssueList (EmptyMessage) returns (AssetIssueList) {}; 
+
+    14.2 Node Fullnode and soliditynode. 
+
+    14.3 Parameters EmptyMessage: null. 
+
+    14.4 Returns AssetIssueList: AssetIssueContract list containing information on all issued tokens. 
+
+    14.5 Function List of all issued tokens. Display of all issued tokens for user’s reference.
+
+15. Query of tokens issued by a given account
+
+    15.1 Interface statement rpc GetAssetIssueByAccount (Account) returns (AssetIssueList) {}; 
+
+    15.2 Nodes Fullnode and soliditynode. 15.3 Parameters Account: address. 
+
+    15.4 Returns AssetIssueList: AssetIssueContract list containing information on all issued tokens. 
+
+    15.5 Function Query of all tokens issued by a given account.
+
+16. Query of token information by token name
+
+    16.1 Interface statement rpc GetAssetIssueByName (BytesMessage) returns (AssetIssueContract) {};
+ 
+    16.2 Nodes Fullnode and soliditynode. 16.3 Parameters BytesMessage: token name.
+ 
+    16.4 Returns AssetIssueContract: information on the token.
+
+     17.5 Function Query of token information with the name. The exclusiveness of token name is ensured on TRON’s network.
+
+17. Query of current tokens by timestamp
+
+    17.1 Interface statement rpc GetAssetIssueListByTimestamp (NumberMessage) returns (AssetIssueList){};
+
+    17.2 Node Soliditynode. 
+
+    17.3 Parameters NumberMessage: current timestamp (the number of milliseconds since 1970) .
+
+    17.4 Returns AssetIssueList: AssetIssueContract list including detailed information of the tokens. 
+
+    17.5 Function List of issued tokens by timestamp. Display of current nodes for users’ reference.
+
+18. Get current block
+
+    18.1 Interface statement rpc GetNowBlock (EmptyMessage) returns (Block) {}; 
+
+    18.2 Nodes Fullnode and soliditynode. 18.3 Parameters EmptyMessage: null. 
+
+    18.4 Returns Block: information on current block. 
+
+    18.5 Function Inquire the latest block.
+
+19. Get block by block height
+
+    19.1 Interface statement rpc GetBlockByNum (NumberMessage) returns (Block) {}; 
+
+    19.2 nodes Fullnode and soliditynode. 
+
+    19.3 parameters NumberMessage: block height.
+ 
+    19.4 Returns Block: block information. 
+
+    19.5 function Accessing the block at designated height, otherwise returning to the genesis block.
+
+20. Get total number of transactions
+
+    20.1 Interface statement rpc TotalTransaction (EmptyMessage) returns (NumberMessage) {}; 
+
+    20.2 Nodes Fullnode and soliditynode.
+
+     20.3 Parameters EmptyMessage: null. 
+
+    20.4 Returns NumberMessage: Total number of transactions. 
+
+    20.5 Function Inquiring the total number of transactions.
+
+21. Query of transaction by ID
+
+    21.1 Interface statement rpc getTransactionById (BytesMessage) returns (Transaction) {}; 
+
+    21.2 Node Soliditynode. 
+
+    21.3 Parameters BytesMessage: transaction ID or Hash.
+ 
+
+    21.4 Returns Transaction: Queried transaction. 
+
+    21.5 Function Query of transaction details by ID which is the Hash of transaction.
+
+22. Query of transaction by timestamp
+
+    22.1 Interface statement rpc getTransactionsByTimestamp (TimeMessage) returns (TransactionList) {};
+
+     22.2 Node Soliditynode.
+ 
+    22.3 Parameters TimeMessage: starting time and ending time. 
+
+    22.4 Returns TransactionList: transaction list.
+
+     22.5 Function Query of transactions by starting and ending time.
+
+23. Query of transaction initiations by address
+
+    23.1 Interface statement rpc getTransactionsFromThis (Account) returns (TransactionList) {}; 
+
+    23.2 Node Soliditynode. 
+
+    23.3 Parameters Account: initiator‘s account (address). 
+
+    23.4 Returns TransactionList: transaction list. 
+
+    23.5 Function Query of transaction initiations by account address.
+
+24. Query of transaction receptions by address
+
+    24.1 Interface statement rpc getTransactionsToThis (Account) returns (NumberMessage) {};
+ 
+    24.2 Node Soliditynode. 
+
+    24.3 Parameters Account: Recipient account (address). 
+
+    24.4 Returns TransactionList: transaction list. 
+
+    24.5 Function Query of all transactions accepted by one given account.
+
+25. Freeze Balance
+
+    25.1 Interface statement rpc FreezeBalance (FreezeBalanceContract) returns (Transaction) {}; 
+
+    25.2 Node Full Node. 
+
+    25.3 Parameters FreezeBalanceContract: address, amount of trx to freeze and frozen duration. Currently balance can only be frozen for 3 days. 
+
+    25.4 Returns Transaction: Return includes a transaction of balance. Request transaction broadcasting after signed by wallet.
+ 
+    25.5 Function
+
+    Two things can be gained through freezing balance:
+
+    a. Bandwidth Points.
+ 
+    b. Power to vote.
+
+26. Unfreeze Balance
+
+    26.1 Interface statement rpc UnfreezeBalance (UnfreezeBalanceContract) returns (Transaction) {}; 
+
+    26.2 Node Full Node. 
+
+    26.3 Parameters UnfreezeBalanceContract: address. 
+
+    26.4 Returns Transaction: returns transaction. Request transaction broadcasting after signed by wallet.
+ 
+    26.5 Function Balance can be unfrozen only 3 days after the latest freeze. Voting records will be cleared upon unfrozen balance, while bandwidth points won’t be. Frozen balance will not be automatically unfrozen after 3 days’ duration.
+
+27. Block-production reward redemption
+
+    27.1 Interface statement rpc WithdrawBalance (WithdrawBalanceContract) returns (Transaction) {};
+ 
+    27.2 Node Full Node. 
+
+    27.3 Parameters WithdrawBalanceContract: address. 
+
+    27.4 Returns Transaction: returns transaction. Request transaction broadcasting after signed by wallet. 
+
+    27.5 Function This interface is only accessible to Super Representatives. Super Representative can obtain reward after successful account keeping. Instead of saved to account balance, rewards will be held independently in account allowance, with 1 permitted withdrawal to account balance every 24 hours.
+
+28. Unfreeze balance
+
+    28.1 Interface statement
+
+    rpc UnfreezeAsset (UnfreezeAssetContract) returns (Transaction) {};
+
+    28.2 Node
 
     Fullnode.
 
-    5.3	Parameters
+    28.3 Parameters
 
-    AccountCreateContract: account type, account name and account address.
+    UnfreezeAssetContract:: address.
 
-    5.4	Returns
+    28.4 Returns
 
-    Transaction: returns transaction of account creation. Request broadcasting after acquisition of wallet signature.
+    Transaction: returns the transaction; request broadcasting after the transaction is signed by wallet.
 
-    5.5	Function
+    28.5 Function
 
-    Account creation. Creating an account (or opting otherwise) when registering a wallet.
+    Token issuers can unfreeze locked supply during issuance.
 
-    6. Account update (to be realized)
+29. Query of the next maintenance time
 
-    6.1	Interface statement
+    29.1 Interface statement
 
-    rpc UpdateAccount (AccountUpdateContract) returns (Transaction){};
+    rpc GetNextMaintenanceTime (EmptyMessage) returns (NumberMessage) {};
 
-    6.2	Node
-
-    Fullnode.
-
-    6.3	Parameters
-
-    AccountUpdateContract: account name and address.
-
-    6.4	Returns
-
-    Transaction: Returns transaction of account creation.
-
-    6.5	Function
-
-    Account name update.
-
-7. Vote
-
-    7.1	Interface statement
-
-    rpc VoteWitnessAccount (VoteWitnessContract) returns (Transaction){};
-
-    7.2	Node
+    29.2 Node
 
     Fullnode.
 
-    7.3	Parameters
+    29.3 Parameters
 
-    VoteWitnessContract: voter address and list of votes; candidate address and number of votes received.
+    EmptyMessage: no parameter needed.
 
-    7.4	Returns
+    29.4 Returns
 
-    Transaction: returns transaction of votes
+    NumberMessage: the next maintenance time.
 
-    7.5	Function
+    29.5 Function
 
-    Vote. Coin holders can only vote for Super Representative candidates, with no more votes than the amount of locked balance (see also 26. Balance freeze).
+    Get the next maintenance time.
 
-8. TRON wallet RPC-API for token issuance
+30. Query of transaction information
 
-    8.1	Interface statement
+    30.1 Interface statement
 
-    rpc CreateAssetIssue (AssetIssueContract) returns (Transaction) {};
+    rpc GetTransactionInfoById (BytesMessage) returns (TransactionInfo) {};
 
-    8.2	Node
+    30.2 Node
+
+    Soliditynode.
+
+    30.3 Parameters
+
+    BytesMessage: transaction ID
+
+    30.4 Returns
+
+    TransactionInfo: transaction information.
+
+    30.5 Function
+
+    Query of transaction fee, block location and the timestamp of the block.
+
+31. Query block by ID
+
+    31.1 Interface statement
+
+    rpc GetBlockById (BytesMessage) returns (Block) {};
+
+    31.2 Node
 
     Fullnode.
 
-    8.3	Parameters
+    31.3 Parameter
 
-    AssetIssueContract: issuer address, token name, total capitalization, exchange rate to TRX, starting date, expiry date, attenuation coefficient, votes, detailed description, url, etc.
+    BytesMessage: block ID.
 
-    8.4	Returns
+    31.4 Returns
 
-    Transaction: returns transaction of token issuance. Request for transaction broadcasting after acquiring wallet signature.
+    Block: the block.
 
-    8.5	Function
+    31.5 Function
 
-    Token issuance. All users can issue tokens at the cost of 1024 TRX. Following successful issuance, users can exchange for the token with TRX before the designated expiry date.
+    Query of block by block ID.
 
-9. Query of list of Super Representative candidates
+32. Token update
 
-    9.1	Interface statement
+    32.1 Interface statement
 
-    rpc ListWitnesses (EmptyMessage) returns (WitnessList) {};
+    rpc UpdateAsset (UpdateAssetContract) returns (Transaction) {};
 
-    9.2	Nodes
+    32.2 Node
 
-    Fullnode and SolidityNode.
+    Fullnode.
 
-    9.3	parameters
+    32.3 Parameters
 
-    EmptyMessage: null.
+    UpdateAssetContract: issuer address, token description, token url, maximum bandwidth consumption by each account and total bandwidth consumption.
 
-    9.4	Returns
+    32.4 Returns
 
-    WitnessList: list of witnesses and detailed information of the candidates.
+    Transaction: returns transaction; request broadcasting after the transaction is signed by wallet.
 
-    9.5	Function
+    32.5 Function
 
-    Query of all candidates prior to voting.
+    Token update can only be initiated by the token issuer to update token description, url, maximum bandwidth consumption by each account and total bandwidth consumption.
 
-10. Application for Super Representative (to be realized)
+33. Paginated query of token list
 
-     10.1 Interface statement
+    33.1 Interface statement
 
-     rpc CreateWitness (WitnessCreateContract) returns (Transaction) {};
+    rpc GetPaginatedAssetIssueList (PaginatedMessage) returns (AssetIssueList) {};
 
-     10.2 Node
+    33.2 Nodes
 
-     Fullnode.
+    Fullnode and soliditynode.
 
-     10.3 Parameters
+    33.3 Parameters
 
-     WitnessCreateContract: account address and Url.
+    PaginatedMessage: starting index (0) and the number of tokens displayed on each page.
 
-     10.4 Returns
+    33.4 Returns
 
-     Transaction: Returns
+    AssetIssueList: a paginated list of AssetIssueContract containing detailed information of tokens.
 
-     10.5 function
+    33.5 Function
 
-     All users with an account created on the blockchain can apply to become TRON’s Super Representative candidate.
+    Paginated list of tokens displaying tokens information for users’ reference.
 
-11. Information update of Super Representative candidate (to be realized)
+34. Transaction signing
 
-     11.1 Interface statement
+    34.1 Interface statement
 
-     rpc UpdateWitness (WitnessUpdateContract) returns (Transaction) {};
+    rpc GetTransactionSign (TransactionSign) returns (Transaction) {};
 
-     11.2 Node
+    34.2 Node
 
-     Fullnode.
+    Fullnode.
 
-     11.3 Parameters
+    34.3 Parameters
 
-     WitnessUpdateContract: an account address and Url.
+    TransactionSign: Transaction to be signed and the private key to sign with.
 
-     11.4 Returns
+    34.4 Returns
 
-     Transaction: returns transaction of SR application. Request broadcasting after acquiring wallet signature.
+    Transaction: transaction to be signed.
 
-     11.5 Function
+35. Address and private key creation
 
-     Updating the url of SRs.
+    35.1 Interface statement
 
-12. Token transfer
+    rpc CreateAdresss (BytesMessage) returns (BytesMessage) {};
 
-     12.1 Interface statement
+    35.2 Node
 
-     rpc TransferAsset (TransferAssetContract) returns (Transaction){};
+    Fullnode.
 
-     12.2 Node
+    35.3 Parameters
 
-     Fullnode.
+    BytesMessage: Passphrase
 
-     12.3 Parameters
+    35.4 Returns
 
-     TransferAssetContract: token name, sender’s address, recipient address, and the amount of tokens.
+    BytesMessage: address.
 
-     12.4 Returns
+36. TRX easy transfer
 
-     Transaction: returns transaction of token transfer. Request to broadcast after acquiring wallet signature.
+    36.1 Interface statement
 
-     12.5 Function
+    rpc EasyTransfer (EasyTransferMessage) returns (EasyTransferResponse) {};
 
-     Token transfer. Create a transaction of token transfer.
+    36.2 Node
 
-13. Participation in token offering
+    Fullnode.
 
-     13.1 Interface statement
+    36.3 Parameters:
 
-     rpc ParticipateAssetIssue (ParticipateAssetIssueContract) returns (Transaction){};
+    EasyTransferMessage: password for transfer, toAddress and the amount of tokens to transfer.
 
-     13.2 Node
+    36.4 Returns
 
-     Fullnode.
-
-     13.3 Parameters
-
-     ParticipateAssetIssueContract: participant address, issuer address, token name, and amount of token (in sun).
-
-     13.4 Returns
-
-     Transaction: returns transaction of participation in token offering.
-
-     13.5 Function
-
-     Participation in token offering.
-
-14. Query of nodes
-
-     14.1 Interface statement
-
-     rpc ListNodes (EmptyMessage) returns (NodeList) {};
-
-     14.2 Nodes
-
-     Fullnode and SolidityNode.
-
-     14.3 Parameters
-
-     EmptyMessage: null.
-
-     14.4 Returns
-
-     NodeList: returns a list of nodes, including their IPs and ports.
-
-     14.5 Function
-
-     Listing the IPs and ports of current nodes.
-
-15. Query of tokens
-
-     15.1 Interface statement
-
-     rpc GetAssetIssueList (EmptyMessage) returns (AssetIssueList) {};
-
-     15.2 Node
-
-     Fullnode and SolidityNode.
-
-     15.3 Parameters
-
-     EmptyMessage: null.
-
-     15.4 Returns
-
-     AssetIssueList: AssetIssueContract list and information on issued tokens.
-
-     15.5 Function
-
-     List of all issued tokens. Display of all issued tokens for user’s reference.
-
-16. Query of tokens issued by a given account
-
-     16.1 Interface statement
-
-     rpc GetAssetIssueByAccount (Account) returns (AssetIssueList) {};
-
-     16.2 Nodes
-
-     Fullnode and SolidityNode.
-
-     16.3 Parameters
-
-     Account: address.
-
-     16.4 Returns
-
-     AssetIssueList: AssetIssueContract list.
-
-     16.5 Function
-
-     Query of all tokens issued by a given account.
-
-17. Query of token information with token name
-
-     17.1 Interface statement
-
-     rpc GetAssetIssueByName (BytesMessage) returns (AssetIssueContract) {};
-
-     17.2 Nodes
-
-     Fullnode and SolidityNode.
-
-     17.3 Parameters
-
-     BytesMessage: token name.
-
-     17.4 Returns
-
-     AssetIssueContract: information on the token.
-
-     17.5 Function
-
-     Query of token information with the name. The exclusiveness of token name is ensured on TRON’s network.
-
-18. Query of current tokens by timestamp
-
-     18.1 Interface statement
-
-     rpc GetAssetIssueListByTimestamp (NumberMessage) returns (AssetIssueList){};
-
-     18.2 Node
-
-     Soliditynode.
-
-     18.3 Parameters
-
-     NumberMessage: current timestamp (the number of milliseconds since 1970)
-
-     18.4 Returns
-
-     AssetIssueList: AssetIssueContract list and detailed information
-
-     18.5 Function
-
-     List of issued tokens by timestamp. Display of current nodes for users’ reference.
-
-19. Get current block
-
-     19.1 Interface statement
-
-     rpc GetNowBlock (EmptyMessage) returns (Block) {};
-
-     19.2 Nodes
-
-     Fullnode and SolidityNode.
-
-     19.3 Parameters
-
-     EmptyMessage: null.
-
-     19.4 Returns
-
-     Block: information on current block.
-
-     19.5 Function
-
-     Access the latest block.
-
-20. Get block by block height
-
-     20.1 Interface statement
-
-     rpc GetBlockByNum (NumberMessage) returns (Block) {};
-
-     20.2 nodes
-
-     Fullnode and SolidityNode.
-
-     20.3 parameters
-
-     NumberMessage: block height.
-
-     20.4 Returns
-
-     Block: block information.
-
-     20.5 function
-
-     Accessing the block at designated height, otherwise returning to the genesis block.
-
-21. Get total number of transactions
-
-     21.1 Interface statement
-
-     rpc TotalTransaction (EmptyMessage) returns (NumberMessage) {};
-
-     21.2 nodes
-
-     Fullnode and SolidityNode.
-
-     21.3 Parameters
-
-     EmptyMessage: null.
-
-     21.4 Returns
-
-     NumberMessage: Total number of transactions.
-
-     21.5 Function
-
-     Accessing the total number of transactions.
-
-22. Query of transaction by ID
-
-     22.1 Interface statement
-
-     rpc getTransactionById (BytesMessage) returns (Transaction) {};
-
-     22.2 Node
-
-     Soliditynode.
-
-     22.3 Parameters
-
-     BytesMessage: transaction ID or Hash.
-
-     22.4 Returns
-
-     Transaction:  Queried transaction.
-
-     22.5 Function
-
-     Query of transaction details by ID which is the Hash of transaction.
-
-23. Query of transaction by timestamp
-
-     23.1 Interface statement
-
-     rpc getTransactionsByTimestamp (TimeMessage) returns (TransactionList) {};
-
-     23.2 Node
-
-     Soliditynode.
-
-     23.3 Parameters
-
-     TimeMessage: starting time and ending time.
-
-     23.4 Returns
-
-     TransactionList: transaction list.
-
-     23.5 Function
-
-     Query of transactions by starting and ending time.
-
-24. Query of transaction initiations by address (to be realized)
-
-     24.1 Interface statement
-
-     rpc getTransactionsFromThis (Account) returns (TransactionList) {};
-
-     24.2 Node
-
-     Soliditynode.
-
-     24.3 Parameters
-
-     Account: initiator account (address).
-
-     24.4 Returns
-
-     TransactionList: transaction list.
-
-     24.5 Function
-
-     Query of transaction initiations by account address.
-
-25. Query of transaction receptions by address (to be realized)
-
-     25.1 Interface statement
-
-     rpc getTransactionsToThis (Account) returns (NumberMessage) {};
-
-     25.2 Node
-
-     Soliditynode.
-
-     25.3 Parameters
-
-     Account: Recipient account (address).
-
-     25.4 Returns
-
-     TransactionList: transaction list.
-
-     25.5 Function
-
-     Query of all transactions accepted by one given account.
-
-26. Freeze Balance
-
-     26.1 Interface statement
-
-     rpc FreezeBalance (FreezeBalanceContract) returns (Transaction) {};
-
-     26.2 Node
-
-     FullNode.
-
-     26.3 Parameters
-
-     FreezeBalanceContract: address, balance to freeze and frozen duration. Currently balance can only be frozen for 3 days.
-
-     26.4 Returns
-
-     Transaction: Return includes a transaction of balance. Request transaction broadcasting after signed by wallet.
-
-     26.5 Function
-
-     Two things can be gained through freezing balance:
-
-     a.	Bandwidth  points. Each update of blockchain transaction consumes bandwidth  points (if more than 10s from the previous transaction, the current transaction does not consume any points). Bandwidth  points obtained=suns*frozen duration. Each transaction (all operations altering blockchain accounts) consumes 100,000 bandwidth  points.
-     b.	Votes. The amount of votes gained equals to the amount of frozen TRX.
-
-27. Unfreeze Balance
-
-     27.1 Interface statement
-
-     rpc UnfreezeBalance (UnfreezeBalanceContract) returns (Transaction) {};
-
-     27.2 Node
-
-     FullNode.
-
-     27.3 Parameters
-
-     UnfreezeBalanceContract: address.
-
-     27.4 Returns
-
-     Transaction: returns transaction. Request transaction broadcasting after signed by wallet.
-
-     27.5 Function
-
-     Balance can be unfrozen only 3 days after the latest freeze. Voting records will be cleared upon unfrozen balance, while bandwidth  points won’t be. Frozen balance will not be automatically unfrozen after 3 days’ duration.
-
-28. Block-production reward redemption
-
-     28.1 Interface statement
-
-     rpc WithdrawBalance (WithdrawBalanceContract) returns (Transaction) {};
-
-     28.2 Node
-
-     FullNode.
-
-     28.3 Parameters
-
-     WithdrawBalanceContract: address.
-
-     28.4 Returns
-
-     Transaction: returns transaction. Request transaction broadcasting after signed by wallet.
-
-     28.5 Function
-
-     This interface is only accessible to Super Representatives. Super Representative can obtain reward after successful account keeping. Instead of saved to account balance, rewards will be held independently in account allowance, with 1 permitted withdrawal to account balance every 24 hours.
-
-Procedures of transaction signature generation
-----------------------------------------------
-
-Procedures
-~~~~~~~~~~
-1.	Convert the format of the transaction’s raw data to byte[].
-2.	Conduct sha256 calculation on raw data.
-3.	Sign the results of sha256 with the private key in correspondence with the address of each contract (1 contract and 1 private key for now).
-4.	Add the signed result to transaction.
-
-Signature algorithm
-~~~~~~~~~~~~~~~~~~~~
-1,	ECDSA algorithm, SECP256K.
-2,	Example of signature data
-   
-.. code-block:: shell
-
-    priKey:::8e812436a0e3323166e1f0e8ba79e19e217b2c4a53c970d4cca0cfb1078979df        
-    pubKey::04a5bb3b28466f578e6e93fbfd5f75cee1ae86033aa4bbea690e3312c087181eb366f9a1d1d6a437a9bf9fc65ec853b9fd60fa322be3997c47144eb20da658b3d1        
-    hash:::159817a085f113d099d3d93c051410e9bfe043cc5c20e43aa9a083bf73660145        
-    r:::38b7dac5ee932ac1bf2bc62c05b792cd93c3b4af61dc02dbb4b93dacb758123f        
-    s:::08bf123eabe77480787d664ca280dc1f20d9205725320658c39c6c143fd5642d        
-    v:::0 
-
-.. Note:: the signed result should be 65 byte in size—r 32 bytes, s 32 bytes and v 1 byte.
-
-3,	Signature verification
-
-When a FullNode receives transaction, it will verify signature, comparing an address calculated with hash, r, s and v with the address of the contract. Signature is successfully verified if the two addresses match.
-
-Example of code
-~~~~~~~~~~~~~~~
-
-.. code-block:: shell
-
-   java
-    public static Transaction sign(Transaction transaction, ECKey myKey) {
-
-        Transaction.Builder transactionBuilderSigned = transaction.toBuilder();
-        byte[] hash = sha256(transaction.getRawData().toByteArray());
-        List<Contract> listContract = transaction.getRawData().getContractList();
-
-            for (int i = 0; i < listContract.size(); i++) {
-
-                ECDSASignature signature = myKey.sign(hash);
-                ByteString bsSign = ByteString.copyFrom(signature.toByteArray());
-                //Each contract may be signed with a different private key in the future.
-                transactionBuilderSigned.addSignature( bsSign );
-                 
-                }
-
-Mechanism
----------
-
-Account creation
-~~~~~~~~~~~~~~~~
-
-You can generate an offline keypair, which includes an address and a private key, that will not be recorded by TRON. In order to create a wallet using this private key, you will need to make a transfer (either in TRX or any other token) to the new address from an existing TRON's wallet. If the transfer is successful, you will have created a new wallet with the corresponding address.
-
-Guidelines for Super Representative application
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-All willing users can apply to become Super Representatives, but to prevent malicious attacks, we have set up a threshold for admittance—to run for Super Representative, 9999 TRX in the applicants’ account will be burnt. After successful application, users can run for Super Representatives.
-
-Freezing/unfreezing balance
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**Why tokens are frozen?**
-
-The balance freezing mechanism is set up out of two considerations:
-+ To prevent malicious spam transactions from clogging the network and causing delayed transaction confirmation.
-+ To prevent malicious voting.
-
-**Freeze/unfreeze mechanism**
-
-Once the balance is frozen, the user will receive a proportionate amount of TRON Power(TP) and bandwidth. TRON Power(TP) represents voting power whereas bandwidth is used to pay for transactions. Their usage and means of calculation will be introduced in following sections.
-
-Frozen assets are held in your frozen account and cannot be used for trading.
-
-The fixed frozen duration is 3 days, after which you can unfreeze your balance any time you like manually. Balance unfrozen will be transferred back into your current account.
-
-More TP and bandwidth can be obtained by freezing more balance. The balance can be unfrozen after 3 days from the latest freezing.
-
-The fixed frozen duration is 3 days, after which you can unfreeze your balance any time you like manually. Balance unfrozen will be transferred back into your current account.
-
-+ The freezing command is as follows:
-
-.. code-block:: shell
-
-    freezebalance password amount time
-    amount: the unit of frozen balance is sun. The minimum balance frozen is 1,000,000 sun, or 1 TRX.
-    time: frozen duration lasting from date of freeze and date to unfreeze is 3 days.
-
-+ e.g.
-
-.. code-block:: shell
-
-    freezebalance password 10_000_000 3
-
-+ Unfreezing command:
-
-.. code-block:: shell
-
-    unfreezebalance password
-
-Block-production reward for Super Representatives
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Each time a Super Representative finishes block production, reward will be sent to the subaccount in the superledger. Super Representatives can check but not directly make use of this asset. A withdrawal can be made once every 24 hours, transferring the reward from the subaccount to the Super Representative’s account.
-
-Super Representative Election
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Every account in TRON’s network is entitled to vote for the Super Representatives they support. Voting requires TP, which is determined by users’ current amount of frozen balance.
-
-Calculation of TP: 1 TP for 1 frozen TRX.
-
-Once you unfreeze your balance, an equivalent amount of TP is also lost, meaning that previous votes casted may no longer be valid. You can refreeze your balance to regain validity of votes.
-
-.. Note:: TRON network only keeps record of the latest votes, meaning that every new allocation of votes you make will replace all previous records.
-
-+ e.g.
-
-.. code-block:: shell
-
-    freezebalance password 10_000_000 3// 10 bandwidths for 10 frozen TRX
-    votewitness password witness1 4 witness2 6//4 votes for witness1 and 6 votes for witness2
-    vote witness password witness1 3 witness2 7// 3 votes for witness1 and 7 votes for witness2
-
-The final result of the above commands is 3 votes for witness1 and 7 votes for witness2.
-
-Bandwidth Points
-~~~~~~~~~~~~~~~~
-
-Having too many transactions will clog our network like Ethereum and may incur delays on transaction confirmation. To keep the network operating smoothly, TRON network only allows every account to initiate a limited number of transactions for free every once every 10 seconds. To engage in transactions more frequently requires bandwidth. Like TRON Power(TP), bandwidth can be obtained through freezing TRX.
-
-1. Definition of bandwidth points
-
-Transactions are transmitted and stored in the network in byte arrays. Bandwidth points consumed in a transaction equals the size of its byte array.
-
-If the length of a byte array is 100 then the transaction consumes 100 bandwidth points.
-
-2. Calculation of bandwidth points
-
-Bandwidth points are the number of usable bytes for an account per day.
-
-Within a given period of time, the entire network could only handle a fixed amount of bandwidth. To TRON’ network, the daily capacity is approximately 54G.
-
-The ratio of bandwidth points in an account to the bandwidth capacity of TRON’s network equals the ratio of frozen balance in an account to frozen balance on the entire network.
-
-e.g If frozen asset on the entire network totals 1,000,000 TRX and one given account froze 1,000 TRX, or 0.1% of total TRX frozen, then the account has 0.1%*54GB=54MB bandwidth points for its transactions.
-
-.. Note:: Since the amount of frozen asset on the entire network and for a certain account are subject to change, bandwidth points held by an account isn’t always fixed.
-
-3. Complimentary bandwidth points
-
-There are 1K bandwidth points for free per account per day. When an account hasn’t frozen any balance, or when its bandwidth points have run out, complimentary bandwidth points can be used.
-
-Each transaction in TRON’ network is about 200 bytes, so each account enjoys about 5 transactions for free each day.
-
-.. Note:: total complimentary bandwidth takes up 1/4 of total bandwidth on the network, amounting to 13.5 GB. When total complimentary bandwidth used exceeds that threshold (meaning too many accounts have used complimentary bandwidth points), even if there are sufficient complimentary bandwidth points in an account, they cannot be used for transaction.
-
-4. Token transfer
-
-For transactions of token transfer, bandwidth points will first be charged from the token issuer.
-
-When issuing tokens, the issuer can configure a limit to maximum bandwidth consumption, namely the maximal bandwidth points which can be charged from him/her for a token holder’s token transfers within 24 hours and the maximal total of bandwidth points.
-
-These two parameters can be configured through updateAsset interface.
-
-5. Consumption of bandwidth points
-
-Aside from inquiries, any other type of transaction consumes bandwidth points. The bandwidth consumption procedure is as follows:
-    + If the transaction isn’t a token transfer, skip to step 2. If the transaction is a token transfer, TRON will try to charge bandwidth points from the token issuer. If the issuer does not have sufficient bandwidth points or the charge is beyond the issuer’s maximal threshold, go to step 2.
-    + Bandwidth points will be charged from the initiator. If insufficient, go to step 3.
-    + Complimentary bandwidth points will be charged from the initiator. If again insufficient, transaction fails.
-
-.. Note:: When balance unfreezes, bandwidth points will be cleared since there is no more frozen TRX.
-
-6. Account creation
-
-Account creation costs transaction initiator 10,000 bandwidth points.
-
-Users can create new accounts for token transfer.
-
-Token issuance
-~~~~~~~~~~~~~~
-
-In TRON’s network, every account is capable of issuing tokens. Users can lock their tokens in separately.
-
-To issue token, issuer needs to set up token name, total capitalization, exchange rate to TRX, circulation duration, description, website, maximal bandwidth consumption per account, total bandwidth consumption and token freeze.
-
-+ e.g.
-
-.. code-block:: shell
-
-    assetissue password abc 1000000 1 1 2018-5-31 2018-6-30 abcdef a.com 1000 1000000 200000 180 300000 365
-
-Tokens named abc are issued with the above command, with a capitalization totaling 1 million. The exchange rate of abc to TRX is 1:1. The duration of circulation is May 31-June 30, 2018. It is described as abcdef. The provided website is a.com.
-
-A maximum of 1000 bandwidth points can be charged from the issuer’s account per account per day. A maximum of 1,000,000 bandwidth points can be charged from the issuer’s account for all token holders’ transactions each day. in total capitalization, 200,000 tokens are locked for 180 days and 300,000 are locked for 365 days.
-
+    EasyTransferResponse: the transaction of a transfer and the result of broadcasting.
