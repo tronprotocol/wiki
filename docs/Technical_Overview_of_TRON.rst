@@ -28,7 +28,7 @@ The blockchain explorer of the testnet is https://test.tronscan.org.
 
 Exchanges should test their code in testnet.
 
-About how to config testnet, please refer
+About how to config testnet, please refer to
 
 .. code-block:: shell
 
@@ -1515,33 +1515,61 @@ GRPC port: 50051 P2P network port: 18888
 **FullNode**
 
     54.236.37.243
+
     52.53.189.99
+
     18.196.99.16
+
     34.253.187.192
+
     52.56.56.149
+
     35.180.51.163
+
     54.252.224.209
+
     18.228.15.36
+
     52.15.93.92
+
     34.220.77.106
+
     13.127.47.162
+
     13.124.62.58
+
     13.229.128.108
+
     35.182.37.246
+
     34.200.228.125
+
     18.220.232.201
+
     13.57.30.186
+
     35.165.103.105
+
     18.184.238.21
+
     34.250.140.143
+
     35.176.192.130
+
     52.47.197.188
+
     52.62.210.100
+
     13.231.4.243
+
     18.231.76.29
+
     35.154.90.144
+
     13.125.210.234
+
     13.250.40.82
+
     35.183.101.48
 
 **SolidityNode**
@@ -1642,7 +1670,7 @@ Clone our latest master branch of https://github.com/tronprotocol/java-tron and 
 **Make sure you have the proper dependencies.**
 
 * JDK 1.8 (JDK 1.9+ is not supported yet)
-* On Linux Ubuntu system (e.g. Ubuntu 16.04.4 LTS), ensure that the machine has [__Oracle JDK 8__](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04), instead of having __Open JDK 8__ in the system. If you are building the source code by using __Open JDK 8__, you will get [__Build Failed__](https://github.com/tronprotocol/java-tron/issues/337) result.
+* On Linux Ubuntu system (e.g. Ubuntu 16.04.4 LTS), ensure that the machine has `Oracle JDK 8 < https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04>`_, instead of having ``Open JDK 8`` in the system. If you are building the source code by using ``Open JDK 8``, you will get `Build Failed < https://github.com/tronprotocol/java-tron/issues/337>`_ result.
 
 **Deployment guide**
 
@@ -1973,7 +2001,7 @@ APIs under wallet service are provided by the FullNode. APIs under walletSolidit
 HTTP Interface
 ~~~~~~~~~~~~~~
 
-If you require an http interface, you will need to deploy a `grpc-gateway < https://github.com/tronprotocol/grpc-gateway/blob/master/README.md>`_.
+If you require an http interface, you will need to deploy a `grpc-gateway <https://github.com/tronprotocol/grpc-gateway/blob/master/README.md>`_.
 
 The grpc-gateway will encode the bytes fields defined in proto into base64 format. For input parameters in bytes format, you should encode in into base64 format, and for output parameters in bytes format, you should decode it into base64 format for subsequent processing. We provide a encoding/decoding tool which you can download from https://github.com/tronprotocol/tron-demo/blob/master/TronConvertTool.zip.
 
@@ -2416,7 +2444,7 @@ To issue token, issuer needs to set up token name, total capitalization, exchang
 
 + e.g.
 
-`assetissue password abc 1000000 1 1 2018-5-31 2018-6-30 abcdef a.com 1000 1000000 200000 180 300000 365 `
+assetissue password abc 1000000 1 1 2018-5-31 2018-6-30 abcdef a.com 1000 1000000 200000 180 300000 365
 
 Tokens named abc are issued with the above command, with a capitalization totaling 1 million. The exchange rate of abc to TRX is 1:1. The duration of circulation is May 31-June 30, 2018. It is described as abcdef. The provided website is a.com.
 
