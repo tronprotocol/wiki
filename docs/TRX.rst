@@ -31,45 +31,45 @@ There will be no subsequent offering of TRX before 2021 and profits of witnesses
 Getting TRX
 -------------
 
-Many exchanges has listed TRX, you can get TRX through these exchanges:
+Many exchanges has listed TRX, you can get TRX through these exchanges.
 
-    `Binance <https://www.binance.com>`_
+* Binance
 
-    `Bittrex <https://bittrex.com>`_
+* Bittrex 
 
-    `Upbit <https://upbit.com/home>`_
+* Upbit 
 
-    `Bitfinex <https://www.bitfinex.com>`_
+* Bitfinex 
 
-    `HuobiPro <https://www.huobipro.com>`_
+* HuobiPro 
 
-    `coinnest <http://www.coinnest.co.kr>`_
+* coinnest 
 
-    `OKEX <https://www.okex.cn>`_
+* OKEX 
 
-    `Gate.io <https://gateio.io>`_
+* Gate.io 
 
-    `CEX.COM <http://cex.com>`_
+* CEX.COM 
 
-    `Liqui <https://liqui.io>`_
+* Liqui 
 
-    `YoBit <https://yobit.net>`_
+* YoBit _
 
-    `OTCBTC <https://otcbtc.com>`_
+* OTCBTC 
 
-    `LBANK.info <http://www.lbank.info>`_
+* LBANK.info 
 
-    `Bibox <https://www.bibox.com>`_
+* Bibox _
 
-    `Bit-Z <https://www.bit-z.com>`_
+* Bit-Z 
 
-    `COINEGG <https://www.coinegg.com>`_
+* COINEGG _
 
-    `Qryptos <https://www.qryptos.com>`_
+* Qryptos 
 
-    `COOLCOIN <https://www.coolcoin.com>`_
+* COOLCOIN 
 
-    `Gatecoin <https://www.gatecoin.com>`_
+* Gatecoin 
 
 Sending TRX
 -----------

@@ -9,7 +9,7 @@ TRON Odyssey
     Technical_Overview_of_TRON
     TRON_Client
     TRON_Virtual_Machine
-    TRON_Technologies
+    TRON_Protocol
     TRON_DAapp_Development
     TRX
     TRON_Event
