@@ -218,56 +218,45 @@ This page shows the following information on the nodes: IP address, hostname, bl
 
 Users can check out the Super Representative list which includes information on the last block, number of blocks produced, number of blocks missed, productivity and votes.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/节点信息.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/SR和SR候选信息/SP信息.png
     :width: 842px
-    :height: 489px
+    :height:436px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/节点信息.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/SR和SR候选信息/SP候选信息.png
     :width: 842px
-    :height: 489px
+    :height: 345px
     :align: center
-
-![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/SP和SP候选信息/SP信息.png)
-![](https://github.com/ybhgenius/Documentation/blob/master/images/Blockchain-Explorer/SP和SP候选信息/SP候选信息.png)
 
 Users can also check out corresponding links to find out more about the SRs.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/节点信息.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/SR和SR候选信息/查看详细信息.png
     :width: 842px
-    :height: 489px
+    :height: 404px
     :align: center
-
-![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/SP和SP候选信息/查看详细信息.png)
 
 **Tokens**
 
 Users can participate in token offerings, get information through token overview or create their own tokens.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/节点信息.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/关于代币/三大模块.png
     :width: 842px
-    :height: 489px
+    :height: 166px
     :align: center
-
-![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/关于代币/三大模块.png)
 
 To participate in token offerings, click on PARTICIPATE and enter an amount to TRX to purchase a certain type of token.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/节点信息.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/关于代币/参与代币.png
     :width: 842px
-    :height: 489px
+    :height: 438px
     :align: center
-
-![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/关于代币/参与代币.png)
 
 Users can also view information on all tokens, including their name, total supply, total amount issued and the registration date.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/节点信息.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/关于代币/代币概览.png
     :width: 842px
-    :height: 489px
+    :height: 309px
     :align: center
-
-![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/关于代币/代币概览.png)
 
 Users can also create their own tokens. Click on CREATE to enter the token creation page, fill in token details, click ISSUE TOKEN and their own token can be successfully issued.
 
@@ -282,20 +271,15 @@ Token creation is very simple in TRON ecosystem. Just set up the required parame
 
 A one-time service charge of 1024 TRX is required to create token.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/节点信息.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/关于代币/创建代币1.png
     :width: 842px
-    :height: 489px
+    :height: 403px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/节点信息.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/关于代币/创建代币2.png
     :width: 842px
-    :height: 489px
+    :height: 761px
     :align: center
-
-
-
-![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/关于代币/创建代币1.png)
-![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/关于代币/创建代币2.png)
 
 Tronscan Introduction
 ~~~~~~~~~~~~~~~~~~~~~
@@ -304,10 +288,8 @@ Tronscan Introduction
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/节点信息.png
     :width: 842px
-    :height: 489px
+    :height: 423px
     :align: center
-
-![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/市场资讯/市场资讯.png)
 
 **Open Tronscan and log in to your wallet.**
 
@@ -460,13 +442,28 @@ Open TRON Blockchain explorer:  https://tronscan.org
 
 Click "Account" button.
 
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/注册成功的副本6.png
+    :width: 842px
+    :height: 1170px
+    :align: center
+
 ![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/竞选超级代表/点击账户.jpg)
 
 Click "APPLY TO BE A SUPER REPRESENTATIVE CANDIDATE" button.
 
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/注册成功的副本6.png
+    :width: 842px
+    :height: 242px
+    :align: center
+
 ![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/竞选超级代表/申请成为超级代表候选.jpg)
 
 Write your personal website address and check information below website address.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/注册成功的副本6.png
+    :width: 842px
+    :height: 565px
+    :align: center
 
 ![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/竞选超级代表/填写网站地址并勾选.jpg)
 
