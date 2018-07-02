@@ -286,7 +286,7 @@ Tronscan Introduction
 
 **View latest TRX market information**
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/节点信息.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/市场资讯/市场资讯.png
     :width: 842px
     :height: 423px
     :align: center
@@ -442,30 +442,24 @@ Open TRON Blockchain explorer:  https://tronscan.org
 
 Click "Account" button.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/注册成功的副本6.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/申请成为超级代表/点击账户.jpg
     :width: 842px
     :height: 1170px
     :align: center
 
-![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/竞选超级代表/点击账户.jpg)
-
 Click "APPLY TO BE A SUPER REPRESENTATIVE CANDIDATE" button.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/注册成功的副本6.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/申请成为超级代表/申请成为超级代表候选.jpg
     :width: 842px
     :height: 242px
     :align: center
 
-![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/竞选超级代表/申请成为超级代表候选.jpg)
-
 Write your personal website address and check information below website address.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/注册成功的副本6.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/申请成为超级代表/填写网站地址并勾选.jpg
     :width: 842px
     :height: 565px
     :align: center
-
-![](https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Blockchain-Explorer/竞选超级代表/填写网站地址并勾选.jpg)
 
 .. Note:: 9999 TRX will be paid when users apply to be a SR candidate.
 
