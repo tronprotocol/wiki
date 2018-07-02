@@ -44,7 +44,7 @@ Consensus
 
 **Improved Consensus Mechanism based on DPOS**
 
-High energy consumption, low efficiency and low TPS are always an issue with POW consensus, which is completely opposite from TRON’s values and design. Under the guidance of our architectural philosophy, we have chosen to adopt the POS mechanism as the basis of TRON consensus. Having gained knowledge on constructive ideas in the blockchain community through research, we made improvements to the DPOS mechianism to meet up with our demands, thereby coming up with the TRON consensus.
+High energy consumption, low efficiency and low TPS are always an issue with POW consensus, which is completely opposite from TRON’s values and design. Under the guidance of our architectural philosophy, we have chosen to adopt the POS mechanism as the basis of TRON consensus. Having gained knowledge on constructive ideas in the blockchain community through research, we made improvements to the DPOS mechanism to meet up with our demands, thereby coming up with the TRON consensus.
 
 **Basic Rules of the Consensus Mechanism**
 
@@ -93,9 +93,9 @@ API is mainly used for the development of client terminals. With API support, to
 Smart Contract/ Virtual Machine
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The smart contract module of TRON allows users to custominze contracts to their own needs.
+The smart contract module of TRON allows users to customize contracts to their own needs.
 
-TRON is home to its own virtual machin, on which Smart contract operates, allowing for developers to customize for diverse and complex functions.
+TRON is home to its own virtual machine on which Smart contract operates, allowing for developers to customize for diverse and complex functions.
 
 Third Party Applications
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,11 +106,11 @@ Third party developers are granted access to TRON’s network for the developmen
 
 **Wallet**
 
-With the wallet, users can view their holding of TRX as well as other assets, or initiate or take transactions.
+With the wallet users can view their holding of TRX as well as other assets, initiate or take transactions.
 
 **Blockchain Explorer**
 
-Blockchain explorer is used for the viewing of block records, list of nodes, node deploymeng and real-time operation of TRON.
+Blockchain explorer is used for the viewing of block records, a list of nodes, node deployment and more information on the real-time operation of Tron.
 
 ERC20 Token Migration
 ~~~~~~~~~~~~~~~~~~~~~
@@ -164,9 +164,9 @@ TRON Milestone
 
 - 2017      Early-Stage
 
-- 2017      TRON Foundation and TRONIX Prersale
+- 2017      TRON Foundation and TRONIX Presale
 
-- 2018.3.31 The lanuch of testnet.
+- 2018.3.31 The launch of testnet.
 
 - 2018.5.31 The launch of mainnet.
 
