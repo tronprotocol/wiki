@@ -1333,9 +1333,9 @@ GetTransactionsToThis
 
     rpc CreateAccount (AccountCreateContract) returns (Transaction){}; 
 
-    4.2 Node Full
+    4.2 Node 
 
-    node.
+    Fullnode.
      
     4.3 Parameters 
 
@@ -1355,9 +1355,9 @@ GetTransactionsToThis
 
     rpc UpdateAccount (AccountUpdateContract) returns (Transaction){}; 
 
-    5.2 Node Full
+    5.2 Node 
 
-    node.
+    Fullnode.
 
      5.3 Parameters 
 
@@ -1377,9 +1377,9 @@ GetTransactionsToThis
 
      rpc VoteWitnessAccount (VoteWitnessContract) returns (Transaction){};
 
-     6.2 Node Full
+     6.2 Node
 
-    node.
+     Fullnode.
  
     6.3 Parameters 
 
@@ -1399,9 +1399,9 @@ GetTransactionsToThis
 
     rpc CreateAssetIssue (AssetIssueContract) returns (Transaction) {};
 
-     7.2 Node Full
+     7.2 Node 
 
-    node.
+    Fullnode.
 
      7.3 Parameters
 
@@ -1451,9 +1451,9 @@ GetTransactionsToThis
 
     rpc CreateWitness (WitnessCreateContract) returns (Transaction) {}; 
 
-    9.2 Node Full
+    9.2 Node
 
-    node.
+    Fullnode.
 
      9.3 Parameters 
 
@@ -1473,9 +1473,9 @@ GetTransactionsToThis
 
     rpc UpdateWitness (WitnessUpdateContract) returns (Transaction) {};
  
-    10.2 Node Full
+    10.2 Node
 
-    node. 
+     Fullnode. 
 
     10.3 Parameters
 
@@ -1495,9 +1495,9 @@ GetTransactionsToThis
 
     rpc TransferAsset (TransferAssetContract) returns (Transaction){}; 
 
-    11.2 Node Full
+    11.2 Nodel
 
-    node. 
+     Fulnode. 
 
     11.3 Parameters 
 
@@ -1517,9 +1517,9 @@ GetTransactionsToThis
 
     rpc ParticipateAssetIssue (ParticipateAssetIssueContract) returns (Transaction){}; 
 
-    12.2 Node Full
+    12.2 Node 
 
-    node. 
+    Fullnode. 
 
     12.3 Parameters
 
@@ -1539,9 +1539,9 @@ GetTransactionsToThis
 
     rpc ListNodes (EmptyMessage) returns (NodeList) {}; 
 
-    13.2 Nodes Full
+    13.2 Nodes
 
-    node and soliditynode. 13.3 Parameters EmptyMessage: null. 
+     Fullnode and soliditynode. 13.3 Parameters EmptyMessage: null. 
 
     13.4 Returns
 

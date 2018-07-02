@@ -144,8 +144,6 @@ Others
 
    A: https://github.com/tronprotocol/documentation/tree/master/TRX
 
-2. Can we form trading pairs with USDT and BNB on Binance?
-
 3. Q: How do I specify the data storage directory when I activate my node?
 
    A: Currently we can’t specify data storage directory yet. This function will be made possible in the upcoming version.
