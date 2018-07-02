@@ -1379,8 +1379,8 @@ GetTransactionsToThis
 
      6.2 Node
 
-     Fullnode.
- 
+    Fullnode.
+
     6.3 Parameters 
 
     VoteWitnessContract: voter address and list of candidates which includes candidate address and number of votes received.
@@ -1455,7 +1455,7 @@ GetTransactionsToThis
 
     Fullnode.
 
-     9.3 Parameters 
+    9.3 Parameters 
 
     WitnessCreateContract: account address and Url.
 
@@ -1465,25 +1465,25 @@ GetTransactionsToThis
 
     9.5 function
 
-     All users with an account created on the blockchain can apply to become TRON’s Super Representative candidate.
+    All users with an account created on the blockchain can apply to become TRON’s Super Representative candidate.
 
 10. Information update of Super Representative candidates
 
     10.1 Interface statement 
 
     rpc UpdateWitness (WitnessUpdateContract) returns (Transaction) {};
- 
+
     10.2 Node
 
      Fullnode. 
 
     10.3 Parameters
 
-     WitnessUpdateContract: an account address and Url. 
+    WitnessUpdateContract: an account address and Url. 
 
     10.4 Returns
 
-     Transaction: returns transaction of SR application. Request broadcasting after the transaction is signed by wallet. 
+    Transaction: returns transaction of SR application. Request broadcasting after the transaction is signed by wallet. 
 
     10.5 Function 
 
@@ -1497,7 +1497,7 @@ GetTransactionsToThis
 
     11.2 Nodel
 
-     Fulnode. 
+    Fulnode. 
 
     11.3 Parameters 
 
@@ -1507,7 +1507,7 @@ GetTransactionsToThis
 
     Transaction: returns transaction of token transfer. Request broadcasting after the transaction is signed by wallet.
 
-     11.5 Function 
+    11.5 Function 
 
     Token transfer. Creates a transaction of token transfer.
 
@@ -1541,13 +1541,17 @@ GetTransactionsToThis
 
     13.2 Nodes
 
-     Fullnode and soliditynode. 13.3 Parameters EmptyMessage: null. 
+    Fullnode and soliditynode.
+
+     13.3 Parameters
+
+     EmptyMessage: null. 
 
     13.4 Returns
 
-     NodeList: returns a list of nodes, including their IPs and ports. 
+    NodeList: returns a list of nodes, including their IPs and ports. 
 
-    14.5 Function
+    13.5 Function
 
      Listing the IPs and ports of current nodes.
 
@@ -1555,7 +1559,7 @@ GetTransactionsToThis
 
     14.1 Interface statement
 
-     rpc GetAssetIssueList (EmptyMessage) returns (AssetIssueList) {}; 
+    rpc GetAssetIssueList (EmptyMessage) returns (AssetIssueList) {}; 
 
     14.2 Node 
 
@@ -1563,7 +1567,7 @@ GetTransactionsToThis
 
     14.3 Parameters
 
-     EmptyMessage: null. 
+    EmptyMessage: null.
 
     14.4 Returns
 
@@ -1577,11 +1581,11 @@ GetTransactionsToThis
 
     15.1 Interface statement
 
-     rpc GetAssetIssueByAccount (Account) returns (AssetIssueList) {}; 
+    rpc GetAssetIssueByAccount (Account) returns (AssetIssueList) {}; 
 
     15.2 Nodes
 
-     Fullnode and soliditynode. 
+    Fullnode and soliditynode. 
 
     15.3 Parameters
 
@@ -1600,20 +1604,20 @@ GetTransactionsToThis
     16.1 Interface statement 
 
     rpc GetAssetIssueByName (BytesMessage) returns (AssetIssueContract) {};
- 
+
     16.2 Nodes 
 
     Fullnode and soliditynode. 
 
     16.3 Parameters
 
-     BytesMessage: token name.
- 
+    BytesMessage: token name.
+
     16.4 Returns
 
-     AssetIssueContract: information on the token.
+    AssetIssueContract: information on the token.
 
-     17.5 Function 
+    16.5 Function 
 
     Query of token information with the name. The exclusiveness of token name is ensured on TRON’s network.
 
@@ -1659,7 +1663,7 @@ GetTransactionsToThis
 
     18.5 Function
 
-     Inquire the latest block.
+    Inquire the latest block.
 
 19. Get block by block height
 
@@ -1674,7 +1678,7 @@ GetTransactionsToThis
     19.3 parameters
 
      NumberMessage: block height.
- 
+
     19.4 Returns 
 
     Block: block information. 
@@ -1687,13 +1691,13 @@ GetTransactionsToThis
 
     20.1 Interface statement
 
-     rpc TotalTransaction (EmptyMessage) returns (NumberMessage) {}; 
+    rpc TotalTransaction (EmptyMessage) returns (NumberMessage) {}; 
 
     20.2 Nodes
 
      Fullnode and soliditynode.
 
-     20.3 Parameters
+    20.3 Parameters
 
      EmptyMessage: null. 
 
@@ -1709,7 +1713,7 @@ GetTransactionsToThis
 
     21.1 Interface statement
 
-     rpc getTransactionById (BytesMessage) returns (Transaction) {}; 
+    rpc getTransactionById (BytesMessage) returns (Transaction) {};
 
     21.2 Node 
 
@@ -1725,7 +1729,7 @@ GetTransactionsToThis
 
     21.5 Function
 
-     Query of transaction details by ID which is the Hash of transaction.
+    Query of transaction details by ID which is the Hash of transaction.
 
 22. Query of transaction by timestamp
 
@@ -1733,13 +1737,13 @@ GetTransactionsToThis
 
     rpc getTransactionsByTimestamp (TimeMessage) returns (TransactionList) {};
 
-     22.2 Node 
+    22.2 Node 
 
     Soliditynode.
- 
+
     22.3 Parameters
 
-     TimeMessage: starting time and ending time. 
+    TimeMessage: starting time and ending time. 
 
     22.4 Returns 
 
@@ -1747,7 +1751,7 @@ GetTransactionsToThis
 
      22.5 Function
 
-     Query of transactions by starting and ending time.
+    Query of transactions by starting and ending time.
 
 23. Query of transaction initiations by address
 
@@ -1776,7 +1780,7 @@ GetTransactionsToThis
     24.1 Interface statement 
 
     rpc getTransactionsToThis (Account) returns (NumberMessage) {};
- 
+
     24.2 Node 
 
     Soliditynode
@@ -1791,12 +1795,13 @@ GetTransactionsToThis
 
     24.5 Function
 
-     Query of all transactions accepted by one given account.
+    Query of all transactions accepted by one given account.
 
 25. Freeze Balance
 
     25.1 Interface statement
-     rpc FreezeBalance (FreezeBalanceContract) returns (Transaction) {}; 
+
+    rpc FreezeBalance (FreezeBalanceContract) returns (Transaction) {}; 
 
     25.2 Node 
     Full Node. 
@@ -1829,12 +1834,12 @@ GetTransactionsToThis
 
     26.3 Parameters
 
-     UnfreezeBalanceContract: address. 
+    UnfreezeBalanceContract: address. 
 
     26.4 Returns
 
-     Transaction: returns transaction. Request transaction broadcasting after signed by wallet.
- 
+    Transaction: returns transaction. Request transaction broadcasting after signed by wallet.
+
     26.5 Function 
 
     Balance can be unfrozen only 3 days after the latest freeze. Voting records will be cleared upon unfrozen balance, while bandwidth points won’t be. Frozen balance will not be automatically unfrozen after 3 days’ duration.
@@ -1844,9 +1849,9 @@ GetTransactionsToThis
     27.1 Interface statement 
 
     rpc WithdrawBalance (WithdrawBalanceContract) returns (Transaction) {};
- 
+
     27.2 Node
-     
+
     FullNode. 
 
     27.3 Parameters 
@@ -1854,7 +1859,7 @@ GetTransactionsToThis
     WithdrawBalanceContract: address. 
 
     27.4 Returns
-     
+
     Transaction: returns transaction. Request transaction broadcasting after signed by wallet. 
 
     27.5 Function 
