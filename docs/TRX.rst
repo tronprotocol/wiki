@@ -76,7 +76,7 @@ Sending TRX
 
 The TRON wallet supports sending TRX via a graphical interface.
 
-There are five types of wallet you can choose to use: web-wallet, android/ios wallet, mac wallet, windows wallet and chrome extension wallet. On 6.25 all wallets will be recommended by Tron foundation on tron.network
+There are five types of wallet you can choose to use: web-wallet, android/ios wallet, mac wallet, windows wallet and chrome extension wallet. On 6.25 all wallets will be recommended by TRON foundation on tron.network
 
 
 TRX Migration
@@ -150,7 +150,7 @@ TRX users vote for SR candidates using wallets.
 
 - Please take note of token migration order.
 - Please note that TRX withdrawals will be suspended from June 21st to June 24th (GMT+8). Both TRX deposits and withdrawals on exchanges will be suspended on June 25th (GMT+8). Deposits and withdrawals of TRX will resume on June 26th.
-- Please contact Tron Foundation to receive mainnet tokens.
+- Please contact TRON Foundation to receive mainnet tokens.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/TRX_Migration/Gudiance_for_exchange的副本.png
     :width: 842
@@ -202,7 +202,7 @@ TRX users vote for SR candidates using wallets.
 
     Candidates will be informed on May 15th (GMT+8) to transfer
 
-    200K TRX to Tron Foundation by May 31st as deposit. Deposit will be returned to designated Tron mainnet addresses at midnight June 25th (GMT+8).
+    200K TRX to TRON Foundation by May 31st as deposit. Deposit will be returned to designated TRON mainnet addresses at midnight June 25th (GMT+8).
 
 3.	Election test period: 6/1 - 6/24 (GMT+8)
 
@@ -210,7 +210,7 @@ TRX users vote for SR candidates using wallets.
 
 4.	Candidates’ deposit is returned:
 
-    Deposit will be returned to designated Tron mainnet addresses at midnight June 25th (GMT+8).
+    Deposit will be returned to designated TRON mainnet addresses at midnight June 25th (GMT+8).
 
 5.	Apply to become an SR candidate using the wallet and call on supporters to vote.
 
@@ -250,15 +250,15 @@ From June 26th (GMT+8), deposits and withdrawals of TRX will resume. Users need 
 Transition manual for exchanges and TRX
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It is suggested that exchanges deploy a Full Node and a Solidity Node in Tron blockchain for improved security. The Full Node will synchronize all data in the blockain, while the Solidity Node will only synchronize data from irreversible blocks already confirmed. Transaction broadcasting can be conducted through the Full Node. With the Solidity Node, users can check their account balance.
+It is suggested that exchanges deploy a FullNode and a SolidityNode in TRON blockchain for improved security. The FullNode will synchronize all data in the blockain, while the SolidityNode will only synchronize data from irreversible blocks already confirmed. Transaction broadcasting can be conducted through the FullNode. With the SolidityNode, users can check their account balance.
 
-1，The prerequisite of Full Node and Solidity Node deployment:
+1，The prerequisite of FullNode and SolidityNode deployment:
 
 - Installation of JDK 1.8 (JDK 1.9 not supported for the moment).
 
 - For Linux Ubuntu systems, please make sure to install Oracle JDK 8 instead of OPEN JDK 8.
 
-2，The deployment of Full Node is as follows:
+2，The deployment of FullNode is as follows:
 
 .. code-block:: shell
 
@@ -270,9 +270,9 @@ It is suggested that exchanges deploy a Full Node and a Solidity Node in Tron bl
 
     ./gradlew run
 
-With these, the Full Node is set up and ready for the synchronization of blockchain data, which is complete upon the alert of “Sync Block Completed!!!”.
+With these, the FullNode is set up and ready for the synchronization of blockchain data, which is complete upon the alert of “Sync Block Completed!!!”.
 
-3，The deployment of Solidity Node is as follows:
+3，The deployment of SolidityNode is as follows:
 
 .. code-block:: shell
 
@@ -284,7 +284,7 @@ With these, the Full Node is set up and ready for the synchronization of blockch
 
     ./gradlew run -PmainClass=org.tron.program.SolidityNode
 
-With these, the Full Node is set up and ready for the synchronization of blockchain data, which is complete upon the alert of “Sync with trust node Completed!!!”.
+With these, the FullNode is set up and ready for the synchronization of blockchain data, which is complete upon the alert of “Sync with trust node Completed!!!”.
 
 4，Connecting grpc-gateway to SolidityNode (optional step)
 
@@ -298,7 +298,7 @@ With these, the Full Node is set up and ready for the synchronization of blockch
 
     go run tron_http/main.go
 
-GRPC interface is available on Solidity Node, providing Http interface for gRPC interface through grpc-gateway. Please note that this is an optional step providing Http interface for gRPC interface for the convenience of users.
+GRPC interface is available on SolidityNode, providing Http interface for gRPC interface through grpc-gateway. Please note that this is an optional step providing Http interface for gRPC interface for the convenience of users.
 
 5，Account generation
 
@@ -354,6 +354,6 @@ GRPC interface is available on Solidity Node, providing Http interface for gRPC 
 
 .. Note:: All addresses of transactions and bock storage should be in byte[] as it has 14 bytes less than the base58check format (21 vs 35). Besides the initial address and the witness address in the configuration file, which adopt the base58check format, all other addresses in blockchain nodes should maintain their original format. Where it involves input and output for the wallet, format conversion has to be made, but what is presented to users should be in base58check format. Addresses should be validated before being converted to base58check format.
 
-6，Connecting with Solidity Node or grpc-gateway to check your balance
+6，Connecting with SolidityNode or grpc-gateway to check your balance
 
-    With the address generated in step 5, connect with Solidity Node to view balance through gRPC interface GetAccount. Or you can access http://localhost:8080/Wallet/GetAccount interface for your balance through grpc-gateway.
+    With the address generated in step 5, connect with SolidityNode to view balance through gRPC interface GetAccount. Or you can access http://localhost:8080/Wallet/GetAccount interface for your balance through grpc-gateway.

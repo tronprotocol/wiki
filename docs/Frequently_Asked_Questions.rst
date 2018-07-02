@@ -6,7 +6,7 @@ Frequently Asked Questions
     :depth: 1
     :local:
 
-Questions on the Full Node in private networks
+Questions on the FullNode in private networks
 ----------------------------------------------
 
 1. When replacing genesis.block.witnesses under config.conf with the address string given upon registration on https://trxscan.org/, do I need to delete other addresses? And do I need to delete the fields of url and voteCount?
@@ -16,7 +16,7 @@ Questions on the Full Node in private networks
 Questions on the Super Node in private networks
 -----------------------------------------------
 
-1. When deploying a private network environment, what’s the relationship between Super Node and Full node? Should I deploy Super Node prior to Full Node?
+1. When deploying a private network environment, what’s the relationship between Super Node and Full node? Should I deploy Super Node prior to FullNode?
 
 2. As the Super Node is selected through user voting, in a private network, do I need to submit application materials to TRON to be approved as a Super Node?
 
@@ -152,7 +152,7 @@ Others
 
 4. Q: Can nodes serve as wallets?
 
-   A: There is a RPC interface for wallet on nodes, but no command can call the wallet directly. Wallets on full nodes can be used through the commandline wallet on another repo.
+   A: There is a RPC interface for wallet on nodes, but no command can call the wallet directly. Wallets on FullNodes can be used through the commandline wallet on another repo.
 
 5. Q: I don’t need to calculate my own address with the private key generated according to the file, do I?
 
@@ -162,19 +162,19 @@ Others
 
    A: We are still enlarging our collection of files which is not yet adequate. A new file on rpc-api for wallet has just been added to the Documentation repository.
 
-7. Can Solidity Node and Full Node be employed on the same machine? Since we can’t specify data directory, will there be consequences to the two nodes’ sharing data?
+7. Can SolidityNode and FullNode be employed on the same machine? Since we can’t specify data directory, will there be consequences to the two nodes’ sharing data?
 
 8. Q: Without Txid, how can we tell the users to inquire the transaction after our transfer?
 
    A: For now there is no transaction id or service charge. Transaction id is in development.
 
-9. Q: Do Solidity Nodes synchronize blocks in accordance with Full Nodes?
+9. Q: Do SolidityNodes synchronize blocks in accordance with FullNodes?
 
    A: Yes.
 
-10. Q: Is gateway for the connection to Solidity Nodes?
+10. Q: Is gateway for the connection to SolidityNodes?
 
-    A: Solidity Nodes are set up for the storage of irrevocable blocks, a few blocks behind Full Nodes, so they are more suitable for the confirmation of transfer. You can connect to both Solidity Node and Full Node through gateway.
+    A: SolidityNodes are set up for the storage of irrevocable blocks, a few blocks behind FullNodes, so they are more suitable for the confirmation of transfer. You can connect to both SolidityNode and FullNode through gateway.
 
 11. Q: Listaccounts is a list of all addresses in the network?
 
@@ -207,3 +207,37 @@ Others
 18. Q: Is a well formed technical plan all we need, or must we have the hardware before applying.
 
     A: The technical plan has two parts:1 before June 26 the first election & 2 after June 26 the first election. The second part just need the plan. For the first part you can only have the plan for now but only after you have hardware we can test your node and tell everyone "yes, they do have a test node."Applying to be a SR has no direct connection to qualifying a SR.
+
+For the specific definition of API, please refer to the following link:
+----------------------------------------------------------------------
+
+https://github.com/tronprotocol/java-tron/blob/develop/src/main/protos/api/api.proto
+
+Frequently used APIs:
+---------------------
+
+Get general info of the wallet (similar to bitcoin getinfo)
+
+GetAccount
+
+Get balance of an address (similar to bitcoin getbalance)
+
+GetAccount
+
+Create a new address (similar to bitcoin getnewaddress)
+
+You can create an address at the local system.
+
+And you can create a new address on blockchain by calling rpc api createAccount, TransferAsset or CreateTransaction (TransferContract) to make a transfer from an existing account to the new address.
+
+Retrieve the list of transaction history by address (similar to bitcoin listtransactions)
+
+GetTransactionsFromThis
+
+GetTransactionsToThis
+
+check address is valid or not (regex or API command)
+
+Local check--- After decode58check at local, you can get a 21-byte byte array starting with 0x41.
+
+If you want to verify whether an address exists on the blockchain, you can call GetAccount.
