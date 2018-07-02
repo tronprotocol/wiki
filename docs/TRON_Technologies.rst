@@ -1331,7 +1331,9 @@ GetTransactionsToThis
 
     4.1 Interface statement 
 
-    rpc CreateAccount (AccountCreateContract) returns (Transaction){}; 4.2 Node Fullnode.
+    rpc CreateAccount (AccountCreateContract) returns (Transaction){}; 
+
+    4.2 Node Fullnode.
      
     4.3 Parameters AccountCreateContract: account type and account address.
  
