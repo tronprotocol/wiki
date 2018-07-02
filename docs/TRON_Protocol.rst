@@ -1,6 +1,6 @@
-=================
-TRON Technologies
-=================
+=============
+TRON Protocol
+=============
 
 .. contents:: Table of contents
     :depth: 1
