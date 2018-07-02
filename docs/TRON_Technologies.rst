@@ -1181,7 +1181,7 @@ TRON Wallet RPC-API
 
     1.2	Nodes
 
-    Fullnode and soliditynode.
+    Fullnode and SolidityNode.
 
     1.3	Parameters
 
@@ -1247,7 +1247,7 @@ TRON Wallet RPC-API
 
     4.2	Node
 
-    Fullnode and soliditynode.
+    Fullnode and SolidityNode.
 
     4.3	Parameters
 
@@ -1357,7 +1357,7 @@ TRON Wallet RPC-API
 
     9.2	Nodes
 
-    Fullnode and soliditynode.
+    Fullnode and SolidityNode.
 
     9.3	parameters
 
@@ -1467,7 +1467,7 @@ TRON Wallet RPC-API
 
      14.2 Nodes
 
-     Fullnode and soliditynode.
+     Fullnode and SolidityNode.
 
      14.3 Parameters
 
@@ -1489,7 +1489,7 @@ TRON Wallet RPC-API
 
      15.2 Node
 
-     Fullnode and soliditynode.
+     Fullnode and SolidityNode.
 
      15.3 Parameters
 
@@ -1511,7 +1511,7 @@ TRON Wallet RPC-API
 
      16.2 Nodes
 
-     Fullnode and soliditynode.
+     Fullnode and SolidityNode.
 
      16.3 Parameters
 
@@ -1533,7 +1533,7 @@ TRON Wallet RPC-API
 
      17.2 Nodes
 
-     Fullnode and soliditynode.
+     Fullnode and SolidityNode.
 
      17.3 Parameters
 
@@ -1577,7 +1577,7 @@ TRON Wallet RPC-API
 
      19.2 Nodes
 
-     Fullnode and soliditynode.
+     Fullnode and SolidityNode.
 
      19.3 Parameters
 
@@ -1599,7 +1599,7 @@ TRON Wallet RPC-API
 
      20.2 nodes
 
-     Fullnode and soliditynode.
+     Fullnode and SolidityNode.
 
      20.3 parameters
 
@@ -1621,7 +1621,7 @@ TRON Wallet RPC-API
 
      21.2 nodes
 
-     Fullnode and soliditynode.
+     Fullnode and SolidityNode.
 
      21.3 Parameters
 
@@ -1731,7 +1731,7 @@ TRON Wallet RPC-API
 
      26.2 Node
 
-     Full Node.
+     FullNode.
 
      26.3 Parameters
 
@@ -1756,7 +1756,7 @@ TRON Wallet RPC-API
 
      27.2 Node
 
-     Full Node.
+     FullNode.
 
      27.3 Parameters
 
@@ -1778,7 +1778,7 @@ TRON Wallet RPC-API
 
      28.2 Node
 
-     Full Node.
+     FullNode.
 
      28.3 Parameters
 
@@ -1820,7 +1820,7 @@ Signature algorithm
 
 3,	Signature verification
 
-When a full node receives transaction, it will verify signature, comparing an address calculated with hash, r, s and v with the address of the contract. Signature is successfully verified if the two addresses match.
+When a FullNode receives transaction, it will verify signature, comparing an address calculated with hash, r, s and v with the address of the contract. Signature is successfully verified if the two addresses match.
 
 Example of code
 ~~~~~~~~~~~~~~~
@@ -1950,7 +1950,7 @@ e.g If frozen asset on the entire network totals 1,000,000 TRX and one given acc
 
 There are 1K bandwidth points for free per account per day. When an account hasn’t frozen any balance, or when its bandwidth points have run out, complimentary bandwidth points can be used.
 
-Each transaction in Tron’ network is about 200 bytes, so each account enjoys about 5 transactions for free each day.
+Each transaction in TRON’ network is about 200 bytes, so each account enjoys about 5 transactions for free each day.
 
 .. Note:: total complimentary bandwidth takes up 1/4 of total bandwidth on the network, amounting to 13.5 GB. When total complimentary bandwidth used exceeds that threshold (meaning too many accounts have used complimentary bandwidth points), even if there are sufficient complimentary bandwidth points in an account, they cannot be used for transaction.
 

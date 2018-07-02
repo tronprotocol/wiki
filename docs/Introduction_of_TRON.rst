@@ -120,9 +120,9 @@ Before the launch of TRON’s main net, the migration from ERC20 to TRX, the off
 Community Plan
 ~~~~~~~~~~~~~~~
 
-The community is always an integral part of any blockchain project, so it is our hope to evoke the members’ passion for full participation in Tron’s construction. This is a belief that we have unwaveringly held since the very inception of our project.
+The community is always an integral part of any blockchain project, so it is our hope to evoke the members’ passion for full participation in TRON’s construction. This is a belief that we have unwaveringly held since the very inception of our project.
 
-There are numerous ways for Tron’s community members to be a part of the project, for instance, through participation in core programming tasks or third-party development through APIs to be opened up by Tron. Furthermore, a wide variety of competitions open to all users will be held for LOGO design, essay writing, poster design, competitive programming, etc.
+There are numerous ways for TRON’s community members to be a part of the project, for instance, through participation in core programming tasks or third-party development through APIs to be opened up by TRON. Furthermore, a wide variety of competitions open to all users will be held for LOGO design, essay writing, poster design, competitive programming, etc.
 
     - Providing Code Types
     - feat: A new feature
@@ -135,7 +135,7 @@ There are numerous ways for Tron’s community members to be a part of the proje
 
 **Reward Plan**
 
-We would like to offer reward to all those who have contributed to the progression and development of Tron’s network and community. A special committee is set up by Tron to conduct close assessment on all participants’ contribution, based on the result of which TRX tokens, gifts, and other forms of reward are offered.
+We would like to offer reward to all those who have contributed to the progression and development of TRON’s network and community. A special committee is set up by TRON to conduct close assessment on all participants’ contribution, based on the result of which TRX tokens, gifts, and other forms of reward are offered.
 
 
 Protocol
@@ -170,17 +170,17 @@ TRON Milestone
 
 - 2018.5.31 The launch of mainnet.
 
-- 2018.6    ERC20 Token-->  TRX Migration completed
+- 2018.6.25 ERC20 Token --> TRX Migration completed
 
 Community
 ---------
 
-TRON community is driven by principles of sharing, equality, freedom of speech and personal expression where community members supporting each other. The Tron community social system provides all supporters and participants with more accessible and comprehensive resources and information on the projects of Tron. All participants will have full freedom with out of any restrictions in talent expression, new ideas suggestions, providing different opinions and taking discussion about different topics, as long as they follow community regulations and being actively engaged in community development at all levels.
+TRON community is driven by principles of sharing, equality,freedom of speech and personal expression where community members supporting each other. The TRON community social system provides all supporters and participants with more accessible and comprehensive resources and information on the projects of TRON. All participants will have full freedom with out of any restrictions in talent expression, new ideas suggestions, providing different opinions and taking discussion about different topics, as long as they follow community regulations and being actively engaged in community development at all levels.
 
 Reddit
 ~~~~~~
 
-To its host of supporters and developers converging here, TRON `reddit <https://www.reddit.com/r/Tronix/>`_ is the dream venue for brainstorming and the exchange of ideas. With a firm belief in the freedom of speech, Tron community as a non-profit community accommodates all perspectives, with the aim for all participants to achieve progress through sharing.
+To its host of supporters and developers converging here,TRON `reddit <https://www.reddit.com/r/TRONix/>`_ is the dream venue for brainstorming and the exchange of ideas. With a firm belief in the freedom of speech, TRON community as a non-profit community accommodates all perspectives, with the aim for all participants to achieve progress through sharing.
 
 Current Official Subreddits:
 
@@ -191,14 +191,14 @@ Current Official Subreddits:
 Slack
 ~~~~~
 
-Keeping in touch with outstanding contributors on Github, the tech team of Tron communicates with and finds itself deeply inspired by developers on `slack <https://tronfoundation.slack.com/messages/C6DKKSU8G/details>`_ . The platform makes it easier for developers to discuss and solve technical problems together with the tech team of Tron in a timely fashion. Join us on Slack at our invitation or by your own request. We also welcome developers making a remarkable contribution to be a part of the Tron team.
+Keeping in touch with outstanding contributors on Github, the tech team of TRON communicates with and finds itself deeply inspired by developers on `slack <https://tronfoundation.slack.com/messages/C6DKKSU8G/details>`_ . The platform makes it easier for developers to discuss and solve technical problems together with the tech team of TRON in a timely fashion. Join us on Slack at our invitation or by your own request. We also welcome developers making a remarkable contribution to be a part of the TRON team.
 
 Gitter Rooms
 ~~~~~~~~~~~~
 
-Log on to gitter with your github account to participate in Tron’s discussions. Accessible Gitter channels revolve around the topic of a certain database. Please select a suitable channel and topic and maintain the relevance of your posts.
+Log on to gitter with your github account to participate in TRON’s discussions. Accessible Gitter channels revolve around the topic of a certain database. Please select a suitable channel and topic and maintain the relevance of your posts.
 
-    `java-tron <https://github.com/tronprotocol/java-tron>`_  – about full node, the launch of mainnet, testnet.
+    `java-tron <https://github.com/tronprotocol/java-tron>`_  – about FullNode, the launch of mainnet, testnet.
 
     `wallet-web <https://github.com/tronprotocol/wallet-web>`_ – blockchain explorer and web wallet developed by community.
 
@@ -212,16 +212,16 @@ TRON Forum
 TRON Foundation
 ---------------
 
-Forging ahead with the development of new technologies and applications jointly with all developers, Tron Foundation is devoted to the healthy development of Tron ecosystem.
+Forging ahead with the development of new technologies and applications jointly with all developers, TRON Foundation is devoted to the healthy development of TRON ecosystem.
 
-Tron Foundation open to the community
+TRON Foundation open to the community
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     `Official Website <https://tron.network/en.html>`_
 
     `Twitter <https://twitter.com/tronfoundation>`_
 
-    `Facebook <https://www.facebook.com/TronFoundation>`_
+    `Facebook <https://www.facebook.com/TRONFoundation>`_
 
     `Slack <https://tronfoundation.slack.com>`_
 

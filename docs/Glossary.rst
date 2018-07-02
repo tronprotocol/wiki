@@ -20,7 +20,7 @@ Items
     Asset
         In TRON's documents, asset is the same as token.
     Asset Issue
-        Issuing a token on the Tron Protocol can be done by anyone who has at least 1024 TRX in their account.
+        Issuing a token on the TRON Protocol can be done by anyone who has at least 1024 TRX in their account.
     Balance	TRX
         A TRX account shows the balance of TRX and of other tokens and their USD equivalent.
     Bandwidth
@@ -40,7 +40,7 @@ Items
     DApp
         Decentralized application, Service that operates without a central trusted party. An application that enables direct interaction/agreements/communication between end users and/or resources without a middleman.
     Freeze
-        Freezing a certain amount of TRX earns users Tron Power to vote and bandwidth points for transactions and smart contract running. The number of bandwidth points equals the amount of TRX frozen*frozen duration (days). Frozen TRX cannot be traded or used for transfer.
+        Freezing a certain amount of TRX earns users TRON Power to vote and bandwidth points for transactions and smart contract running. The number of bandwidth points equals the amount of TRX frozen*frozen duration (days). Frozen TRX cannot be traded or used for transfer.
     Frozen account
         Unfrozen TRX re-enters circulation and can be traded.
     Google Protobuf
@@ -56,7 +56,7 @@ Items
     Level DB
         Level DB will be initially adopted with the primary goal to meet the requirements of fast R/W and rapid development. After launching the main net, TRON will upgrade its database to an entirely customized one catered to its very own needs.
     Private Testnet
-        Private Testnet: its developers configure their ID and server IP according to Tron's deployment configuration file to participate in testing. Only readily deployed developers are allowed access.
+        Private Testnet: its developers configure their ID and server IP according to TRON's deployment configuration file to participate in testing. Only readily deployed developers are allowed access.
     Public Testnet
         Public testnet: it is similar to TRON's mainnet launched on May 31, which everyone can visit and use.
     RPC
@@ -68,7 +68,7 @@ Items
     Sun
         Sun, abbreviated as S, replaced drop as the smallest unit of TRX.
     Super Representative
-        The 27 Super Representatives are the bookkeepers on TRON network. They are responsible for the verification and packing of all transaction data broadcasted on the network. Background information of the SRs are posted on TRON network for public access, and the most convenient way to check out the list of SRs and their information is by using Tron’s Blockchain explorer.
+        The 27 Super Representatives are the bookkeepers on TRON network. They are responsible for the verification and packing of all transaction data broadcasted on the network. Background information of the SRs are posted on TRON network for public access, and the most convenient way to check out the list of SRs and their information is by using TRON’s Blockchain explorer.
         High throughput is a feature of TRON mainnet. It is also known as TPS, namely the maximum transaction capacity in a second.
     Timestamp
         The approximate of block production time is recorded as Unix timestamp, which is numbr of seconds that have elapsed since 00:00:00 UTC.
@@ -83,4 +83,4 @@ Items
     TRON Power
         TRON Power (TP), the power to vote for Super Representatives, can be obtained through balance freezing. TRON Power (TP) can be obtained from balance freezing. All users in TRON's network are entitled to vote for Super Representatives they approve of. To vote, TP is needed, the amount of which is determined by the amount of frozen asset. Calculation of TP: 1 frozen TRX equals to 1 TP. When users unfreeze all balance, they also loose their TPs, which invalidates their votes. To prevent invalid votes, users can refreeze balance.
     TVM（TRON Virtual Machine）
-        TRON Virtual Machine (TVM), is a lightweight, Turing complete virtual machine developed for Tron’s ecosystem, aimed at providing millions of global developers with custom-built blockchain system which is efficient, convenient, stable, secure and scalable.
+        TRON Virtual Machine (TVM), is a lightweight, Turing complete virtual machine developed for TRON’s ecosystem, aimed at providing millions of global developers with custom-built blockchain system which is efficient, convenient, stable, secure and scalable.
