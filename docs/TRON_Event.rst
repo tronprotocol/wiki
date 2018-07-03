@@ -81,11 +81,11 @@ Reward will be delivered within 1 month to the announcement.
 Judges
 ~~~~~~
 
-Justin Sun: CEO of Tron
+Justin Sun: CEO of TRON
 
-Lucien Chen: CTO of Tron
+Lucien Chen: CTO of TRON
 
-Marcus Zhao: Director of Technology of Tron
+Marcus Zhao: Director of Technology of TRON
 
 Application  Procedure
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -120,7 +120,7 @@ Application  Procedure
 
 - Step 2. Applicants will receive a confirmation email upon successful application:
 
-You have successfully signed up for Tron Programming Contest. Please submit your project to program@tron.network by 23:59 on May 31, 2018 (GMT+8). Submission after the deadline is considered as unsuccessful. Thank you for your participation!
+You have successfully signed up for TRON Programming Contest. Please submit your project to program@tron.network by 23:59 on May 31, 2018 (GMT+8). Submission after the deadline is considered as unsuccessful. Thank you for your participation!
 
 Project Submission
 ~~~~~~~~~~~~~~~~~~
@@ -163,7 +163,7 @@ Project Submission
 
 - Step 2. Applicants will receive a confirmation email upon successful project submission:
 
-You have successfully submitted your project. We will evaluate the submitted project carefully. Announcement of the results of Tron Programming Contest will be made on June 5, 2018. Thank you for your participation!
+You have successfully submitted your project. We will evaluate the submitted project carefully. Announcement of the results of TRON Programming Contest will be made on June 5, 2018. Thank you for your participation!
 
 Standard of Evaluation for TRON programming Contest
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -228,7 +228,7 @@ Starting now, community members can participate in the Bug Bounty by identifying
 
 Here are some possible ways to find bugs:
 
-- Run full node simulations and identify problems;
+- Run FullNode simulations and identify problems;
 
 - Participate in elections and identify problems;
 
@@ -282,7 +282,7 @@ Loan Amount: USD$100,000
 
 Disbursement: Within 6 – 24 hours
 
-Disbursement Method: Once eligibility for TRON Accelerator is verified, applicants will receive the equivalent of USD$100,000 in digital assets from the Tron Foundation. After funds are disbursed, TRON will publicize information on participating projects and funding flows on official TRON channels.
+Disbursement Method: Once eligibility for TRON Accelerator is verified, applicants will receive the equivalent of USD$100,000 in digital assets from the TRON Foundation. After funds are disbursed, TRON will publicize information on participating projects and funding flows on official TRON channels.
 
 Repayment
 ~~~~~~~~~
@@ -323,7 +323,7 @@ The scope of eligible projects includes but is not limited to the following bloc
 How to Apply
 ~~~~~~~~~~~~
 
-1. Developers should submit applications to the Tron Foundation (loan@tron.network) with their project description and product achievements (including but not limited to product link or APKs).
+1. Developers should submit applications to the TRON Foundation (loan@tron.network) with their project description and product achievements (including but not limited to product link or APKs).
 
 2. We will reach out to developers who pass our assessment. Fund disbursement of USD$100,000 in direct convertible loans will be completed in a timely fashion.
 
@@ -377,7 +377,7 @@ Please make a list of node names for community testnet participation.
 
 Please give us the name of your social media account, which could be Twitter, Telegram, Reddit, etc. There should be at least 500 followers/subscribers to your account.
 
-.. Note:: The information mentioned above will be posted on Tron’s official website (http://tronsr.org/) and our Reddit page (https://www.reddit.com/r/Tronix/) once provided us.
+.. Note:: The information mentioned above will be posted on TRON’s official website (http://tronsr.org/) and our Reddit page (https://www.reddit.com/r/Tronix/) once provided us.
 
 Step 2.
 

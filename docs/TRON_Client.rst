@@ -138,10 +138,160 @@ Contents from the repository are served using the Github CDN which uses aggressi
 
 Tronscan.org will sanitize all HTML tags for security reasons, only standard markdown tags are allowed.
 
-Guide to voting on the new block explorer
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Guide to Tronscan
+~~~~~~~~~~~~~~~~~
 
-**Open TRON block explorer or log in to your wallet.**
+Use the block explorer at https://tronscan.org.
+
+**Blockchain module**
+
+**Block search**
+
+Information on all blocks—from the genesis block to all current blocks—can be found on this page, including block height, its previous block and the corresponding byte size. You can also use the search bar to check block height and SR nodes.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/blockchain模块/查看区块.png
+    :width: 842px
+    :height: 492px
+    :align: center
+
+**Transaction search**
+
+You can search for transaction records on this page. Information on the sender and the recipient’s address, the amount of TRX transferred, block height of transaction record, corresponding Hash and production time can all be found. You can also use the search bar to look for a specific transaction by Hash.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/blockchain模块/查询账户.png
+    :width: 842px
+    :height: 519px
+    :align: center
+
+**Check address/transaction statistics**
+
+On the statistics page, we can see figures of the top 25 TRX holders, TRX transferred in the past hour, transactions in the past hour and the trend of average block size. 'The Tronscan will continue to create more data visualizations for the users' convenience.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/blockchain模块/查询交易.png
+    :width: 842px
+    :height: 536px
+    :align: center
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/blockchain模块/查看地址交易统计数据.png
+    :width: 842px
+    :height: 592px
+    :align: center
+
+**Check block Live**
+
+Block Live is a special feature of Tronscan, with which users can check the real-time transaction records, votes, token issuance and participation, and nodes. We can also use filters to view only our desired contents.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/blockchain模块/查看地址交易统计数据.png
+    :width: 842px
+    :height: 592px
+    :align: center
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/blockchain模块/查看区块直播.png
+    :width: 842px
+    :height: 216px
+    :align: center
+
+**Check node information**
+
+This page shows the number of nodes and the country with most nodes.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/数量与分布.png
+    :width: 842px
+    :height: 135px
+    :align: center
+
+This page shows the geographical distribution of TRON’s nodes. From the density of nodes in different regions, users can have a straightforward impression of where they are located. With the embedded Google map, users can zoom in and out of the map to know about the specific details.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/地图分布.png
+    :width: 842px
+    :height: 460px
+    :align: center
+
+This page shows the following information on the nodes: IP address, hostname, block height, GPRC, GPRC m/s and time of the last update.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/节点信息/节点信息.png
+    :width: 842px
+    :height: 489px
+    :align: center
+
+**Check SR and SR candidate information**
+
+Users can check out the Super Representative list which includes information on the last block, number of blocks produced, number of blocks missed, productivity and votes.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/SR和SR候选信息/SP信息.png
+    :width: 842px
+    :height:436px
+    :align: center
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/SR和SR候选信息/SP候选信息.png
+    :width: 842px
+    :height: 345px
+    :align: center
+
+Users can also check out corresponding links to find out more about the SRs.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/SR和SR候选信息/查看详细信息.png
+    :width: 842px
+    :height: 404px
+    :align: center
+
+**Tokens**
+
+Users can participate in token offerings, get information through token overview or create their own tokens.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/关于代币/三大模块.png
+    :width: 842px
+    :height: 166px
+    :align: center
+
+To participate in token offerings, click on PARTICIPATE and enter an amount to TRX to purchase a certain type of token.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/关于代币/参与代币.png
+    :width: 842px
+    :height: 438px
+    :align: center
+
+Users can also view information on all tokens, including their name, total supply, total amount issued and the registration date.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/关于代币/代币概览.png
+    :width: 842px
+    :height: 309px
+    :align: center
+
+Users can also create their own tokens. Click on CREATE to enter the token creation page, fill in token details, click ISSUE TOKEN and their own token can be successfully issued.
+
+Token creation is very simple in TRON ecosystem. Just set up the required parameters and you are done. The parameters are as follows:
+
++ Token name
++ Total supply
++ Token description
++ Website URL: to provide users with more information on the token they are purchasing.
++ Token exchange rate with TRX.
++ Participation period: during the participation period, users can exchange TRX for tokens.
+
+A one-time service charge of 1024 TRX is required to create token.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/关于代币/创建代币1.png
+    :width: 842px
+    :height: 403px
+    :align: center
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/关于代币/创建代币2.png
+    :width: 842px
+    :height: 761px
+    :align: center
+
+Tronscan Introduction
+~~~~~~~~~~~~~~~~~~~~~
+
+**View latest TRX market information**
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/市场资讯/市场资讯.png
+    :width: 842px
+    :height: 423px
+    :align: center
+
+**Open Tronscan and log in to your wallet.**
 
     https://tronscan.org/#/
 
@@ -260,12 +410,12 @@ Super Representative
 Token holders in the TRON community fall into the following categories:
 
 1. Token holder: Individual holding any amount of TRX.
-2. Super Representative candidates: 127 individuals elected through voting by the entire token holder community. Votes are updated once every 24 hours.
-3. Super Representatives: top 27 individuals among the 127 candidates, voted once every 24 hours. Super Representatives play a key role in governing the TRON community by ensuring basic functions, e.g. block generation and bookkeeping, and obtain corresponding earnings.
+2. Super Representative candidates: 127 individuals elected through voting by the entire token holder community. Votes are updated once every 6 hours.
+3. Super Representatives: top 27 individuals among the 127 candidates, voted once every 6 hours. Super Representatives play a key role in governing the TRON community by ensuring basic functions, e.g. block generation and bookkeeping, and obtain corresponding earnings.
 
 **Rewards**
 
-1.	Candidate reward: 127 candidates updated once every 6 hours will share 230,400 TRX. The reward will be split in accordance to the votes each candidate receives. Each year, candidate reward will total 336,384,000 TRX.
+1.	Candidate reward: 127 candidates updated once every 6 hours will share 115200 TRX. The reward will be split in accordance to the votes each candidate receives. Each year, candidate reward will total 168,192,000 TRX.
 2.	Super Representative reward: The TRON Protocol network will generate one block every 3 seconds, with each block awarding 32 TRX to super representatives. A total of 336,384,000 TRX will be awarded annually to twenty-seven super representatives.
 3.	There will be no inflation on the TRON network before January 1, 2021, and the TRON Foundation will award all block rewards and candidate rewards prior to that date.
 
@@ -285,6 +435,33 @@ Every token holder has the opportunity to become a TRON Super Representative. Ho
 
 New recommended Super Representatives are updated and posted once a week.
 
+How to apply for SR candidate.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Open TRON Blockchain explorer:  https://tronscan.org
+
+Click "Account" button.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/申请成为超级代表/点击账户.jpg
+    :width: 842px
+    :height: 1170px
+    :align: center
+
+Click "APPLY TO BE A SUPER REPRESENTATIVE CANDIDATE" button.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/申请成为超级代表/申请成为超级代表候选.jpg
+    :width: 842px
+    :height: 242px
+    :align: center
+
+Write your personal website address and check information below website address.
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/申请成为超级代表/填写网站地址并勾选.jpg
+    :width: 842px
+    :height: 565px
+    :align: center
+
+.. Note:: 9999 TRX will be paid when users apply to be a SR candidate.
 
 Android Wallet
 --------------
