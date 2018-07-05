@@ -774,6 +774,9 @@ message ``HelloMessage`` contains 3 parameters:
 *TotalTransaction*:
 ``TotalTransaction`` takes a parameter of EmptyMessage, and returns an ``NumberMessage`` object.
 
+*GenerateAddress*:
+``GenerateAddress`` takes a parameter of ‘EmptyMessage’ and returns an ``AddressPrKeyPairMessage`` object.
+
 .. code-block:: shell
 
       service Wallet {
@@ -914,6 +917,24 @@ message ``HelloMessage`` contains 3 parameters:
           };
         }
       };
+         rpc GetNextMaintenanceTime (EmptyMessage) returns (NumberMessage) {
+           option (google.api.http) = {
+           post: "/wallet/getnextmaintenancetime"
+           body: "*"
+        };
+      }
+
+          rpc GenerateAddress (EmptyMessage) returns (AddressPrKeyPairMessage){
+            option (google.api.http) = {
+            post: "/wallet/generateaddress"
+            body: "*"
+            additional_bindings {
+            get: "/wallet/generateaddress"
+            }
+         };
+        }
+       };
+
 
 ``WalletSolidity`` service contains several RPCs.
 *GetAccount* :
@@ -968,6 +989,8 @@ message ``HelloMessage`` contains 3 parameters:
 
 ``GetTransactionInfoById`` takes a parameter of BytesMessage and returns ``TransactionInfo`` object.
 
+``GenerateAddress``: takes a parameter of EmptyMessage and returns ``AddressPrKeyPairMessage`` object.
+
 .. code-block:: shell
 
       service WalletSolidity {
@@ -1005,6 +1028,9 @@ message ``HelloMessage`` contains 3 parameters:
         rpc GetBlockByNum (NumberMessage) returns (Block) {
 
         }
+        Rpc GenerateAddress (EmptyMessage) returns (AddressPrKeyPairMessage){
+        }
+
 
         //Get transaction.
 
@@ -1234,6 +1260,19 @@ message ``Neighbours`` contains 3 parameters:
        Transaction transaction = 1;
        bytes privateKey = 2;
      }
+
+``AddressPrKeyPairMessage``: address and private key message.
+
+``Address``: account address.
+
+``privateKey``: account private key.
+
+.. code-block:: shell
+
+     message AddressPrKeyPairMessage {
+          string address = 1;
+          string privateKey = 2;
+      }
 
 Please check detailed protocol document that may change with the iteration of the program at any time. Please refer to the latest version.
 

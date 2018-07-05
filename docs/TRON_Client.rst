@@ -413,12 +413,6 @@ Token holders in the TRON community fall into the following categories:
 2. Super Representative candidates: 127 individuals elected through voting by the entire token holder community. Votes are updated once every 6 hours.
 3. Super Representatives: top 27 individuals among the 127 candidates, voted once every 6 hours. Super Representatives play a key role in governing the TRON community by ensuring basic functions, e.g. block generation and bookkeeping, and obtain corresponding earnings.
 
-**Rewards**
-
-1.	Candidate reward: 127 candidates updated once every 6 hours will share 115200 TRX. The reward will be split in accordance to the votes each candidate receives. Each year, candidate reward will total 168,192,000 TRX.
-2.	Super Representative reward: The TRON Protocol network will generate one block every 3 seconds, with each block awarding 32 TRX to super representatives. A total of 336,384,000 TRX will be awarded annually to twenty-seven super representatives.
-3.	There will be no inflation on the TRON network before January 1, 2021, and the TRON Foundation will award all block rewards and candidate rewards prior to that date.
-
 **Super Representative**
 
 Users can get SR information from TRON blockchain explorer, the detailed information shown as below:
@@ -796,350 +790,236 @@ Initiate transfer
 Wallet-Cli
 ----------
 
-Download java-tron and wallet-cli
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# wallet-cli [![Build Status](https://travis-ci.org/tronprotocol/wallet-cli.svg?branch=master)](https://travis-ci.org/tronprotocol/wallet-cli)
+Wallet CLI
 
-.. code-block:: shell
 
-    git clone https://github.com/tronprotocol/java-tron.git
-
+Download wallet-cli
+---------------------------------
     git clone https://github.com/tronprotocol/wallet-cli.git
 
-Build and run java-tron
-~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: shell
+    Edit config.conf in src/main/resources
+----------------------------------------
+    ```
+net {
+ type = mainnet
+ #type = testnet 
+}
 
-    cd java-tron
+fullnode = {
+  ip.list = [
+    "fullnode ip : port"
+  ]
+}
 
-    ./gradlew build
+soliditynode = {
+  ip.list = [
+    "solidity ip : port"
+  ]
+}//note: solidity node is optional
 
-    ./gradlew run -Pwitness
-
+```
 Build and run wallet-cli by command line
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------
+    Create a new command line terminal window.
 
-Create a new command line terminal window.
-
-.. code-block:: shell
-
-    cd wallet-cli
-
-    ./gradlew build
-
-    ./gradlew run -Pcmd
+    ```
+cd wallet-cli  
+./gradlew build      
+./gradlew run
+```
 
 Build and run web wallet
-~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------
+    ```
+cd wallet-cli  
+./gradlew build
+cd build/libs
+java -jar wallet-cli.jar
+```
 
-.. code-block:: shell
 
-    cd wallet-cli
+How wallet-cli connects to java-tron :
+--------------------------------------
+    Wallet-cli connect to java-tron by grpc protocol.
+    Java-tron nodes can be deployed locally or remotely.
+    We can set the connected java-tron node IP in config.conf of wallet-cli.
 
-    ./gradlew build
 
-    cd build
+    Wallet-cli supported command list:
+    ----------------------------------
 
-    cd libs
+        RegisterWallet
+RegisterWallet Password
+Register a wallet in local.
+    Generate a pair of ecc keys.
+    Derive a AES Key by password and then use the AES algorithm to encrypt and save the private key.
+    The account address is calculated by the public key sha3-256, and taking the last 20 bytes.
+    All subsequent operations that require the use of a private key must enter the password.
 
-    java -jar wallet-1.0-SNAPSHOT.jar
-
-How wallet-cli connects to java-tron
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Wallet-cli connect to java-tron by grpc protocol.
-
-Java-tron nodes can be deployed locally or remotely.
-
-We can set the connected java-tron node IP in config.conf of wallet-cli.
-
-Java-tron provides grpc api list
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Please refer to the link for details.
-
-https://github.com/tronprotocol/Documentation
-
-rpc GetAccount (Account) returns (Account)
-
-rpc CreateTransaction (TransferContract) returns (Transaction)
-
-rpc BroadcastTransaction (Transaction) returns (Return)
-
-rpc ListAccounts (EmptyMessage) returns (AccountList)
-
-rpc CreateAccount (AccountCreateContract) returns (Transaction)
-
-rpc VoteWitnessAccount (VoteWitnessContract) returns (Transaction)
-
-rpc CreateAssetIssue (AssetIssueContract) returns (Transaction)
-
-rpc ListWitnesses (EmptyMessage) returns (WitnessList)
-
-rpc UpdateWitness (WitnessUpdateContract) returns (Transaction)
-
-rpc CreateWitness (WitnessCreateContract) returns (Transaction)
-
-rpc TransferAsset (TransferAssetContract) returns (Transaction)
-
-rpc ParticipateAssetIssue (ParticipateAssetIssueContract) returns (Transaction)
-
-rpc ListNodes (EmptyMessage) returns (NodeList)
-
-rpc GetAssetIssueList (EmptyMessage) returns (AssetIssueList)
-
-rpc GetAssetIssueByAccount (Account) returns (AssetIssueList)
-
-rpc GetAssetIssueByName (BytesMessage) returns (AssetIssueContract)
-
-rpc GetNowBlock (EmptyMessage) returns (Block)
-
-rpc GetBlockByNum (NumberMessage) returns (Block)
-
-rpc FreezeBalance (FreezeBalanceContract) returns (Transaction)
-
-rpc UnfreezeBalance (UnfreezeBalanceContract) returns (Transaction)
-
-rpc WithdrawBalance (WithdrawBalanceContract) returns (Transaction)
-
-Web wallet host
-~~~~~~~~~~~~~~~
-
-127.0.0.0:8088
-
-.. Note:: make sure the baseUrl configured in interface.js is what you want, for example 127.0.0.1:8088.
-
-Wallet-cli supported command list
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-RegisterWallet
-~~~~~~~~~~~~~~
-
-.. code-block:: shell
-
-    registerwallet password
-
-Registesr a wallet locally. Generates a pair of ecc keys. Derives an AES Key by password and then uses the AES algorithm to encrypt and save the private key. The account address is calculated by the public key sha3-256, and taking the last 20 bytes of the private key. All subsequent operations that require the use of a private key must enter the password.
-
-ImportWallet
-~~~~~~~~~~~~
-
+    ImportWallet
 ImportwalletByBase64
-
 ChangePassword
-
 Login
-
 Logout
-
 BackupWallet
-
 BackupWallet2Base64
-
 Getaddress
-
 GetBalance
-
 GetAccount
-
 GetAssetissueByAccount
-
 GetAssetIssueByName
-
 SendCoin
-
 TransferAsset
-
 ParticipateAssetissue
-
 Assetissue
-
 CreateWitness
-
 VoteWitness
-
 FreezeBalance
-
 UnfreezeBalance
-
 WithdrawBalance
-
 Listaccounts
-
 Listwitnesses
-
 Listassetissue
-
 listNodes
-
 GetAssetIssueByName
-
 Getblock
-
+UpdateAccount
 Exit or Quit
-
 help
 
 Input any one of then, you will get more tips.
 
-How to freeze/unfreeze balance
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once balance is frozen, users will received a proportionate amount of TronPower and bandwidth.
+    How to freeze/unfreeze balance
+----------------------------------
 
-TronPower is used for voting and bandwidth is used for transactions. 
+    After the funds are frozen, the corresponding number of shares and bandwidth will be obtained.
+    Shares can be used for voting and bandwidth can be used for trading.
+                                                                    The rules for the use and calculation of share and bandwidth are described later in this article.
 
-`1 TRX` = `1,000,000 SUN` = `1 TronPower`.
 
-Their usage and means of calculation will be introduced in following sections.
+**Freeze operation is as follows：**
 
-**The freeze command is as follows:**
+```
+freezebalance password amount time
+```
 
-.. code-block:: shell
+*amount:The amount of frozen funds，the unit is drop.
+    The minimum value is **1000000 drop(1TRX)**.*
 
-    freezebalance password amount time
+*time：Freeze time, this value is currently only allowed for **3 days***
 
-    - amount: freeze balance in SUN, with a minimum of 1,000,000 SUN, equivalent to 1 TRX.
-    - time: frozen time in days, the interval between freezing asset and unfreezing is at least 3 days.
 
 For example：
+```
+freezebalance 123455 10000000 3
+```
 
-.. code-block:: shell
 
-    freezebalance 123455 10000000 3
+After the freeze operation,frozen funds will be transferred from Account Balance to Frozen,
+    You can view frozen funds from your account information.
+    After being unfrozen, it is transferred back to Balance by Frozen, and the frozen funds cannot be used for trading.
 
 
-Frozen assets will transfer from account Balance to Frozen, which will be reversed once balance unfreezes. Frozen assets cannot be used for transactions.
+                                                                                                                   When more share or bandwidth is needed temporarily, additional funds may be frozen to obtain additional share and bandwidth.
+    The unfrozen time is postponed until 3 days after the last freeze operation
 
-When in need of more TronPower or bandwidth, users can freeze more balance to obtain more TronPower and bandwidth. Date to unfreeze balance will be renewed to 3 days after the latest freeze.
+After the freezing time expires, funds can be unfroze.
 
-TronPower can only be unfrozen when 3 days has passed since the last freeze has occurred. Frozen assets stack, so you can freeze 10 TRX on day 1, 20 TRX on day 2 and 30 TRX on day 3 but you can only unfreeze that 60 TRX on day 6 (3 days after the last freeze).
 
-When unfreezing TronPower you can only unfreeze the entire amount.
+**Unfreeze operation is as follows：**
+```
+unfreezebalance password 
+```
 
-If you set the frozen duration to be longer than 3 days then you must wait this duration before unfreezing TronPower.
 
-**Unfreeze command is as follows:：**
-
-.. code-block:: shell
-
-    unfreezebalance password
-
-Creating an account
-~~~~~~~~~~~~~~~~~~~
-
-Accounts cannot be created directly. New accounts can only be created by making transfers to inexistent accounts, with a minimum transfer of 1 TRX. This requires 0.1 TRX or bandwidth generated by freezing assets on the sender's account.
-
-**Command line operation flow example**
-
-.. code-block:: shell
-
-    cd wallet-cli
-
-    ./gradlew build
-
-    ./gradlew run -Pcmd
-
-    RegisterWallet 123456      (password = 123456)
-
-    login 123456
-
-    getAddress                 (Print ``address = f286522619d962e6f93235ca27b2cb67a9e5c27b``, backup it)
-
-    BackupWallet 123456        (Print ``priKey = 22be575f19b9ac6e94c7646a19a4c89e06fe99e2c054bd242c0af2b6282a65e9``, backup it) (BackupWallet2Base64 option)
-
-    getbalance                 (Print 'Balance = 0')
-
-    //set genesis.block.assets address to yours. restart java-tron.
-
-    getbalance
-
-    assetIssue 123456 testAssetIssue00001 10000000000000000 1 100 2018-4-1 2018-4-30 1 just-test https://github.com/tronprotocol/wallet-cli/
-
-    getaccount  f286522619d962e6f93235ca27b2cb67a9e5c27b
-
-    (Print balance: 9999900000
-
-    asset {
-
-    key: "testAssetIssue00001"
-
-    value: 10000000000000000
-
-    })
-
-    (cost trx 1000 trx for assetIssue)
-
-    (You can query the trx balance and other asset balances for any account )
-
-    TransferAsset 123456 649DDB4AB82D558AD6809C7AB2BA43D1D1054B3F testAssetIssue00001 10000
 
 How to vote
-~~~~~~~~~~~
+----------------------------------
 
-Voting requires TronPower, which can be obtained through balance freezing.
+    Voting requires share. Share can be obtained by freezing funds.
 
-- Calculation of TronPower: 1 TronPower for 1 frozen TRX, or 1 TronPower for 1,000,000 SUN.
-- Once unfrozen, previous votes casted will be invalid, which can be prevented by refreezing balance.
+- The share calculation method is: **1** unit of share can be obtained for every **1TRX** frozen.
+- After unfreezing, previous vote will expire. You can avoid the invalidation of the vote by re-freezing and voting.
 
-**Note:** TRON network only keeps record of the latest votes, meaning that every new vote you make will replace all previous records.
+**Note:** The Tron Network only records the status of your last vote, which means that each of your votes will cover all previous voting results.
 
-Example：
+    For example：
 
-.. code-block:: shell
+```
+freezebalance 123455 10000000 3   // Freeze 10TRX and acquire 10 units of shares
 
-    // 10 TronPower for 10 frozen TRX (10,000,000 SUN)
-    freezebalance 123455 10000000 3 
-   
-    // 4 votes for witness1 and 6 votes for witness2
-    votewitness 123455 witness1 4 witness2 6 
-    
-    // 10 votes for witness1
-    votewitness 123455 witness1 10 
+votewitness 123455 witness1 4 witness2 6   // Cast 4 votes for witness1 and 6 votes for witness2 at the same time.
 
-The final result of the above commands is 10 votes for witness1 and no vote for witness2.
-At first, witness1 will have 4 votes and withness2 will have 6 votes, but since Tron only
-accounts for the latest vote it will overwrite these votes with 10 votes for witness1.
+votewitness 123455 witness1 10   // Voted 10 votes for witness1.
+```
 
-How to calculate bandwidth
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+The final result of the above command was 10 votes for witness1 and 0 votes for witness2.
 
-The bandwidth calculation rule is：
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: shell
 
-    constant * FrozenFunds * days
+                                                                                    How to calculate bandwidth
+----------------------------------
 
-    Calculation of bandwidth: constant *  frozen asset in SUN * days.
+    The bandwidth calculation rule is：
+```
+constant * FrozenFunds * days
+```
+Assuming freeze 1TRX（1_000_000 DROP），3 days，bandwidth obtained = 1* 1_000_000 * 3 = 3_000_000.
 
-The `constant` is currently `1`. This may or may not change in the future.
+    Any contract needs to consume bandwidth, including transfer, transfer of assets, voting, freezing, etc.
+    The query does not consume bandwidth, and each contract needs to consume **100_000 bandwidth**.
 
-Suppose 1 TRX is frozen (1,000,000 SUN) for a duration of 3 days, then bandwidth=1 \* 1000000 \* 3 = 3000000.
+If the previous contract exceeds a certain time (**10s**), this operation does not consume bandwidth.
 
-All contracts consume bandwidth, including transfer, migration of asset, voting, freezing balance, etc. Inquiries do not consume bandwidth while for every contract about 100,000 bandwidth is consumed.
+    When the unfreezing operation occurs, the bandwidth is not cleared.
+    The next time the freeze is performed, the newly added bandwidth is accumulated.
 
-Bandwidth is only consumed in the event that an operation (transaction / contact) occurs within 10 seconds of the last operation from the same account.
 
-Bandwidth is not reset or removed when you freeze balance. The new balance will accumulate on top of the old balance prior to freezing or unfreezing.
+    How to withdraw balance
+----------------------------------
 
-How to withdraw block producing reward
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    After each block is produced, the block award is sent to the account's allowance,
+and an withdraw operation is allowed every **24 hours** from allowance to balance.
+    The funds in allowance cannot be locked or traded.
 
-Upon complete block production, reward will be sent to allowance in user’s account. Withdrawal can be made once every 24 hours, transferring reward from allowance to balance. Asset in allowance cannot be locked or traded.
 
-How to create TRX
-~~~~~~~~~~~~~~~~~~~
+    How to create witness
+----------------------------------
+    Applying to become a witness account needs to consume **100_000TRX**.
+This part of the funds will be burned directly.
 
-You can gen one keypair and address by command line, then modify java-tron config.conf set genesis.block.assets address to yours.
 
-Now that you have a lot of trx, you can send it to any address.
+    How to create account
+----------------------------------
+    It is not allowed to create accounts directly. You can only create accounts by transferring funds to non-existing accounts.
+    Transfer to a non-existent account with a minimum transfer amount of **1TRX**.
 
-With enough trx, you can issue assets, participate in asset, apply for witnesses, and more.
+Command line operation flow example
+-----------------------------------
 
-How to create witness
-~~~~~~~~~~~~~~~~~~~~~~
+    cd wallet-cli
+    ./gradlew build
+    ./gradlew run
+RegisterWallet 123456      (password = 123456)
+login 123456
+getAddress                 (Print 'address = f286522619d962e6f93235ca27b2cb67a9e5c27b', backup it)
+BackupWallet 123456        (Print 'priKey = 22be575f19b9ac6e94c7646a19a4c89e06fe99e2c054bd242c0af2b6282a65e9', backup it) (BackupWallet2Base64 option)
+getbalance                 (Print 'Balance = 0')
 
-It takes 100,000 TRX to become establish a witness account. These TRX will be burnt immediately.
+getbalance
+
+assetIssue 123456 testAssetIssue00001 10000000000000000 1 100 2018-4-1 2018-4-30 1 just-test https://github.com/tronprotocol/wallet-cli/
+    getaccount  f286522619d962e6f93235ca27b2cb67a9e5c27b
+(Print balance: 9999900000
+asset {
+    key: "testAssetIssue00001"
+    value: 10000000000000000
+})
+(cost trx 1000 trx for assetIssue)
+    (You can query the trx balance and other asset balances for any account )
+TransferAsset 123456 649DDB4AB82D558AD6809C7AB2BA43D1D1054B3F testAssetIssue00001 10000
 
 
