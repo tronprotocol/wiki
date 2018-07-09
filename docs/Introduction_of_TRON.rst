@@ -23,19 +23,19 @@ TRON adopts a 3-layer architecture comprised of storage layer, core layer and ap
 
 The tech team of TRON designed a unique distributed storage protocol consisting of block storage and state storage.
 
-The notion of graph database was introduced into the design of the storage layer to better meet the need for diversified data storage in the real world.
+The notion of a graph database was introduced into the design of the storage layer to better meet the need for diversified data storage in the real world.
 
 **Core Layer**
 
 Smart contract module, account management module and consensus module are three modules of the core layer. It’s TRON’s vision to base its functions on a stacked virtual machine and optimized instruction set.
 
-In order to better serve the development of dAPPs, Java is designated as the language for smart contracts, which is to be further supplemented by other high-level programming languages.
+In order to better serve the development of DApps, Java is designated as the language for smart contracts, which is to be further supplemented by other high-level programming languages.
 
 In addition, innovations are made to TRON’s consensus on the basis of DPOS to fulfill its special needs.
 
 **Application Layer**
 
-Developers can utilize interfaces for the realization of diverse dAPPs and customized wallets.
+Developers can utilize interfaces for the realization of diverse DApps and customized wallets.  
 
 The protocol of TRON adheres in entirety to Google Protobuf, intrinsically supporting multi-language extension.
 
@@ -72,11 +72,11 @@ Token Module
 
 **Configuration**
 
-Users can customize their own token through TKC (token configuration) functions.
+Users can customize their own token through TKC (token configuration) functions. 
 
-Customizable parameters include, but are not exclusive to, token name, abbreviation, LOGO, total capitalization, exchange rate of TRX, starting date, expiring date, attenuation coefficient, controlled inflation model, inflation period, description, etc.
+Customizable parameters include, but are not limited to, token name, abbreviation, LOGO, total capitalization, exchange rate of TRX, starting date, expiring date, attenuation coefficient, controlled inflation model, inflation period, description, etc. 
 
-Users can chose to stay with the default parameters of the system if it’s their option to not customize their own.
+Users can chose to stay with the default parameters of the system. It's their option to not customize their own.
 
 **Issue/Deployment**
 
@@ -90,39 +90,39 @@ Customized token is deployed once witnesses successfully validate, and can be fr
 
 API is mainly used for the development of client terminals. With API support, token issuance platform can be designed by developers themselves.
 
-Smart Contract/ Virtual Machine
+Smart Contract/Virtual Machine
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The smart contract module of TRON allows users to customize contracts to their own needs.
 
-TRON is home to its own virtual machine on which Smart contract operates, allowing for developers to customize for diverse and complex functions.
+TRON is home to its own virtual machine, on which Smart contract operates, allowing for developers to customize for diverse and complex functions.
 
 Third Party Applications
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Token Deployment Platform**
 
-Third party developers are granted access to TRON’s network for the development of their own platforms. With the use of TRON’s token module, users of these platforms could also customize their own tokens.
+Third party developers are granted access to Tron’s network for the development of their own platforms. With the use of TRON’s token module, users of these platforms could also customize their own tokens.
 
 **Wallet**
 
-With the wallet users can view their holding of TRX as well as other assets, initiate or take transactions.
+With the wallet, users can view their holding of TRX as well as other assets, or initiate or take transactions.
 
 **Blockchain Explorer**
 
-Blockchain explorer is used for the viewing of block records, a list of nodes, node deployment and more information on the real-time operation of Tron.
+Blockchain explorer is used for the viewing of block records, list of nodes, node deployment and real-time operation of Tron.
 
 ERC20 Token Migration
 ~~~~~~~~~~~~~~~~~~~~~
 
-Before the launch of TRON’s main net, the migration from ERC20 to TRX, the official token of TRON, will be initiated by TRON foundation. The migration exchange rate is 1:1. The specificities of migration entails further clarification, to which may involve revision might be made before official execution.
+Before the launch of TRON’s main net, the migration from ERC20 to TRX, the official token of Tron, will be initiated by TRON foundation. The migration exchange rate is 1:1. The specificities of migration entails further clarification, to which may involve revision might be made before official execution.
 
 Community Plan
 ~~~~~~~~~~~~~~~
 
-The community is always an integral part of any blockchain project, so it is our hope to evoke the members’ passion for full participation in TRON’s construction. This is a belief that we have unwaveringly held since the very inception of our project.
+The community is always an integral part of any blockchain project, so it is our hope to evoke the members’ passion for full participation in Tron’s construction. This is a belief that we have unwaveringly held since the very inception of our project.
 
-There are numerous ways for TRON’s community members to be a part of the project, for instance, through participation in core programming tasks or third-party development through APIs to be opened up by TRON. Furthermore, a wide variety of competitions open to all users will be held for LOGO design, essay writing, poster design, competitive programming, etc.
+There are numerous ways for Tron’s community members to be a part of the project, for instance, through participation in core programming tasks or third-party development through APIs to be opened up by Tron. Furthermore, a wide variety of competitions open to all users will be held for LOGO design, essay writing, poster design, competitive programming, etc.
 
     - Providing Code Types
     - feat: A new feature
@@ -135,7 +135,7 @@ There are numerous ways for TRON’s community members to be a part of the proje
 
 **Reward Plan**
 
-We would like to offer reward to all those who have contributed to the progression and development of TRON’s network and community. A special committee is set up by TRON to conduct close assessment on all participants’ contribution, based on the result of which TRX tokens, gifts, and other forms of reward are offered.
+We would like to offer reward to all those who have contributed to the progression and development of Tron’s network and community. A special committee is set up by TRON to conduct close assessment on all participants’ contribution, based on the result of which TRX tokens, gifts, and other forms of reward are offered.
 
 
 Protocol
@@ -143,21 +143,21 @@ Protocol
 
 TRON adheres to the Google Protobuf protocol, which covers multiple aspects such as accounts, blocks and transfers.
 
-There are 3 types of accounts: basic account, asset release account, and contract account. Each of those three types has five properties: name, type, address, balance and related asset.
+There are 3 types of accounts: Basic Account, Asset Release Account and Contract Account. Each of those three types has six properties: name, type, address, balance, voting and related asset.
 
-A basic account can apply to be a witness, which possesses other attributes and parameters including voting statistics, public key, URL, history performance, etc.
+A Basic Account can apply to be a witness, which possesses other attributes and parameters, including voting statistics, public key, URL, history performance, etc.
 
-A block typically consists of several transactions and a blockheader, which is comprised of basic block information like timestamp, root of Merkle tree, parent hash, signature, to name just a few.
+A Block typically consists of several transactions and a blockheader, which is comprised of basic block information like a timestamp, root of Merkle tree, parent hash and a signature, to name just a few.
 
-There are eight categories of contract transaction: account creation contract, transfer contract, asset transfer contract, asset voting contract, witness voting contract, witness creation contract, asset issuance contract and deployment contract.
+There are eight categories of a contract transaction: Account Creation Contract, Transfer Contract, Asset Transfer Contract, Asset Voting Contract, Witness Voting Contract, Witness Creation Contract, Asset Issuance Contract and Deployment Contract.
 
 Each transaction contains several TXInputs, TXOutputs and other properties.
 
-Signature is required for input, transaction and block header.
+A signature is required for input, transaction and block header,
 
-Inventory, protocol involved in transfers, is mainly used to inform recipient nodes of transmitted data.
+Inventory, a protocol involved in transfers, is mainly used to inform recipient nodes of transmitted data.
 
-Please find in the appendix the detailed protocol. The specificities of the protocol is subject to change with program upgrading, so please always make reference to the latest version available.
+Please look for the detailed protocol, which is located in the appendix. The specifications of the protocol are subject to change with program upgrading, so please always adhere to the latest version available.
 
 TRON Milestone
 ---------------
