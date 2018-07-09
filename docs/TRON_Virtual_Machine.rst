@@ -9,32 +9,32 @@ TRON Virtual Machine
 Introduction
 ------------
 
-TRON Virtual Machine (TVM), is a lightweight, Turing complete virtual machine developed for TRON’s ecosystem, aimed at providing millions of global developers with custom-built blockchain system which is efficient, convenient, stable, secure and scalable.
+TRON Virtual Machine (TVM) is a lightweight, Turing complete virtual machine developed for the TRON's ecosystem. Its goal is to provide millions of global developers with a custom-built blockchain system that is efficient, convenient, stable, secure and scalable.
 
-TVM can connect seamlessly with existing development ecosystem and supports DPOS. TVM is able to be compatible with EVM environment in the beginning, so that instead of learning a new programming language, developers can develop, debug and compile smart contracts in a Remix environment with Solidity and other languages. Once you’ve built and uploaded your smart contract to TRON’s mainnet, it will be executed on the TVM of the SR node to be isolated from external connections.
+The TVM supports DPOS and can connect seamlessly with the existing development ecosystem. The TVM will be compatible with EVM environments at the beginning, so that, instead of having to learn a new programming language, the developers can build, debug and execute smart contracts in a mixed environment with Solidity and other languages. Once you’ve built and uploaded your smart contract to TRON’s mainnet, it will be executed on the TVM of the SR node in order to be isolated from external connections.
 
-Furthermore, TVM employs the concept of Bandwidth. Different from the gas mechanism on Ethereum’s  EVM,  operations of transaction or smart contracts on TVM are free, with no tokens consumed. Technically, executable computation capacity on TVM is not restricted by total holding of tokens.
+Furthermore, the TVM covers the concept of Bandwidth. Different from the Gas Mechanism on Ethereum’s EVM, operations of transaction or smart contracts on the TVM are free, with no tokens consumed. Technically, the executable computational capacity of the TVM is not restricted by the total holding of tokens.
 
 Features of TVM
 ~~~~~~~~~~~~~~~
 
 1. Lightweight
 
-    TVM adopts a lightweight architecture with the aim of reducing resource consumption to guarantee system performance.
+    The TVM adopts a lightweight architecture with the intent of reducing resource consumption to guarantee system performance.
 
 2. Stability and security
 
-    With a meticulous design paradigm and fine-grained underlying operation code, TVM can guarantee the preciseness of every step of a computation, diminishing ambiguity to the largest extent. Out of security reasons, transfers and smart contract running cost only bandwidth points, not TRX, which exempts TRON from being attacked similarly to Ethereum for its mode of gas consumption. Stability of bandwidth consumption is achieved while the cost of each computational step is fixed.
+    With a meticulous design paradigm and fine-grained underlying operation code, the TVM can guarantee the preciseness of every step of a computation, which minimizes ambiguities. Out of security reasons, transfers and smart contracts execution cost only bandwidth points, and not TRX, which exempts TRON from being attacked like Ethereum due to its gas consumption mode. Stability of bandwidth consumption is achieved while the cost of each computational step is fixed.
 
 3. Compatibility
 
-    Currently, TVM is compatible with EVM and will be with more mainstream VMs in the future. Thereby, all smart contracts on EVM are executable on TVM. By connecting seamlessly to existing development ecosystem, higher efficiency can be achieved by developers. Needless to learn a new programming language, they can use mainstream programming languages for smart contract such as Solidity to develop, debug and compile smart contracts in the Remix environment, which greatly reduces development costs.
+    Currently the TVM is compatible with the EVM and it will also be with more mainstream VMs in the future. Thereby, all smart contracts on EVM are executable on TVM. Because it connects seamlessly to the existing development ecosystem, higher efficiency can be achieved by the developers. It's not necessary for them to learn a new programming language. They can use mainstream programming languages such as Solidity to develop, debug and compile smart contracts in the mixed environment, which greatly reduces development costs.
 
 4. Developer-friendly
 
-    Thanks to TVM’s bandwidth setup, developments costs are reduced and developers can focus on the logic of their contract code. TVM also offers all-in-one interfaces for contract deployment, triggering and viewing, for the convenience of developers.
+    Thanks to the TVM's bandwidth setup, development costs are reduced and developers can focus on the logic of their contract code. The TVM also offers convenience all-in-one interfaces for the deployment, triggering and viewing of contracts.
 
-    The following interfaces are available in TRON Wallet-CLI:
+    The following interfaces are available on TRON Wallet-CLI:
 
     + deploycontract(password, contractAddress, ABI, code, data, value)
     + triggercontract(password, contractAddress, selector, data, value)
@@ -45,7 +45,7 @@ Developers can call these interfaces to deploy, trigger or check smart contracts
 How TVM works
 ~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Virtual_Machine/虚拟机的副本.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Virtual_Machine/虚拟机.png
     :width: 842px
     :height: 915px
     :align: center
@@ -53,33 +53,33 @@ How TVM works
 
 The above flowchart shows how TVM works:
 
-Compilation of TRON smart contract→execution and computing engines of VM→Interoperation service layer for external interfaces
+Compilation of TRON smart contracts → Execution and computing engines of the VM → Interoperation service layer for external interfaces
 
 Put simply, the flow is as follows:
-+ Currently, TVM is compatible mainly with Solidity. The compiler translates Solidity smart contract into bytecode readable and executable on TVM.
-+ A virtual machine processes data through opcode, which is equivalent to operating a logic of a stack-based finite sate machine.
-+ TVM accesses blockchain data and invoke External Data Interface through the Interoperation layer.
++ Currently, the TVM is compatible mainly with Solidity. The compiler translates Solidity smart contracts into bytecode readable and executable by the TVM.
++ A virtual machine processes data through opcode, which is equivalent to the operation logic of a stack-based finite state machine.
++ The TVM accesses blockchain data and invokes the External Data interface through the interoperation layer.
 
 Future development of TVM
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. More developer-friendly debugging tools
 
-    TRON will be committed to the development of optimized debugging tools and the establishment of standardized symbol and data format, for improved developer efficiency.
+    Tron will be committed to the development of optimized debugging tools and the establishment of standardized symbol and data format for the improvement developers efficiency.
 
 2. Fulfillment of diversified processing demands
 
-    Different from gas consumption mechanism for every transaction on EVM, there is no charge on TVM. Each operation only occupies bandwidth, which will be released within a certain amount of time after completion of transaction. It takes developers very little to develop smart contracts with more complex logic. It is our belief that besides being used for digital asset transactions, smart contracts could also be suitably applied to areas such as game development, financial risk modeling and scientific computing. The design of TVM inherently supports multi-scenario tasks, and further optimizations of processing speed, response time, and floating point compatibility.
+    Different from the gas consumption mechanism for every transaction on EVM, there is no charge on TVM. Each operation only consumes bandwidth, which will be released within a certain period of time after the completion of the transaction. It takes developers very little effort to develop smart contracts with more complex logic. It is our belief that, besides being used for digital asset transactions, smart contracts could also be suitably applied to areas such as game development, financial risk modeling and scientific computing. The design of the TVM inherently supports multi-scenario tasks and further optimizations of processing speed, response time and floating point compatibility.
 
 3. Improvement of Just-In-Time (JIT) compilation speed and integration of WebAssembly
 
-    Improving JIT compilation speed is conducive to faster interpretation and optimized compilation of local code.
+    Improved JIT compilation speed is conducive to faster interpretation and optimized compilation of local code.  
 
-Meanwhile, TRON is planning to further optimize its TVM based on WebAssembly (WASM). WebAssembly, spearheaded by Apple, Google, Microsoft and Mozzila, is designed to break bottlenecks of current Web browsers and can be generated through compiling C/C++ and other programming languages.
+Meanwhile, TRON is planning to further optimize its TVM based on the WebAssembly (WASM). WebAssembly, spearheaded by Apple, Google, Microsoft and Mozzila, is designed to break bottlenecks of current Web browsers and can be generated through compiling C/C++ and other programming languages.  
 
-Integrating WASM, TVM will be able to provide high performance and high throughput for blockchain to cope with complex scenarios.
+After the Integration of the WASM, the TVM will be able to provide high performance and high throughput for blockchain to cope with complex scenarios.
 
-Guide to TVM (smart contract deploymeng)
+Guide for smart contract deployment on TVM
 -----------------------------------------
 
 1. Compile contract
@@ -144,4 +144,4 @@ bc72e90029
 
     getcontract(ContractAddress)
 
-    The above is an introduction of Tron Virtual Machine and a guide to deployment. We welcome everyone to check out TVM and give us your thoughts and suggestions. We will continue to perfect and update TMV for optimal performance on TRON main
+    The above is an introduction of Tron Virtual Machine and a guide to deployment. We welcome everyone to check out TVM and give us your thoughts and suggestions. We will continue to perfect and update TVM for optimal performance on TRON main
