@@ -2327,8 +2327,6 @@ Once the balance is frozen, the user will receive a proportionate amount of TRON
 
 Frozen assets are held in your frozen account and cannot be used for trading.
 
-The fixed frozen duration is 3 days, after which you can unfreeze your balance any time you like manually. Balance unfrozen will be transferred back into your current account.
-
 More TP and bandwidth points can be obtained by freezing more balance. The balance can be unfrozen after 3 days from the latest freezing.
 
 + The freezing command is as follows:
@@ -2449,6 +2447,12 @@ assetissue password abc 1000000 1 1 2018-5-31 2018-6-30 abcdef a.com 1000 100000
 Tokens named abc are issued with the above command, with a capitalization totaling 1 million. The exchange rate of abc to TRX is 1:1. The duration of circulation is May 31-June 30, 2018. It is described as abcdef. The provided website is a.com.
 
 A maximum of 1000 bandwidth points can be charged from the issuer’s account per account per day. A maximum of 1,000,000 bandwidth points can be charged from the issuer’s account for all token holders’ transactions each day. in total capitalization, 200,000 tokens are locked for 180 days and 300,000 tokens are locked for 365 days.
+
+**SR Rewards**
+
+1.	Candidate reward: 127 candidates updated once every 6 hours will share 115200 TRX. The reward will be split in accordance to the votes each candidate receives. Each year, candidate reward will total 168,192,000 TRX.
+2.	Super Representative reward: The TRON Protocol network will generate one block every 3 seconds, with each block awarding 32 TRX to super representatives. A total of 336,384,000 TRX will be awarded annually to twenty-seven super representatives.
+3.	There will be no inflation on the TRON network before January 1, 2021, and the TRON Foundation will award all block rewards and candidate rewards prior to that date.
 
 Relevant expenses
 ~~~~~~~~~~~~~~~~~
