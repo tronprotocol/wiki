@@ -17,7 +17,7 @@ Questions on the Full Node in private networks
 
 .. code-block:: shell
 
-    - netstat -tulnp| grep 50051
+    netstat -tulnp| grep 50051
 
 If the port is open, you can test your node using tronscan.org. Make sure your port and IP is open on internet. If you are using a private IP only, you will need to use other gRPC software
 
@@ -30,7 +30,7 @@ You can also check if your node is running using the following terminal command:
 
 .. code-block:: shell
 
-    - tail -f logs/tron.log |grep "MyheadBlockNumber"
+    tail -f logs/tron.log |grep "MyheadBlockNumber"
 
 
 Questions on the Super Node in private networks
@@ -40,7 +40,7 @@ Questions on the Super Node in private networks
     A:  On a private deployment, you will need at least one Super Node, no minimum requirements for FullNode.
 
 2.	Q: As user voting determines Super Node selection in private networks, do I need to submit any application materials to the TRON foundation to be approved as a Super Node?
-    A: You don’ t need to submit material to TRON foundation.
+    A: You don’ t need to submit material to TRON Foundation.
 
 3.	Q: Why is data in private environments continuously synchronized and why is the journal still continuously updated to all other nodes? What is the difference between a private and a public environment then?
     A: If this is related to the IP list-> A: On config.conf you need to update the seed.ip, if you use the same of the public network, and your computer is connected to the internet, it will attempt to connect to those nodes and the IP list will be saved in the DB, even if the connection fails.
@@ -56,7 +56,7 @@ Questions regarding operation in public networks
     Is a good practice to limit JVM heap size to fit inside one NUMA region (Around 1 TB on the bigger machines). If its JVM spans NUMA regions, GC will take much longer.
 
 2.	Q: What performance does a processor need to have in order to run the node software?
-    A: You will need at least 2 CPU cores to run a full node badly. On a private environment, with lower number of transactions, you can will be fine running on 4 CPU cores. So, the CPU performance will depends on the network request. You will need to monitor your machine to decide the best requirements. In the PUBLIC NETWORK, TRON recommend at least 64CPU cores machine for a Super Representative to be approved.
+    A: At least 2 core CPUs are required to run a full node, at the minimum performance. On a private environment, with lower number of transactions, you can will be fine running on 4 CPU cores. So, the CPU performance will depends on the network request. You will need to monitor your machine to decide the best requirements. In the PUBLIC NETWORK, TRON recommend at least 64CPU cores machine for a Super Representative to be approved.
 
 3.	Q: What ports should be open to public network?
     A: 18888 and 50051 are the two default ports.
@@ -78,7 +78,7 @@ Questions regarding error occurrences/messages for Super Nodes
 
 .. code-block:: shell
 
-    - tail -f logs/tron.log |grep "MyheadBlockNumber"
+    tail -f logs/tron.log |grep "MyheadBlockNumber"
 
 Questions regarding block generation by Super Nodes
 ---------------------------------------------------
@@ -98,14 +98,16 @@ Questions regarding block generation by Super Nodes
 5.	Q: How do I know if my test Super Node is running?
     A: A: Run the following command:
 
-    - tail -f logs/tron.log |grep "Try Produce Block"
+.. code-block:: shell
+
+    tail -f logs/tron.log |grep "Try Produce Block"
 
 6.	Q: Based on this command: java -jar java-tron.jar -p yourself private key --witness -c yourself config.conf(Example：/data/java-tron/config.conf, how do I know that I am running a Super Node?
     A: Run the following command:
 
 .. code-block:: shell
 
-- tail -f logs/tron.log |grep "Try Produce Block"
+    tail -f logs/tron.log |grep "Try Produce Block"
 
 7.	Q: What are some command-line commands that can generate an address to be sent to TRON? Is web wallet the only way?
     A: You can use Wallet CLI: https://github.com/tronprotocol/wallet-cli
@@ -153,7 +155,7 @@ Questions on the Super Representatives election
     A: Voting does not consume your TRX.
 
 9.	Q: Does the status of Super Representatives only last for 24 hours?
-    A:  No. The status of Super Representatives lasts for 6 hours. But if the results of the next election remains the same, the status will be maintained for another 6 hours.
+    A: No. The status of Super Representatives lasts for 6 hours. But if the results of the next election remains the same, the status will be maintained for another 6 hours.
 
 10.	Q: Information on my node is not included in either of the two configuration nodes, namely build/resources/main/config.conf and build/resources/main/config.conf in the wallet. Is it still possible to discover my node and proceed to block production?
     A: Set your own private key in the configuration file. With a successful vote a block will be produced.
@@ -193,7 +195,7 @@ Others
 10.	Q: Listaccounts is a list of all addresses in the network?
     A: For now, yes. But we are uncertain if that’s going to change, because we need to further think it through as the address base if enormous.
 
-11.	Q: How many decimal places is there for the balance?
+11.	Q: How many decimal places are there for the balance?
     A: Six.
 
 12.	Q: Is the machines of the nodes in Beijing? Is the wall an issue?
