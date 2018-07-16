@@ -19,9 +19,9 @@ Revolutionize in cooperation and competition
 
 Take home $1,000,000 for your excellence in programming
 
-**Tron Developer Programming Competition is a programming carnival dedicated to global community members and developers, based on the blockchain technology with the key feature of decentralization.**
+**TRON Developer Programming Competition is a programming carnival dedicated to global community members and developers, based on the blockchain technology with the key feature of decentralization.**
 
-Tron offers to global developers and community members a world-class platform of blockchain development and a valuable opportunity to exchange ideas. Participants are also encouraged to develop third-party apps compatible with Tron’s mainnet and to contribute to the construction and the flourishment of Tron’s ecosystem.
+TRON offers to global developers and community members a world-class platform of blockchain development and a valuable opportunity to exchange ideas. Participants are also encouraged to develop third-party apps compatible with Tron’s main net and to contribute to the construction and the flourish of Tron’s ecosystem.
 
 First-place prizes will be offered to designers of the five applications like the wallet based on Windows, Mac, iOS/Android platform, wallet embedded with Google Chrome and blockchain explorer.
 
