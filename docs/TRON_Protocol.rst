@@ -11,10 +11,10 @@ Protobuf protocol
 
 The protocol of TRON is defined by Google Protobuf and contains a range of layers, from account, block to transfer.
 
-+ There are 3 types of account—basic account, asset release account and contract account, and attributes included in each account are name, types, address, balance and related asset.
-+ A basic account is able to apply to be a validation node, which has serval parameters, including extra attributes, public key, URL, voting statistics, history performance, etc.
++ There are 3 types of accounts—basic account, asset release account and contract account, and attributes included in each account are name, types, address, balance and related asset.
++ A basic account is able to apply to be a validation node, which has several parameters, including extra attributes, public key, URL, voting statistics, history performance, etc.
 
-There are three different ``Account types``: ``Normal``, ``AssetIssue``, ``Contract``.
+There are three different `Account types`: ``Normal``, ``AssetIssue``, ``Contract``.
 
 .. code-block:: shell
 
@@ -24,7 +24,7 @@ There are three different ``Account types``: ``Normal``, ``AssetIssue``, ``Contr
          Contract = 2;
        }
 
-An ``Account` contains 7 parameters:
+An ``Account`` contains 7 parameters:
 
 ``account_name``: the name for this account – e.g. “*BillsAccount*”.
 
@@ -66,7 +66,7 @@ A ``Witness`` contains 8 parameters:
 
 ``totalProduced``: the number of blocks this witness produced – e.g. *2434*.
 
-``totalMissed``: the number of blocks this witness missed – e.g. *7*.
+``totalMissed``: the number of blocks this witness missed – e.g. *7*. 
 
 ``latestBlockNum``: the latest height of block – e.g. *4522*.
 
@@ -143,7 +143,7 @@ message ``ChainInventory`` contains ``BlockId`` and ``remain_num``.
 
 ``BlockId``: the identification of block.
 
-``remain_num``：the remaining number of blocks in the synchronizing process.
+``remain_num``：the remain number of blocks in the synchronizing process.
 
 A ``BlockId`` contains 2 parameters:
 
@@ -166,7 +166,7 @@ A ``BlockId`` contains 2 parameters:
 
 An ``AccountCreateContract`` contains 3 parameters:
 
-``type``: What type this account is – e.g. _0_ stands for ``Normal``.
+``type``: What type this account is – e.g. *0* stands for ``Normal``.
 
 ``account_name``: the name for this account – e.g.”*Billsaccount*”.
 
@@ -367,9 +367,9 @@ A ``DeployContract`` contains 2 parameters:
            bytes script = 2;
            }                       t
 
-+ Each transaction contains several TXInputs, TXOutputs and other related qualities.
++ Each transaction contains several TXInputs, TXOutputs and other related properties.
 
-Input, transaction and block header all require signature.
+Input, transaction and head block all require signature.
 
 message ``Transaction`` contains ``raw_data`` and ``signature``.
 
@@ -510,7 +510,7 @@ message ``Result`` contains ``fee`` and ``ret``.
           code ret = 2;
         }
 
-message TransactionInfocontainsid，fee，blockNumber and blockTimeStamp.
+message TransactionInfo contains ``id``, ``fee``, ``blockNumber`` and ``blockTimeStamp``.
 
 `id`：transaction ID.
 
@@ -696,7 +696,7 @@ message ``BlockId`` contains ``ids`` and ``type``.
           UNKNOWN = 255;
         }
 
-message ``DisconnectMessage`` contains ``reason``:
+message ``DisconnectMessage`` contains ``reason``.
 
 ``DisconnectMessage``: the message when disconnection occurs.
 
@@ -728,9 +728,6 @@ message ``HelloMessage`` contains 3 parameters:
 
 *CreateAssetIssue* :
 ``CreateAssetIssue``takes a parameter of AssetIssueContract, and returns an ``Transaction``object.
-
-*ListAccounts*:
-``ListAccounts`` takes a parameter of EmptyMessage, and returns an ``AccountList`` object.
 
 *UpdateAccount*:
 ``UpdateAccount`` takes a parameter of AccountUpdateContract, and returns an ``Transaction`` object.
@@ -773,9 +770,6 @@ message ``HelloMessage`` contains 3 parameters:
 
 *TotalTransaction*:
 ``TotalTransaction`` takes a parameter of EmptyMessage, and returns an ``NumberMessage`` object.
-
-*GenerateAddress*:
-``GenerateAddress`` takes a parameter of ‘EmptyMessage’ and returns an ``AddressPrKeyPairMessage`` object.
 
 .. code-block:: shell
 
@@ -886,6 +880,12 @@ message ``HelloMessage`` contains 3 parameters:
             body: "*"
           };
         }
+        rpc GetPaginatedAssetIssueList (PaginatedMessage) returns (AssetIssueList) {
+          option (google.api.http) = {
+            post: "/wallet/getpaginatedassetissuelist"
+            body: "*"
+           };
+        }
         rpc GetAssetIssueByAccount (Account) returns (AssetIssueList) {
           option (google.api.http) = {
             post: "/wallet/getassetissuebyaccount"
@@ -924,14 +924,14 @@ message ``HelloMessage`` contains 3 parameters:
         };
       }
 
-          rpc GenerateAddress (EmptyMessage) returns (AddressPrKeyPairMessage){
+        rpc GenerateAddress (EmptyMessage) returns (AddressPrKeyPairMessage){
             option (google.api.http) = {
             post: "/wallet/generateaddress"
             body: "*"
             additional_bindings {
-            get: "/wallet/generateaddress"
+                get: "/wallet/generateaddress"
             }
-         };
+        };
         }
        };
 
@@ -940,9 +940,6 @@ message ``HelloMessage`` contains 3 parameters:
 *GetAccount* :
 
 ``GetAccount`` takes a parameter of Account, and returns an ``Account`` object.
-*ListAccounts*:
-
-``listAccounts`` takes a parameter of EmptyMessage , and returns ``listAccounts`` object.
 *ListWitness*:
 
 ``LitWitness`` takes a parameter of EmptyMessage, and returns ``WitnessList`` object.
@@ -987,7 +984,7 @@ message ``HelloMessage`` contains 3 parameters:
 ``getTransactionsToThis`` takes a parameter of Account, and returns ``NumberMessage`` object.
 *GetTransactionInfoById*
 
-``GetTransactionInfoById`` takes a parameter of BytesMessage and returns ``TransactionInfo`` object.
+``GetTransactionInfoById`` `GetTransactionInfoById` takes a parameter of BytesMessage and returns ``TransactionInfo`` object.
 
 ``GenerateAddress``: takes a parameter of EmptyMessage and returns ``AddressPrKeyPairMessage`` object.
 
@@ -1049,11 +1046,13 @@ message ``HelloMessage`` contains 3 parameters:
         rpc getTransactionsToThis (Account) returns (NumberMessage) {
 
         }
+        rpc GetTransactionInfoById (BytesMessage) returns (TransactionInfo) {
+        
+        }
       };
 
 ``AccountList``: the list of accounts in the blockchain explorer.
-
-message ``AccountList`` contains one parameter:
+message `AccountList` contains one parameter:  
 
 ``account``:
 
@@ -1152,7 +1151,7 @@ message ``PingMessage` contains 4 parameters:
 
 ``to``: which node will the message send to.
 
-``version``: version of the message sending node.
+``version``: the version of the Internet.
 
 ``timestamp``: the timestamp of message.
 
@@ -1274,5 +1273,5 @@ message ``Neighbours`` contains 3 parameters:
           string privateKey = 2;
       }
 
-Please check detailed protocol document that may change with the iteration of the program at any time. Please refer to the latest version.
+Please check the detailed protocol document, it may change with the iteration of the program at any time. Please refer to the latest version.
 
