@@ -1998,281 +1998,365 @@ APIs under wallet service are provided by the FullNode. APIs under walletSolidit
     WalletExtension/ GetTransactionsToThis
     Function: Get the record of all incoming transactions of a certain account.
 
-HTTP Interface
-~~~~~~~~~~~~~~
+HTTP RPC Interface
+~~~~~~~~~~~~~~~~~~~
 
-If you require an http interface, you will need to deploy a `grpc-gateway <https://github.com/tronprotocol/grpc-gateway/blob/master/README.md>`_.
+Available in the lastest build of java-tron master.
 
-The grpc-gateway will encode the bytes fields defined in proto into base64 format. For input parameters in bytes format, you should encode in into base64 format, and for output parameters in bytes format, you should decode it into base64 format for subsequent processing. We provide a encoding/decoding tool which you can download from https://github.com/tronprotocol/tron-demo/blob/master/TronConvertTool.zip.
+Please add to the configuration files for both nodes:
 
 .. code-block:: shell
 
-    wallet/getaccount
-    Function: returns account info
-    Parameters: convert to_address and owner_address to base64 format
-    Demo: curl -X POST  http://127.0.0.1:18890/wallet/getaccount -d '{"address": "QYgZmb8EtAG27PTQy5E3TXNTYCcy"}'
+  node {
+  ...
+    http {
+      fullNodePort = 8090
+      solidityPort = 8091
+    }
 
-    Wallet/createtransaction
-    Function: create the transaction of a transfer. If the recipient address does not exist, then a corresponding account will be created on the blockchain.
-    Parameters: convert to_address and owner_address to base64 format
-    Demo:
-    curl -X POST  http://127.0.0.1:18890/wallet/createtransaction -d '{"to_address": "QYgZmb8EtAG27PTQy5E3TXNTYCcy" ,"owner_address":"QfoWCvbA5qqphqTcvTU0D1+xZMHu", "amount": 1000 }'
+**SolidityNode Interface**
 
-    Wallet/broadcasttransaction
-    Function: transaction broadcasting. Transaction needs to be signed before broadcasting.
-    Parameter: use the signed transaction as the input parameter.
-    Demo:
-    curl -X POST http://127.0.0.1:18890/wallet/broadcasttransaction -d '{
-         "raw_data": {
-             "ref_block_bytes": "dyA=",
-             "ref_block_hash": "X70qJj+97nQ=",
-             "expiration": "1529305956000",
-             "contract": [
-                 {
-                     "type": "TransferContract",
-                     "parameter": {
-                         "@type": "type.googleapis.com/protocol.TransferContract",
-                         "owner_address": "QVHyqChqzKYaik1etWXHerLDoP69",
-                         "to_address": "Qc0ipGHFhxlCL42QGmC+ems/HYip",
-                         "amount": "987000000"
-                    }
-                 }
-             ]
-         },
-         "signature": [
-      "V+C1KAq2arK7hf7VG9+4CBq96BRYRm3r5ep7TL0P8d1PE4lRfAUvAbfRRCiGmiriKUaOivcno2XN0/udPVj47AE="
-         ]
-     }'
+The default http port on solidityNode is 8091.
 
-    Wallet/updateaccount
-    Function: updates account name. Only one update is allowed for each account.
-    Parameters: owner_address and account_name should be in base64 format; `ewbmV3X25hbWU=` is `new_name` in base64 format.
-    Demo: curl -X POST  http://127.0.0.1:18890/wallet/createtransaction -d '{"account_name": "newbmV3X25hbWU=" ,"owner_address":"QYgZmb8EtAG27PTQy5E3TXNTYCcy"}'
+.. code-block:: shell
 
-    Wallet/votewitnessaccount
-    Function: users can vote for witnesses.
-    Parameters: owner_address, voter’s address, should be in base64 format; votes, the votes list, should be a byte array; vote_address, address of the witness, should be in base64 format.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/votewitnessaccount -d '{"owner_address":"QYgZmb8EtAG27PTQy5E3TXNTYCcy", "votes": [{"vote_address": "QfSI1WI/szR9S3ZL5f7Mewb18Rd7", "vote_count": 11}]}'
+/walletsolidity/getaccount
+Function：Query information about an account
+demo: curl -X POST  http://127.0.0.1:8091/walletsolidity/getaccount -d '{"address": "41E552F6487585C2B58BC2C9BB4492BC1F17132CD0"}'
+Parameters：address should be converted to a hex string
+Return value：Account Object
 
-    Wallet/createassetissue
-    Function: creates token; on Tron’s public blockchain, users can issue tokens which can be transferred reciprocally or participate in token offerings with their TRX. During token creation, an issuer can chose to freeze a certain amount of tokens.
-    Parameters: owner_address, issuer’s address, should be in base64 format; name, token name, should be in base64 format.
-    Demo: to issue a token named MyToken
-    curl -X POST http://127.0.0.1:18890/wallet/createassetissue -d '{"owner_address":"QYgZmb8EtAG27PTQy5E3TXNTYCcy", "votes": [{"vote_address": "QfSI1WI/szR9S3ZL5f7Mewb18Rd7", "vote_count": 11}]}'
+/walletsolidity/listwitnesses
+Function：Query the list of super representatives
+demo: curl -X POST  http://127.0.0.1:8091/walletsolidity/listwitnesses
+Parameters：None
+Return value：List of all super representatives
 
-    Wallet/updatewitness
-    Function: edit the url of the witness’ official website
-    Parameters: owner_address, creator’s address, should be in base64 format; update_url, updated url, should be in base64 format
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/updatewitness -d '{"owner_address":"QYgZmb8EtAG27PTQy5E3TXNTYCcy", "update_url": "d3d3Lm5ld3VybC5jb20="}'
+/walletsolidity/getassetissuelist
+Function：Query the list of Tokens
+demo: curl -X POST  http://127.0.0.1:8091/walletsolidity/getassetissuelist
+Parameters：None
+Return value：List of all Tokens
 
-    Wallet/createaccount
-    Function: creates account. An existent account can call the api to create a new account at a ready address.
-    Parameters: owner_address, account creator’s address, should be in base64 format; account_address, the new address, should be in base64 format.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/createaccount -d '{"owner_address":"QYgZmb8EtAG27PTQy5E3TXNTYCcy", "account_address": ""}'
+/walletsolidity/getpaginatedassetissuelist
+Function：Query the list of Tokens with pagination
+demo: curl -X POST  http://127.0.0.1:8091/walletsolidity/getpaginatedassetissuelist -d '{"offset": 0, "limit":10}'
+Parameters：Offset is the index of the starting Token, and limit is the number of Tokens expected to be returned.
+Return value：List of Tokens
+
+/walletsolidity/getnowblock
+Function：Query the latest block
+demo: curl -X POST  http://127.0.0.1:8091/walletsolidity/getnowblock
+Parameters：None
+Return value：Latest block on solidityNode
+
+/walletsolidity/getblockbynum
+Function：Query block by height
+demo: curl -X POST  http://127.0.0.1:8091/walletsolidity/getblockbynum -d '{"num" : 100}'
+Parameters：Num is the height of the block
+Return value：specified Block object
+
+/walletsolidity/gettransactionbyid
+Function：Query transaction based on id
+demo: curl -X POST  http://127.0.0.1:8091/walletsolidity/gettransactionbyid -d '{"value" : "309b6fa3d01353e46f57dd8a8f27611f98e392b50d035cef213f2c55225a8bd2"}'
+Parameters：value is the transaction id，converted to a hex string
+Return value：specified Transaction object
+
+/walletsolidity/gettransactioninfobyid
+Function：Query transaction fee based on id
+demo: curl -X POST  http://127.0.0.1:8091/walletsolidity/gettransactioninfobyid -d '{"value" : "309b6fa3d01353e46f57dd8a8f27611f98e392b50d035cef213f2c55225a8bd2"}'
+Parameters：value is the transaction id，converted to a hex string
+Return value：Transaction fee，block height and block creation time
+
+/walletextension/gettransactionsfromthis
+Function：Query the list of transactions sent by an address
+demo: curl -X POST  http://127.0.0.1:8091/walletextension/gettransactionsfromthis -d '{"account" : {"address" : "41E552F6487585C2B58BC2C9BB4492BC1F17132CD0"}, "offset": 0, "limit": 10}'
+Parameters：Address is the account address, converted to a hex string; offset is the index of the starting transaction; limit is the number of transactions expected to be returned
+Return value：Transactions list
+
+/walletextension/gettransactionstothis
+Function：Query the list of transactions received by an address
+demo: curl -X POST  http://127.0.0.1:8091/walletextension/gettransactionstothis -d '{"account" : {"address" : "41E552F6487585C2B58BC2C9BB4492BC1F17132CD0"}, "offset": 0, "limit": 10}'
+Parameters：Address is the account address, converted to a hex string; offset is the index of the starting transaction; limit is the number of transactions expected to be returned
+Return value：Transactions list
+
+**FullNode Interface**
+
+.. code-block:: shell
+
+The default http port on FullNode is 8090.
+
+wallet/createtransaction
+Function：Creates a transaction of transfer. If the recipient address does not exist, a corresponding account will be created on the blockchain.
+demo: curl -X POST  http://127.0.0.1:8090/wallet/createtransaction -d '{"to_address": "41e9d79cc47518930bc322d9bf7cddd260a0260a8d", "owner_address": "41D1E7A6BC354106CB410E65FF8B181C600FF14292", "amount": 1000 }'
+Parameters：To_address is the transfer address, converted to a hex string; owner_address is the transfer transfer address, converted to  a hex string; amount is the transfer amount
+Return value：Transaction contract data
+
+/wallet/gettransactionsign
+Function：Sign the transaction, the api has the risk of leaking the private key, please make sure to call the api in a secure environment
+demo: curl -X POST  http://127.0.0.1:8090/wallet/gettransactionsign -d '{
+"transation" : {"txID":"454f156bf1256587ff6ccdbc56e64ad0c51e4f8efea5490dcbc720ee606bc7b8","raw_data":{"contract":[{"parameter":{"value":{"amount":1000,"owner_address":"41e552f6487585c2b58bc2c9bb4492bc1f17132cd0","to_address":"41d1e7a6bc354106cb410e65ff8b181c600ff14292"},"type_url":"type.googleapis.com/protocol.TransferContract"},"type":"TransferContract"}],"ref_block_bytes":"267e","ref_block_hash":"9a447d222e8de9f2","expiration":1530893064000,"timestamp":1530893006233}}
+"privateKey" : "your private key"}
+}'
+Parameters：Transaction is a contract created by http api, privateKey is the user private key
+Return value：Signed Transaction contract data
+
+wallet/broadcasttransaction
+Function：Broadcast the signed transaction
+demo：curl -X POST  http://127.0.0.1:8090/wallet/broadcasttransaction -d '{"signature":["97c825b41c77de2a8bd65b3df55cd4c0df59c307c0187e42321dcc1cc455ddba583dd9502e17cfec5945b34cad0511985a6165999092a6dec84c2bdd97e649fc01"],"txID":"454f156bf1256587ff6ccdbc56e64ad0c51e4f8efea5490dcbc720ee606bc7b8","raw_data":{"contract":[{"parameter":{"value":{"amount":1000,"owner_address":"41e552f6487585c2b58bc2c9bb4492bc1f17132cd0","to_address":"41d1e7a6bc354106cb410e65ff8b181c600ff14292"},"type_url":"type.googleapis.com/protocol.TransferContract"},"type":"TransferContract"}],"ref_block_bytes":"267e","ref_block_hash":"9a447d222e8de9f2","expiration":1530893064000,"timestamp":1530893006233}}'
+Parameters：Signed Transaction contract data
+Return value：broadcast success or failure
+
+wallet/updateaccount
+Function：Modify account name
+demo：curl -X POST  http://127.0.0.1:8090/wallet/updateaccount -d '{"account_name": "0x7570646174654e616d6531353330383933343635353139" ,"owner_address":"41d1e7a6bc354106cb410e65ff8b181c600ff14292"}'
+Parameters：account_name is the name of the account, converted into a hex string；owner_address is the account address of the name to be modified, converted to a hex string.
+Return value：modification Transaction Object
+
+wallet/votewitnessaccount
+Function：Vote on the super representative
+demo：curl -X POST  http://127.0.0.1:8090/wallet/votewitnessaccount -d '{
+"owner_address":"41d1e7a6bc354106cb410e65ff8b181c600ff14292",
+"votes": [{"vote_address": "41e552f6487585c2b58bc2c9bb4492bc1f17132cd0", "vote_count": 5}]
+}'
+Parameters：Owner_address is the voter address, converted to a hex string; votes.vote_address is the address of the super delegate being voted, converted to a hex string; vote_count is the number of votes
+
+wallet/createassetissue
+Function：Issue Token
+demo：curl -X POST  http://127.0.0.1:8090/wallet/createassetissue -d '{
+"owner_address":"",
+"name":"{{assetIssueName}}",
+"abbr": "{{abbrName}}",
+"total_supply" :4321,
+"trx_num":1,
+"num":1,
+"start_time" :{{startTime}},
+"end_time":{{endTime}},
+"vote_score":2,
+"description":"007570646174654e616d6531353330363038383733343633",
+"url":"007570646174654e616d6531353330363038383733343633",
+"free_asset_net_limit":10000,
+"public_free_asset_net_limit":10000,
+"frozen_supply":{"frozen_amount":1, "frozen_days":2}
+}'
 
 
-    Wallet/createwitness
-    Function: users can apply to become a Super Representative, which costs 9999 TRX.
-    Parameters: owner_address, address of the applicant, should be in base64 format; url, url of the applicant’s website, should be in base64 format.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/createwitness -d '{"owner_address":"QYgZmb8EtAG27PTQy5E3TXNTYCcy", "url": "d3d3Lm5ld3VybC5jb20="}'
+wallet/createaccount
+Function：Create an account. Uses an already activated account to create a new account
+demo：curl -X POST  http://127.0.0.1:8090/wallet/createaccount -d '{"owner_address":"41d1e7a6bc354106cb410e65ff8b181c600ff14292", "account_address": "41e552f6487585c2b58bc2c9bb4492bc1f17132cd0"}'
+Parameters：Owner_address is an activated account，converted to a hex String; account_address is the address of the new account, converted to a hex string, this address needs to be calculated in advance
+Return value：Create account Transaction raw data
 
-    Wallet/transferasset
-    Function: token transfer.
-    Parameters: asset_name, name of the token, should be in base64 format; owner_address, address of the sender’s account, should be in base64 format; to_address, recipient’s address, should be in base64 format; amount, the amount of tokens, should include only numbers.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/transferasset -d '{"owner_address":"QYgZmb8EtAG27PTQy5E3TXNTYCcy", "to_address": "d3d3Lm5ld3VybC5jb20=", "asset_name": "TXlBc3NldA==", "amount": 1000}'
+wallet/createwitness
+Function：Apply to become a super representative
+demo：curl -X POST  http://127.0.0.1:8090/wallet/createwitness -d '{"owner_address":"41d1e7a6bc354106cb410e65ff8b181c600ff14292", "url": "007570646174654e616d6531353330363038383733343633"}'
+Parameters：owner_address is the account address of the applicant，converted to a hex string；url is the official website address，converted to a hex string
+Return value：Super Representative application Transaction raw data
 
-    Wallet/participateassetissue
-    Function: to participate in token offerings, users can exchange for issued tokens with TRX.
-    Parameters: owner_address, issuer’s address, should be in base64 format; to_address, recipient’s address, should be in base64 format; asset_name, name of the token, should be in base64 format; amount, the amount of tokens, should include only numbers.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/participateassetissue -d '{"to_address": "QYgZmb8EtAG27PTQy5E3TXNTYCcy" ,"owner_address":"QfoWCvbA5qqphqTcvTU0D1+xZMHu", "amount":1000, "asset_name":"TXlBc3NldA=="}'
+wallet/transferasset
+Function：Transfer Token
+demo：curl -X POST  http://127.0.0.1:8090/wallet/transferasset -d '{"owner_address":"41d1e7a6bc354106cb410e65ff8b181c600ff14292", "to_address": "41e552f6487585c2b58bc2c9bb4492bc1f17132cd0", "asset_name": "0x6173736574497373756531353330383934333132313538", "amount": 100}'
+Parameters：Owner_address is the address of the withdrawal account, converted to a hex string；To_address is the recipient address，converted to a hex string；asset_name is the token contract address，converted to a hex string；Amount is the amount of token to transfer
+Return value：Token transfer Transaction raw data
 
-    Wallet/freezebalance
-    Function: Freezes TRX for the account
-    Parameters: owner_address should be in base64 format; frozen_balance is the amount of frozen TRX in sun; frozen_duration is the frozen period.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/freezebalance -d '{"owner_address" : "QVHyqChqzKYaik1etWXHerLDoP69", "frozen_balance" : 100000, "frozen_duration" : 3}'
+wallet/easytransfer
+Function: Easily transfer from an address using the password string. Only works with accounts created from createAddress
+Demo: curl -X POST http://127.0.0.1:8090/wallet/easytransfer -d '{"passPhrase": "7465737470617373776f7264","toAddress": "41D1E7A6BC354106CB410E65FF8B181C600FF14292", "amount":10}'
+Parameters: passPhrase is the password, converted from ascii to hex. toAddress is the recipient address, converted into a hex string; amount is the amount of TRX 'to transfer expressed in SUN.
+Warning: Please control risks when using this API. To ensure environmental security, please do not invoke APIs provided by other or invoke this very API on a public network.
 
-    Wallet/unfreezeasset
-    Function:  Unfreezes TRX for the account
-    Parameters: owner_address should be in base64 format.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/unfreezeasset -d '{"owner_address" : "QVHyqChqzKYaik1etWXHerLDoP69"}'
+wallet/easytransferbyprivate
+Function：Easily transfer from an address using the private key.
+demo: curl -X POST  http://127.0.0.1:8090/wallet/easytransferbyprivate -d '{"privateKey": "D95611A9AF2A2A45359106222ED1AFED48853D9A44DEFF8DC7913F5CBA727366", "toAddress":"4112E621D5577311998708F4D7B9F71F86DAE138B5","amount":10000}'
+Parameters：passPhrase is the private key in hex string format. toAddress is the recipient address, converted into a hex string; amount is the amount of TRX to transfer in SUN.
+Return value： transaction, including execution results.
+Warning: Please control risks when using this API. To ensure environmental security, please do not invoke APIs provided by other or invoke this very API on a public network.
 
-    Wallet/withdrawbalance
-    Function: Withdraws rewards for an SR
-    Parameters: owner_address should be converted to base64 format.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/withdrawbalance -d '{"owner_address" : "QVHyqChqzKYaik1etWXHerLDoP69"}'
+wallet/createaddress
+Function: Create address from a specified password string (NOT PRIVATE KEY)
+Demo: curl -X POST http://127.0.0.1:8090/wallet/createaddress -d '{"value": "7465737470617373776f7264" }'
+Parameters: value is the password, converted from ascii to hex
+Return value：value is the corresponding address for the password, encoded in hex. Convert it to base58 to use as the address.
+Warning: Please control risks when using this API. To ensure environmental security, please do not invoke APIs provided by other or invoke this very API on a public network.
 
-    Wallet/updateasset
-    Function: Updates a token asset
-    Parameters: owner_address should be in base64 format; description should be in base64 format and the original description is ‘just test’; url should be in base64 format and the original website is www.baidu.com.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/updateasset -d '{"owner_address" : "QVHyqChqzKYaik1etWXHerLDoP69", "description" : "anVzdCB0ZXN0", "url" : "d3d3LnRlc3R1cmwuY29t", "new_limit" : 1000, "new_public_limit" : 1000}'
+wallet/generateaddress
+Function: Generates a random private key and address pair
+demo：curl -X POST -k http://127.0.0.1:8090/wallet/generateaddress
+Parameters: no parameters.
+Return value：value is the corresponding address for the password, encoded in hex. Convert it to base58 to use as the address.
+Warning: Please control risks when using this API. To ensure environmental security, please do not invoke APIs provided by other or invoke this very API on a public network.
 
-    Wallet/listnodes
-    Function: Lists all connected nodes
-    Parameters: none.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/listnodes
 
-    Wallet/getassetissuebyaccount
-    Function: Lists issued tokens by account:
-    Parameters: address should be converted to base64 format.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/getassetissuebyaccount -d {"address" : "QVHyqChqzKYaik1etWXHerLDoP69"}
+wallet/participateassetissue
+Function：Create a new Token
+demo：curl -X POST http://127.0.0.1:8090/wallet/participateassetissue -d '{
+"to_address": "41e552f6487585c2b58bc2c9bb4492bc1f17132cd0",
+"owner_address":"41e472f387585c2b58bc2c9bb4492bc1f17342cd1",
+"amount":100,
+"asset_name":"3230313271756265696a696e67"
+}'
+Parameters：
+to_address is the address of the Token issuer，converted to a hex string
+owner_address is the address of the Token owner，converted to a hex string
+amount is the number of tokens created
+asset_name is the name of the token，converted to a hex string
+Return value：Token creation Transaction raw data
 
-    Wallet/getaccountnet
-    Function: Query bandwidth for an account
-    Parameters: address should be converted to base64 format.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/getaccountnet -d {"address" : "QVHyqChqzKYaik1etWXHerLDoP69"}
+wallet/freezebalance
+Function：Freezes an amount of TRX. Will give bandwidth and TRON Power(voting rights) to the owner of the frozen tokens.
+demo：curl -X POST http://127.0.0.1:8090/wallet/freezebalance -d '{
+"owner_address":"41D1E7A6BC354106CB410E65FF8B181C600FF14294",
+"frozen_balance": 10000,
+"frozen_duration": 3
+}'
+Parameters：
+owner_address is the address that is freezing trx account，converted to a hex string
+frozen_balance is the number of frozen trx
+frozen_duration is the duration in days to be frozen
+Return value：Freeze trx transaction raw data
 
-    Wallet/getassetissuebyname
-    Function: Query tokens by name
-    Parameters: value is the token name and the original text reads TWX.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/getassetissuebyname -d {"value" : "VFdY"}
+wallet/unfreezebalance
+Function：Unfreeze TRX that has passed the minimum freeze duration. Unfreezing will remove bandwidth and TRON Power.
+demo：curl -X POST http://127.0.0.1:8090/wallet/unfreezebalance -d '{
+"owner_address":"41e472f387585c2b58bc2c9bb4492bc1f17342cd1",
+}'
+Parameters：
+owner_address address to unfreeze TRX for，converted to a hex string
+Return value：Unfreeze TRX transaction raw data
 
-    Inquire the latest block: wallet/getnowblock
-    Function: Query the network for the latest block
-    Parameters: none.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/getnowblock
+wallet/unfreezeasset
+Function：Unfreeze a token that has passed the minimum freeze duration.
+demo：curl -X POST http://127.0.0.1:8090/wallet/unfreezeasset -d '{
+"owner_address":"41e472f387585c2b58bc2c9bb4492bc1f17342cd1",
+}'
+Parameters：
+owner_address address to unfreeze Tokens for，converted to a hex string
+Return value：Unfreeze Token transaction raw data
 
-    Wallet/getblockbynum
-    Function: Query a block by height
-    Parameters: num is the blockheight.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/getblockbynum -d {"num" : 1}
+wallet/withdrawbalance
+Function：Withdraw Super Representative rewards, useable every 24 hours.
+demo：curl -X POST http://127.0.0.1:8090/wallet/withdrawbalance -d '{
+"owner_address":"41e472f387585c2b58bc2c9bb4492bc1f17342cd1",
+}'
+Parameters：
+owner_address is the address to withdraw from，converted to a hex string
+Return value：Withdraw TRX transaction raw data
 
-    Wallet/getblockbyid
-    Function: Query block by ID
-    Parameters: value shows the block ID 0000000000079080a30e7326c924457cde710b001ecf1a0b66b67df497c60c39 in base64 format.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/getblockbyid -d {"value" : "AAAAAAAHkICjDnMmySRFfN5xCwAezxoLZrZ99JfGDDk="}
+wallet/updateasset
+Function：Update a Token's information
+demo：curl -X POST http://127.0.0.1:8090/wallet/updateasset -d '{
+"owner_address":"41e472f387585c2b58bc2c9bb4492bc1f17342cd1",
+"description": ""，
+"url": "",
+"new_limit" : 1000000,
+"new_public_limit" : 100
+}'
+Parameters：
+Owner_address is the address of the token issuer, converted to a hex string
+Description is a description of the token, converted to a hex string
+Url is the official website address of the token issuer, converted to a hex string
+New_limit is the free bandwidth that each token can use for each holder.
+New_public_limit is the free bandwidth of the token
+Return value: Token update transaction raw data
 
-    Wallet/getblockbylimitnext
-    Function: Query block by a range of blockheight
-    Parameters: startNum is the starting blockheight and the endNum is the end blockheight. The return with include the startNum block and the endNum block.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/getblockbylimitnext -d '{"startNum" : 10, "endNum" : 10}'
 
-    Wallet/getblockbylatestnum
-    Function: Query topN blocks by height
-    Parameter: num is the latest number of blocks.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/getblockbylatestnum -d '{"num" : 10}'
+wallet/listnodes
+Function：List the nodes which the api fullnode is connecting on the network
+demo: curl -X POST  http://127.0.0.1:8090/wallet/listnodes
+Parameters：None
+Return value：List of nodes
 
-    Wallet/gettransactionbyid
-    Function: Query transactions by transaction ID
-    Parameters: value is the transaction ID, which can be obtained through hashing the raw_data of the transaction; value should be in base64 format.
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/gettransactionbyid -d '{"value" : "JTqX9taV7RNDyZbwGsN4BsMthBqoBaqnROvCQtHYOyg="}'
+wallet/getassetissuebyaccount
+Function：List the tokens issued by an account.
+demo: curl -X POST  http://127.0.0.1:8090/wallet/getassetissuebyaccount -d '{"address": "41F9395ED64A6E1D4ED37CD17C75A1D247223CAF2D"}'
+Parameters：Token issuer account address，converted to a hex string
+Return value：List of tokens issued by the account
 
-    Inquire list of all Super Representatives: /wallet/listwitnesses
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/listwitnesses
-    Parameters:
+wallet/getaccountnet
+Function：Query bandwidth information.
+demo: curl -X POST  http://127.0.0.1:8090/wallet/getaccountnet -d '{"address": "4112E621D5577311998708F4D7B9F71F86DAE138B5"}'
+Parameters：Account address，converted to a hex string
+Return value：Bandwidth information for the account. If a field doesn't appear, then the corresponding value is 0. {"freeNetUsed": 557,"freeNetLimit": 5000,"NetUsed": 353,"NetLimit": 5239157853,"TotalNetLimit": 43200000000,"TotalNetWeight": 41228}
 
-    Inquire list of all issued tokens: /wallet/getassetissuelist
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/getassetissuelist
-    Parameters:
+wallet/getassetissuebyname
+Function：Query token by name.
+demo: curl -X POST  http://127.0.0.1:8090/wallet/getassetissuebyname -d '{"value": "44756354616E"}'
+Parameters：The name of the token, converted to a hex string
+Return value：token.
 
-    Paginated inquiry of list of issued tokens: /wallet/getpaginatedassetissuelist
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/getpaginatedassetissuelist -d '{"offset" : 0, "limit" : 10}'
-    Parameters: offset is the ID of the first token on each page, while limit is the maximum amount of returned tokens on each page.
+/wallet/getnowblock
+Function：Query the latest block
+demo: curl -X POST  http://127.0.0.1:8090/wallet/getnowblock
+Parameters：None
+Return value：Latest block on full node
 
-    Inquire total amount of transactions: /wallet/totaltransaction
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/totaltransaction
-    Parameters:
+/wallet/getblockbynum
+Function：Query block by height
+demo: curl -X POST  http://127.0.0.1:8090/wallet/getblockbynum -d '{"num" : 100}'
+Parameters：Num is the height of the block
+Return value：specified Block object
 
-    Inquire the next maintenance time of a Super Representative: /wallet/getnextmaintenancetime
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/getnextmaintenancetime
-    Parameters:
+wallet/getblockbyid
+Function：Query block by ID
+demo: curl -X POST  http://127.0.0.1:8090/wallet/getblockbyid -d '{"value": "0000000000038809c59ee8409a3b6c051e369ef1096603c7ee723c16e2376c73"}'
+Parameters：Block ID.
+Return value：Block Object
 
-    Signing: /wallet/gettransactionsign
-    Demo: curl -X POST http://127.0.0.1:18890/wallet/gettransactionsign -d '{
-      "transaction" : {
-          "raw_data": {
-              "ref_block_bytes": "gfA=",
-              "ref_block_hash": "5YSAo+xJYGU=",
-              "expiration": "1529325009000",
-              "contract": [
-                  {
-                      "type": "TransferContract",
-                      "parameter": {
-                          "@type": "type.googleapis.com/protocol.TransferContract",
-                          "owner_address": "QVHyqChqzKYaik1etWXHerLDoP69",
-                          "to_address": "Qc0ipGHFhxlCL42QGmC+ems/HYip",
-                          "amount": "987000000"
-                      }
-                  }
-              ]
-          }
-      },
-      "privateKey" : "j5vLuYaQ4w8yolHZWY+CGY1i+p7CYXovSUgzvyYPOPk="
-      }'
-    Parameters: transaction refers to a specific transaction and privateKey is the user’s private key in base64 format.
-    Warning: use this API to control risks. Ensure the security of the environment, do not invoke this API provided by others, do not invoke this API on the public network.
+wallet/getblockbylimitnext
+Function：Query a range of blocks by block height
+demo: curl -X POST  http://127.0.0.1:8090/wallet/getblockbylimitnext -d '{"startNum": 1, "endNum": 2}'
+Parameters：
+   startNum：Starting block height, including this block
+   endNum：Ending block height, excluding that block
+Return value：A list of Block Objects
 
-    Inquire account info: /walletsolidity/getaccount
-    Demo: curl -X POST http://127.0.0.1:18890/walletsolidity/getaccount -d '{"address" : "QYgZmb8EtAG27PTQy5E3TXNTYCcy"}'
-    Parameters: address should be in base64 format.
+wallet/getblockbylatestnum
+Function：Query the latest blocks
+demo: curl -X POST  http://127.0.0.1:8090/wallet/getblockbylatestnum -d '{"num": 5}'
+Parameters：The number of blocks to query
+Return value：A list of Block Objects
 
-    Inquire list of all Super Representatives: /walletsolidity/listwitnesses
-    Demo: curl -X POST http://127.0.0.1:18890/walletsolidity/listwitnesses
-    Parameters:
+wallet/gettransactionbyid
+Function：Query transaction by ID
+demo: curl -X POST  http://127.0.0.1:8090/wallet/gettransactionbyid -d '{"value": "d5ec749ecc2a615399d8a6c864ea4c74ff9f523c2be0e341ac9be5d47d7c2d62"}'
+Parameters：Transaction ID.
+Return value：Transaction information.
 
-    Inquire list of all tokens: /walletsolidity/getassetissuelist
-    Demo: curl -X POST http://127.0.0.1:18890/walletsolidity/getassetissuelist
-    Parameters:
+wallet/listwitnesses
+Function：Query the list of Super Representatives
+demo: curl -X POST  http://127.0.0.1:8090/wallet/listwitnesses
+Parameters：None
+Return value：List of all Super Representatives
 
-    Paginated inquiry of list of all tokens: /walletsolidity/getpaginatedassetissuelist
-    Demo: curl -X POST http://127.0.0.1:18890/walletsolidity/getpaginatedassetissuelist -d '{"offset" : 0, "limit" : 10}'
-    Parameters: offset is the ID of the first token on each page, while limit is the maximum amount of tokens returned on each page.
+wallet/getassetissuelist
+Function：Query the list of Tokens
+demo: curl -X POST  http://127.0.0.1:8090/wallet/getassetissuelist
+Parameters：None
+Return value：List of all Tokens
 
-    Inquire current block: /walletsolidity/getnowblock
-    Demo: curl -X POST http://127.0.0.1:18890/walletsolidity/getnowblock
-    Parameters:
+wallet/getpaginatedassetissuelist
+Function：Query the list of Tokens with pagination
+demo: curl -X POST  http://127.0.0.1:8090/wallet/getpaginatedassetissuelist -d '{"offset": 0, "limit": 10}'
+Parameters：Offset is the index of the starting Token, and limit is the number of Tokens expected to be returned.
+Return value：List of Tokens
 
-    Inquire block by height: /walletsolidity/getblockbynum
-    Demo: curl -X POST http://127.0.0.1:18890/walletextension/gettransactionsfromthis -d '{"num" : 10000}'
-    Parameters: num is blockheight.
+wallet/totaltransaction
+Function：Count all transactions on the network
+demo: curl -X POST  http://127.0.0.1:8090/wallet/totaltransaction
+Parameters：None
+Return value：Total number of transactions.
 
-    Inquire transactions taken by an account: /walletextension/gettransactionsfromthis
-    Demo: curl -X POST http://127.0.0.1:18890/walletextension/gettransactionsfromthis -d '{"account" : {"address" : "QYgZmb8EtAG27PTQy5E3TXNTYCcy"}, "offset" : 0, "limit" : 5}'
-    Parameters: address is in base64 format; offset is the starting index; limit is the maximum amount of transactions to be returned.
+wallet/getnextmaintenancetime
+Function：Get the time of the next Super Representative vote
+demo: curl -X POST  http://127.0.0.1:8090/wallet/getnextmaintenancetime
+Parameters：None
+Return value: number of milliseconds until the next voting time.
 
-    Inquire transactions initiated by an account: /walletextension/gettransactionstothis
-    Demo: curl -X POST http://127.0.0.1:18890/walletextension/gettransactionstothis -d '{"account" : {"address" : "QYgZmb8EtAG27PTQy5E3TXNTYCcy"}, "offset" : 0, "limit" : 5}'
-    Parameters: address is in base64 format; offset is the starting index; limit is the maximum amount of transactions to be returned.
-
-    Inquire transaction fee and it block location by transaction hash: /walletsolidity/gettransactioninfobyid
-    Demo: curl -X POST http://127.0.0.1:18890/walletsolidity/gettransactioninfobyid -d '{"value" : "4ebiUlBCZ5vI1JtBMFXjiH/HSaVeIaUO8PN9l5E1kXU="}'
-    Parameters: value is the transaction ID, hash of the raw_data of the transaction, and should be in base64 format.
-
-    Inquire transaction by transaction hash (and confirm the transaction through this API): /walletsolidity/gettransactionbyid
-    Demo: curl -X POST http://127.0.0.1:18890/walletsolidity/gettransactionbyid -d '{"value" : "9PeN9FHPDHr1qpILy3U+iMcLAKvwojUek9jYx1EESXA="}'
-    Parameters: value is the transaction ID, hash of the raw_data of the transaction, and should be in base64 format.
-
-    Walletextension/gettransactionsfromthis
-    Function: Query an account's account transaction
-    Parameter description: address is base64 format, offset is the start index, limit is the maximum number of transactions returned
-    Demo:curl -X POST http://127.0.0.1:18890/walletextension/gettransactionsfromthis -d '{"account" : {"address" : "QYgZmb8EtAG27PTQy5E3TXNTYCcy"}, "offset" : 0, "limit" : 5}'
-
-    Walletextension/gettransactionstothis
-    Function: Inquire account transactions
-    Parameter description: address is base64 format, offset is the start index, limit is the maximum number of transactions returned
-    Demo:curl -X POST http://127.0.0.1:18890/walletextension/gettransactionstothis -d '{"account" : {"address" : "QYgZmb8EtAG27PTQy5E3TXNTYCcy"}, "offset" : 0, "limit" : 5}'
-
-    Walletsolidity/gettransactioninfobyid
-    Function: In accordance with the transaction hash query transaction fee, the transaction block
-    Parameter description: value is the id of the transaction, which is obtained from the raw_data of the hash transaction. The value needs to be in base64 format.
-    Demo:curl -X POST http://127.0.0.1:18890/walletsolidity/gettransactioninfobyid -d '{"value" : "4ebiUlBCZ5vI1JtBMFXjiH/HSaVeIaUO8PN9l5E1kXU="}'
-
-    Wallet/createadresss
-    Function: creates the address for a password, password is in base64
-    Parameter Description: value is the user's password, returns base64 format address which needs to be converted to base58 before using.
-    Demo:curl -X POST http://127.0.0.1:18890/wallet/createadresss -d '{"value": "QeVS9kh1hcK1i8LJu0SSvB8XEyzQ" }'
-    Warning: use this API to control risks. Ensure the security of the environment, do not invoke this API provided by others, do not invoke this API on the public network.
-
-    Wallet/easytransfer
-    Function: An easy way to quickly transfer TRX. Wraps the create transaction, sign and broadcast
-    Parameter Description: passPhrase is the user password in base64, toAddress is the address of the transfer recipient in base64, amount is the number of transfer trx
-    Demo:curl -X POST http://127.0.0.1:18890/wallet/easytransfer -d '{"passPhrase": "QeVS9kh1hcK1i8LJu0SSvB8XEyzQ","toAddress": "QYkTnLE4evhePSTiEqAIrJdJZ+Vh", "amount":10}'
-    Warning: use this API to control risks. Ensure the security of the environment, do not invoke this API provided by others, do not invoke this API on the public network.
-
-    wallet/generateaddress
-    Function:generate private key and address.
-    demo：curl -X POST -k http://127.0.0.1:18890/wallet/generateaddress
-    Parameter Description:
-    Warning: use this API to control risks. Ensure the security of the environment, do not invoke this API provided by others, do not invoke this API on the public network.
+wallet/validateaddress
+Function：validate address
+demo: curl -X POST  http://127.0.0.1:8090/wallet/validateaddress -d '{"address": "4189139CB1387AF85E3D24E212A008AC974967E561"}'
+Parameters：The address, should be in base58checksum, hexString or base64 format.
+Return value: ture or false
 
 API code generation
 ~~~~~~~~~~~~~~~~~~~
@@ -2326,8 +2410,6 @@ The balance freezing mechanism is set up out of two considerations:
 Once the balance is frozen, the user will receive a proportionate amount of TRON Power(TP) and bandwidth. TRON Power(TP) represents voting power whereas bandwidth points are used to pay for transactions. Their usage and means of calculation will be introduced in following sections.
 
 Frozen assets are held in your frozen account and cannot be used for trading.
-
-The fixed frozen duration is 3 days, after which you can unfreeze your balance any time you like manually. Balance unfrozen will be transferred back into your current account.
 
 More TP and bandwidth points can be obtained by freezing more balance. The balance can be unfrozen after 3 days from the latest freezing.
 
@@ -2449,6 +2531,12 @@ assetissue password abc 1000000 1 1 2018-5-31 2018-6-30 abcdef a.com 1000 100000
 Tokens named abc are issued with the above command, with a capitalization totaling 1 million. The exchange rate of abc to TRX is 1:1. The duration of circulation is May 31-June 30, 2018. It is described as abcdef. The provided website is a.com.
 
 A maximum of 1000 bandwidth points can be charged from the issuer’s account per account per day. A maximum of 1,000,000 bandwidth points can be charged from the issuer’s account for all token holders’ transactions each day. in total capitalization, 200,000 tokens are locked for 180 days and 300,000 tokens are locked for 365 days.
+
+**SR Rewards**
+
+1.	Candidate reward: 127 candidates updated once every 6 hours will share 115200 TRX. The reward will be split in accordance to the votes each candidate receives. Each year, candidate reward will total 168,192,000 TRX.
+2.	Super Representative reward: The TRON Protocol network will generate one block every 3 seconds, with each block awarding 32 TRX to super representatives. A total of 336,384,000 TRX will be awarded annually to twenty-seven super representatives.
+3.	There will be no inflation on the TRON network before January 1, 2021, and the TRON Foundation will award all block rewards and candidate rewards prior to that date.
 
 Relevant expenses
 ~~~~~~~~~~~~~~~~~

@@ -19,22 +19,22 @@ Revolutionize in cooperation and competition
 
 Take home $1,000,000 for your excellence in programming
 
-**Tron Developer Programming Competition is a programming carnival dedicated to global community members and developers, based on the blockchain technology with the key feature of decentralization.**
+**TRON Developer Programming Competition is a programming carnival dedicated to global community members and developers, based on the blockchain technology with the key feature of decentralization.**
 
-Tron offers to global developers and community members a world-class platform of blockchain development and a valuable opportunity to exchange ideas. Participants are also encouraged to develop third-party apps compatible with Tron’s main net and to contribute to the construction and the flourish of Tron’s ecosystem.
+TRON offers to global developers and community members a world-class platform of blockchain development and a valuable opportunity to exchange ideas. Participants are also encouraged to develop third-party apps compatible with Tron’s main net and to contribute to the construction and the flourish of Tron’s ecosystem.
 
 First-place prizes will be offered to designers of the five applications like the wallet based on Windows, Mac, iOS/Android platform, wallet embedded with Google Chrome and blockchain explorer.
 
 Rules of Contest
 ~~~~~~~~~~~~~~~~
 
-1, Application begins on April 17, 2018. Submission of application as well as code ends at 23:59 (GMT+8) on May 31, 2018.
+1. Application begins on April 17, 2018. Submission of application as well as code ends at 23:59 (GMT+8) on May 31, 2018.
 
-2, Developers can apply and participate individually or in team.
+2. Developers can apply and participate individually or in team.
 
-3, Each team/individual participant can sign up for 5 sub-contests.
+3. Each team/individual participant can sign up for 5 sub-contests.
 
-4, All development must be based on Tron blockchain technology and should be one of the following five applications compatible with Tron’s main net:
+4. All development must be based on Tron blockchain technology and should be one of the following five applications compatible with Tron’s main net:
 
 - Wallet based on Windows (including off-line signature function and voting function)
 - Wallet based on Mac (Off-line signature function is optional but a plus and voting function is necessary.)
@@ -45,11 +45,11 @@ Rules of Contest
 
 For files of relevant code and technological support please refer to: https://github.com/tronprotocol.
 
-5, The freedom belongs to developers to exchange ideas or team up in Tron community. The recommended platform is the official Slack of Tron, https://tronfoundation.slack.com/， and official forum of TRON, http://tronsr.org/.
+5. Developers are free to exchange ideas or team up in community. The recommended platform is the official Slack of Tron, https://tronfoundation.slack.com/， and official forum of TRON, http://tronsr.org/.
 
-6, Please submit your project from April 17-May 21, 2018. Failure to make your submission is regarded as voluntary withdrawal from the contest.
+6. Please submit your project from April 17-May 21, 2018. Failure to make your submission is regarded as voluntary withdrawal from the contest.
 
-7, Submitted work must include an operable program and code.
+7. Submitted work must include an operable program and code.
 
 Prizes
 ~~~~~~
@@ -64,7 +64,7 @@ First-place winners for the following five applications will take home a reward 
 - Wallet embedded with Google Chrome: $180,000
 - Blockchain Explorer: $280,000.
 
-The developer of any product we deem to be complete will receive a $100,000 TRON Accelerator. For more information please refer to
+The developer of any product we deem to be complete will receive a $100,000 TRON Accelerator. For more information please refer to  
 https://github.com/tronprotocol/Documentation/blob/master/English_Documentation/TRON_Accelerator.md
 
 Timeline
@@ -85,7 +85,7 @@ Justin Sun: CEO of TRON
 
 Lucien Chen: CTO of TRON
 
-Marcus Zhao: Director of Technology of TRON
+Marcus Zhao: Director of Technology, Tron
 
 Application  Procedure
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -116,11 +116,11 @@ Application  Procedure
     |                              |- (  )Blockchain Explorer                 |
     +------------------------------+------------------------------------------+
 
-    .. Note:: item with * is required.
+    Attention: item with * is required.
 
 - Step 2. Applicants will receive a confirmation email upon successful application:
 
-You have successfully signed up for TRON Programming Contest. Please submit your project to program@tron.network by 23:59 on May 31, 2018 (GMT+8). Submission after the deadline is considered as unsuccessful. Thank you for your participation!
+You have successfully signed up for Tron Programming Contest. Please submit your project to program@tron.network by 23:59 on May 31, 2018 (GMT+8). Submission after the deadline is considered as unsuccessful. Thank you for your participation!
 
 Project Submission
 ~~~~~~~~~~~~~~~~~~
@@ -159,11 +159,11 @@ Project Submission
     |Name of Attachment                                                 |                                                                            |
     +-------------------------------------------------------------------+----------------------------------------------------------------------------+
 
-    .. Note:: item with * is required.
+    Attention: items with * are required.
 
 - Step 2. Applicants will receive a confirmation email upon successful project submission:
 
-You have successfully submitted your project. We will evaluate the submitted project carefully. Announcement of the results of TRON Programming Contest will be made on June 5, 2018. Thank you for your participation!
+You have successfully submitted your project. We will evaluate the submitted project carefully. Announcement of the results of Tron Programming Contest will be made on June 5, 2018. Thank you for your participation!
 
 Standard of Evaluation for TRON programming Contest
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -174,7 +174,7 @@ We will score projects submitted for the programming contest based on the follow
 
 1. Originality：
 
-    The submitted project must be the original creation of the applicant. We will not tolerate plagiarism.
+    The submitted project must be created originally by the applicant. We will not tolerate plagiarism.
 
 2. Compatibility：
 
@@ -218,55 +218,6 @@ Notes to the evaluation form:
 
 2. There is a better chance of winning if submitted projects scores high points for the bonus criteria.
 
-BUG-BOUNTY
-----------
-
-Event introduction
-~~~~~~~~~~~~~~~~~~
-
-Starting now, community members can participate in the Bug Bounty by identifying bugs and reporting them to TRON. TRON Foundation will rate and reward the reports based on the importance of the bug, how hidden the bug is, estimated workload of the discovery, and subsequent workload of communication with TRON.
-
-Here are some possible ways to find bugs:
-
-- Run FullNode simulations and identify problems;
-
-- Participate in elections and identify problems;
-
-- Using the blockchain explorer, wallets, and other apps;
-
-- Review TRON's open-source code on Github and identify problems;
-
-Github: https://github.com/tronprotocol
-
-Reward mechanism
-~~~~~~~~~~~~~~~~
-
-We will rate your submitted report and offer reward accordingly. Furthermore, if your submission also includes a fix and/or corresponding code, you can earn an even greater reward.
-
-How to report bugs
-~~~~~~~~~~~~~~~~~~
-
-Submit your comments via the Issues section on TRON’s GitHub project page. Subject line should read [Bounty].
-
-Further clarification
-~~~~~~~~~~~~~~~~~~~~~
-
-1. Bug Bounty begins upon this announcement.
-
-2. Bug report should include bug description, how to reproduce the bug, corresponding screenshots and your suggested fix (optional).
-
-3. For different reports on the same bug, we will only rate and reward the earliest submission.
-
-4. Please include [Bounty] in the subject line of your post, for us to spot your report more easily.
-
-5. Please leave your email address for us to make contact if needed.
-
-6. We will assess new submissions regularly and update reward announcements on the forum (tronsr.org).
-
-7. Reward will be sent out within 7 working days following its announcement.
-
-8. All rights of interpretation for Bug Bounty are reserved to TRON.
-
 TRON Accelerator
 ----------------
 
@@ -282,7 +233,7 @@ Loan Amount: USD$100,000
 
 Disbursement: Within 6 – 24 hours
 
-Disbursement Method: Once eligibility for TRON Accelerator is verified, applicants will receive the equivalent of USD$100,000 in digital assets from the TRON Foundation. After funds are disbursed, TRON will publicize information on participating projects and funding flows on official TRON channels.
+Disbursement Method: Once eligibility for TRON Accelerator is verified, applicants will receive the equivalent of USD$100,000 in digital assets from the TRON Foundation After funds are disbursed, TRON will publicize information on participating projects and funding amounts on official TRON channels.
 
 Repayment
 ~~~~~~~~~
@@ -290,14 +241,14 @@ Repayment
 There are currently two repayment methods:
 
 - If the developer’s project completes a new round of financing, the loan of USD$100,000 will be converted to its equivalent in equity, at 80% of the company’s new valuation amount. [USD$100,000 / (0.80 x New Valuation)]
-- Loans provided through TRON Accelerator will be interest-free for the first 18 months. The  developer shall repay the principal balance of USD$100,000 within 18 months, either in USD or mainstream digital asset equivalent at the time of repayment.
+- Loans provided through TRON Accelerator will be interest-free for the first 18 months. The developer shall repay the principal balance of USD$100,000 within 18 months, either in USD or mainstream digital asset equivalent at the time of repayment.
 
 By setting up TRON Accelerator, TRON aims to expand and strengthen its network ecosystem, instead of seeking short-term commercial gains. If projects fail due to force majeure, the developer does not need to repay the principal balance.
 
 Application Requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Developer submits application to the TRON Foundation. Application must include product description and project achievements (including but not limited to product links and APKs).
+- Developer submits their application to the TRON Foundation. Application must include product description and project achievements (including, but not limited to, product links and APKs).
 
 - Applicant must verify software ownership.
 
@@ -305,7 +256,7 @@ Application Requirements
 
 - Upon approval, qualified applicants will receive funds totaling USD$100,000 in convertible debt.
 
-- Evaluation standards: The product should be in the demo stage or beyond. Developers should demonstrate rigorous work ethic and the desire for a long-term partnership with TRON to build a community-centric ecosystem.
+- Evaluation standards: The product should be in the demo stage or beyond. Developers should demonstrate a rigorous work ethic and the desire for a long-term partnership with TRON to build a community-centric ecosystem.
 
 - Funding usage policy: Funding must be used to support further project development or operations for the applicant.
 
@@ -323,7 +274,7 @@ The scope of eligible projects includes but is not limited to the following bloc
 How to Apply
 ~~~~~~~~~~~~
 
-1. Developers should submit applications to the TRON Foundation (loan@tron.network) with their project description and product achievements (including but not limited to product link or APKs).
+1. Developers should submit applications to the Tron Foundation (loan@tron.network) with their project description and product achievements (including but not limited to product link or APKs).
 
 2. We will reach out to developers who pass our assessment. Fund disbursement of USD$100,000 in direct convertible loans will be completed in a timely fashion.
 
