@@ -480,12 +480,13 @@ Create Wallet
 
 **Wallet Functionalities**
 
++ individual connection (connect to any node, e.g. private net)
 + check balance (TRX, tokens)
 + toggle market price view
 + check frozen amount
 + send TRX and tokens
 + receive using QR code
-+ freeze TRX to get TRON Power and bandwidth
++ freeze TRX to get votes and bandwidth
 + submit votes for representatives
 + offline signing mechanism with QR code scanning
 + participate in token distributions
@@ -526,7 +527,7 @@ Cold Wallet Setup
 Check information on blocks and recent transactions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/查看相关信息/区块和交易信息.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/查看相关信息/区块和交易信息.png
     :width: 842px
     :height: 1496px
     :align: center
@@ -534,7 +535,7 @@ Check information on blocks and recent transactions
 Check SR candidate information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/查看相关信息/查看SP候选信息.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/查看相关信息/查看SP候选信息.png
     :width: 842px
     :height: 1496px
     :align: center
@@ -542,7 +543,7 @@ Check SR candidate information
 Check node information
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/查看相关信息/查看节点信息.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/查看相关信息/查看节点信息.png
     :width: 842px
     :height: 1496px
     :align: center
@@ -552,12 +553,12 @@ Participate in token offerings
 + select the token you’d like to buy
 + select quantity of purchase
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/查看相关信息/查看token信息.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/查看相关信息/查看token信息.png
     :width: 842px
     :height: 1496px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/查看相关信息/选择购买数量.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/查看相关信息/选择购买数量.png
     :width: 842px
     :height: 1496px
     :align: center
@@ -565,7 +566,7 @@ Participate in token offerings
 Check account information
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/查看相关信息/查看账户信息.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/查看相关信息/查看账户信息.png
     :width: 842px
     :height: 1496px
     :align: center
@@ -575,7 +576,7 @@ Import wallet
 + import public address only (watch-only setup)
 + or import with private key or 24-word recovery phrase
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/倒入钱包/导入钱包.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/倒入钱包/导入钱包.png
     :width: 842px
     :height: 1496px
     :align: center
@@ -585,50 +586,50 @@ Create account
 
 1. Cellphone screen display.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/创建钱包账户/1桌面显示.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/创建钱包账户/1.桌面显示.png
     :width: 842px
     :height: 1496px
     :align: center
 
 2. Account creation page in app.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/创建钱包账户/2.点击app之后的界面.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/创建钱包账户/2.点击app之后的界面.jpg
     :width: 842px
     :height: 1496px
     :align: center
 
 3. Tap CREATE WALLET.
 
-+ Cold wallet creation: toggle COLD WALLET SETUP and tick I AM AWARE OF THE RISKS.
-+ Hot wallet creation: don’t toggle COLD WALLET SETUP and tick I AM AWARE OF THE RISKS.
++ Cold wallet creation: toggle COLD WALLET SETUP, tick I AM AWARE OF THE RISKS and set the name and password.
++ Hot wallet creation: don’t toggle COLD WALLET SETUP, tick I AM AWARE OF THE RISKS and set the name and password.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/创建钱包账户/3.设置密码.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/创建钱包账户/3.设置用户名和密码.png
     :width: 842px
     :height: 1496px
     :align: center
 
 4. Tap GENERATE ADDRESS AND PRIVATE KEY and tap OK after reading the information page.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/创建钱包账户/4.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/创建钱包账户/4.png
     :width: 842px
     :height: 1496px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/创建钱包账户/6.png
+.. image:: https://raw.githubusercontent.com/ybhgenius/Documentation/master/images/Wallet_for_Android/创建钱包账户/6.png
     :width: 842px
     :height: 1496px
     :align: center
 
 5. Make sure to save your private key and 24-word recovery phrase.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/创建钱包账户/7.钱包创建好之后的页面%20now%20we%20see%20here%20is%20a%20public%20address%20%2Cprivate%20key%20and%2024%20words%20recovery%20phrase.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/创建钱包账户/7.钱包创建好之后的页面%20now%20we%20see%20here%20is%20a%20public%20address%20%2Cprivate%20key%20and%2024%20words%20recovery%20phrase.jpg
     :width: 842px
     :height: 1496px
     :align: center
 
 6. Tap continue and enter wallet page.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/创建钱包账户/8.创建号钱包之后下滑页面找到continue按钮.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/创建钱包账户/8.创建号钱包之后下滑页面找到continue按钮.jpg
     :width: 842px
     :height: 1496px
     :align: center
@@ -640,105 +641,100 @@ Users can vote in hot wallet setup.
 
 1.	Enter wallet page.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/1.当前的余额显示页面.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/1.余额TP带宽显示界面.png
     :width: 842px
     :height: 1496px
     :align: center
 
 2. Enter transfer page.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/2.点击余额右侧的转账页面.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/2.点击右侧的转账界面.png
     :width: 842px
     :height: 1496px
     :align: center
 
 3. Select freeze and enter freeze page.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/3.点击FREEZE进入TRX冻结页面.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/3.freeze页面.png
     :width: 842px
     :height: 1496px
     :align: center
 
 4. Type in freeze amount.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/4.在freeze%20amount%20输入栏中键入希望冻结的TRX数量，然后点击freeze按钮，注，拥有多少冻结TRX就拥有多少投票权.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/4.在freeze%20amount%20输入栏中键入希望冻结的TRX数量，然后点击freeze按钮，注，拥有多少冻结TRX就拥有多少投票权.jpg
     :width: 842px
     :height: 1496px
     :align: center
 
-5. Enter your password and confirm the freeze.
+5. Enter your password，click send button and confirm the freeze.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/5冻结TRX需要输入账户密码进行确认.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/5.确认合约.png
     :width: 842px
     :height: 1496px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/6.键入账户密码.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/6输入密码点击发送.png
     :width: 842px
     :height: 1496px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/7.png
-    :width: 842px
-    :height: 1496px
-    :align: center
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/8.进行100TRX冻结之后的页面显示.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/7.发送成功.png
     :width: 842px
     :height: 1496px
     :align: center
 
 6. Return to balance page and click the vote button on the left-hand side.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/9.回到余额显示页面，然后点击余额左侧的投票按钮.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/9.点击投票按钮.png
     :width: 842px
     :height: 1496px
     :align: center
 
 7. Enter SR candidate page.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/10.点击投票按钮之后进入超级代表候选人list页面，candidates一栏下显示的是所有待投票竞选的SR候选人.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/10.点击投票按钮之后进入超级代表候选人list页面，candidates一栏下显示的是所有待投票竞选的SR候选人.jpg
     :width: 842px
     :height: 1496px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/11.此为your%20votes页面下的显示情况，因为我们还没有对任何一个SR候选节点进行投票，所以列表中空空如也.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/11.此为your%20votes页面下的显示情况，因为我们还没有对任何一个SR候选节点进行投票，所以列表中空空如也.png
     :width: 842px
     :height: 1496px
     :align: center
 
 8. Select a SR candidate and enter the amount of votes.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/12.我们回到candidates一栏，任意选择一个SR候选人进行投票演示，以list中首个系节点为例，注，candidates%20list%20的排列是以票数多少为顺序.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/12.我们回到candidates一栏，任意选择一个SR候选人进行投票演示，以list中首个系节点为例，注，candidates%20list%20的排列是以票数多少为顺序.jpg
     :width: 842px
     :height: 1496px
     :align: center
 
 9. Tap SUBMIT, enter the amount of votes and your password and submit votes.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/13.输入希望为此节点投出的票数.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/13.输入希望为此节点投出的票数.jpg
     :width: 842px
     :height: 1496px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/14.点击submit%20votes之后要求输入账户密码进行确认投票.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/14.点击submit%20votes之后要求输入账户密码进行确认投票.jpg
     :width: 842px
     :height: 1496px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/16.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/16.png
     :width: 842px
     :height: 1496px
     :align: center
 
 10. You can check your votes in the candidates tab and in the votes tab.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/17.为此候选人投过票后此候选人右侧显示你为其透过的票数.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/17.为此候选人投过票后此候选人右侧显示你为其透过的票数.jpg
     :width: 842px
     :height: 1496px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/投票/18.这个时候我们可以看到在your%20votes一栏中与投票前不同的是出现了我们为其投过票的SR候选人信息.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/投票/18.这个时候我们可以看到在your%20votes一栏中与投票前不同的是出现了我们为其投过票的SR候选人信息.jpg
     :width: 842px
     :height: 1496px
     :align: center
@@ -748,41 +744,60 @@ Initiate transfer
 
 1. Enter account page.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/转出和转入/转入/1.账户中有余额时候的余额显示界面.png
-    :width: 842px
-    :height: 1496px
-    :align: center
-
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/转出和转入/转入/2.点击余额数字可转换成美元的等值额度.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/转出和转入/转入/1.显示余额界面.png
     :width: 842px
     :height: 1496px
     :align: center
 
 2. Enter your address or scan QR-code to extract address. Enter the amount of TRX for transfer and tap SEND.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/转出和转入/转入/3.点击右侧转账按钮后出现的界面（默认停留在send也就是转出TRX时的操作页面）可以通过在to一栏输入转入地址也可以点击右侧的二维码小标志，打开二维码扫描页面.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/转出和转入/转入/3.点击右侧转账按钮后出现的界面（默认停留在send也就是转出TRX时的操作页面）可以通过在to一栏输入转入地址也可以点击右侧的二维码小标志，打开二维码扫描页面.png
     :width: 842px
     :height: 1496px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/转出和转入/转入/4.点击receive后显示自己的钱包地址和二维码性质的地址，可供转出账户进行输入和scan，待转出账户操作完毕后，点击左上角返回箭头进行余额查看.jpg
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/转出和转入/转入/4.点击receive后显示自己的钱包地址和二维码性质的地址，可供转出账户进行输入和scan，待转出账户操作完毕后，点击左上角返回箭头进行余额查看.jpg
     :width: 842px
     :height: 1496px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/转出和转入/转出/6.输入希望转入的额度点击send.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/转出和转入/转出/6.输入希望转入的额度点击send.png
     :width: 842px
     :height: 1496px
     :align: center
 
 3. Enter account password and tap SEND, and you will see the message of SENT SUCCESSFULLY.
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/转出和转入/转出/7.点击send之后需要输入账户密码进行确认.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/转出和转入/转出/7.点击send之后需要输入账户密码进行确认.png
     :width: 842px
     :height: 1496px
     :align: center
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Wallet_for_Android/转出和转入/转出/9.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/转出和转入/转出/9.png
+    :width: 842px
+    :height: 1496px
+    :align: center
+
+Check history
+~~~~~~~~~~~~~
+
+1. Enter history page.
+
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/历史记录/1.进入历史记录界面.png
+    :width: 842px
+    :height: 1496px
+    :align: center
+
+2. Check each transaction information.
+
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/历史记录/2.查看单笔交易信息.png
+    :width: 842px
+    :height: 1496px
+    :align: center
+
+3. Check transaction information on Tronscan.
+
+.. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/Wallet_for_Android/历史记录/3.tronscan上查看记录.png
     :width: 842px
     :height: 1496px
     :align: center
@@ -790,18 +805,16 @@ Initiate transfer
 Wallet-Cli
 ----------
 
-# wallet-cli [![Build Status](https://travis-ci.org/tronprotocol/wallet-cli.svg?branch=master)](https://travis-ci.org/tronprotocol/wallet-cli)
-Wallet CLI
-
-
 Download wallet-cli
----------------------------------
+~~~~~~~~~~~~~~~~~~~
 
 git clone https://github.com/tronprotocol/wallet-cli.git
 
 Edit config.conf in src/main/resources
-----------------------------------------
-    ```
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: shell
+
 net {
  type = mainnet
  #type = testnet 
@@ -819,25 +832,23 @@ soliditynode = {
   ]
 }//note: solidity node is optional
 
-```
 Build and run wallet-cli by command line
-----------------------------------------
-    Create a new command line terminal window.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Create a new command line terminal window.
 
-    ```
+.. code-block:: shell
+
 cd wallet-cli  
 ./gradlew build      
 ./gradlew run
-```
 
 Build and run web wallet
-----------------------------------------
-    ```
+~~~~~~~~~~~~~~~~~~~~~~~~
+
 cd wallet-cli  
 ./gradlew build
 cd build/libs
 java -jar wallet-cli.jar
-```
 
 
 How wallet-cli connects to java-tron :
@@ -849,19 +860,18 @@ Java-tron nodes can be deployed locally or remotely.
 
 We can set the connected java-tron node IP in config.conf of wallet-cli.
 
-
 Wallet-cli supported command list:
 ----------------------------------
 
-        RegisterWallet
+RegisterWallet
 RegisterWallet Password
 Register a wallet in local.
-    Generate a pair of ecc keys.
-    Derive a AES Key by password and then use the AES algorithm to encrypt and save the private key.
-    The account address is calculated by the public key sha3-256, and taking the last 20 bytes.
-    All subsequent operations that require the use of a private key must enter the password.
+Generate a pair of ecc keys.
+Derive a AES Key by password and then use the AES algorithm to encrypt and save the private key.
+The account address is calculated by the public key sha3-256, and taking the last 20 bytes.
+All subsequent operations that require the use of a private key must enter the password.
 
-    ImportWallet
+ImportWallet
 ImportwalletByBase64
 ChangePassword
 Login
@@ -895,117 +905,121 @@ help
 Input any one of then, you will get more tips.
 
 
-    How to freeze/unfreeze balance
-----------------------------------
+How to freeze/unfreeze balance
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    After the funds are frozen, the corresponding number of shares and bandwidth will be obtained.
-    Shares can be used for voting and bandwidth can be used for trading.
-                                                                    The rules for the use and calculation of share and bandwidth are described later in this article.
+After the funds are frozen, the corresponding number of shares and bandwidth will be obtained.
+Shares can be used for voting and bandwidth can be used for trading.
+The rules for the use and calculation of share and bandwidth are described later in this article.
 
 
 **Freeze operation is as follows：**
 
-```
+.. code-block:: shell
+
 freezebalance password amount time
-```
 
 *amount:The amount of frozen funds，the unit is drop.
-    The minimum value is **1000000 drop(1TRX)**.*
+
+The minimum value is **1000000 drop(1TRX)**.*
 
 *time：Freeze time, this value is currently only allowed for **3 days***
 
 
 For example：
-```
-freezebalance 123455 10000000 3
-```
 
+.. code-block:: shell
+
+freezebalance 123455 10000000 3
 
 After the freeze operation,frozen funds will be transferred from Account Balance to Frozen,
-    You can view frozen funds from your account information.
-    After being unfrozen, it is transferred back to Balance by Frozen, and the frozen funds cannot be used for trading.
 
+You can view frozen funds from your account information.
 
-                                                                                                                   When more share or bandwidth is needed temporarily, additional funds may be frozen to obtain additional share and bandwidth.
-    The unfrozen time is postponed until 3 days after the last freeze operation
+After being unfrozen, it is transferred back to Balance by Frozen, and the frozen funds cannot be used for trading.
+
+When more share or bandwidth is needed temporarily, additional funds may be frozen to obtain additional share and bandwidth.
+
+The unfrozen time is postponed until 3 days after the last freeze operation
 
 After the freezing time expires, funds can be unfroze.
 
 
 **Unfreeze operation is as follows：**
-```
-unfreezebalance password 
-```
 
+.. code-block:: shell
+
+unfreezebalance password
 
 
 How to vote
-----------------------------------
+~~~~~~~~~~~
 
-    Voting requires share. Share can be obtained by freezing funds.
+Voting requires share. Share can be obtained by freezing funds.
 
 - The share calculation method is: **1** unit of share can be obtained for every **1TRX** frozen.
 - After unfreezing, previous vote will expire. You can avoid the invalidation of the vote by re-freezing and voting.
 
 **Note:** The Tron Network only records the status of your last vote, which means that each of your votes will cover all previous voting results.
 
-    For example：
+For example：
 
-```
-freezebalance 123455 10000000 3   // Freeze 10TRX and acquire 10 units of shares
+.. code-block:: shell
 
-votewitness 123455 witness1 4 witness2 6   // Cast 4 votes for witness1 and 6 votes for witness2 at the same time.
+    freezebalance 123455 10000000 3   // Freeze 10TRX and acquire 10 units of shares
 
-votewitness 123455 witness1 10   // Voted 10 votes for witness1.
-```
+    votewitness 123455 witness1 4 witness2 6   // Cast 4 votes for witness1 and 6 votes for witness2 at the same time.
+
+    votewitness 123455 witness1 10   // Voted 10 votes for witness1.
+
 
 The final result of the above command was 10 votes for witness1 and 0 votes for witness2.
 
+How to calculate bandwidth
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+The bandwidth calculation rule is：
 
-                                                                                    How to calculate bandwidth
-----------------------------------
+.. code-block:: shell
 
-    The bandwidth calculation rule is：
-```
 constant * FrozenFunds * days
-```
+
 Assuming freeze 1TRX（1_000_000 DROP），3 days，bandwidth obtained = 1* 1_000_000 * 3 = 3_000_000.
 
-    Any contract needs to consume bandwidth, including transfer, transfer of assets, voting, freezing, etc.
-    The query does not consume bandwidth, and each contract needs to consume **100_000 bandwidth**.
+Any contract needs to consume bandwidth, including transfer, transfer of assets, voting, freezing, etc.
+The query does not consume bandwidth, and each contract needs to consume **100_000 bandwidth**.
 
 If the previous contract exceeds a certain time (**10s**), this operation does not consume bandwidth.
 
-    When the unfreezing operation occurs, the bandwidth is not cleared.
-    The next time the freeze is performed, the newly added bandwidth is accumulated.
+When the unfreezing operation occurs, the bandwidth is not cleared.
+The next time the freeze is performed, the newly added bandwidth is accumulated.
 
+How to withdraw balance
+~~~~~~~~~~~~~~~~~~~~~~~
 
-    How to withdraw balance
-----------------------------------
-
-    After each block is produced, the block award is sent to the account's allowance,
+After each block is produced, the block award is sent to the account's allowance,
 and an withdraw operation is allowed every **24 hours** from allowance to balance.
-    The funds in allowance cannot be locked or traded.
+The funds in allowance cannot be locked or traded.
 
 
-    How to create witness
-----------------------------------
-    Applying to become a witness account needs to consume **100_000TRX**.
+How to create witness
+~~~~~~~~~~~~~~~~~~~~~
+
+Applying to become a witness account needs to consume **100_000TRX**.
 This part of the funds will be burned directly.
 
+How to create account
+~~~~~~~~~~~~~~~~~~~~~~
 
-    How to create account
-----------------------------------
-    It is not allowed to create accounts directly. You can only create accounts by transferring funds to non-existing accounts.
-    Transfer to a non-existent account with a minimum transfer amount of **1TRX**.
+It is not allowed to create accounts directly. You can only create accounts by transferring funds to non-existing accounts.
+Transfer to a non-existent account with a minimum transfer amount of **1TRX**.
 
 Command line operation flow example
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    cd wallet-cli
-    ./gradlew build
-    ./gradlew run
+cd wallet-cli
+./gradlew build
+./gradlew run
 RegisterWallet 123456      (password = 123456)
 login 123456
 getAddress                 (Print 'address = f286522619d962e6f93235ca27b2cb67a9e5c27b', backup it)
@@ -1015,14 +1029,14 @@ getbalance                 (Print 'Balance = 0')
 getbalance
 
 assetIssue 123456 testAssetIssue00001 10000000000000000 1 100 2018-4-1 2018-4-30 1 just-test https://github.com/tronprotocol/wallet-cli/
-    getaccount  f286522619d962e6f93235ca27b2cb67a9e5c27b
+getaccount  f286522619d962e6f93235ca27b2cb67a9e5c27b
 (Print balance: 9999900000
 asset {
-    key: "testAssetIssue00001"
-    value: 10000000000000000
+key: "testAssetIssue00001"
+value: 10000000000000000
 })
 (cost trx 1000 trx for assetIssue)
-    (You can query the trx balance and other asset balances for any account )
+(You can query the trx balance and other asset balances for any account )
 TransferAsset 123456 649DDB4AB82D558AD6809C7AB2BA43D1D1054B3F testAssetIssue00001 10000
 
 

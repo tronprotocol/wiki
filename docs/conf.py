@@ -33,5 +33,6 @@ html_theme = 'guzzle_sphinx_theme'
 html_theme_options = {
     "base_url": "https://tron.network/"
 }
+html_favicon = './img/favicon.png'
 
 
