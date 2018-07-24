@@ -337,7 +337,7 @@ Password will encrypt private key. Both password and private key are needed to l
 
 **Only users with TRX are allowed to vote.**
 
-10,000TRX can be claimed at the bottom of the account page to vote and only one claim can be made by every account. Once TRX is successfully claimed, account balance can be viewed in WALLET.
+Request of free testing TRX is only supported on the testnet at https://test.tronscan.org/#/. 10,000TRX can be claimed at the bottom of the account page to vote and only one claim can be made by every account. Once TRX is successfully claimed, account balance can be viewed in WALLET.
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Blockchain_Explorer/testnet的副本.png
     :width: 842px
@@ -810,7 +810,6 @@ Download wallet-cli
 
 git clone https://github.com/tronprotocol/wallet-cli.git
 
-
 Edit config.conf in src/main/resources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -853,13 +852,13 @@ java -jar wallet-cli.jar
 
 
 How wallet-cli connects to java-tron :
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------
+
 Wallet-cli connect to java-tron by grpc protocol.
 
 Java-tron nodes can be deployed locally or remotely.
 
 We can set the connected java-tron node IP in config.conf of wallet-cli.
-
 
 Wallet-cli supported command list:
 ----------------------------------

@@ -12,14 +12,14 @@ Questions on the Full Node in private networks
 1.	Q: Do I need to delete other addresses when replacing genesis.block.witnesses under config.conf with the address string given upon registration on https://tronscan.org/?//
     A: There is no need to delete. However, those address will be part of your network too, and useless if you don’ t have their private key. Att: Zion, Sun and Blackhole Accounts can not be deleted from genesis block config file, however you can change their addresses.
 
-2.	Q: After replacing the seed.node.ip.list with the IP-address of my own public network and entering the command "java -jar java-tron.jar", how can I test if the deployment has been successful? Are there any testing interfaces or commands such as the "redis" command (which sends a ping to a server and gets a png back from the server) for a successfull deployment?
+2.	Q: After replacing the seed.node.ip.list with the IP-address of my own public network and entering the command "java -jar java-tron.jar", how can I test if the deployment has been successful? Are there any testing interfaces or commands such as the "redis" command (which sends a ping to a server and gets a pong back from the server) for a successfull deployment?
     A: There is no default interface with java-tron. There are several ways to check if you have a successful deployment, as once your server is running you can send gRPC commands. First thing you will need to check is if the gRPC port is open:
 
 .. code-block:: shell
 
     netstat -tulnp| grep 50051
 
-If the port is open, you can test your node using tronscan.org. Make sure your port and IP is open on internet. If you are using a private IP only, you will need to use other gRPC software
+If the port is open, you can test your node using tronscan.org. Make sure your port and IP is open on internet. If you are using a private IP only, you will need to use other gRPC software.
 
 .. image:: https://raw.githubusercontent.com/tronprotocol/Documentation/master/images/FAQ/查询节点.png
     :width: 842px
